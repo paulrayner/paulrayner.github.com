@@ -23,7 +23,7 @@ Open the document in Word, and then save as a web page. _Select the "Save only D
 
 Open the html file in Sublime Text 2. Avert your eyes at the horror that is Word-formatted HTML. Reopen with encoding UTF-8 and save the file:
 
-{% img /images/posts/sublime-text-utf8.png 300 80 "Sublime Text 2 Reopen with Encoding" %}
+![Sublime Text 2 Reopen with Encoding]({{ site.url }}/assets/sublime-text-utf8.png)
 
 If I don't recode as UTF-8, then the next step will fail with the error:
 
@@ -39,7 +39,7 @@ Run [pandoc](http://johnmacfarlane.net/pandoc/). For example, the following comm
 
 Weird single quotes need to go:
 
-{% img /images/posts/sublime-text-backtick-replace.png 240 132 "Sublime Text 2 Replace backtick with single quote" %}
+![Sublime Text 2 Replace backtick with single quote]({{ site.url }}/assets/sublime-text-backtick-replace.png)
 
 If you had reviewing turned on in Word, then reviewer comments and changes will likely be present in the HTML. Remove these using a search and replace with the following Regex in the search field:
 

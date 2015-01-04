@@ -26,9 +26,8 @@ For example, let's look at a koan for accessing array elements:
 
 This is my first time seeing negative array references in any language. I was able to surmise (correctly) that they refer to entries counting backwards from the end of the array.
 
-{% blockquote Core API Documents - Array, http://www.ruby-doc.org/core-1.9.3/Array.html %}
+Core API Documents - Array, http://www.ruby-doc.org/core-1.9.3/Array.html
 A negative index is assumed to be relative to the end of the array—that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.
-{% endblockquote %}
 
 According to the Core API docs, indexing an array can also give us `nil`:
 

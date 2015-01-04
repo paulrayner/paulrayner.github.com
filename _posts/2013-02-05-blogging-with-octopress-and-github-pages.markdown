@@ -73,9 +73,7 @@ If you're using `rbenv`, as I was initially, then start with [Blog with Octopres
 
 ##Customize your Blog!
 
-{% pullquote %}
-As Wynn Netherland points out, [Octopress Classic is the new Kubrick][24], so customize your blog. Make it your own. Take a look at some of the [Octopress "hidden" features][25] and get creative (I really like the Octopress theme fellow DDD Denver member Leo Gorodinski is using [on his blog](http://gorodinski.com)). Or, if you are front-end design-challenged like me, get an expert like [Jordan McCullough](https://twitter.com/thejordanmcc) to develop a theme for you. {" Friends don't let friends stick with the Octopress default template. "} 
-{% endpullquote %}
+As Wynn Netherland points out, [Octopress Classic is the new Kubrick][24], so customize your blog. Make it your own. Take a look at some of the [Octopress "hidden" features][25] and get creative (I really like the Octopress theme fellow DDD Denver member Leo Gorodinski is using [on his blog](http://gorodinski.com)). Or, if you are front-end design-challenged like me, get an expert like [Jordan McCullough](https://twitter.com/thejordanmcc) to develop a theme for you. " Friends don't let friends stick with the Octopress default template. "
 
 This started out as a post about installing Octopress, and became something much more for me. I've found since I stopped blogging that I have amassed a huge amount of notes and sites captured in Evernote, but I haven't been sharing my discoveries back with the wider community. So I've resolved to write a blog post instead of stashing away things I find into my own private area, add commentary when I can, and write substantial informational posts of my own from time to time. That way others can benefit from what I'm learning.
 

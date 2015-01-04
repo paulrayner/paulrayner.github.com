@@ -9,10 +9,10 @@ categories: [DDD, Agile]
 
 I'm often asked about what teams doing Domain-Driven Design (DDD) should do in the way of documentation.The question [What types of Written Design Documents are used in DDD projects?](http://stackoverflow.com/questions/16284767/what-types-of-written-design-documents-are-used-in-ddd-projects)) came up on Stack Overflow and I started to write a response, but realized it was getting way too long to post there. So here it is.
 
- {% pullquote %}{"When it comes to documentation, we need to begin with the end in mind."} We need
+"When it comes to documentation, we need to begin with the end in mind." We need
 to understand why we are writing it in the first place: What purpose is each
 document intending to serve?
-{% endpullquote %} The problem with a lot of documentation is that it is seen as an end in
+The problem with a lot of documentation is that it is seen as an end in
 itself, rather than a means to an end, which is to deliver a quality product
 that meets an important customer need. This is why agile teams adopt the value
 of "working software over comprehensive documentation." 

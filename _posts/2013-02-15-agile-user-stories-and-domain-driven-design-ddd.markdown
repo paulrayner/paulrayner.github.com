@@ -24,11 +24,13 @@ Click on either thumbnail below to download the full-size PDF version.
 
 ###Front
 
-[{% img /images/posts/stories-for-design-and-delivery-thumbnail1.png 890 × 700 "Stories for design and delivery" %}](http://www.virtual-genius.com/resources/Stories-for-design-and-delivery.pdf)
+![Stories for design and delivery]({{ site.url }}/assets/stories-for-design-and-delivery-thumbnail1.png)
 
 ###Back
 
-[{% img /images/posts/stories-for-design-and-delivery-thumbnail2.png 890 × 700 "Stories for design and delivery" %}](http://www.virtual-genius.com/resources/Stories-for-design-and-delivery.pdf)
+![Stories for design and delivery]({{ site.url }}/assets/stories-for-design-and-delivery-thumbnail2.png)
+
+[get the PDF](http://www.virtual-genius.com/resources/Stories-for-design-and-delivery.pdf)
 
 ###History
 

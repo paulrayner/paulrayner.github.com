@@ -6,14 +6,17 @@ comments: true
 sharing: true
 categories: [DDD]
 ---
-{% img pull-right http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg/178px-Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg 178 239 'Burlington House Cartoon' %}
+
+![Burlington House Cartoon](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg/178px-Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg)
 Last week when I was in London I came across Leonardo DaVinci's drawing, [_The Virgin and Child with St Anne and St John the Baptist_](http://en.wikipedia.org/wiki/The_Virgin_and_Child_with_St_Anne_and_St_John_the_Baptist), while wandering the National Gallery in London. It's also known as _The Burlington House Cartoon_ because drawings of this sort were usually transferred to a board for painting by pricking or incising the outline. With this cartoon, this has not been done, suggesting that the drawing has been kept as a work of art in its own right.
 
 I see a sample app as functioning like this cartoon. It's not a complete system, and is not intended to be prescriptive in any way. Rather, it is an along-the-way artifact created to learn. It's a point-in-time snapshot of a much deeper, largely invisible, learning process, and thus is incomplete in that way too. When the sample app is done, it can function as a teaching tool, as a guide on the way to building something real. As a conversation starter and tradeoff clarifier.
 
 Last Friday I presented at the [DDD Exchange 2013](http://skillsmatter.com/event/design-architecture/dddx-2013) hosted by Skills Matter in London on what I've learned recently in exploring doing domain-driven design (DDD) in Ruby. The way I approached this exploration was to start porting the DDD sample app from Java and C# to Ruby. I wanted to do this because it would give me an opportunity to go much deeper in Ruby than every before, while applying DDD concepts and techniques I was familiar with in some unfamiliar ways using new tools.
 
-{% img pull-left http://skillsmatter.com/custom/images/dddx-670x180px.gif 167 45 'DDD Exchange Logo' %}I started the port to Ruby back in early May, and presented my early findings to an encouraging audience at DDD Denver on May 13. At that point I had only the domain model objects and some of the Rspec tests in place. Much of my time had been taken with investigating how best to implement value objects, and possible different approaches for the UI and for how to tackle enabling eventual consistency between aggregates. I had only begun to work out how to handle persistence with MongoDB.
+![DDD Exchange Logo](http://skillsmatter.com/custom/images/dddx-670x180px.gif)
+
+I started the port to Ruby back in early May, and presented my early findings to an encouraging audience at DDD Denver on May 13. At that point I had only the domain model objects and some of the Rspec tests in place. Much of my time had been taken with investigating how best to implement value objects, and possible different approaches for the UI and for how to tackle enabling eventual consistency between aggregates. I had only begun to work out how to handle persistence with MongoDB.
 
 When I gave the DDD Denver presentation, I was very nervous about presenting such an incomplete effort in public. But I found everyone to be very supportive and it inspired me to keep going. In the next four weeks I was able to solve all the big issues and prepare a presentation for DDD Exchange 2013. If you are interested, Skills Matter did an excellent job of recording the presentation and getting it online. See below for links to resources.
 
