@@ -7,7 +7,7 @@ sharing: true
 categories: [DDD, Reviews]
 ---
 
-![Implementing DDD]({{ site.url }}/assets/iddd_thumbnail.png.jpg)
+![Implementing DDD]({{ site.url }}/assets/iddd_thumbnail.jpg)
 This is a review of the book _Implementing Domain-Driven Design_ by Vaughn Vernon, based on the [Safari Books Online rough cut edition][2]. The book is also currently available for [preorder on Amazon.com][0], with a scheduled release date of February 14, 2013. Rather than try to cover everything, I’ll be focusing on the parts of the book that I found most interesting and helpful: highlighting the things that stood out to me.
 
 I have been a certified [Domain Language DDD instructor][3] for over two years now, and the most common question I am asked is where to find solid, pragmatic advice on how to actually implement DDD using the frameworks and tools with which developers are already familiar. The good news is _Implementing Domain-Driven Design_ more than adequately fills the lacuna. {" This book is up-to-date, easily comprehensible, free from dogma and the advice it gives is firmly grounded in the real-world experience of one of DDD's foremost practitioners. "}
