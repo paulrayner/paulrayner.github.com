@@ -3,9 +3,16 @@ layout: page
 title: About
 permalink: /about/
 ---
+<section  class="gravatar visible-desktop">
+  <img src="http://www.gravatar.com/avatar/4ce180eb1538932a4cc5b14c9eb0e83b?s=300">
+  <h1>About Paul</h1>
+  <p>I am from Perth, Australia, but choose to live, work and play with my amazing wife and two children in Denver, Colorado.</p> 
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+  <p>I can often be found enjoying barefoot running, bodyweight strength training, guitar playing, paleo eating, serving my church community, and good conversations with friends and family.</p>
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+  <p>I co-founded and co-lead <a href="http://bit.ly/ddd_den">DDD Denver</a>. Look for me speaking at local user groups, on the <a href="http://www.nofluffjuststuff.com/conference/speaker/paul_rayner">No Fluff Just Stuff tour</a>, and at regional and international conferences.</p>
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+  <p>If you are looking for an expert hands-on team coach and design mentor in Domain-Driven Design (DDD), BDD with Cucumber, or lean/agile process I am available for consulting and training.</p>
+
+  <p>Email: <a href="mailto:paul@virtual-genius.com">paul@virtual-genius.com</a></p>
+</section>
