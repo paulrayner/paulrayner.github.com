@@ -15,3 +15,7 @@ markdown: redcarpet
 
 # Maintain permalinks in migration of posts from Octopress
 permalink: /blog/:year/:month/:day/:title/
+
+# Add support for AsciiDoc posts using Asciidoctor
+gems:
+  - jekyll-asciidoc
