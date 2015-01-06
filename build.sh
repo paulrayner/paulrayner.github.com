@@ -6,10 +6,6 @@ if [ $TRAVIS_PULL_REQUEST == "true" ]; then
   exit 0
 fi
 
-# Set Git user
-git config user.email "paul@virtual-genius.com"
-git config user.name "Paul Rayner"
-
 # Enable error reporting to the console
 set -e
 
@@ -25,6 +21,8 @@ cp -R _site/* ../paulrayner.github.com.master
 
 echo -e "Committing and pushing site to master branch on GitHub pages repository\n"
 cd ../paulrayner.github.com.master
+git config user.email "paul@virtual-genius.com"
+git config user.name "Paul Rayner"
 git add -A .
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --quiet origin master > /dev/null 2>&1
