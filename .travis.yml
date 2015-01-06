@@ -8,6 +8,3 @@ rvm:
 env:
   global:
     secure: Df0ktiBYzkOskq6gtBwwmcEm/HFFxS3Fjd03483ehf/bRt98yVHsO1ivcY5Kc4cOEMSxE8VGDdYrJ4Hih4bFOdg9iUBfY/Cozh1z0k9To9toCzHZKKJk9KW5OrqMkuA4T84U3RtLY+JwiW5ss6QFmyJ5UooiwnBMtqXWLsvocZU=
-
-notifications:
-  email: false
