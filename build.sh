@@ -13,25 +13,24 @@ git config user.name "Paul Rayner"
 # Enable error reporting to the console
 set -e
 
+echo -e "Building jekyll site (to _site by default)\n"
+jekyll build
+
+echo
+rm -rf ../paulrayner.github.com.master
+
 # Clone `master' branch of the repository using encrypted GH_TOKEN for authentification
-echo -e "Cloning Jekyll site\n"
-git clone https://${GH_TOKEN}@github.com/paulrayner/paulrayner.github.com.git site
+echo -e "Cloning master branch of Jekyll site\n"
+git clone https://${GH_TOKEN}@github.com/paulrayner/paulrayner.github.com.git ../paulrayner.github.com.master
 
-# build site with jekyll, by default to `_site' folder
-echo -e "Building jekyll site\n"
-jekyll build -d site
 
-cd site
-
-touch .nojekyll
-rm build.sh
+echo -e "Copy generated HTML site to master branch"
+cp -R _site/* ../paulrayner.github.com.master
 
 # commit and push generated content to `master' branch
 # since repository was cloned in write mode with token auth - we can push there
 echo -e "Committing site\n"
-#git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-git commit -a -m "Travis #test001"
+cd ../paulrayner.github.com.master
+git add -A .
+git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
 git push --quiet origin master > /dev/null 2>&1
-
-cd ..
-rm -rf site
