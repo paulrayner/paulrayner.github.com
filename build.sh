@@ -29,3 +29,4 @@ git push --quiet origin master > /dev/null 2>&1
 
 echo -e "Cleaning up"
 rm -rf ../paulrayner.github.com.master
+rm -rf _site
