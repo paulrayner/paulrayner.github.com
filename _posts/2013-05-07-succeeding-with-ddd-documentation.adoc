@@ -1,16 +1,19 @@
 ---
+tags: 
+- DDD
+- Agile
 ---
 :title: Succeeding with DDD - Documentation
 :layout: post
 :date: 2013-05-07 11:40
 :comments: true
 :sharing: true
-categories: [DDD, Agile]
+:tags: DDD, Agile
 
 I'm often asked about what teams doing Domain-Driven Design (DDD) should do in the way of documentation. The question http://stackoverflow.com/questions/16284767/what-types-of-written-design-documents-are-used-in-ddd-projects[What types of Written Design Documents are used in DDD projects?] came up on Stack Overflow and I started to write a response, but realized it was getting way too long to post there. So here it is.
 
 ****
-"When it comes to documentation, we need to begin with the end in mind."
+When it comes to documentation, we need to begin with the end in mind.
 ****
 
 We need
@@ -30,7 +33,7 @@ now as it develops the software, or is it to support future development?"
 Depending on the answer to this question, approach the documentation in a
 different way. Let's start with supporting future development.
 
-=== The Problem of Tribal Mythology
+== The Problem of Tribal Mythology
 
 Jason Smith in http://www.amazon.com/Elemental-Design-Patterns-Jason-Smith/dp/0321711920[Elemental Design Patterns] says the following about kinds of
 documentation supporting future development:
@@ -64,13 +67,14 @@ written after features/modules are implemented/delivered. It can be produced
 as the software is being built, but then there is the additional maintenance
 cost of keeping it up-to-date as things change.
 
-=== Preserving Tribal Wisdom
+== Preserving Tribal Wisdom
 
 So we want to avoid tribal mythology by documenting our systems as necessary.
 We want to capture and preserve for people to come the "tribal wisdom" that
 has been gained in the rough-and-tumble of developing the system. As Jason
 points out:
 
+[quote, Jason Smith, Elemental Design Patterns]
 ____
 Tribal wisdom, however, is the virtuous flip side of this tribal mythology.
 It is prescribed action with understanding, how accompanied by why, and is
@@ -79,6 +83,7 @@ rote copying, and provides illumination through a comprehensive discussion of
 the reasons behind the action. 
 ____
 
+[quote, Jason Smith, Elemental Design Patterns]
 ____
 At some point in the past, for almost every
 action or decision in a system, someone knew why it was done that way.
@@ -88,7 +93,7 @@ designs. By ensuring that we have a strong tradition of knowledge retention
 that facilitates understanding, we build a tradition of tribal wisdom.
 ____
 
-=== Favor Documenting over Documentation
+== Favor Documenting over Documentation
 
 So we support future development by preserving tribal wisdom through
 documentation, but what about supporting the team as they develop the product?
@@ -108,9 +113,9 @@ problem space, and helping the team grasp what the solution needs to look
 like. Let's look at some important characteristics of this style of
 documentation:
 
-=== Characteristics of Useful Documentation
+== Characteristics of Useful Documentation
 
-==== Trustworthy
+=== Trustworthy
 
 This should have to go without saying but, like comments in code, much of the
 documentation that exists cannot be trusted. If you have documents that are
@@ -118,7 +123,7 @@ supporting your development, make them living documents by keeping them up to
 date. They must be correct. They must speak the truth about the software and
 the business domain.
 
-==== Malleable
+=== Malleable
 
 Part of keeping documents trustworthy is enabling change. Documentation must
 be malleable - make it as easy to change as possible. Reduce the friction of
@@ -134,7 +139,7 @@ The important thing is to understand the purpose of each document, and ensure
 that it is kept up to date. As much as possible, push the knowledge into the
 code and the tests.
 
-==== Accessible
+=== Accessible
 
 Documentation must be as accessible as necessary. Things that the team is
 working on right now, I would expect to be on the walls of the team area. Just
@@ -151,7 +156,7 @@ on the team wiki.
 Don't let your wiki fall prey to the http://en.wikipedia.org/wiki/Tragedy_of_the_commons[Tragedy of the Commons]. Appoint a curator for your documents if necessary. But strive for team-ownership of the documentation, just as you strive for team ownership of the
 code.
 
-=== Documentation and Doing DDD
+== Documentation and Doing DDD
 
 DDD teams often find they have a leg-up with documentation, because they
 devote so much effort to distilling domain knowledge into the software itself
@@ -181,7 +186,7 @@ usually has more to do with the team's existing process than doing DDD.
 However, there are certain kinds of documentation that teams doing DDD do find
 very helpful. Let's look at some of these.
 
-=== Requirements Specification?
+== Requirements Specification?
 
 Many teams opt for user stories as items in a feature queue, prioritized by value to the business
 (i.e. "Product Backlog", in Scrum terms). See my earlier blog post on http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd/[user stories and DDD]. 
@@ -248,15 +253,16 @@ Note that I am not against specifying requirements in written form, but rather e
 I would also strongly recommend using mockups and prototypes as much as
 possible.
 
-=== Core Elements
+== Core Elements
 
 I typically create a short document that captures the core domain vision
 statement and the context map. 
 
-=== Architecture
+== Architecture
 
 Architecture is largely orthogonal, but supportive, for DDD. I find the http://en.wikipedia.org/wiki/4%2B1_architectural_view_model["4+1 architecture" approach] to be the most useful. It is useful to keep in mind that, as Grady Booch declared in 2009, architecture is a _shared hallucination_:
 
+[quote, Grady Booch]
 ____
 Architecture is just a collective hunch, a shared hallucination, an assertion by a set of stakeholders on the nature of their observable world, be it a world that is or a world as they wish it to be. Architecture therefore serves as a means of anchoring an extended set of stakeholders to a common vision of that world, a vision around which they may rally, to which they are led, and for which they work collectively to make manifest.
 ____
@@ -275,7 +281,7 @@ worth solving for the business.
 
 George Fairbanks book, http://www.amazon.com/Just-Enough-Software-Architecture-Risk-Driven/dp/0984618104/[Just-Enough Software Architecture] is the best book I've found on characterizing, describing and documenting software archtictures. I love the pragmatic, risk-driven approach to architecture that this book takes (the sections on modeling alone are excellent, though it defines DDD too narrowly for my taste). If you are looking for something more comprehensive in the software engineering tradition, then it's hard to beat the definitive tome: http://www.amazon.com/Documenting-Software-Architectures-Views-Beyond/dp/0321552687[Documenting Software Architectures].
 
-=== Ubiquitous language
+== Ubiquitous language
 
 It can be helpful having a document that explains the Ubiquitous Language.
 Many teams develop a dictionary of significant business terms early on, and
@@ -295,7 +301,7 @@ As terms change over time, such a document can be a good place to explain why
 these changes in language were made, since that kind of historical information
 won't be obvious by looking at the code etc.
 
-=== Informal UML diagrams
+== Informal UML diagrams
 
 I am always sketching UML diagrams on whiteboards. It saddens me that many
 teams don't see the value in this. I particularly find instance diagrams
@@ -326,7 +332,7 @@ them. One of the problems with producing high-quality UML diagrams is that it
 tends to communicate that they are "done," and shouldn't be changed. That they
 are finished.
 
-=== Anything else?
+== Anything else?
 
 I'm a big fan BDD tool such as Cucumber to create living documentation for
 the system, if the team has the skills and experience with such a tool. For
@@ -350,7 +356,7 @@ frameworks and the various tradeoffs they provide. The important thing is the
 improvements I see in communication and collaboration when teams use these
 tools to refine acceptance criteria for user stories.
 
-=== Standalone vs. Combined Documents
+== Standalone vs. Combined Documents
 
 No preference for this. Most teams work this kind of thing out on their own
 over time. I'm not even sure what the factors are for deciding whether to
@@ -363,7 +369,7 @@ My preference is for diagrams surrounded by text. If a picture is worth a 1000
 words, supporting text that explains the critical aspects of the diagram is a
 multiplier for this in terms of utility.
 
-=== Respect Your Audience
+== Respect Your Audience
 
 Finally, and most importantly, when writing any software documentation
 consider your audience. Will the readers be coders? testers? domain experts?

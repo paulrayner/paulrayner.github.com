@@ -51,9 +51,3 @@ $on-laptop:        800px;
         "asciidoctor-default",
         "coderay-asciidoctor"
 ;
-
-
-// Avoid manually converting all image tags from Octopress
-img {
-  width: 100%;
-}
