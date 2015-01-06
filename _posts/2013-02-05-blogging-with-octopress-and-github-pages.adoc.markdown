@@ -7,8 +7,6 @@ sharing: true
 categories: [Writing, Productivity]
 ---
 
-##Why Octopress?
-
 Here are [4 good reasons from AlBlue's blog][0] to consider using Octopress for a technical blog: 
 
 * Jekyll-based
@@ -17,6 +15,8 @@ Here are [4 good reasons from AlBlue's blog][0] to consider using Octopress for 
 * Plugins
 
 See also [Octopress Is Pretty Great][27], which has a great description of not only the positives of Octopress, but also a good step-by-step summary of how to configure Octopress for your environment.
+
+##Why Octopress?
 
 The Jekyll-style approach is to write content in an author-friendly text format (i.e. [Markdown](http://daringfireball.net/projects/markdown/)) that is then translated to HTML and served up as such is gaining more and more momentum over the more common CMS-style approach. Tom Preston Werner [wrote Jekyll back in 2008](http://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker.html), and it is now used to [serve content on Github Pages](https://help.github.com/articles/using-jekyll-with-pages). 
 
