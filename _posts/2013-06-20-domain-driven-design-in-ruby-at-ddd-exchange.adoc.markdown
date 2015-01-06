@@ -7,8 +7,9 @@ sharing: true
 categories: [DDD]
 ---
 
-![Burlington House Cartoon](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg/178px-Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg)
 Last week when I was in London I came across Leonardo DaVinci's drawing, [_The Virgin and Child with St Anne and St John the Baptist_](http://en.wikipedia.org/wiki/The_Virgin_and_Child_with_St_Anne_and_St_John_the_Baptist), while wandering the National Gallery in London. It's also known as _The Burlington House Cartoon_ because drawings of this sort were usually transferred to a board for painting by pricking or incising the outline. With this cartoon, this has not been done, suggesting that the drawing has been kept as a work of art in its own right.
+
+![Burlington House Cartoon](http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg/178px-Leonardo_-_St._Anne_cartoon-alternative-downsampled.jpg)
 
 I see a sample app as functioning like this cartoon. It's not a complete system, and is not intended to be prescriptive in any way. Rather, it is an along-the-way artifact created to learn. It's a point-in-time snapshot of a much deeper, largely invisible, learning process, and thus is incomplete in that way too. When the sample app is done, it can function as a teaching tool, as a guide on the way to building something real. As a conversation starter and tradeoff clarifier.
 
