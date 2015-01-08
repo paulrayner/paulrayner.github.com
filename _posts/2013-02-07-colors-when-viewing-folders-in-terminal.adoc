@@ -3,17 +3,19 @@ layout: post
 title: "Colors when viewing folders in Terminal"
 date: 2013-02-07 15:33
 comments: true
-categories: 
+tags:
+- Coding
+- Productivity 
 ---
 
 Saw directory listing coloring at Golden Ruby Users Group this week, and needed to have it!
 
-[LsColors](http://linux-sxs.org/housekeeping/lscolors.html)
+http://linux-sxs.org/housekeeping/lscolors.html[LsColors]
 
     LS_COLORS='di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.rpm=90'
     export LS_COLORS
 
-[ls, colors and Terminal.app](http://norbauer.com/notebooks/code/notes/ls-colors-and-terminal-app)
+http://norbauer.com/notebooks/code/notes/ls-colors-and-terminal-app[ls, colors and Terminal.app]
 
 Customize Your Colors
 
@@ -51,7 +53,7 @@ And here is a list of the positions in LSCOLORS:
 * directory writable by others, with sticky bit
 * directory writable by others, without sticky bit
 
-[Colors for Dark Terminal Themes](http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/):
+http://osxdaily.com/2012/02/21/add-color-to-the-terminal-in-mac-os-x/[Colors for Dark Terminal Themes]:
 
     export CLICOLOR=1
     export LSCOLORS=GxFxCxDxBxegedabagaced
