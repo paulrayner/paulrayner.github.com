@@ -2,7 +2,39 @@
 tags: Asciidoc
 excerpt: The jekyll-asciidoc gem has now been released and is available for download at RubyGems. Get it now, and add the richness of AsciiDoc markup to your Jekyll static site generation.
 ---
-:title: Build Jekyll-Based Blogs and Websites with AsciiDoc
+:title: Build Jekyll-Based Blogs & Websites with AsciiDoc
+:layout: post
+:date: 2015-01-05 11:40
+:comments: true
+:sharing: true
+
+Announcing the release of https://github.com/asciidoctor/jekyll-asciidoc[jekyll-asciidoc], a http://jekyllrb.com/[Jekyll] plugin that converts AsciiDoc files in your site source to HTML pages using http://asciidoctor.org[Asciidoctor]. The jekyll-asciidoc gem was written by Dan Allen (https://twitter.com/mojavelinux[@mojavelinux]) and I have https://rubygems.org/gems/jekyll-asciidoc[published the release 1.0.0 version to RubyGems].
+
+Jekyll is a simple, blog-aware, static site generator, enabling you to convert plain text content into static websites and blogs. Until recently, Jekyll only supported http://daringfireball.net/projects/markdown/[Markdown] (or http://redcloth.org/textile[Textile]) formatted content.
+
+However, as https://github.com/blog/1939-how-github-uses-github-to-document-github[How GitHub uses GitHub to document GitHub] mentions:
+
+[quote]
+____
+Jekyll 2.0 introduced a new plugin type called a http://jekyllrb.com/docs/plugins/#converters[Converter] that transforms any markup into HTML. This frees the writer up to compose content however she chooses, and Jekyll will just serve the final HTML. For example, you can write your posts in AsciiDoc, if that's your thing.
+____
+
+By adding the Asciidoctor gem and jekyll-asciidoc plugin to your instance of Jekyll, you can start writing content using all the richness and clarity of AsciiDoc syntax.
+
+TIP: GitHub doesn’t (yet) whitelist the AsciiDoc plugin, so you can only run it on your own machine. I set up a Travis CI job to automate publishing of this site to GitHub Pages.
+
+*_This post is actually written in AsciiDoc and is being rendered using jekyll-asciidoc!_*
+
+Here's the actual AsciiDoc content for this blog post. You can also see it at https://github.com/paulrayner/paulrayner.github.com/tree/jekyll/_posts[my website source repository on GitHub].
+
+.post.adoc
+[source,asciidoc]
+....
+---
+tags: Asciidoc
+excerpt: The jekyll-asciidoc gem has now been released and is available for download at RubyGems. Get it now, and add the richness of AsciiDoc markup to your Jekyll static site generation.
+---
+:title: Build Jekyll-Based Blogs & Websites with AsciiDoc
 :layout: post
 :date: 2015-01-05 11:40
 :comments: true
@@ -21,3 +53,8 @@ Dan Allen (https://twitter.com/mojavelinux[@mojavelinux]) recently authored http
 
 *_This post is actually written in AsciiDoc and is being rendered using jekyll-asciidoc!_*
 
+Here's the actual AsciiDoc content for this blog post. You can also see it at https://github.com/paulrayner/paulrayner.github.com/tree/jekyll/_posts[my website source repository on GitHub].
+....
+
+
+:page-source: https://raw.githubusercontent.com/paulrayner/paulrayner.github.com/jekyll/_posts/2012-11-22-book-review-implementing-domain-driven-design.adoc
