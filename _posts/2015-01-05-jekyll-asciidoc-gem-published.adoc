@@ -15,6 +15,7 @@ Announcing the release of https://github.com/asciidoctor/jekyll-asciidoc[jekyll-
 q:>[Start writing your web content in Jekyll using all the richness and clarity of AsciiDoc.]
 The jekyll-asciidoc gem was written by Dan Allen (https://twitter.com/mojavelinux[@mojavelinux]) and I have https://rubygems.org/gems/jekyll-asciidoc[published the release 1.0.0 version to RubyGems].
 
+
 Jekyll is a simple, blog-aware, static site generator, enabling you to convert plain text content into static websites and blogs. Until recently, Jekyll only supported http://daringfireball.net/projects/markdown/[Markdown] (or http://redcloth.org/textile[Textile]) formatted content.
 
 https://github.com/blog/1939-how-github-uses-github-to-document-github[How GitHub uses GitHub to document GitHub] announced:
@@ -25,6 +26,9 @@ Jekyll 2.0 introduced a new plugin type called a http://jekyllrb.com/docs/plugin
 ____
 
 Yes, that _is_ my thing. This post is actually written in AsciiDoc and is being rendered using jekyll-asciidoc.
+
+[.dropshadow]
+image:/assets/jekyll-asciidoc_rubygems.png[jekyll-asciidoc gem on RubyGems, 400, link="https://rubygems.org/gems/jekyll-asciidoc"]
 
 TIP: GitHub doesn’t (yet) whitelist the AsciiDoc plugin, so you can only run it on your own machine. I set up a Travis CI job to automate publishing of this site to GitHub Pages.
 
