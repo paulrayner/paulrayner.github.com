@@ -98,7 +98,6 @@ a {
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
     }
 }
 
@@ -130,7 +129,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: #eef; // TODO: Change this to something better
 }
 
 code {
@@ -149,7 +148,7 @@ pre {
 }
 
 
-
+// TODO: Check if content-width should be % or hard-coded
 /**
  * Wrapper
  */

@@ -16,6 +16,9 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    text-decoration: none;
+
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
 
     &,
     &:visited {
@@ -87,6 +90,23 @@
 }
 
 
+/**
+ * Site contact list in header
+ */
+.site-contact {
+    &, &:visited, &:hover {
+        color: $grey-color-dark;
+    }
+}
+
+ul.site-contact {
+    list-style-type: none;
+    margin-left: 0;
+    & li {
+        display: inline;
+    }
+}
+
 
 /**
  * Site footer
@@ -97,7 +117,7 @@
 }
 
 .footer-heading {
-    font-size: 18px;
+    font-size: 10px;
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -108,7 +128,7 @@
 }
 
 .footer-col-wrapper {
-    font-size: 15px;
+    font-size: 10;
     color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
@@ -126,13 +146,17 @@
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(30% - (#{$spacing-unit} / 2));
+    width:         calc(30% - (#{$spacing-unit} / 2));
+}
+
+.footer-brand {
+    height: 60px;
 }
 
 @include media-query($on-laptop) {
@@ -162,7 +186,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+//    padding: $spacing-unit 0;
 }
 
 .page-heading {
@@ -187,8 +211,6 @@
     display: block;
     font-size: 24px;
 }
-
-
 
 /**
  * Posts
@@ -232,5 +254,13 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+
+.home h2 a {
+    color: #ba3925;
+    &:hover {
+        color: #ba3925;
     }
 }

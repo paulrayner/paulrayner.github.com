@@ -1,15 +1,13 @@
 ---
+layout: post
+title: Succeeding with DDD - Documentation
+date: 2013-05-07 11:40
+comments: true
+sharing: true
 tags: 
 - DDD
 - Agile
-excerpt: |
-  I'm often asked about what teams doing Domain-Driven Design (DDD) should do in the way of documentation. The question came up on Stack Overflow and I started to write a response, but realized it was getting way too long to post there.
 ---
-:title: Succeeding with DDD - Documentation
-:layout: post
-:date: 2013-05-07 11:40
-:comments: true
-:sharing: true
 
 I'm often asked about what teams doing Domain-Driven Design (DDD) should do in the way of documentation. The question http://stackoverflow.com/questions/16284767/what-types-of-written-design-documents-are-used-in-ddd-projects[What types of Written Design Documents are used in DDD projects?] came up on Stack Overflow and I started to write a response, but realized it was getting way too long to post there. So here it is.
 

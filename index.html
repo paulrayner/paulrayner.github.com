@@ -4,19 +4,17 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        {% include post-meta.html post=post %}
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+        {% include post-meta.html post=post %}
 
         {% if post.excerpt %}
-          <p class="post-excerpt">{{ post.excerpt | markdownify }}</p>
+          <p class="post-excerpt">{{ post.excerpt }}</p>
           <h5><a class="post-read-more" href="{{ post.url | prepend: site.baseurl }}">Read More ...</a></h4>
         {% endif %}
       </li>
