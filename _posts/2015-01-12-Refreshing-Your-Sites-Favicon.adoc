@@ -1,0 +1,20 @@
+---
+tags: 
+- Coding
+- Rails
+excerpt: Know how to force a favicon refresh, using a technique that works locally and doesn't require code changes.
+---
+:title: Refreshing Your Site's Favicon
+:layout: post
+:date: 2015-01-12 14:00
+:comments: true
+:sharing: true
+
+This is based on one of the answers to the Stack Overflow question http://stackoverflow.com/questions/2208933/how-do-i-force-a-favicon-refresh[How do I force a favicon refresh]? Last time I had to do this for a Rails app my Google-fu was apparentely too week to find the answer, so I'm posting the solution for next time I have to do it.
+
+Once you've updated `favicon.ico`, which lives in `/public` for a Rails app, the two simple steps are:
+
+. Type in `www.yoursite.com/favicon.ico` for the browser URL and press Enter <- where `www.yoursite.com` is the URL for your app, which could be something like `localhost:3000`
+. Press Ctrl+f5
+
+Now when you navigate to the URL for your website the `favicon.ico` icon which shows in the browser tab should be the new one. Works for me!
