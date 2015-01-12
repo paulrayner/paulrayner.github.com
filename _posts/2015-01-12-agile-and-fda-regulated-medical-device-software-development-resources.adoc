@@ -1,0 +1,43 @@
+---
+tags: 
+- Agile
+- FDA
+excerpt: Annotated list of online resources available dealing with adopting and applying agile practices when developing FDA-regulated medical device software. This list will be updated as new resources are discovered or become available.
+---
+:title: Agile and FDA-Regulated Medical Device Software Development Resources
+:layout: post
+:date: 2015-01-12 2:20pm
+:comments: true
+:sharing: true
+
+Here is a (lightly) annotated list of online resources available dealing with adopting and applying agile practices when developing FDA-regulated medical device software. This list will be updated as new resources are discovered or become available.
+
+[.left]
+image:/assets/aami_tir45.png[AAMI TIR45:2012 Cover, 100, 100, role="left", link="https://my.aami.org/store/detail.aspx?id=TIR45"]
+
+The definitive work is now https://my.aami.org/store/detail.aspx?id=TIR45[AAMI TIR45:2012], a technical information report created by the AAMI to provide guidance on the use of agile practices in the development of medical device software. It is currently $150 to download a pdf ($90 for AAMI members). You can also http://marketplace.aami.org/eseries/scriptcontent/docs/Preview%20Files/TIR45_1208_preview.pdf[download a preview].
+
+http://agile2009.agilealliance.org/files/session_pdfs/Moving%20to%20Agile%20in%20an%20FDA%20Environment.pdf[Moving to Agile in an FDA Environment
+An Experience Report] - Agile 2009 presentation for Abbott. See also http://www.computer.org/csdl/proceedings/agile/2009/3768/00/3768a151-abs.html[IEEE article], which requires payment.
+
+http://ronrammage.wordpress.com/2010/11/06/agile-medical-device-software-development/[Agile Medical Device Software Development?] - Published Nov 6, 2010 on Ron Rammage's Blog
+
+http://rdn-consulting.com/blog/2013/09/23/fda-regulation-of-mobile-medical-apps/[FDA Regulation of Mobile Medical Apps] - Published September 23, 2013 on Bob on Medical Device Software Blog
+
+http://rdn-consulting.com/blog/2010/10/16/agile-software-development-in-regulated-environments/[Agile Software Development in Regulated Environments] - Published October 16, 2010 on Bob on Medical Device Software Blog
+
+http://scalingsoftwareagilityblog.com/software-verification-and-validation-in-high-assurance-agile-development-verification/[Software Verification and Validation in High Assurance Agile Development: Verification: SRS and User Stories] - Published December 17, 2010 by Dean Leffingwell. Has good notes from Brian Shoemaker in the comments.
+
+Other resources, yet to be annotated.
+
+* http://users.encs.concordia.ca/~abdelw/sba/papers/SERA10-FDAToXP.pdf
+* http://www.mddionline.com/article/fda-endorses-agile-what-does-mean
+* http://www.academia.edu/1871584/Barriers_to_Adopting_Agile_Practices_when_Developing_Medical_Device_Software
+
+== Agile Traceability
+
+http://www.infoq.com/news/2008/06/agile-traceability-matrix[Traceability Matrix in an Agile Project - InfoQ]
+http://pagilista.blogspot.com/2012/07/requirements-traceability-in-agile.html
+
+
+http://www.agilemodeling.com/essays/agileRequirementsBestPractices.htm[Agile Requirements Best Practices] - Scott Ambler
