@@ -72,3 +72,10 @@ image:/assets/jekyll-asciidoc_rubygems.png[jekyll-asciidoc gem on RubyGems, 400,
 TIP: GitHub doesn’t (yet) whitelist the AsciiDoc plugin, so you can only run it on your own machine. I set up a Travis CI job to automate publishing of this site to GitHub Pages.
 
 Here's the actual AsciiDoc content for this blog post. You can see the original file in https://github.com/paulrayner/paulrayner.github.com/blob/jekyll/_posts/2015-01-05-jekyll-asciidoc-gem-published.adoc[my website source repository on GitHub].....
+....
+
+*Updated 2015/1/12*
+
+The jekyll-asciidoc plugin is now included as an official plugin in the list of Converters on the http://jekyllrb.com/docs/plugins/[Jekyll plugins page].
+
+image:/assets/jekyll-asciidoc-official.png[jekyll-asciidoc gem on Jekyll documentation plugins list, link="http://jekyllrb.com/docs/plugins/"]
