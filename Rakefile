@@ -28,19 +28,11 @@ task :publish do |t, args|
     puts "Invalid header format on post #{File.basename(file)}"
     Process.exit
   end
-  # parse the YAML. So much better than regex search and replaces
-  headers = YAML::load("---\n"+contents[1])
+
+  binding.pry
+  headers = update_header(contents[1], long_date)
   content = contents[2].strip
-
-  should = { :generate => false, :deploy => false, :schedule => false, :limit => 0 }
-
-  should[:generate] = true
-  should[:deploy] = true
-
-  # fall back to current date and title-based slug
-  headers['date'] ||= long_date
-  headers['slug'] ||= headers['title'].to_url.downcase
-
+  
   # write out the modified YAML and post contents back to the original file
   File.open(file,'w+') {|file| file.puts YAML::dump(headers) + "---\n" + content + "\n"}
 
@@ -49,7 +41,7 @@ task :publish do |t, args|
   mv file, target
   puts %Q{Published "#{headers['title']}" to #{target}}
 
-  system "git add " + target
+  puts system "git add " + target
   puts "git commit -am \"Published #{headers['title']}\""
   puts "git push origin jekyll"
 end
@@ -57,4 +49,14 @@ end
 # posts prefixed with "publish_" - find the earliest one based on modification date
 def next_draft_to_publish
   Dir.glob("_drafts/publish_*").min_by {|f| File.mtime(f)}
+end
+
+def update_header(header, long_date)
+  headers = YAML::load("---\n" + header)
+  headers['layout'] ||= 'post'
+  headers['comments'] ||= 'true'
+  headers['sharing'] ||= 'true'
+  headers['date'] ||= long_date
+  headers['permalink'] ||= 'blog' + headers['title'].to_url.downcase
+  headers
 end
