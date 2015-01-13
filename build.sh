@@ -11,7 +11,7 @@ set -e
 
 # Auto-publish the next draft
 echo -e "Auto-publishing the next draft\n"
-bundle exec rake
+#bundle exec rake
 
 echo -e "Building jekyll site (to _site by default)\n"
 jekyll build
