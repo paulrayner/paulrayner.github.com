@@ -41,8 +41,8 @@ task :publish do |t, args|
   puts %Q{Published "#{headers['title']}" to #{target}}
 
   system "git add " + target
-  "git commit -am \"Published #{headers['title']}\""
-  puts "git push origin jekyll"
+  system "git commit -am \"Published #{headers['title']}\""
+  system "git push origin jekyll"
 end
 
 # posts prefixed with "publish_" - find the earliest one based on modification date
@@ -58,7 +58,4 @@ def update_header(header, long_date)
   headers['date'] ||= long_date
   headers['permalink'] ||= 'blog/:title'
   headers
-end
-
-def move_draft_to_posts_folder
 end
