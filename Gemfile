@@ -7,3 +7,10 @@ gem 'coderay', '1.1.0'
 group :jekyll_plugins do
   gem "jekyll-asciidoc"
 end
+
+group :development do
+  gem "pry"
+  gem "pry-byebug"
+end
+
+gem 'stringex'
