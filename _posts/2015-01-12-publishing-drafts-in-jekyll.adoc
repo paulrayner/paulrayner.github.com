@@ -1,0 +1,223 @@
+---
+layout: post
+title: Publishing Drafts in Jekyll
+comments: true
+sharing: true
+tags:
+- Coding
+- Jekyll
+excerpt: Something here about publishing drafts in Jekyll.
+date: 2015-01-12 21:49
+slug: publishing-drafts-in-jekyll
+---
+== Working with drafts in Jekyll
+
+=== From http://jekyllrb.com/docs/drafts:
+
+Drafts are posts without a date. They’re posts you’re still working on and don’t want to publish yet. To get up and running with drafts, create a `_drafts` folder in your site’s root (as described in the site structure section) and create your first draft:
+
+    |-- _drafts/
+    |   |-- a-draft-post.md
+
+To preview your site with drafts, simply run `jekyll` serve or `jekyll build` with the `--drafts` switch. Each will be assigned the value modification time of the draft file for its date, and thus you will see currently edited drafts as the latest posts.
+
+=== From http://praglowski.com/2013/03/13/scheduling-a-future-posts-in-jekyll/ (linked from http://www.andreafortuna.org/blogging/2014/10/02/how-to-schedule-a-post-in-jekyll/):
+
+    Just add a line: future: false in your _config.yml and then add a post with: rake post title="Some future post" date="2013-06-07" commit, push and that’s all - the post will be visible on a given date.
+
+    … almost :(
+
+    You need to made GitHub Pages to rebuild your blog - by pushing something to repository or in other way - need to find some cron task to do it for me.
+
+=== From http://dave.mn/blog/jekyll-schedule/:
+
+Using Grunt...
+
+    If using Grunt, you can tie this into your Jekyll plugin flags as I have:
+
+     1 jekyll: {
+     2     draft: {
+     3         options: {
+     4             src: '.',
+     5             dest: 'build',
+     6             drafts: true,
+     7             config: ['_config-dev.yml']
+     8         }
+     9     }
+    10 }
+
+    With no date front-matter specified in a draft, the current date will be used when serving with the --drafts flag so one is not necessary. If you already have a date in mind, you can leave one in there and that will then be used during previews. So now we have drafts working, let’s take a look at how to schedule them for publishing on a specific date.
+
+He uses Lingon which runs his deploy task for Grunt.
+
+
+=== From http://barkmadley.com/2011/06/08/future-posts-with-jekyll.html:
+
+    Use a "work in progress" branch which I keep locally and it holds the ideas I have for future posts. When a post has been fully baked I will pick a date and move it to it's own branch, which will be named based on the date I pick to publish it.
+
+Preview work in progress by using the site.pages enumeration:
+
+    {% unless site.safe %} <!-- This is only true when run on github -->
+    <header>
+      <h2>work in progress</h2>
+    </header>
+    <ul class="posts">
+    {% for pag in site.pages %}
+      {% if pag.url contains '/wip/' %}
+      <li>
+        <a href="{{ pag.url }}">{{ pag.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    {% endunless %}
+
+a simple rake task. This will merge in all branches that are older or equal to todays date into the master branch, and then push those changes to the github remote repository.
+
+    desc 'merge branches that are based on dates (usually containing only posts) and push them to the github based on todays date'
+    task :merge do
+      date = %x[date "+%Y-%m-%d"].strip
+      sh "git checkout master"
+      sh "git fetch"
+      %x[git branch].lines.
+        map    {|line| line.strip}.
+        select {|line| line.match(/^\d\d\d\d-\d\d-\d\d$/)}.
+        select {|line| line <= date}.
+        each do |date|
+        puts date
+        sh "git merge #{date}"
+        sh "git branch -d #{date}"
+        %x[git push origin :#{date}]
+      end
+      sh "git push origin master"
+    end
+
+Using these two rake tasks I am able to have a workflow that works for me.
+
+    git checkout wip
+    vim wip/somefile.md
+    # write write write
+    # possibly commit changes
+    rake post[2011-06-06,somefile]
+    git commit # this commits 2011-06-06-somefile.md into the 2011-06-06 branch
+    # when it is 2011-06-06 or in a cronjob
+    rake merge
+
+
+Heroku scheduler: https://devcenter.heroku.com/articles/scheduler
+
+From http://neverstopbuilding.com/queue-jekyll-on-heroku:
+
+"Simple Queuing Of Jekyll Posts With Heroku", or "How to Have Heroku push to Heroku"
+
+Need to study this one to figure out who to trigger things from Heroku application...
+
+From http://brettterpstra.com/2013/01/18/scheduling-posts-2-the-rakening/:
+
+I like this approach, as it has a great publish Rake task:
+
+    desc "Publish a draft"
+    task :publish, :filename do |t, args|
+      # if there's a filename passed (rake publish[filename])
+      # use it. Otherwise, list all available drafts in a menu
+      unless args.filename
+        file = choose_file(File.join(source_dir,'_drafts'))
+        Process.exit unless file # no file selected
+      else
+        file = args.filename if File.exists?(File.expand_path(args.filename))
+        raise "Specified file not found" unless file
+      end
+      now = Time.now
+      short_date = now.strftime("%Y-%m-%d")
+      long_date = now.strftime("%Y-%m-%d %H:%M")
+
+      # separate the YAML headers
+      contents = File.read(file).split(/^---\s*$/)
+      if contents.count < 3 # Expects the draft to be properly formatted
+        puts "Invalid header format on post #{File.basename(file)}"
+        Process.exit
+      end
+      # parse the YAML. So much better than regex search and replaces
+      headers = YAML::load("---\n"+contents[1])
+      content = contents[2].strip
+
+      should = { :generate => false, :deploy => false, :schedule => false, :limit => 0 }
+
+      # For use with a Dropbox/Hazel system. _drafts is a symlink from Dropbox,
+      # posts dropped into it prefixed with "publish_" are automatically
+      # published via Hazel script.
+      # Checks for a "preview" argument, currently unimplemented
+      if File.basename(file) =~ /^preview_/ or args.preview == "true"
+        headers['published'] = false
+        should[:generate] = true
+        should[:limit] = 10
+      elsif File.basename(file) =~ /^publish_/ and args.preview != "false"
+        headers['published'] = true
+        should[:generate] = true
+        should[:deploy] = true
+      end
+
+      #### deploy scheduling ###
+      # if there's a date set in the draft...
+      if headers.key? "date"
+        pub_date = Time.parse(headers['date'])
+        if pub_date > Time.now # and the date is in the future (at time of task)
+          headers['date'] = pub_date.strftime("%Y-%m-%d %H:%M") # reformat date to standard
+          short_date = pub_date.strftime("%Y-%m-%d") # for renaming the file to the publish date
+            # offer to schedule a generate and deploy at the time of the future pub date
+            # skip asking if we're creating from a scripted file (publish_*)
+            should[:schedule] = should[:generate] and should[:deploy] ? true : ask("Schedule deploy for #{headers['date']}?", ['y','n']) == 'y'
+            system("at -f ~/Sites/dev/brettterpstra.com/atjob.sh #{pub_date.strftime('%H%M %m%d%y')}") if should[:schedule]
+        end
+      end
+      ### draft publishing ###
+      # fall back to current date and title-based slug
+      headers['date'] ||= long_date
+      headers['slug'] ||= headers['title'].to_url.downcase
+
+      # write out the modified YAML and post contents back to the original file
+      File.open(file,'w+') {|file| file.puts YAML::dump(headers) + "---\n" + content + "\n"}
+      # move the file to the posts folder with a standardized filename
+      target = "#{source_dir}/#{posts_dir}/#{short_date}-#{headers['slug']}.#{new_post_ext}"
+      mv file, target
+      puts %Q{Published "#{headers['title']}" to #{target}}
+      # auto-generate[/deploy] for non-future publish_ and preview_ files
+      if should[:generate] && should[:deploy]
+        Rake::Task[:gen_deploy].execute
+      elsif should[:generate]
+        if should[:limit] > 0
+          # my generate task accepts two optional arguments: 
+          # posts to limit jekyll to, and whether it's preview mode
+          Rake::Task[:generate].invoke(should['limit'], true)
+        else
+          Rake::Task[:generate].execute
+        end
+      end
+    end
+
+==== Additional functions
+
+`choose_file` 
+
+    # Creates a user selection menu from directory listing
+    def choose_file(dir)
+      puts "Choose file:"
+      @files = Dir["#{dir}/*"]
+      @files.each_with_index { |f,i| puts "#{i+1}: #{f}" }
+      print "> "
+      num = STDIN.gets
+      return false if num =~ /^[a-z ]*$/i
+      file = @files[num.to_i - 1]
+    end
+
+`ask` - This is borrowed from the OctoPress Rakefile.
+
+    def ask(message, valid_options)
+      return true if $skipask
+      if valid_options
+        answer = get_stdin("#{message} #{valid_options.delete_if{|opt| opt == ''}.to_s.gsub(/"/, '').gsub(/, /,'/')} ") while !valid_options.map{|opt| opt.nil? ? '' : opt.upcase }.include?(answer.nil? ? answer : answer.upcase)
+      else
+        answer = get_stdin(message)
+      end
+      answer
+    end
