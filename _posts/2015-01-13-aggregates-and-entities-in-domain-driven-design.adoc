@@ -3,8 +3,12 @@ title: Aggregates & Entities in Domain-Driven Design
 tags:
 - DDD
 - Coding
+layout: post
+comments: true
+sharing: true
+date: 2015-01-13 15:21
+permalink: blog/:title
 ---
-
 Here are some thoughts on distinctions between aggregates and entities in domain-driven design (DDD), in response to some good questions https://twitter.com/hbrumleve[Harry Brumleve] asked me via email.
 
 Here is the relevant content from the email:
