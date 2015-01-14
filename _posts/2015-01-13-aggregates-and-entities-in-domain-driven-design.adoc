@@ -38,11 +38,11 @@ Let's say your company needs to create a purchase order for an 4 day agile works
 
 == Aggregates Support Higher Level Concepts
 
-So the business could work with LineItems individually, but in practice never would, since they only really make sense in light of the PurchaseOrder they belong to. And you would mostly likely want to work with the higher-level concept of Purchase Orders rather than always having to deal at the granularity of the Line Items. 
+The business could work with LineItems individually, but in practice never would, since they only really make sense in light of their PurchaseOrder. And you would mostly likely want to work with the higher-level concept of Purchase Orders rather than always having to deal at the granularity of the Line Items. 
 
-Also, if someone was to approve Purchase Order with ID=XYZ124, they would typically be approving all its Line Items as well. Also, I could imagine business rules for certain types of Purchase Orders that the sum of the values of the individual Line Items could not exceed a certain amount for the Purchase Order to be approved. A Purchase Order would also probably need to have at least one Line Item to be valid.
+If someone was to approve Purchase Order with ID=XYZ124, they would typically be approving all its Line Items as well. I could imagine business rules for certain types of Purchase Orders that the sum of the values of the individual Line Items could not exceed a certain amount for the Purchase Order to be approved. A Purchase Order would probably need to have at least one Line Item to be valid.
 
-Now, here we have a case of two or more objects that seem to belong together most of the time in terms of how you need to work with them. So what we do is treat PO as an _aggregate_ of the PO entiity and the Line Item value objects. And we make the PO entity the root of the aggregate.  So what we have in this example is an aggregate consisting of a single entity, the Purchase Order (functioning as the _root_ of the aggregate), and a set of one or more associated Line Item value objects.
+Here is a case of two or more objects that seem to belong together most of the time in terms of how you need to work with them. So treat PO as an _aggregate_ of the PO entiity and the Line Item value objects. And make the PO entity the root of the aggregate.  So what we have in this example is an aggregate consisting of a single entity, the Purchase Order (functioning as the _root_ of the aggregate), and a set of one or more associated Line Item value objects.
 
 == Aggregates, Invariants and Consistency
 
