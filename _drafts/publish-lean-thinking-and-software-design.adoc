@@ -1,0 +1,56 @@
+---
+title: "Lean Thinking and Software Design"
+tags:
+  - Lean
+  - Agile
+  - Design
+---
+
+Lean software development is a subset of Lean Product Development, not Lean Manufacturing. It is foolish to blindly apply Lean Manufacturing practices to software development. The underlying principles of value, flow, pull and waste remain the same, but the way these principles are applied to software development will look fundamentally different.
+
+Successful software development is about building the right product at the right time for your customers. This means focusing attention on the right places in the portfolio of projects and products that your company provides, and optimizing the entire value stream from "concept to cash" for your customers and the development teams.
+
+Agility is so much more than just adopting Scrum or some other agile process framework. q:>[Agility involves adopting a new set of values and principles]Agility involves adopting a new set of values and principles, and then applying practices through the entire software development lifecycle and beyond in order to provide value to customers earlier and more often.
+
+Agile software development should consist of frequent feedback loops, intense team collaboration, continuous improvement, business and customer involvement, baking quality in and consistent delivery of valuable software. These characteristics are derived from Lean disciplines that can transform software development work and the wider organization.
+
+As Paul Hodgetts points out in his excellent http://www.agilelogic.com/files/LeanIsMoreWhitepaper.pdf[Lean is More] whitepaper:
+
+[quote, Paul Hodgetts, Lean is More]
+____
+Treating software development as Lean Manufacturing leads us down a path of optimizing the mechanics of developing software, which can yield limited benefits but fails to address the much larger software product development issues.
+____
+
+I would put it even more strongly than this. Much of the work software developers do is invisible, particularly when it comes to the thinking involved with design.
+
+It's not about the mechanics of the process, any more than writing a song is about the mechanics of playing the instrument or enjoying a meal is about the nutritional content of the food. Such reductionism is a false hope for improvement. For example, seeking to create a more efficient process by reducing or eliminating design-related activities in software development as waste (such as design meetings, writing design documents, refactoring etc) will inevitably lead to a product with little conceptual integrity, and fast-track it towards becoming a Big Ball of Mud. 
+
+Asking developers to track hours, rather than value delivered, as a measure of productivity is the fast-track to dysfunction and decreasing productivity. Let's not http://alistair.cockburn.us/Taylorism+strikes+software+development[reintroduce Taylorism to software development] through the back-door of Lean.
+
+[quote, Paul Hodgetts, Lean is More]
+____
+Agile methods were developed by assembling the best practices from successful projects. While the combinations of best practices found in agile methods exhibit the core values and principles of a lean approach, it can be difficult to understand the reasons why agile processes work just from examining their practices...Mapping agile practices to lean concepts such as value, flow, pull and waste can help explain why agile works, and offer new insights to guide process improvements.
+____
+
+To see this more clearly we can look through at Kanban and Scrum the lens of lean and agile principles. Kniberg and Skarin, in http://www.infoq.com/minibooks/kanban-scrum-minibook[Kanban and Scrum: Making the Most of Both], point out that Scrum and Kanban are both aligned with the values and principles of both Lean and agile. For example:
+
+[quote, Henrik Kniberg & Mattias Skarin, Kanban and Scrum: Making the Most of Both]
+____
+Scrum and Kanban are both pull scheduling systems, which corresponds to the JIT (Just in Time) inventory management principles of Lean. This means that the team chooses when and how much work to commit to, they "pull" work when they are ready, rather than having it "pushed" in from the outside. Just like a printer pulls in the next page only when it is ready to print on it (although there is a small and limited batch of paper that it can pull from).
+
+* Scrum and Kanban are based on continuous and empirical process optimization, which corresponds to the Kaizen principles of Lean.
+* Scrum and Kanban emphasize responding to change over following a plan (although Kanban allows faster response than Scrum), one of the four values of the agile manifesto.
+____
+
+While the batch sizes in Scrum are much larger (batching work into timeboxed iterations) and thus likely to not be as lean as Kanban, producing shippable code every 2 weeks is certainly much leaner than a more traditional process which might integrate and release something 2-4 times per year. The shorter you make the iteration, the more you are approaching Kanban.
+
+As a DDD practitioner, one area where I think the careful application of Lean thinking holds a great deal of promise is in strategic design:
+
+[quote, Paul Hodgetts, Lean is More]
+____
+Agile and lean are not in conflict with each other as they may seem at first glance, nor are they incompatible approaches to process improvement... Lean Product Development offers several strategies and practices that can supplement agile methods, particularly in areas where agile methods have been criticized as lacking...the strategy of set-based design offers a balanced alternative to heavyweight up-front design approaches on one hand, and reactive, emergent approaches on the other."
+____
+
+Many teams feel that they constantly have to adopt expedient design approaches to meet Sprint deadlines, but Lean thinking combined with strategic DDD frees the team to focus their design work where it matters most. q:>[Lean thinking combined with strategic DDD frees the team to focus their design work where it matters most.] This is for the competitive advantage of their business. It encourages them to reduce the amount of code they write themselves, cultivate domain knowledge, and explore models collaboratively with the business to maximize the potential to develop innovative custom software solutions that leap ahead of the competition in the marketplace.
+
+To learn more about Lean Software Development, I highly recommend http://www.amazon.com/gp/product/0321437381/[Implementing Software Development] by Mary and Tom Poppendieck.
