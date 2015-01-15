@@ -1,11 +1,15 @@
 ---
-title: "Lean Thinking and Software Design"
+title: Lean Thinking and Software Design
 tags:
-  - Lean
-  - Agile
-  - Design
+- Lean
+- Agile
+- Design
+layout: post
+comments: true
+sharing: true
+date: 2015-01-15 14:30
+permalink: blog/:title
 ---
-
 Lean software development is a subset of Lean Product Development, not Lean Manufacturing. It is foolish to blindly apply Lean Manufacturing practices to software development. The underlying principles of value, flow, pull and waste remain the same, but the way these principles are applied to software development will look fundamentally different.
 
 Successful software development is about building the right product at the right time for your customers. This means focusing attention on the right places in the portfolio of projects and products that your company provides, and optimizing the entire value stream from "concept to cash" for your customers and the development teams.
