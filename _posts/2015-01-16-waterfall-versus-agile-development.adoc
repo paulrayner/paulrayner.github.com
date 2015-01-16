@@ -1,9 +1,13 @@
 ---
-title: "Waterfall versus Agile Development"
+title: Waterfall versus Agile Development
 tags:
-  - Agile
+- Agile
+layout: post
+comments: true
+sharing: true
+date: 2015-01-16 00:17
+permalink: blog/:title
 ---
-
 image::/assets/ddredhillsr_1.jpg[William Red Hill, 300, role="left"]
 A recent question from a client: _"I attended your Agile for Teams class about two years ago for my company. What are the criteria for determining if a project should be run in a waterfall or Scrum methodology? I am continuing to get beat up by C-level executives stating that if we just run the project in mini waterfalls we can be agile and responsive to stakeholders as well."_ What would _you_ say?
 
