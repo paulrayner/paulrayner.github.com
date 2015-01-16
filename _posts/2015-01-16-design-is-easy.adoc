@@ -8,7 +8,7 @@ sharing: true
 date: 2015-01-16 13:30
 permalink: blog/:title
 ---
-image::/assets/cartoons/design_is_easy.jpg[Design is Easy, link="/assets/cartoons/design_is_easy.jpg"]
+image::/assets/design_is_easy.jpg[Design is Easy, link="/assets/cartoons/design_is_easy.jpg"]
 Welcome to my new comic, *_Leading by Design_*. Like this blog, it is licensed http://creativecommons.org/licenses/by-sa/4.0/[under a Creative Commons Attribution-ShareAlike 4.0 International License.] Please share!
 
 _Click cartoon to enlarge._
