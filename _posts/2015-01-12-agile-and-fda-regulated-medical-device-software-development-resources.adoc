@@ -114,6 +114,15 @@ Key Takeaways:
 * Create loosely coupled systems partitioned by risk; allocate testing assets and perform functional validations of “System of Systems” according to risk level.
 ____
 
+---
+http://www.ibm.com/developerworks/rational/library/compliant-agile-medical-device/[Being agile while still being compliant: A practical approach for medical device manufacturers] - by Keith Collyer and Jordi Manzano. Published 5 March 2013. Available as pdf download.
+
+____
+Abstract:
+
+Experts from IBM and Diagnostic Grifols describe how Diagnostic Grifols is using agile software development approaches in the tightly regulated field of medical devices. "Many organizations believe that they must use a waterfall approach in regulated environments," they say. "We show how this is not the case."
+____
+
 == Blog Posts
 
 http://ronrammage.wordpress.com/2010/11/06/agile-medical-device-software-development/[Agile Medical Device Software Development?] - Published Nov 6, 2010 on Ron Rammage's Blog
