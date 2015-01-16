@@ -1,0 +1,11 @@
+---
+title: "Design is Easy"
+tags:
+  - Design
+---
+
+image::/assets/cartoons/design_is_easy.jpg[Design is Easy, link="/assets/cartoons/design_is_easy.jpg"]
+
+_Click cartoon to enlarge._
+
+I really do like Marty's work, and enjoyed reading http://www.amazon.com/Zag-Number-Strategy-High-Performance-Brands/dp/0321426770/ref=asap_bc?ie=UTF8[Zag] and http://www.amazon.com/Designful-Company-culture-nonstop-innovation/dp/0321580060/ref=asap_bc?ie=UTF8[The Designful Company]. Follow https://twitter.com/martyneumeier[Marty] on twitter.
