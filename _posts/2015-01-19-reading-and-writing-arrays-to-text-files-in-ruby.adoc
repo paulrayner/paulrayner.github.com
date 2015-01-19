@@ -1,9 +1,13 @@
 ---
-title: "Reading and Writing Arrays to Text Files in Ruby"
+title: Reading and Writing Arrays to Text Files in Ruby
 tags:
-  - Coding
+- Coding
+layout: post
+comments: true
+sharing: true
+date: 2015-01-19 13:30
+permalink: blog/:title
 ---
-
 I wanted to be able to schedule publishing new articles here on a regular schedule. One thing I needed was to create a simple mechanism to tell the publisher which posts are upcoming and the order to publish them in.
 
 I opted for a simple text file called `publish_queue` which sits in the Jekyll `_drafts` folder, along with the draft posts that are ready to publish and queued up, or under development for future queuing. It will likely be a YAML text file eventually, but a simple file with the name of the draft post on each line seemed a sufficient first solution. So the file looks like:
