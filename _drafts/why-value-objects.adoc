@@ -1,0 +1,21 @@
+---
+title: "Why Value Objects?"
+tags:
+  - ddd
+---
+
+Value objects are a key building block pattern in domain-driven design (DDD). Here are some of the reasons why. They...
+
+* Give rich, expressive names to key concepts in our model
+* Increase the conceptual cohesiveness of objects, readability of our code and the overall suppleness of our design
+* Making value objects immutable reduces incidence of bugs, improves thread safety and encourages a functional composition style
+* Encapsulation (information hiding) reduces cognitive burden and increases communication
+* Reduces primitive obsession
+* Removes burden of maintaining state from entities, focusing them on identity and lifecycle. Entities delegate the bulk of their behavioral work to value objects.
+
+== Value Object’s are NOT Data Transfer Objects
+
+Data Transfer Objects’s (DTOs) have become the dominant method for moving data between layers, such as propagating a database schema up through the layers. Data Transfer Objects and Value Objects are therefore two completely separate things.
+
+They look the same superficially, but the entire purpose of a DTO is simply to move data from here to there, with no logic/behavior, just state (i.e. DTO is a technical solution to a technical problem). However, a Value Object represents a concept, rather than a mechanical contrivance to shuttle stuff around.
+

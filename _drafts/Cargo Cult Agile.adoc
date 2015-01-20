@@ -1,0 +1,117 @@
+---
+title: "Cargo Cult Agile"
+tags:
+  - agile
+---
+
+Cargo Cult Agile - Part I
+
+Background on cargo cult here. 
+
+"The term "cargo cult" has been used metaphorically to describe an attempt to recreate successful outcomes by replicating circumstances associated with those outcomes, although those circumstances are either unrelated to the causes of outcomes or insufficient to produce them by themselves. In the former case, this is an instance of the post hoc ergo propter hoc fallacy." - http://en.wikipedia.org/wiki/Cargo_cult
+
+Basic idea is applying practices blindly in your context, hoping you'll see the same benefits as others have had when they've used the same practices. For example, going through the motions of a Sprint planning meeting every two weeks will give you success.
+
+Without really understanding why. Is that the key thing. This is my struggle, because beginners at anything rarely understanding why their being asked to do the things the do they do.
+
+This is frustrating. I keep picking these topics that I cannot explain. And writing it down has not really clarified my thinking that much. Maybe there's a few different ideas here that I need to tease apart. Maybe "cargo cult agile" is not the right metaphor.
+
+James Shore on the 14 May, 2008 wrote a blog post on Cargo Cult Agile (http://www.jamesshore.com/Blog/Cargo-Cult-Agile.html). He describes the problem as "The tragedy of the cargo cult is its adherence to the superficial, outward signs of some idea combined with ignorance of how that idea actually works."
+
+So, two things here, two things that must be _combined_ to constitute the cargo cult tragedy. "Adherence to the superficial, outward signs of some idea is the first." The second is "ignorance of how that idea actually works."
+
+James goes on to say:
+
+----
+So I see these Cargo Cult Agile teams following the rituals of agile development without understanding the underlying ideas. They have a daily stand-up meeting, but they don't collaborate. They plan every two weeks, but they don't deliver.
+
+It's probably inevitable that teams water down and misunderstand agile development. It's unfortunate, though--and a little ironic--that a set of methods created to reduce meetings and waste is being abused to increase them. Cargo Cult Agile teams often go from a weekly one-hour meeting to daily half-hour meetings. This is not an improvement.
+
+Stand-up meetings are a neat tool, but they're hardly the core of agile development. Beware Cargo Cult Agile. Don't use stand-up meetings to avoid real communication and collaboration.
+----
+
+James refers to Steve McConnell's "From the editor" IEEE Software article from March/April 2000 (http://www.stevemcconnell.com/ieeesoftware/eic10.htm)
+
+Mike Hadlow posting from March 12, "Coconut Headphones: Why Agile Has Failed" references James's posting:
+
+----
+Agile has indeed become a cargo cult. Stripped of actual software engineering practices and conducted by ‘agile practitioners’ with no understanding of software engineering, it merely becomes a set of meaningless rituals that are mostly impediments and distractions to creating successful software.
+----
+
+He's using it to argue against having non-technical managers for software projects because "developing software is a deeply technical endeavor"
+
+10 December 2009, Manoj Vadakkan "Cargo Cult Agile". Seems to have more emphasis on getting the elements correct rather than "half-baked". He says:
+
+----
+Like the Cargo Cult, we are getting some of those superficial elements correct. But can we really attract the cargo planes with those elements alone? Do we really know what problems we are trying to solve? Do we really understand what we are doing and why?
+
+In order to solve problems in your organizations, you need to look inside, not outside, to adopt yet another practice, process, or tool. You need to look at what problems you need to solve and identify solutions to those problems. Certainly, Agile/Scrum practices are proven in the industry. So bring that knowledge to your organizations in the form of training, coaching, or hiring. They can seed some of the options to get to your solutions. However, the solutions need to come from within the organization. That should be what "adopting" Agile/Scrum means. These practices need to solve the problems and achieve your organization’s goals.
+
+...
+     4) Consider getting a coach, advisor, or someone who has done this before.
+             a. A good coach will be able to guide you to possible solutions for your issues. Instead of just "adopting" some of
+                 those silver bullets like daily meetings and iterations, they will be able to guide you to solutions to the 
+                 problems. A good, experienced coach can reduce the costly expense of experimenting.
+----
+
+Nov 29, 2013 (as dated by Google, but no date on blog post) https://joelkuiper.eu/agile:
+
+----
+Often the metaphorical use of Cargo Cult indicates having rituals or activities that probably have no influence on the actual outcome, and perhaps were once only coincidental to success.
+
+I’d like to propose that sometimes Agile is, in fact, Cargo Cult. My reason for believing this is twofold. First, I do not believe that some of the rituals of Agile such as Test Driven Development, daily stand-ups or planning poker have in itself any influence on actual (product) success. Maybe some are necessary but certainly not sufficient for proper development. Secondly I think that the Agile methodology can be actively harmful to a successful development cycle.
+----
+
+and...
+
+----
+But many of these core principles are often expressed within standardized frameworks such as Scrum. In these frameworks the rituals become the goals, instead means to the principles they want to uphold and tend to be done without understanding why they are done.
+
+For example, I’ve often seen daily standups not being used for the benefit of development, but instead being abused as a method for the product owner to exert force on team members.
+
+...
+If rituals are done without understanding why they should be done, they become Cargo Cult. I’ve seen this often: the team claims Agile but many problems are not tackled in the appropriate way.
+...
+Agile resolves around principles which should be understood properly. Implementing just the rituals would be rather ironic.
+....
+Don’t drink the Kool-aid, it is cyanide. Planning the long game is not a sin. Understand the reasons for the rituals, and make reasonable choices (as Kant would’ve put it: wisdom is required for morality).
+----
+
+7/24/2009 - Rally Software "Implementing Scrum? - Avoid Cargo Cult Scrum" (Alan Atlas)
+
+Using terminology like "Daily Scrum" to mean something else:
+
+----
+Cargo Cult Scrum is what happens when you adopt the practices, vocabulary, and artifacts of scrum but you don’t understand why or how they work. Cargo Cult scrum is bad. It is accidental and is based on ignorance.
+....
+When we talk about cargo cult implementations of scrum we are talking about people who seize on the advanced ideas of scrum and expect magical, unexplainable benefit to come from them, not realizing that informed usage is required in the bargain.
+....
+
+The true meaning of ‘daily scrum’ has been lost, if it was ever apprehended in the first place.
+....
+
+Though you shouldn’t do Cargo Cult Scrum for any reason, the reality is that any step down the road to scrum is usually better than whatever preceded it.
+
+Don’t feel bad if your scrum implementation isn’t the same as what’s in the books. Feel bad if you are have stopped trying to make it better.
+----
+
+=== Signs you might be doing cargo cult agile
+
+Many of these will also be present when a team is starting out. The key difference is the team's shared commitment to growing improvement and understanding:
+
+* Management talk about "best practices" as if they are real
+* Management renames existing meetings as Scrum ceremonies
+* Focus on estimation and "tracking to actuals" at the expense of getting things done
+* Names change, but not the meaning
+* Gantt charts
+* Boss is Scrummaster
+* Scrummaster is more like a boss than a servant to the team
+* Scrum ceremonies are long, tedious and boring
+* Agile adoption was driven top-down, with little buy-in from people actually asked to do it
+* Team members are not on-board, and perhaps are even actively or passively rebelling against agile
+* The team is not interested in improving, or does not try to
+* Fear
+** Of failure
+** Of management
+* Lack of trust
+* Opposite of agile values are what matters to corporate culture

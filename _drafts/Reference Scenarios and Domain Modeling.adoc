@@ -1,0 +1,71 @@
+---
+title: "Reference Scenarios and Domain Modeling"
+tags:
+  - agile
+  - ddd
+---
+
+From <http://blog.edument.se/2012/07/23/insights-from-dddx-2012-part-2/>:
+
+## Insights from DDDx 2012: Part 2
+
+_[July 23, 2012 at 8:05 am][1]_ _[sphryne][2]_
+
+   [1]: http://blog.edument.se/2012/07/23/insights-from-dddx-2012-part-2/ (8:05 am)
+   [2]: http://blog.edument.se/author/sphryne/ (View all posts by sphryne)
+
+In my [previous post][3] I talked about what I'd taken away from the morning  
+sessions at DDDx 2012, a one-day event in London dedicated to Domain Driven Design. In this post, I'll turn to the afternoon sessions.
+
+   [3]: http://blog.edument.se/2012/06/26/insights-from-dddx-2012-part-1/
+
+**Legacy Applications and DDD?**
+
+While having the opportunity to develop something new offers clear chances to put DDD to use, the reality is that much development involves working on legacy systems. Some of them are important to the core domain and have genuine domain complexity, meaning DDD is a good fit - if only it can be applied with an existing system! Since this is a common situation, I looked forward to hearing Cyrille Martraire's perspectives and experiences in this area.
+
+A common reaction to legacy systems is, "let's redo all the things!" There's enough history to show that this tends to end rather badly, however. As it was put in this talk, re-doing leads to waste and risk. Therefore, any re-doing should be bounded. These boundaries can be found by focusing on the assets - the things that deliver business value - in the legacy application, separating them out from each other. Any re-doing should be focused on a single asset at a time.
+
+Cyrille introduced the notion of a bubble context. Inside of the bubble context, you have freedom to build things the way you want, carefully using the ubiquitous language. An anti-corruption layer mediates between the bubble context and legacy system. (An ACL enables integration of two systems with different models, but without them having to know about each other. It does this by exposing each system to the other as a facade, performing the mapping work between them.) Gradually, as the bubble context grows in capability, responsibilities can be turned over to it.
+
+There are a couple of things that I like about this approach. One is that it reduces risk: there's not one big re-write, but instead regular, small steps towards putting new implementation into production. The other is that the anti-corruption layer encapsulates the knowledge about the differences between the legacy system's model and the replacement system's model. This also reduces risk (since there are fewer changes needed to the legacy code) and helps keep the model in the replacement system clean (since it is being kept at a distance from the legacy model).
+
+While this was what I mostly took away, there were a few other nice ideas. One that stood out to me was an interesting way of learning about a legacy system: fix its bugs! Bug fixing often requires gaining a fairly deep understanding of the code in question, and it is much more active than simply reading the code. This is certainly something I should remember to actively do.
+
+Another important point is that the ubiquitous language is signal. Anything in the code that is not discussing the ubiquitous language is noise. Code should have a high signal to noise ratio. While I've long talked about naming code elements so that they reflect the domain language, this is an interesting way of thinking about it.
+
+**Domain Scenarios and Model Whirlpools**
+
+Next up was Paul Rayner. He started out with some excellent points about the process of modeling. Modeling is not about an exact depiction of reality, nor is it about maximizing captured knowledge or elegance. Models are certainly not about large amounts of abstraction either. Normal people aren't as into abstractions as developers. We like to find ways to say, "well, an X is really just a Y" - but domain experts may see things very differently. Even if in a data sense the abstraction holds up, in a process sense it may not.
+
+Perhaps most critically, a model is something that lives and evolves. How should we drive that evolution, though? Paul suggested reference scenarios as an approach that worked well. A reference scenario is, essentially, a story. However, it's not a user story, which tends to focus on just one actor's interactions with a system. Instead, it is a story of an entire process that the system should handle, incorporating multiple actors.
+
+Reference scenarios are used to drive evolution of the ubiquitous language, and as a way to assess the current model. Essentially, they aid discovery. There was an important reminder here to not get attached to a model. Just because it looks nice so far does not mean it will actually hold up in the light of a new reference scenario. A collection of reference scenarios can later be used to crash-test changes to the model. Does the new model handle all of the reference scenarios well? If not, then it will need reconsidering.
+
+Overall, I really like the idea of reference scenarios. I'm all for writing BDD-style given/when/then tests, but those come along somewhat later, when a model has started to emerge and we can discuss interactions with it. Reference scenarios come earlier than this, driving the discovery of the model itself.
+
+**The Value of Research**
+
+The final talk of the day came from Eric Evans, the founder of Domain Driven Design. The talk title was a bit of a mouthful: "case study involving strategic design and established formalisms". Happily, though, the talk itself was very understandable and full of useful insights.
+
+Case studies are extremely valuable, because they give feedback on how ideas and approaches play out in the real world. In this case, it involved a long and quite deep search for the real problem. While there was plenty of desire to "do something", Eric pointed out that just doing something is not a strategy. Thus came the strategic design aspect of the talk: whatever is designed and delivered in software must align with the business and help it to achieve its goals. The initially proposed solutions seemed technically feasible, but the domain experts were decidedly queasy about it. Could a computer really do something that humans did fairly well? This is certainly something to look out for in general. It took much more searching to uncover the place where automation could really deliver value.
+
+The established formalisms part of the study discussed the role of research in DDD. In this case, researching well established statistical methods was key to building a solution. While this may seem like an odd thing to do in domain modeling at first glance, a model is "a system of abstractions over a domain". Turning to established theory can uncover suitable abstractions - in this case the Monte Carlo method.
+
+**Summing Up**
+
+By the end of the day, I felt like my brain was bursting with new ideas and ways to approach problems. The talks were all interesting and with valuable ideas to take away, ponder and apply. I've already started doing this in my work here at Edument. Most of all, though, attending DDDx brought me in contact with the DDD community. Any widely used practice or tool will grow a community around it. It's been my pleasure to be involved in the Perl community over many years. Judging by DDDx, DDD has a nice community around it also. I'm already booked for DDDx in 2013, and look forward to more interesting and mind opening sessions. See you there! ![:-)][4]
+
+   [4]: http://s0.wp.com/wp-includes/images/smilies/icon_smile.gif?m=1129645325g
+
+### Share this:
+
+  * [Facebook][5]
+  * [LinkedIn][6]
+  * [Twitter][7]
+  * ### Like this:
+
+   [5]: http://blog.edument.se/2012/07/23/insights-from-dddx-2012-part-2/?share=facebook (Share on Facebook)
+   [6]: http://blog.edument.se/2012/07/23/insights-from-dddx-2012-part-2/?share=linkedin (Click to share on LinkedIn)
+   [7]: http://blog.edument.se/2012/07/23/insights-from-dddx-2012-part-2/?share=twitter (Click to share on Twitter)
+
+Entry filed under: Uncategorized. Tags: . 

@@ -16,7 +16,7 @@ image::/assets/TravisCI-Full-Color-vertical.png[Travis Logo, role="right"]
 To preview your site with drafts, simply run `jekyll` serve or `jekyll build` with the `--drafts` switch. Each will be assigned the value modification time of the draft file for its date, and thus you will see currently edited drafts as the latest posts.
 
 
-=== From http://praglowski.com/2013/03/13/scheduling-a-future-posts-in-jekyll/ (linked from http://www.andreafortuna.org/blogging/2014/10/02/how-to-schedule-a-post-in-jekyll/):
+From http://praglowski.com/2013/03/13/scheduling-a-future-posts-in-jekyll/ (linked from http://www.andreafortuna.org/blogging/2014/10/02/how-to-schedule-a-post-in-jekyll/):
 
     Just add a line: future: false in your _config.yml and then add a post with: rake post title="Some future post" date="2013-06-07" commit, push and that’s all - the post will be visible on a given date.
 
@@ -24,7 +24,8 @@ To preview your site with drafts, simply run `jekyll` serve or `jekyll build` wi
 
     You need to made GitHub Pages to rebuild your blog - by pushing something to repository or in other way - need to find some cron task to do it for me.
 
-=== From http://dave.mn/blog/jekyll-schedule/:
+
+From http://dave.mn/blog/jekyll-schedule/:
 
 Using Grunt...
 
@@ -45,8 +46,7 @@ Using Grunt...
 
 He uses Lingon which runs his deploy task for Grunt.
 
-
-=== From http://barkmadley.com/2011/06/08/future-posts-with-jekyll.html:
+== From http://barkmadley.com/2011/06/08/future-posts-with-jekyll.html:
 
     Use a "work in progress" branch which I keep locally and it holds the ideas I have for future posts. When a post has been fully baked I will pick a date and move it to it's own branch, which will be named based on the date I pick to publish it.
 
@@ -190,7 +190,7 @@ I like this approach, as it has a great publish Rake task:
       end
     end
 
-==== Additional functions
+=== Additional functions
 
 `choose_file` 
 

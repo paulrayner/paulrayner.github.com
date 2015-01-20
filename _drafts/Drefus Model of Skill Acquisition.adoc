@@ -1,0 +1,185 @@
+== Drefus Model of Skill Acquisition
+
+image::drefus_table1.png[Table of Drefus model - taken from http://www.sld.demon.co.uk/dreyfus.pdf]
+
+"The fundamental idea here is that when teaching a concept, you have to tailor the style of teaching
+to where the learner is in their understanding and that progression follows a common pattern. Early
+stages of learning focus on concrete steps to imitate, the focus then shifts to understanding
+principles and finally into self-directed innovation...It’s tedious, but fixed rules such as these
+can give novices some measure of capability. Of course, novices face the problem of not knowing
+which rules are most relevant in a given situation. And when something unexpected comes up, they
+will be completely flummoxed. "
+-- The Five Dreyfus Model Stages: Stage 1 - Novice, Pragmatic Thinking and Learning, p. 31.
+
+"Advanced beginners can start using advice in the correct context, based on similar situations they’ve experienced in the
+recent past but just barely. And although they can start formulating some overall principles, there is no “big picture.”
+They have no holistic understanding and really don’t want it yet. If you tried to force the larger context on an
+advanced beginner, they would probably dis- miss it as irrelevant."
+-- The Five Dreyfus Model Stages: Stage 2 - Advanced Beginner, Pragmatic Thinking and Learning, p. 32.
+
+"At the third stage, practitioners can now develop con- ceptual models of the problem domain and work with those models
+effectively. They can troubleshoot prob- lems on their own and begin to figure out how to solve novel problems—ones they
+haven’t faced before. They can begin to seek out and apply advice from experts and use it effectively. Instead of
+following the sort of knee-jerk response of the previous levels, the com- Competents can petent practitioner will seek
+out and solve troubleshoot. problems; their work is based more on deliberate planning and past experience. Without more
+experience, they’ll still have trouble trying to determine which details to focus on when problem solving...*In the field of software development, we’re getting there, but even at this level, practitioners can’t apply agile methods the way we would like—there isn’t yet enough ability for reflection and self-correction.*"
+-- The Five Dreyfus Model Stages: Stage 3 - Competent, Pragmatic Thinking and Learning, p. 33.
+
+"Proficient practitioners need the big picture. They will seek out and want to understand the larger concep- tual framework around this skill. They will be very frustrated by oversimplified information."
+-- The Five Dreyfus Model Stages: Stage 4 - Proficient, Pragmatic Thinking and Learning, p. 33.
+
+Proficient practitioners can:
+
+* self-correct/improve
+* learn from the experience of others
+* understand and apply _maxims_ in *context* (e.g. DRY)
+* predict next steps based on their past experience
+* apply software patterns
+
+"Proficient practitioners can take full advantage of the reflection and feedback that is core to agile methods. This is a big leap from the earlier stages; someone at the proficient stage is much more like a junior expert than a really advanced competent."
+-- The Five Dreyfus Model Stages: Stage 4 - Proficient, Pragmatic Thinking and Learning, p. 35.
+
+"Advanced beginners and competent practitioners often confuse software design patterns with recipes, sometimes with disastrous results."
+-- The Five Dreyfus Model Stages: Stage 4 - Proficient, Pragmatic Thinking and Learning, p. 36.
+
+"Experts are the primary sources of knowledge and information in any field. They are the ones who con- tinually look for better methods and better ways of doing things. They have a vast body of experience that they can tap into and apply in just the right context. These are the folks who write the books, write the articles, and do the lecture circuit. These are the modern wizards...*Experts work from intuition, not from reason.* "
+-- The Five Dreyfus Model Stages: Stage 5 - Expert, Pragmatic Thinking and Learning, p. 36.
+
+"The expert knows the difference between irrelevant details and the very important details, perhaps not on a conscious level, but the expert knows which details to focus on and which details can be safely ignored. The expert is very good at targeted, focused pattern matching."
+-- The Five Dreyfus Model Stages: Stage 5 - Expert, Pragmatic Thinking and Learning, p. 37.
+
+=== Resources: Dreyfus Model and Agile 
+
+http://www.slideshare.net/mgbarcomb/growing-whole-teams-using-the-dreyfus-model[Growing whole teams using the Dreyfus model - Slideshare presentation] - Matt Barcomb & Lisa Crispin
+
+[, Ralph Jocham, "Dreyfus Model and Communication", http://agiletips.blogspot.com/2010/09/dreyfus-model-and-communication.html, posted Sep 2, 2010]
+""
+The Scrum Teams have moved up the Dreyfus model and are around the competent or even proficient level, whereas the management is still novice, advanced beginner at best. We had an interfacing problem and did not communicate on the same skill level. The risk with that is that you think you understand, but don't understand without realizing it.
+I am convinced that this is one of the main challenges when communicating certain topics. You cannot assume that everyone has the same tacit knowledge and thereby the same skill level then you. You need to find a way to describe matters to a novice as tangible as possible. Not an easy feat but a necessity.
+""
+
+=== References
+
+http://en.wikipedia.org/wiki/Dreyfus_model_of_skill_acquisition[Dreyfus model of skill acquisition - Wikipedia]
+http://www.sld.demon.co.uk/dreyfus.pdf[Table of the Dreyfus levels, referenced from Wikipedia entry]
+
+== Four Stages of Competence
+
+
+"In psychology, the four stages of competence, or the "conscious competence" learning model, relates to the psychological states involved in the process of progressing from incompetence to competence in a skill.
+...
+The Four Stages of Learning provides a model for learning. It suggests that individuals are initially unaware of how little they know, or unconscious of their incompetence. As they recognize their incompetence, they consciously acquire a skill, then consciously use it. Eventually, the skill can be utilized without it being consciously thought through: the individual is said to have then acquired unconscious competence."
+-- Four stages of competence - Wikipeda, http://en.wikipedia.org/wiki/Four_stages_of_competence:
+
+*The four stages*
+
+. *Unconscious incompetence*:: The individual does not understand or know how to do something and does not necessarily recognize the deficit. They may deny the usefulness of the skill. The individual must recognize their own incompetence, and the value of the new skill, before moving on to the next stage. The length of time an individual spends in this stage depends on the strength of the stimulus to learn.
+. *Conscious incompetence*:: Though the individual does not understand or know how to do something, he or she does recognize the deficit, as well as the value of a new skill in addressing the deficit. The making of mistakes can be integral to the learning process at this stage.
+. *Conscious competence*:: The individual understands or knows how to do something. However, demonstrating the skill or knowledge requires concentration. It may be broken down into steps, and there is heavy conscious involvement in executing the new skill.
+. *Unconscious competence*:: The individual has had so much practice with a skill that it has become "second nature" and can be performed easily. As a result, the skill can be performed while executing another task. The individual may be able to teach it to others, depending upon how and when it was learned.
+
+_Initially described as “Four Stages for Learning Any New Skill”, the theory was developed at the Gordon Training International by its employee Noel Burch in the 1970s._
+
+== Shuhari
+
+Shuhari roughly translates to "first learn, then detach, and finally transcend."
+
+* shu (守?) "protect", "obey" — traditional wisdom — learning fundamentals, techniques, heuristics, proverbs
+* ha (破?) "detach", "digress" — breaking with tradition — detachment from the illusions of self
+* ri (離?) "leave", "separate" — transcendence — there are no techniques or proverbs, all moves are natural, becoming one with spirit alone without clinging to forms; transcending the physical
+
+
+"It is known that, when we learn or train in something, we pass through the stages of shu, ha, and ri. These stages are explained as follows. In shu, we repeat the forms and discipline ourselves so that our bodies absorb the forms that our forebears created. We remain faithful to these forms with no deviation. Next, in the stage of ha, once we have disciplined ourselves to acquire the forms and movements, we make innovations. In this process the forms may be broken and discarded. Finally, in ri, we completely depart from the forms, open the door to creative technique, and arrive in a place where we act in accordance with what our heart/mind desires, unhindered while not overstepping laws."
+-- Aikido master Endō Seishirō Shihan:
+
+"During the Shu phase the student should loyally follow the instruction of a single teacher; the student is not yet ready to explore and compare different paths."
+-- "Shuhari" - Wikipedia, http://en.wikipedia.org/wiki/Shuhari
+
+From http://martinfowler.com/bliki/ShuHaRi.html[Martin Fowler's Bliki]:
+
+"Shu-Ha-Ri is a way of thinking about how you learn a technique. The name comes from Japanese martial arts (particularly Aikido), and Alistair Cockburn introduced it as a way of thinking about learning techniques and methodologies for software development."
+-- Martin Fowler
+
+The idea is that a person passes through three stages of gaining knowledge:
+
+* *Shu*: In this beginning stage the student follows the teachings of one master precisely. He concentrates on how to do the task, without worrying too much about the underlying theory. If there are multiple variations on how to do the task, he concentrates on just the one way his master teaches him.
+* *Ha*: At this point the student begins to branch out. With the basic practices working he now starts to learn the underlying principles and theory behind the technique. He also starts learning from other masters and integrates that learning into his practice.
+* *Ri*: Now the student isn't learning from other people, but from his own practice. He creates his own approaches and adapts what he's learned to his own particular circumstances.
+
+"The fundamental idea here is that when teaching a concept, you have to tailor the style of teaching to where the learner is in their understanding and that progression follows a common pattern. Early stages of learning focus on concrete steps to imitate, the focus then shifts to understanding principles and finally into self-directed innovation."
+-- Martin Fowler
+
+See Cockburn's Agile Software Development, p.21.
+
+There are other expressions of this style of learning. A more nuanced approach is the Dreyfus model.
+
+Clark Terry's formulation of this model: http://jazzadvice.com/clark-terrys-3-steps-to-learning-improvisation/[Imitate, Assimilate, Innovate].
+
+"Innovation is the direct result of hours upon hours of imitation and assimilation."
+-- Clark Terry
+
+== Dunning-Kruger Effect
+
+"The Dunning–Kruger effect is a cognitive bias manifesting in two principal ways: unskilled individuals tend to suffer from illusory superiority, mistakenly rating their ability much higher than is accurate, while highly skilled individuals tend to rate their ability lower than is accurate. In unskilled individuals, this bias is attributed to a metacognitive inability of the unskilled to recognize their ineptitude. Skilled individuals tend to underestimate their relative competence, erroneously assuming that tasks which are easy for them are also easy for others."
+-- "Dunning-Kruger Effect" - Wikipedia, http://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect
+
+Dunning and Kruger proposed that, for a given skill, incompetent people will:
+
+. fail to recognize their own lack of skill;
+. fail to recognize genuine skill in others;
+. fail to recognize the extremity of their inadequacy;
+. recognize and acknowledge their own previous lack of skill, if they are exposed to training for that skill.
+
+"If you’re incompetent, you can’t know you’re incompetent. […] the skills you need to produce a right answer are exactly the skills you need to recognize what a right answer is."
+-- David Dunning, "Dunning-Kruger Effect" - Wikipedia, http://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect
+
+"For poor performers to recognize their ineptitude would require them to possess the very expertise they lack."
+-- David Dunning, "We Are All Confident Idiots", http://www.psmag.com/navigation/health-and-behavior/confident-idiots-92793, posted Oct 27, 2014
+
+"Poor performers — and we are all poor performers at some things — fail to see the flaws in their thinking or the answers they lack."
+-- David Dunning, "We Are All Confident Idiots", http://www.psmag.com/navigation/health-and-behavior/confident-idiots-92793, posted Oct 27, 2014
+
+"An ignorant mind is precisely not a spotless, empty vessel, but one that’s filled with the clutter of irrelevant or misleading life experiences, theories, facts, intuitions, strategies, algorithms, heuristics, metaphors, and hunches that regrettably have the look and feel of useful and accurate knowledge. This clutter is an unfortunate by-product of one of our greatest strengths as a species. We are unbridled pattern recognizers and profligate theorizers."
+-- David Dunning, "We Are All Confident Idiots", http://www.psmag.com/navigation/health-and-behavior/confident-idiots-92793, posted Oct 27, 2014
+
+"Because of the way we are built, and because of the way we learn from our environment, we are *all engines of misbelief.*"
+-- David Dunning, "We Are All Confident Idiots", http://www.psmag.com/navigation/health-and-behavior/confident-idiots-92793, posted Oct 27, 2014
+
+"What education often does appear to do, however, is imbue us with confidence in the errors we retain."
+-- David Dunning, "We Are All Confident Idiots", http://www.psmag.com/navigation/health-and-behavior/confident-idiots-92793, posted Oct 27, 2014
+
+"The way we traditionally conceive of ignorance — as an absence of knowledge — leads us to think of education as its natural antidote. But education, even when done skillfully, can produce illusory confidence."
+-- David Dunning, "We Are All Confident Idiots", http://www.psmag.com/navigation/health-and-behavior/confident-idiots-92793, posted Oct 27, 2014
+
+"In the classroom, some of best techniques for disarming misconceptions are essentially variations on the Socratic method. To eliminate the most common misbeliefs, the instructor can open a lesson with them—and then show students the explanatory gaps those misbeliefs leave yawning or the implausible conclusions they lead to."
+-- David Dunning, "We Are All Confident Idiots", http://www.psmag.com/navigation/health-and-behavior/confident-idiots-92793, posted Oct 27, 2014
+
+"Behavioral scientists often recommend that small groups appoint someone to serve as a devil’s advocate—a person whose job is to question and criticize the group’s logic. While this approach can prolong group discussions, irritate the group, and be uncomfortable, the decisions that groups ultimately reach are usually more accurate and more solidly grounded than they otherwise would be."
+-- David Dunning, "We Are All Confident Idiots", http://www.psmag.com/navigation/health-and-behavior/confident-idiots-92793, posted Oct 27, 2014
+
+“A learned blockhead is a greater blockhead than an ignorant one.”
+-- Benjamin Franklin
+
+"The built-in features of our brains, and the life experiences we accumulate, do in fact fill our heads with immense knowledge; what they do not confer is insight into the dimensions of our ignorance. As such, wisdom may not involve facts and formulas so much as the ability to recognize when a limit has been reached."
+-- David Dunning, "We Are All Confident Idiots", http://www.psmag.com/navigation/health-and-behavior/confident-idiots-92793, posted Oct 27, 2014
+
+"It ain’t what you don’t know that gets you into trouble. It’s what you know for sure that just ain’t so."
+-- Josh Billings (NOT Mark Twain or Will Rogers)
+
+"Real knowledge is to know the extent of one's ignorance."
+-- Confucius
+
+"I know that I know nothing"
+-- Socrates
+
+"One of the painful things about our time is that those who feel certainty are stupid, and those with any imagination and understanding are filled with doubt and indecision."
+-- Bertrand Russell
+
+"Ignorance more frequently begets confidence than does knowledge"
+-- Charles Darwin
+
+"The Foole doth thinke he is wise, but the wiseman knowes himselfe to be a Foole."
+-- Shakespeare, As You Like It (V.i)
+
+"being educated means ...'being able to differentiate between what you know and what you don’t.'"
+-- William Feather

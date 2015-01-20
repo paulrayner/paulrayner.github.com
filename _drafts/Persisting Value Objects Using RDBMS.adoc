@@ -1,0 +1,50 @@
+---
+title: "Persisting Value Objects"
+tags:
+  - ddd
+---
+
+Introduction here...something about challenge of using a RDBMS...
+
+== Inline Value Object’s Fields to Entity’s Table
+
+This is the simplest arrangement, both in terms of ORM mapping and database schema design. It also is an easy way to support refactoring a Value Object out of an Entity, since only the objects and the ORM mapping would need to change; there is no change to the underlying database schema. An example of this would be refactoring the Origin, Destination and Arrival Deadline out of the Cargo Entity and into the RouteSpecification Value Object.
+Create Database Table for each of Value Object Type and Represent Data as Field
+
+An example of this approach would be to persist the Legs object to a Legs database table that has a foreign key back to the Itinerary database table. This is a common approach for 1-Many relationships.
+
+== Serialize the Value Object and Store in Field in Entity’s Table
+
+For example, persist Itinerary as a serialized object (using an appropriate serialization format such as plain text, XML, YAML or JSON) and then inline it into the Entity’s table within the Cargo database table. 
+
+Querying and indexing options may be limited (as in SQL Server 2008 XML columns), or even perhaps non-existent (in most RDMS’s). An ORM will typically need custom code or a custom type (as in Hibernate) to manage the serialization/deserialization of each collection.
+
+Serializing objects to text-based formats gives you human-readable database data, but is comparatively slow and potentially huge in size compared to regular database columns. Verify that this approach can handle the performance needs before going too far with it. Also, if the serialized Value Object stored in the DB is opaque (e.g., only querying by primary key to serialize/deserialize) then consider using a much faster and typically smaller format like binary.
+
+== Combined RDMS and Document Database Approach
+
+In the Java space, SpringSource has been doing some very interesting work for the http://www.springsource.org/spring-data[Spring.Data.Commons and related projects] in the area of what they call 'cross-store persistence.' footnote:[Sourced from Steve Bohlen posting to DDD Immersion Alumni Mailing List on 11/17/2011] Portions of your object are persisted to a RDBMS and other portions are persisted to NoSQL stores (and the framework handles persisting and rehydrating the right parts to/from the right data store for you). These are all OSS solutions.
+
+== Use a Document Database
+
+The CargoRepository could use an Itinerary document Id stored in a Cargo field to retrieve the Itinerary stored in a document database such as MongoDB, RavenDB or CouchDB. Note that many document databases offer transparency of query into the contents of the 'document' (i.e. serialized Value Object in this case), which removes the need to predict which properties, etc. of the Value Object need to be stored separately in the table as additional fields just so that they can be queried. 
+
+To Summarize:
+
+*TODO: Convert below to nicely formatted table...*
+
+O-R
+RDMS  Represent Data in Fields  Serialize Object  Reference to Other Storage
+Inline in Entity Table  1-to-1
+* Good O-R mapper support
+* Straightforward object/DB schema versioning
+* Factoring fields into Value Object doesn’t change DB schema 1-to-Many/1-to-1 Complex
+* Version management of serialization
+* Some performance concerns
+* Query limitations
+* Field length limitations  Document Id
+* Hybrid approach – store document Id in Entity’s table and lookup in Repository
+* Queries supported by document databases
+Separate Table  1-to-Many
+* Good O-R mapper support, but must put ID field in Value Object
+* Straightforward object/DB schema versioning X X

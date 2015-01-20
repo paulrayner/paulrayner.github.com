@@ -1,0 +1,180 @@
+---
+title: "Why You May Not Be Doing Cargo Cult Agile"
+tags:
+  - agile
+---
+
+Cargo Cult Agile - Part II
+
+Why you may not be doing cargo cult agile, even if you see some or all of the above symptoms mentioned in the previous post.
+
+The tension is learning a new thing always involves adopting new practices. And many of these practices will seem strange and unfamiliar. For example, starting gymnastics involves doing hundreds of core-strengthening exercises, like hollow and arch holds. These are hard.  And they seem like a waste of time. How do these contribute to gymnastics?
+
+Rudiments vs cargo cult. In cargo cult, the confidence is in the practices themselves. If the team just does the practices, then the expected good things will come. We don't build airstrips and wooden radios, but we start using user stories and the other Scrum artifacts and call ourselves "agile."
+
+In terms of rudiments, I'm referring to how many people learn drums. Where they learn a few basic patterns and practice them over and over as they gradually move to move advanced skills, like learning to play a complete song. It's like learning to play piano by learning scales and arpeggios as well as practicing some simple tunes. Or starting on the road to guitar mastery by learning licks and scales and basic chords and strumming patterns.
+
+Without training and follow-up coaching supplementing the practices with an injection of new knowledge about underlying values and principles, there is a major risk that client staff will adopt practices & techniques blindly (i.e. "cargo cult" agile[http://en.wikipedia.org/wiki/Cargo_cult]) making the situation even worse. The focus of the training is therefore on discovery-based practical learning, with an emphasis on helping you figure out how to apply what you are discovering to your real work as part of the learning.
+
+I was talking with a friend today who is helping lead the transition to agile for his group. He's already seen benefits with their customers (business stakeholders) having better visibility into what the team is doing. But the Sprints have been a challenge, and felt like they were failing.
+
+Maybe the difficulty is it can be hard to tell by looking if you are cargo culting it or just struggling as a beginner. A beginner doesn't have to know that she is learning skills that she will later transcend on the road to mastery to be successful with improving with these basic skills. She can keep practicing and begin to see the benefits, with encouragement from others more experienced than herself. Maybe that's the difference, is having expert guidance and trusting the guidance rather than the practices themselves.
+
+Last week I wrote a testimonial for my gym, Awaken Gymnastics in Denver. I joined the gym four months ago and have seen steady, if slow, progress in my strength, mobility and skills. Without the encouragement, advice and gentle guidance of the trainers I would likely have given up. Without their experience, it's very hard to know where to focus my attention. Should I be concerned right now about where my toes are pointing? About where 
+
+Learning how to do handstands with correct form is one of the scariest and most difficult things I've ever had to do. The fear of falling over and hurting myself when suspending my entire body weight upside down on my hands is still something I have to overcome in each class, especially as the types of handstands get harder. Doing a handstand well involves building the necessary core, shoulder and arm strength, which I am still working on. It requires a tremendous sense of balance, in an inverted position! If you are kicking up into a handstand supported by a training partner in the class, it requires trusting them to not let you fall. Every natural instinct is driving me to act in ways that will sabotage correct form and injure myself. It's a compound movement, so everything has to come together at the same time for it to be done well. And you have to commit to the movement. There is no such thing as a half-handstand. We do break it down into smaller skills, but at the end of the day you just have to kick up over and over again. Practice, practice, practice!
+
+And when you're strength starts to fail, you need to get a feel for when to pull out of the move so you don't hurt yourself by collapsing with no control.
+
+Not many adults do gymnastics, but it seems to me the parallels apply in any new skill-based endeavor. Whether it's exercise like yoga, zumba, musical instruments like piano, trumpet, or sports like baseball or cricket. Every single one of these requires learning some fundamentals just to get going. And how do you tell 
+
+=== Avoiding Cargo Cult Agile
+
+* Recognize you don’t understand why or how the practices work
+** this is an important step
+** Ignorance of ignorance is a key thing here
+** Understand why there are no such things as "best practices"
+* Seek an understanding of the values and principles underlying the practices
+* Join a community of practice (e.g. Agile Denver)
+* Resources
+** Books
+** Videos
+* Get coaching
+** Avoid focusing attention on adhering to a practice when it is most likely not to be important for you at this time
+
+
+How to fix this?
+
+==== Agile for Teams Training class
+
+Here's how we address these kinds of concerns through the training. The emphasis is not on the Scrum ceremonies, artifacts, and roles. These aren't even taught until late in the class. We start and end with connecting class participants with what they already believe about the agile values and principles. We discuss what pain points they see in their organization where these values are not upheld. And when Scrum is introduced, it is in the context of these.
+
+*Learning Pyramid*
+
+Class members reflect on:
+
+* why it is important to have values and principles at the _bottom_ of the learning pyramid
+* what would happen if this were not the case, and 
+* why it is important to keep in mind that Scrum is one of _many_ possible ways to approach agile development.
+
+*Ball game*
+
+* team size
+** teams are too big for effective communication and planning
+** simple task can be complex at scale
+** difficulty of communicating/understanding requirements/conditions of success
+** some people don't get heard
+** leaders typically arise, often same as in regular work
+** significance of physical arrangement for improved communication and performance
+* performance
+** priority of teamwork
+** unimportance of estimation
+** importance of iteration for improvement
+*** Iteration trumps planning, though planning is essential.
+*** importance of experimentation
+*** must be able to take risks & show creativity
+*** permission to try something and fail, so as to learn for next time
+** focus on adapting to changing circumstances (introduction of balloons)
+** unrealistic goals can lead teams to overreach
+** partial work doesn't count
+** batching work can sometimes help
+** reduce handling (inventory)
+
+*Greeting card*
+
+* Contrasting req's up-front, with iterative + fixed roles, with agile (cross-functional teams)
+
+*Agile Value Principles Presentation*
+
+* Point out that manifesto is:
+** _empirical_ - "by _doing_ it and encouraging others to do it"
+** _pragmatic_ - "_better ways ... through this work_"
+** _discovery-based_ - "_We are uncovering..._"
+** _software-focused_ - "_delivering software_"
+** _comparative_ - "_there is value in the items on the right, we value the items on the left more_" <- not absolute (which is a common misunderstanding)
+* Have each table group create a poster to present to the class on one of the agile values and why they feel it is important, plus they cover what would be true if the value was reversed (start with this)
+* Have group agree on which 
+
+*LEGO simulation*
+
+* focuses attention on teamwork, adapting to change, delivering frequently, dealing with cross-team dependencies (i.e. city infrastructure such as roads, signage, layout etc.)
+* timeboxing to get stuff done - privilege of focus
+* sometimes its the first time groups actually experience teamwork with their coworkers
+
+For each of these techniques, I need a question that drives it back to the agile values:
+
+* Product Vision
+** Vision Template - how does this connect to/enable/support each agile value?
+*** individuals and iteractions - provides focus for team, a shared goal/purpose they can work towards together, requires collaborating together to arrive at clear statement of vision
+*** working software - focus on outcomes rather than outputs, saying no to less important work that distracts from vision 
+*** customer collaboration - vision statement is customer-focused, not technology focused. Identify customer and their needs
+*** responding to change - developing the vision statement in the first place may actually require iterating to learn the customer need, iterating over the vision statement as team better understands the customer's need and market
+* Storymapping - identify product backlog, from customers experience/journey
+* Personas - learn about your customer/users and narrow focus of development
+* Product Backlog - prioritize customer value
+** MMFs vs Epics
+** MVP - requires some background in Lean first (may need to move things around a little)
+* User Stories
+** placeholder for a team conversation
+** focus attention on the customer benefit
+* Definition of Done
+** Team consensus on what "working software" actually means
+* Feature Teams
+** Skill liquidity
+** Cross-functional teams
+** Dynamic roles
+** Avoiding key-person dependencies (avoid waiting waste in lean disciplines)
+
+*Review Exercises*
+
+* Identify agile values and principles from manifesto for each Scrum artifact and activity/ceremony and annotate as a poster
+
+*Lean Disciplines*
+
+* Do this as world cafe format, creating class presentations
+* Learn lean disciplines as foundational element
+* Connect lean disciplines to team's current work through questions being asked
+
+*TOC*
+
+* Digging into lean discipline of "Optimize the Whole" through 5 focusing steps
+* All about enabling continous improvement within the team, and across the organization
+
+*Scrum Framework*
+
+* Annotate a Scrum diagram with ceremonies and artifacts, and fill out a table on roles by researching online as part of scavanger hunt exercise
+
+* Annotate Scrum posters with lean disciplines as review exercise
+
+*Responsibility Process*
+
+* Teamwork is an individual skill
+* New question: Which of the agile values and lean disciplines does the responsibility process best enable and why?
+
+*Visual Management*
+
+* Visualizing progress in a sprint
+* Visualizing progress across sprints <- add examples of release burndowns?
+* Estimation <- connect with V2: working software, V3: customer collaboration, D1: eliminate waste, D6: respect people
+* Metrics and motivation <- connect with V1: people and interactions, D6: respect people
+
+*Agile Design*
+
+* Review agile principle "Continuous attention to technical excellence and good design enhances agility" - why, or why not?
+* Conway's Law - individuals and interactions, component vs. feature teams
+* Maybe add something in this section from Mike Cohn's book on when to use component teams?
+
+*How to have better Scrum ceremonies*
+
+* Role-centered analysis of how to improve a ceremony for your team
+* Need to have another question about how your suggested improvements support the agile values and lean disciplines
+
+*Digging into impediments*
+
+* 5 whys (RCA - root cause analysis) for culture of improvement
+* Applying the values and learning in our organizational context
+
+==== Agile Coaching
+
+* Encourage team with each practice to remember _why_ a practice is valuable, and experiment with different approaches. One experiment per Sprint. And even eventually stop doing the practice if it is having the opposite effect and there is a better way of accomplishing it.
+* If 

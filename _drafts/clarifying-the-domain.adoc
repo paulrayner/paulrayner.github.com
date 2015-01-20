@@ -1,0 +1,44 @@
+---
+title: "Clarifying the “Domain” in Domain-Driven Design"
+tags:
+  - ddd
+---
+
+From http://virtual-genius.com/blog/post/Clarifying-the-e2809cDomaine2809d-in-Domain-Driven-Design-(DDD).aspx:
+
+One of the things we noticed, and were quick to correct, in our Keeping Architectures Relevant presentation was some confusion around the way we were using the word “domain.” As we explained, when we use the word “domain” in Domain-Driven Design (DDD) we are referring to the business domain. By this we mean what the business knows and does to serve its customers. This use of “domain” is not unique to DDD, by the way.
+
+The developers are trying to mine the nuggets of business knowledge that “domain experts” or “subject matter experts” (SME’s) have about the business domain. This knowledge is based on the experts’ years of experience “doing the work” of the business.
+
+Sometimes the Product Owner (i.e., person responsible for the success of the software product under development), to use the Scrum terminology, plays the role of domain expert, but in many situations it could just as easily be the sales and marketing staff, or technical people within the business who have a long-term and intimate understanding of how the business works.
+
+Domain experts are the people who understand the in’s and out’s of the business, and to whom the developers typically go when they need to find out what the software should do and how it fits in to what the business needs.
+
+We ran into some problems in the presentation because we also referred to the problem domain and solution domain, right after we had carefully defined domain in the narrower sense of “business domain.” So we took a couple of minutes in the presentation to define our terminology and referred to them as areas of focus, expertise and responsibility for the problem and solution space.
+
+We decided that we also need to revise the final draft of our Architecture Journal article early next week and refer to ‘domain’ exclusively in the more narrow sense above, and instead refer to the “problem space” and “solution space” in the article and future presentations to avoid any confusion.
+
+See the table below for an initial attempt to break down the focus, expertise and areas of responsibility of the domain experts and developers in the problem and solution spaces:
+
+  
+Problem Space
+
+Solution Space
+
+Primary Focus 
+Building the right product
+Business-facing
+Building the product right
+Technical/implementation
+Expertise 
+Knowledge of business capabilities, functions, processes and needs.
+Knowledge of best way to implement
+Modeling the domain, and embedding the UL into the domain model.
+Areas of Responsibility 
+Providing the terms, usage and definitions for the UL.
+Specifying, clarifying and verifying the domain model with the developers.
+Refining the UL with the domain experts
+Distilling the domain model.
+Refactoring the domain model to deeper insight.
+Identifying and implementing bounded contexts for domain models.
+These roles are somewhat fluid though, and will vary from team to team and context to context. Is this how it works in your environment?
