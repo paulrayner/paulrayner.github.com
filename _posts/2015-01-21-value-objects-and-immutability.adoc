@@ -1,9 +1,13 @@
 ---
-title: "Value Objects and Immutability"
+title: Value Objects and Immutability
 tags:
-  - ddd
+- ddd
+layout: post
+comments: true
+sharing: true
+date: 2015-01-21 12:01
+permalink: ':title'
 ---
-
 Why make value objects immutable, and how to do it when working in a language like Java or C#?
 
 == Why Immutable?
@@ -40,4 +44,3 @@ q:>[“Because changes only occur upon construction, immutable classes make it t
 .  Do not provide a no-argument constructor.
 .  Implement hashcode and equals (use your IDE to generate the code). Remember to do this for any enclosed value objects too.
 .  Not only must you avoid typical JavaBeans-inspired setXXX methods, but you must also be careful not to return mutable object references. The fact that the object reference is final doesn’t mean that you can’t change what it points to. Thus, you need to make sure you defensively copy any object references you return from getXXX methods. Be especially wary of collections!
-
