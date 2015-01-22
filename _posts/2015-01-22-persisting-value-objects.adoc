@@ -1,9 +1,13 @@
 ---
-title: "Persisting Value Objects"
+title: Persisting Value Objects
 tags:
-  - ddd
+- ddd
+layout: post
+comments: true
+sharing: true
+date: 2015-01-22 12:00
+permalink: ':title'
 ---
-
 It can be challenging sometimes to know how best to persist value objects to a data store, especially if you are using a RDBMS. There are a variety of options to choose from, however, depending on your needs and constraints.
 
 Examples below are based on my https://github.com/paulrayner/ddd_sample_app_ruby[Ruby port of the DDD sample app]. Here is a class diagram showing the `Cargo` aggregrate, which consists of the `Cargo` entity (as the aggregate root) and a number of value objects, such as `Itinerary` and `RouteSpecification` that are also part of the `Cargo` aggregate. This is based on examples given in Eric Evans's http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215[Domain-Driven Design] book.
