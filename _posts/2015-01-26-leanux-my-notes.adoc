@@ -1,9 +1,12 @@
 ---
 layout: post
-title: "LeanUX - My Notes"
+title: LeanUX - My Notes
 tags: lean
+comments: true
+sharing: true
+date: 2015-01-26 12:00
+permalink: ':title'
 ---
-
 image::/assets/lean-ux.jpg[Lean UX, 100, role=left]
 Lean UX: Applying Lean Principles to Improve User Experience by Gothelf & Seiden comes in at just over 100 pages, so it's a quick read. But it's full of very practical guidance for how to apply lean principles to user experience design (UXD). Published in 2013, it won a Jolt Award. Here I captured quotes and notes I thought were interesting.
 
