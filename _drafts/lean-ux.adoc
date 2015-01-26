@@ -1,8 +1,15 @@
-== LeanUX - Book Review
+---
+layout: post
+title: "LeanUX - My Notes"
+tags: lean
+---
 
-this book comes in at just over 100 pages, so it's a quick read. But it's chock-ful of very practical guidance for how to apply lean principles to user experience design (UXD). Published in 2013, it won a Jolt Award.
+image::/assets/lean-ux.jpg[Lean UX, 100, role=left]
+Lean UX: Applying Lean Principles to Improve User Experience by Gothelf & Seiden comes in at just over 100 pages, so it's a quick read. But it's full of very practical guidance for how to apply lean principles to user experience design (UXD). Published in 2013, it won a Jolt Award. Here I captured quotes and notes I thought were interesting.
 
-Here's a couple of quotes from Eric Ries in the forward that I thought were good:
+If anything below looks interesting to you, run - don't walk - and http://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1449311652/[buy Lean UX]. It's _that_ good.
+
+There are a couple of quotes from Eric Ries in the forward that I thought were great:
 
 "The problem is the systems we use to build companies. We are still building linear organizations in a world that demands constant change. We are still building silos in a world that demands thorough collaboration."
 -- Eric Ries, from the forward, p. xi
@@ -17,12 +24,12 @@ Hence:
 -- Eric Ries, from the forward, p. xi
 
 
-Conway's Law leads to component-based teams, where the organizational structure matches the architecture of the software. Feature-based cross-functional teams organized around customer outcomes are how agile typically tries to "hack" Conway's Law. *put something here from the conversations with Gary and Melissa at Alteryx*
+Conway's Law is commonly expressed as organizations structured around component-based teams, where the organizational structure matches the architecture of the software. Feature-based cross-functional teams organized around customer outcomes are how agile typically tries to "hack" Conway's Law by maintaining software boundaries but incorporating all the people needed across the system architecture to ship a customer feature.
 
 "...heed Jeff Gothelf's call to 'get out of the deliverables business' and return our focus where it belongs, enlisting the whole corporation in its most urgent task: delighting customers." 
 -- Eric Ries, from the forward, p. xi
 
-This is something Richard Lawrence and I have talked about a lot when it comes to doing BDD well. Team members need to willing to make getting early feedback a priority, over only showing things to others when they are "done":
+This is something I have thought about a lot when it comes to doing BDD well. Team members need to willing to make getting early feedback a priority, instead of only showing things to others when they are "done". Early feedback is best.
 
 "As I've learned to practice Lean UX, I've had to overcome the feeling that I was showing work that was "ugly," "unfinished," or "not ready." Working this way requires the support of a high-functioning team. You need to know - as a team - that you're not going to get it right the first time and that you're all working together to iterate your way forward." 
 -- p. xv
@@ -31,9 +38,9 @@ This is something Richard Lawrence and I have talked about a lot when it comes t
 
 My quick and dirty sketch of the 3 foundations of Lean UX:
 
-image::lean_ux_sketch.jpg[LeanUX - 3 Foundations]
+image::/assets/lean_ux_sketch.jpg[LeanUX - 3 Foundations]
 
-_The thing above "Focus" is supposed to be an eye looking through a magnifying glass. Oh, the horror of my lack of drawing skills!_
+_The thing above "Focus" in the drawing on the right is supposed to be an eye looking through a magnifying glass. Oh, the horror of my lack of drawing skills!_
 
 The 3 foundations of Lean UX are:
 
@@ -96,7 +103,7 @@ Goal: understand what the users are doing with your products and why they are do
 "GOOB: Getting out of the building." "Ultimately, the success or failure of your product isn't the team's decision - it's the customers'...the sooner you give them a voice, the sooner you'll learn whether you've got an idea that's ready to be built."
 -- p. 9
 
-=== Shared understadning
+=== Shared understanding
 
 "Shared understanding is the currency of Lean UX."
 -- p. 10
@@ -121,7 +128,7 @@ Goal: understand what the users are doing with your products and why they are do
 "Ensuring that an idea is right before scaling it out mitigates the risk inherent in broad feature deployment."
 -- p. 11
 
-=== Permission to Fail
+=== Permission to fail
 
 Teams need to learn to *experiment* with ideas in order to find the best solutions to business problems. This requires a safe environment to take risks:
 
@@ -180,7 +187,7 @@ Composed of:
 . Explicit request for improvement that doesn't dictate a specific solution
 * _[*Our service/product*] was designed to achieve [*these goals*]. We have observed that the product/service isn't meeting [*these goals*], which is causing [*this adverse effect*] to our business. How might we improve [*service/product*] so that our customers are more successful based on [*these measurable criteria*]?_
 
-image::business_assumptions_worksheet.jpg[Business Assumptions Worksheet]
+image::/assets/business_assumptions_worksheet.jpg[Business Assumptions Worksheet]
 
 Declare assumptions at the start so we can identify project risks. Figure out which assumptions are the riskiest and work on them first. Prioritize according to High Risk and High Unknown.
 
