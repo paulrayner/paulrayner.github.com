@@ -1,9 +1,13 @@
 ---
-title: "Don't Give Your Customers What They Ask For"
+title: Don't Give Your Customers What They Ask For
 tags:
-  - agile
+- agile
+layout: post
+comments: true
+sharing: true
+date: 2015-02-02 14:50
+permalink: ':title'
 ---
-
 image::/assets/flying_machine_patent.jpg[Patent Drawing for a Flying Machine, 300, role=left, link=http://arcweb.archives.gov/arc/action/ExternalIdSearch?id=594412]
 *_Give them what they need._* There is a pairing exercise participants experience in my BDD with Cucumber workshops, where one person describes a commonplace activity to the other. The challenge is describing it _without_ being able to use certain common words. One thing I have noticed, no matter where I have run this exercise, is that very few people actually explain _why_ this activity should even be done. They typically spend all the time describing the mechanics of how to do it, but don't explain why, and the listener usually doesn't think to ask. I contend that as technologists we do the same thing to our customers all the time.
 
