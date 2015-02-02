@@ -4,6 +4,18 @@ tags:
   - agile
 ---
 
+I - Introduction: Example of someone talking about CCA
+What is a Cargo Cult?
+
+II - Ways people tie this to agile instantiations
+III - Agile principles vs instantiations
+IV - Learning in general and then applied to agile, beginners
+V - Learning agile vs CCA
+
+
+
+
+
 Cargo Cult Agile - Part I
 
 Background on cargo cult here. 
