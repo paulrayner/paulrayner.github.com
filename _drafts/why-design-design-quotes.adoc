@@ -25,3 +25,8 @@ Design must reflect the practical and aesthetic in business but above all... goo
 ""
 Questions about whether design is necessary or affordable are quite beside the point: design is inevitable. The alternative to good design is bad design, not no design at all. Everyone makes design decisions all the time without realizing it—like Moliere's M. Jourdain who discovered he had been speaking prose all his life—and good design is simply the result of making these decisions consciously, at the right stage, and in consultation with others as the need arises.
 ""
+
+[quote, Venkat Subramaniam]
+""
+A good design is not the one that correctly predicts the future, it's one that makes adapting to the future affordable.
+""
