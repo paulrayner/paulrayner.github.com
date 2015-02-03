@@ -2,8 +2,12 @@
 title: What is Design? - Design Quotes Part 1
 tags:
 - design
+layout: post
+comments: true
+sharing: true
+date: 2015-02-03 12:00
+permalink: ':title'
 ---
-
 q:>[Design is intelligence made visible.]I'm collecting helpful quotes about the nature and importance of design. This is part one in a series of pages of quotes about different aspects of design. Many of the quotes I've sourced are about design in general, but also apply well to software design in all its many forms. What other quotes on the _nature_ of design am I missing?
 
 [quote, Steve Jobs]
