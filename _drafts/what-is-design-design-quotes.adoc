@@ -1,0 +1,42 @@
+---
+title: What is Design? - Design Quotes Part 1
+tags:
+- design
+---
+
+q:>[Design is intelligence made visible.]I'm collecting helpful quotes about the nature and importance of design. This is part one in a series of pages of quotes about different aspects of design. Many of the quotes I've sourced are about design in general, but also apply well to software design in all its many forms. What other quotes on the _nature_ of design am I missing?
+
+[quote, Steve Jobs]
+""
+Design is not just what it looks like and feels like. Design is how it works.
+""
+
+[quote, Paola Antonelli]
+""
+People think that design is styling. Design is not style. It's not about giving shape to the shell and not giving a damn about the guts. Good design is a renaissance attitude that combines technology, cognitive science, human need, and beauty to produce something that the world didn't know it was missing.
+""
+
+[quote, Edward Tufte]
+""
+Good design is a lot like clear thinking made visual.
+""
+
+[quote, Don Newgren]
+""
+Design is intelligence made visible.
+""
+
+[quote, Charles Eames]
+""
+[Design is] a plan for arranging elements in such a way as to best accomplish a particular purpose.
+""
+
+[quote, Mitchell Kapor]
+""
+What is design? It's where you stand with a foot in two worlds - the world of technology and the world of people and human purposes - and you try to bring the two together.
+""
+
+[quote, Fred Brooks, The Design of Design]
+""
+Design isn’t just to satisfy requirements, but also to uncover requirements.
+""

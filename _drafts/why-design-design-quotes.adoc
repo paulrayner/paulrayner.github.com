@@ -1,0 +1,27 @@
+---
+title: Why Design? - Design Quotes Part 3
+tags:
+- design
+---
+
+q:>[Good design is good business.]These quotes are about the _purpose_ of design. What other quotes on the _utility_ of design am I missing?
+
+[quote, Red Adair]
+""
+If you think it's expensive to hire a professional to do the job, wait until you hire an amateur.
+""
+
+[quote, Thomas J. Watson Jr.]
+""
+Good design is good business.
+""
+
+[quote, Thomas J. Watson]
+""
+Design must reflect the practical and aesthetic in business but above all... good design must primarily serve people.
+""
+
+[quote, Douglas Martin]
+""
+Questions about whether design is necessary or affordable are quite beside the point: design is inevitable. The alternative to good design is bad design, not no design at all. Everyone makes design decisions all the time without realizing it—like Moliere's M. Jourdain who discovered he had been speaking prose all his life—and good design is simply the result of making these decisions consciously, at the right stage, and in consultation with others as the need arises.
+""

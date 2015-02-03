@@ -1,0 +1,47 @@
+---
+title: The Design Process - Design Quotes Part 2
+tags:
+- design
+---
+
+q:>[When you specify something to be designed, tell what properties you need, not how they are to be achieved.]These quotes are about the process of design. What other quotes on design as process am I missing?
+
+[quote, Antoine De Saint-Exupery]
+""
+Perfection is not reached when there is nothing to be added anymore, but when there is nothing to be left out anymore.
+""
+
+[quote, Jeff Smith]
+""
+The design process, at its best, integrates the aspirations of art, science, and culture.
+""
+
+[quote, Joshua Rose]
+""
+Everyone is a lot of people to design for.
+""
+
+[quote, Ayse Birsel]
+""
+To say that something is designed means it has intentions that go beyond its function. Otherwise it's just planning.
+""
+
+[quote, Kevin Mullet and Darrell Sano]
+""
+Good design defuses the tension between functional and aesthetic goals precisely because it works within the boundaries defined by the functional requirements of the communication problem. Unlike the fine arts, which exists for their own sake, design must always solve a particular real-world problem.
+""
+
+[quote, Fred Brooks, The Design of Design]
+""
+In practice, designing seems to proceed by oscillating between sub-solution and sub-problem areas, as well as by decomposing the problem and combining sub-solutions.
+""
+
+[quote, Fred Brooks, The Design of Design]
+""
+When you specify something to be designed, tell what properties you need, not how they are to be achieved.
+""
+
+[quote, Fred Brooks, The Design of Design]
+""
+The trick is to hold “process” off long enough to permit great design to occur, so that the lesser issues can be debated once the great design is on the table—rather than smothering it in the cradle.
+""
