@@ -1,0 +1,70 @@
+---
+title: Clearing the Ground for Design
+tags:
+- design
+---
+
+A number of years I coached a development team new to applying Domain-Driven Design (DDD). A few of them had attended a DDD Immersion class, but most of them had no software design training of any kind. When I started with the team it was clear that they did not have space in their process for design, at least not in a deliberate way. There was not a sense of permission to allocate capacity to do design work, which was preventing them from innovating in the areas where they needed to.
+
+== Tight Deadline 
+
+The team knew that they were working to a tight deadline, and a number of the developers on the team were both new to the domain and unfamiliar with how to drive a software design from a domain. 
+
+The team had some significant design challenges, and a short timeframe in which to accomplish delivery of a solution. They also needed to coordinate a large amount of work with the Marketing department in terms of data migration, putting both groups in a Partnership relationship from a strategic DDD perspective. The production release would need to be coordinated with Marketing, as would the setup of all environments for testing purposes prior to the production release.
+
+== Lack of Visibility
+
+There was a lack of visibility into the work that needed to be done, and a lack of shared understanding about the team's process. By process, I mean the formal and informal policies that software teams have in place for getting the work done. Without visibility into what the work is and how it is being done, it becomes much more difficult to report progress to management, to collaborate as a (large) team, to coordinate with external parties (such as other teams), to deal with issues as they come up, to know the team capacity, and to have a sense of accomplishment and momentum for a project. 
+
+Attention to design as an integral part of what the team does in their daily work may be sidelined because the team feels like they don't have the ability to take the time to do design. Having the work visible to everyone will enable the team to have a much more accurate view of their real situation, so they can eliminate unnecessary delays and thus create more space for design work.  
+
+== Make the Work Visible
+
+It was clear that we would need to get some of this fuzziness about process out of the way if they were to be able to focus on design the way they needed to. I took the team through an exercise mapping out the team's process, where the team brainstormed the various states that features should go through as they flow from initial requests through to being completed. For each state, the team wrote a checklist of items that needed to be done before a feature could move to the next state. These states were mapped out as vertical queues on a large taskboard, with large stickies representing features starting on the left of the board.
+
+The last few states on the right of the taskboard involved batching up a set of features which would move together into a series of states to be pushed together as a production release. For the purposes of development delivery, the team decided that a feature would be considered done if it made it to the last state prior to being batched for the release. 
+
+The team was encouraged to treat the taskboard like a baseball scoreboard, in that it should be an accurate representation of the current state of play. The idea is that anyone from the team should be able to walk up to the board at any time and know what is going on. It should accurately answer the question, "What are we working on, right now?" Also, anyone on the team should be able to walk someone outside the team through the board and explain what the team is doing. 
+
+== Improving the Process
+
+On several occasions the team later refactored the board as they found that some of the queues on the taskboard didn't make sense or weren't being used. The checklists for feature states were also refined as the team gained greater understanding of how best to work together and found ways to improve.
+
+In DDD, much emphasis is placed on modeling and the need to develop a shared understanding of the domain via the model. This requires taking things that are implicit concepts and making them explicit. Having a shared understanding and a common language for talking about that shared understanding helps the team be more successful in their design work. In the same way, the team's taskboard is a model of the team's own design process. The goal is for the team to be as effective in doing the work as possible, and this process model allows the team to develop and maintain a shared understanding of the way they work together by making the many implicit (or, in some cases, non-existent) team policies explicit and visible to all. 
+
+Just as a software model must be refined over time as the team learns new things, the process model - reflected in the taskboard and its associated artifacts - should be refined and improved. The taskboard makes the team's development policies explicit, via a model expressed through such tangible things as checklists, different color stickies, taped lines deliniating each feature state/queue and swimlane, and large sheets holding the features assigned to each iteration. By treating the model as a set of team policies rather than being set in stone, the team feels capable of making changes when needed to make the model more useful.
+
+The team's large taskboard was placed on the wall in the team area, and every day the team would meet for 10-15 minutes in the morning to discuss their progress and any issues that needed resolving. Each team member had an avatar that they stuck on a task on the board to show where they were working, and would move these around as they changed tasks. In the daily team standup meeting, the focus was on coordinating work and raising issues rather than problem solving. The project manager would ensure that any problem solving was "taken offline" so that the meeting could stay focused and short. I should point out that this was incredibly hard to do, as the natural tendency is for people to want to dive into the details of a problem right away. It took a lot of discipline to do this.
+
+Problems were shown on the board using pink stickies, this was the brightest color that the team could use in order to draw attention to issues. If something was holding up a feature from progressing to the next state, then a pink sticky was created right away to show this situation. For example, issues could be related to design questions that needed answering, environment issues, dependencies on another team, etc. The team would endeavor to resolve pink stickies as soon as possible, and management could keep an eye on these and step in when needed to assist in removing roadblocks that were beyond the ability of the team to resolve. 
+
+Making the work visible in this way shifts the role of management away from a command-and-control approach to more of a facilitative trouble-shooting role, allowing them to focus on more strategic concerns while the team can address everyday tactical ones. Since the taskboard and daily standup meetings provide a high level of visibility into tactical concerns, they do not need to solve problems for the team that the team can solve themselves. They can focus more on communicating progress and issues outward and upward, creating an environment where the team can succeed because expectations around critical project concerns such as schedule, deliverables, cost are being managed well. They don't need to track hours on tasks, but rather can help focus the team eliminating any issues that prevent the flow of features across the board. 
+
+== Synchronization Meetings
+
+Key business representatives and domain experts would typically attend each daily standup meeting. They would ask questions and clarify issues as needed. They would see progress being made on items, and be made aware of problems that needed to be addressed. If there were domain-related questions, then meetings could be scheduled for later in the day to discuss design questions, though sometimes quick questions could be resolved in a few minutes right after the daily standup meeting was over.
+
+For a while there were serious issues around the configuration of the performance testing environment, so the staff member responsible for that area attended the daily standup to keep the team appraised of progress and coordinate work around fixing the issues.
+
+== Walking the Board
+
+The team would discuss the items on the board from top left through to bottom right, this meant that items closest to being done were discussed first. This helped place the emphasis for the team on completing features that had already been started, rather than pulling in more work. Pink stickies were also the focus of reporting in the meeting. If one was present for longer than the team was comfortable or the necessary people were not present to address it, then a meeting would be scheduled as soon as possible to discuss what could be done immediately to resolve it.
+
+Once a feature was ready to be worked on, the team would meet to discuss it and make sure they understood it, and would break it down into tasks that they would then move across the board with the feature. Once all the tasks were completed, the feature was considered done and moved to the final column of the taskboard.
+
+== All-In
+
+Members of the team, BA's, programmers and testers were all involved in varying degrees with the development of each feature. What changed as the feature moved across the board was the level of involvement. The BA's would be more involved early on as a feature was started, with input from the programmers and tester as necessary to clarify key examples and ensure that the requirements for the feature where understood. As part of this analysis, the BA's would update the project documentation as needed. The programmers would then do the coding work, clarifying questions with the BA, tester and domain experts as they worked on the feature, and then promote the feature to the testing environment. If the testers had questions, they would ask the programmers and BA to clarify as needed. This was a very collaborative whole-team approach that allowed them to avoid many issues resulting from the loss of knowledge incurred via handovers from one member of the team to another.
+
+As a feature moved across the board, the team made an effort to seek feedback whenever appropriate on unfinished work. This might mean a quick demo of a screen design to a business representative, walking through a reference scenario on the whiteboard to clarify questions about the design, discussing design options and tradeoffs, or giving them a "heads-up" on when the feature might be completed. The team also scheduled demoes to their stakeholders and domain experts whenever they had enough features completed to warrant showcasing what was done. This provided a great sense of momentum and gave more opportunities for feedback to the team on progress and clarifying requirements.
+
+If a bug was found, it was written on a blue sticky and placed in the QA column. The developers had agreed that bugs would take priority and a developer would fix them as soon as they had capacity. This made for quicker turnaround on quality issues. Since much of the QA was done by an offsite group, they also had their own bug-tracking system which was used to record these items. The unique ID from the QA system for each issue reported was recorded on the blue sticky for everyone's reference.
+
+[Something here about how timeboxing work to iterations was not an emphasis for the team, and how this was not a real issue since they focused so much on flow.]
+
+[Something here about how using the process model enabled the team to create capacity for design. Great design requires the team creating capacity to do the work.]
+
+== Process is the Servant
+
+There's a temptation for teams, and especially for management, to see process as the main thing. To focus so much on process that they forget that such things as iterations, task boards, stickies, charts and team daily standup meetings are a means to an end, and not an end in themselves. The process model serves the team, and not the other way around. Teams can sometimes lose sight of this, particularly in the early days of a transition to such an approach. 
+
