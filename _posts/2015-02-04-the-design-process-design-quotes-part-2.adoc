@@ -2,8 +2,12 @@
 title: The Design Process - Design Quotes Part 2
 tags:
 - design
+layout: post
+comments: true
+sharing: true
+date: 2015-02-04 12:01
+permalink: ':title'
 ---
-
 q:>[When you specify something to be designed, tell what properties you need, not how they are to be achieved.]These quotes are about the process of design. What other quotes on design as process am I missing?
 
 [quote, Antoine De Saint-Exupery]
