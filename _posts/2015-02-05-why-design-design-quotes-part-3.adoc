@@ -2,8 +2,12 @@
 title: Why Design? - Design Quotes Part 3
 tags:
 - design
+layout: post
+comments: true
+sharing: true
+date: 2015-02-05 12:00
+permalink: ':title'
 ---
-
 q:>[Good design is good business.]These quotes are about the _purpose_ of design. What other quotes on the _utility_ of design am I missing?
 
 [quote, Red Adair]
