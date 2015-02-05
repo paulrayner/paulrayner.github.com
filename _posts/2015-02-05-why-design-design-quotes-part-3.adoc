@@ -34,3 +34,8 @@ Questions about whether design is necessary or affordable are quite beside the p
 ""
 A good design is not the one that correctly predicts the future, it's one that makes adapting to the future affordable.
 ""
+
+[quote, Herbert Simon]
+""
+Everyone designs who devises courses of action aimed at changing existing situations into preferred ones.
+""
