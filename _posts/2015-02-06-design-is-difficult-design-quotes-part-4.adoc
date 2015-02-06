@@ -2,8 +2,12 @@
 title: Design is Difficult - Design Quotes Part 4
 tags:
 - design
+layout: post
+comments: true
+sharing: true
+date: 2015-02-06 12:00
+permalink: ':title'
 ---
-
 q:>[No, Watson, this was not done by accident, but by design.]These quotes are about the difficulty of good design. What other quotes on the challenges of doing good design am I missing?
 
 [quote, Jonathan Ive]
