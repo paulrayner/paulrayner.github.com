@@ -2,8 +2,12 @@
 title: Good Design is People-Centered - Design Quotes Part 5
 tags:
 - design
+layout: post
+comments: true
+sharing: true
+date: 2015-02-09 12:01
+permalink: ':title'
 ---
-
 q:>[A design isn't finished until somebody is using it.]These quotes are about the goal of design, which is centered around meeting the needs of real people. What other quotes on people-centered design am I missing?
 
 [quote, Matt Beale]
