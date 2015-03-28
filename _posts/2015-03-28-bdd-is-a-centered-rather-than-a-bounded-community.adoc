@@ -26,6 +26,7 @@ adapt a significant amount of the content from his original article in what
 follows to make it relevant for those without a background or interest in
 theology. Before I do that though, first a little background is in order.
 
+
 === CukeUp 2015
 
 The CukeUp 2015 conference at Skills Matter in London culminated yesterday in an
@@ -33,10 +34,13 @@ wonderful panel discussion about what BDD actually is, organized and facilitated
 by Tom Stuart. I highly recommend anyone interested in BDD watch it once Skills
 Matter posts the video. I'll link to it here once they do.
 
+[.left]
+image::/assets/what-is-bdd-panel.png[What is BDD?, 300]
+
 It seemed clear to me from the sentiments expressed in the session that focusing
 on boundaries and exclusion is not what the BDD community has ever been about.
-BDD is a community that promotes a certain growing body of knowledge and cloud
-of practices.
+BDD is a community with values and principles at the center that promotes a
+certain growing body of knowledge and cloud of practices.
 
 But there is no interest the BDD community in adopting a bounded set approach,
 and staying static by "locking down" the body of knowledge or cloud of practices
