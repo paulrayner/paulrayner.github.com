@@ -18,6 +18,9 @@ that the same theology also talks about the notion of a community being a
 bounded set. In other words, _BDD is a centered community, rather than a bounded
 community._
 
+[.right]
+image::/assets/what-is-bdd-panel2.png[BDD panel, 300, link=https://skillsmatter.com/skillscasts/6174-wtf-is-bdd]
+
 I want to be clear what I meant by bounded vs. centered set as it applies to a
 community when I proposed it in the CukeUp 2015 panel. These terms originated in
 a theological context with the writings of anthropologist and missiologist Paul
@@ -26,13 +29,12 @@ adapt a significant amount of the content from his original article in what
 follows to make it relevant for those without a background or interest in
 theology. Before I do that though, first a little background is in order.
 
-
-=== CukeUp 2015
+== CukeUp 2015
 
 The CukeUp 2015 conference at Skills Matter in London culminated yesterday in an
 wonderful panel discussion about what BDD actually is, organized and facilitated
-by Tom Stuart. I highly recommend anyone interested in BDD watch it once Skills
-Matter posts the video. I'll link to it here once they do.
+by Tom Stuart. I highly recommend anyone interested in current thinking in BDD watch
+the video posted by Skills Matter at https://skillsmatter.com/skillscasts/6174-wtf-is-bdd.
 
 [.left]
 image::/assets/what-is-bdd-panel.png[What is BDD?, 300]
@@ -48,7 +50,7 @@ that currently makes up BDD. Rather, the BDD community wants, and needs, to
 continue challenging the status quo and incorporating new learning and practices
 as they reveal themselves in the future.
 
-=== Bounded sets
+== Bounded sets
 
 In his 1978 articlefootnote:[Paul Hiebert, "Conversion, Culture and Cognitive Categories." In: Gospel in Context 1:4 (October, 1978), 24-29., sourced from https://danutm.files.wordpress.com/2010/06/hiebert-paul-g-conversion-culture-and-cognitive-categories.pdf, 3/28/2015
 ]
@@ -85,7 +87,7 @@ turned into an apple (something we cannot do). The big question, therefore, is
 whether an object is inside or outside the category. Once it is within, there
 can be no change in its categorical status.
 
-=== What if BDD was a Bounded Set?
+== What if BDD was a Bounded Set?
 
 What happens to our concept of "BDD" if we define it in terms of a bounded set?
 If we use the above characteristics of a bounded set we probably come up with
@@ -116,7 +118,7 @@ strict adherence to certain essential BDD "practices."
 BDD, as understood by leaders within the community, is clearly NOT a bounded
 set. Rather, it is a centered set. Let's see what we mean by that.
 
-=== Centered Sets
+== Centered Sets
 
 There are other ways to form mental categories. Hiebert says a second way is to
 form centered setsfootnote:[There are also Fuzzy Sets, see Hiebert's article for
@@ -159,7 +161,7 @@ towards the positive magnetic pole, and protons are those attracted by the negat
 pole. The diagram here is another way of visualizing a centered setfootnote:[Sourced from http://www.academia.edu/6810466/Understanding_Christian_Identity_in_Terms_of_Bounded_and_Centered_Set_Theory_in_the_Writings_of_Paul_G._Hiebert].
 
 
-=== BDD as a Centered Set
+== BDD as a Centered Set
 
 In contrast to a bounded set, how does the concept "BDD" look defined as a
 centered set as I propose?
