@@ -1,0 +1,130 @@
+== Introduction
+
+During CukeUp 2015 I did a quick sketch of how I tend to think about the
+relationships between Domain-Driven Design (DDD), Behaviour-Driven Development
+(BDD) and User Experience Design (UXD). Each of these is a different discipline,
+yet when I coach a team or work on a team I try to bring an integrated approach
+to the problems at hand.
+
+This is a model that tries to describe how I think about the complemetary
+relationship between the disciplines of DDD, BDD and UXD. The model is _integrative_,
+in that tries to take a _holistic_ view of the three disciplines.
+
+image::/assets/venn-bdd-ddd-uxd.jpg[Venn Diagram]
+
+Replace above image with high quality one (perhaps include the rough sketch
+above at the end of the article to show the evolution of the idea).
+
+I propose this simple model as a way of thinking about the commonalities and
+differences between these three approaches, with the goal of helping others
+see them and experiment with combining approaches to get the best of all three.
+
+[quote, George E.P. Box, Empirical Model-Building and Response Surfaces (1987) p. 424]
+""
+All models are wrong, but some are useful.
+""
+
+So, this model is wrong. It leaves out a lot of things, and maybe will create
+the wrong impression for some people. But with the goal of driving towards a
+more intergrated way of thinking, hopefully it will be very useful. And encourage
+people to look beyond their own discipline and explore incorporating others.
+
+Thanks to feedback from Mathias, Konstantin, Julien, Matt, Gaspar and Ulrika.
+
+Starting with design, the two approaches that focus most on this are UXD and DDD,
+with UXD focused more on perceptual design (how the user interacts with the system)
+and DDD on conceptual design (the underlying system structure and various models
+  expressed in software and how they interact). I
+
+== DDD Distinctives
+
+* Domain model exploration
+* Creative collaboration between technical practitioners and domain practitioners/experts
+* Conceptual modeling
+* Strategic design - context mapping and domain distillation
+* Event storming ("stickies to code"), especially for event-based architectures.
+* Emphasizes using tests to drive the design as part of "code probes" to implement
+key parts of the model and verify its usefulness. Eric tends to use unit tests to
+probe object contracts/shape, but more generally the DDD community practices TDD.
+* Model exploration whirlpool
+
+Some other things about DDD:
+
+* especially suited to complex business domains
+* CQRS
+* Event sourcing
+
+== BDD Distinctives
+
+* Test automation
+* Living documentation/executable specification
+* Emphasis on importance of tester role in collaboratively verifying behaviour
+
+Aslak on TDD as part of BDD:
+
+[quote]
+""
+BDD started out as TDD, replacing the word "test" with "should" to help people
+understand that TDD is not about testing, but about design and reflection. The
+word "should" might not have caught on, but we have learned that choosing the
+right words can have a deep impact on how we think.
+
+When it's time to write code, BDD is no different from TDD. Write a failing
+test. Watch it fail. Write enough code to make it pass. Clean up your mess
+(refactor).
+""
+
+From Aslak on BDD "technical stuff":
+
+* Modelling by Example - enforce a ubiquitous language right into your domain mode
+* Automate most of your tests through the domain, not the UI (brittle and slow)
+* Don't aim for high test coverage with BDD. It's for discovery of your domain, not for testing the implementation.
+
+== Things Shared Between BDD and DDD
+
+* Ubiquitous language
+* TDD
+* Promotion of hexagonal architecture
+
+== UXD Distinctives
+
+* Personas
+* Mockups
+* Visual design
+
+=== Lean UX
+
+As a subspecies of UXD. Incorporates Lean Startup techniques and philosophy. Much greater and more-frequent customer involvement.
+
+* "Proto-personas"
+
+
+== Things Shared Between BDD and UXD
+
+* Focus on user behaviour/intention via the user interface
+* TDD
+
+== Things Shared Between DDD and UXD
+
+* Strong emphasis on primacy of design
+* UX is an important source of information for DDD
+
+== Things Common to All Three Approaches
+
+Focus on:
+
+* achieving customer value as early and often as possible
+* understanding the problem domain
+* using real-world examples
+* cross-discipline conversations and collaboration
+* specific applications of the agile manifesto values and principles
+
+Expand on each of these. Refer to https://cukes.info/blog/2015/03/27/aslaks-view-of-bdd[Aslak's view of BDD].
+
+== Conclusion
+
+Somethign here about my own experiences with taking an integrative approach.
+
+Add reference at the bottom to Gojko's "DDD, BDD, TDD - three amigos" (or
+whatever it was called) article from 2010. Found slides at least, at
+http://www.slideshare.net/skillsmatter/ddd-exchange-2010-gojko-adzic-on-ddd-tdd-bdd.
