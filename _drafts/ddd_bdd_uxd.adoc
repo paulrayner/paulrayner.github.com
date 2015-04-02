@@ -1,5 +1,8 @@
 == Introduction
 
+Rough draft!!! At the moment this is mostly a brain dump... Need to think more
+about the core point(s) and target audience...
+
 During CukeUp 2015 I did a quick sketch of how I tend to think about the
 relationships between Domain-Driven Design (DDD), Behaviour-Driven Development
 (BDD) and User Experience Design (UXD). Each of these is a different discipline,
@@ -47,6 +50,7 @@ and DDD on conceptual design (the underlying system structure and various models
 key parts of the model and verify its usefulness. Eric tends to use unit tests to
 probe object contracts/shape, but more generally the DDD community practices TDD.
 * Model exploration whirlpool
+* Clean separation of domain model from other concerns (infrastructure, UI etc)
 
 Some other things about DDD:
 
@@ -83,8 +87,11 @@ From Aslak on BDD "technical stuff":
 == Things Shared Between BDD and DDD
 
 * Ubiquitous language
-* TDD
-* Promotion of hexagonal architecture
+* TDD (red-green-refactor). In BDD it's at the stakeholder (acceptance test) level, in DDD its more
+likely to push down into microtesting (unit, integration etc). This may be a
+contentious statement, I'm not sure. TDD is primarily about emergent design
+through the refactor step, which supports both DDD and BDD. DDD tends to focus
+more on refactoring _concepts_ (making things that are implicit, explicit).
 
 == UXD Distinctives
 
@@ -102,7 +109,7 @@ As a subspecies of UXD. Incorporates Lean Startup techniques and philosophy. Muc
 == Things Shared Between BDD and UXD
 
 * Focus on user behaviour/intention via the user interface
-* TDD
+*
 
 == Things Shared Between DDD and UXD
 
@@ -114,17 +121,39 @@ As a subspecies of UXD. Incorporates Lean Startup techniques and philosophy. Muc
 Focus on:
 
 * achieving customer value as early and often as possible
-* understanding the problem domain
+* understanding the problem/business domain
 * using real-world examples
 * cross-discipline conversations and collaboration
 * specific applications of the agile manifesto values and principles
+* experimentation
+* iterative approach
 
 Expand on each of these. Refer to https://cukes.info/blog/2015/03/27/aslaks-view-of-bdd[Aslak's view of BDD].
+
+Some (other) ideas to consider:
+
+* BDD doesn't pay (much) attention to bounded context in terms of ubiquitous
+language. This may be a nice way to highlight what DDD brings to the table.
+* BDD introduces consistency and rigor to the ubiquitous language (c.f. Gojko)
+through specification workshops and enforcement via acceptance tests exercising
+the ubiquitous language.
+* There's been much dialog in the BDD community about declarative vs imperative
+steps in scenarios. This seems more a case of the need for domain modeling
+to model the missing (i.e. implicit) domain concepts, so they can be added to
+the steps (c.f. http://dannorth.net/2011/01/31/whose-domain-is-it-anyway/).
+
+Maybe should incorporate some of the important ideas from the "Recipe for success"
+in Gojko's "DDD, BDD, TDD presentation" from DDDx 2010. Slides at
+http://www.slideshare.net/skillsmatter/ddd-exchange-2010-gojko-adzic-on-ddd-tdd-bdd:
+
+* Use strategic design to decide what to build
+* Use feature injection to get the scope
+* Evolve a ubiquitous language with specification workshops
+* Establish guidelines with collaborative high-lvel domain design
+* TDD design below, respecting DDD guidelines
+* Use context mapping to facilitate cross-team collaboration
+
 
 == Conclusion
 
 Somethign here about my own experiences with taking an integrative approach.
-
-Add reference at the bottom to Gojko's "DDD, BDD, TDD - three amigos" (or
-whatever it was called) article from 2010. Found slides at least, at
-http://www.slideshare.net/skillsmatter/ddd-exchange-2010-gojko-adzic-on-ddd-tdd-bdd.
