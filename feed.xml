@@ -5,8 +5,8 @@
     <description>Thinking about DDD, BDD, coding, software design and agile etc.</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 03 Jun 2015 01:39:56 +0000</pubDate>
-    <lastBuildDate>Wed, 03 Jun 2015 01:39:56 +0000</lastBuildDate>
+    <pubDate>Wed, 03 Jun 2015 02:25:04 +0000</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2015 02:25:04 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -350,7 +350,7 @@ increase the gravitational pull of the values at the center.&lt;/p&gt;
         <link>http://thepaulrayner.com/good-design-is-people-centered-design-quotes-part-5</link>
         <guid isPermaLink="true">http://thepaulrayner.com/good-design-is-people-centered-design-quotes-part-5</guid>
         
-        <category>design</category>
+        <category>Design</category>
         
         
       </item>
@@ -444,7 +444,7 @@ increase the gravitational pull of the values at the center.&lt;/p&gt;
         <link>http://thepaulrayner.com/design-is-difficult-design-quotes-part-4</link>
         <guid isPermaLink="true">http://thepaulrayner.com/design-is-difficult-design-quotes-part-4</guid>
         
-        <category>design</category>
+        <category>Design</category>
         
         
       </item>
@@ -518,7 +518,7 @@ increase the gravitational pull of the values at the center.&lt;/p&gt;
         <link>http://thepaulrayner.com/why-design-design-quotes-part-3</link>
         <guid isPermaLink="true">http://thepaulrayner.com/why-design-design-quotes-part-3</guid>
         
-        <category>design</category>
+        <category>Design</category>
         
         
       </item>
@@ -615,7 +615,7 @@ increase the gravitational pull of the values at the center.&lt;/p&gt;
         <link>http://thepaulrayner.com/the-design-process-design-quotes-part-2</link>
         <guid isPermaLink="true">http://thepaulrayner.com/the-design-process-design-quotes-part-2</guid>
         
-        <category>design</category>
+        <category>Design</category>
         
         
       </item>
@@ -700,7 +700,7 @@ increase the gravitational pull of the values at the center.&lt;/p&gt;
         <link>http://thepaulrayner.com/what-is-design-design-quotes-part-1</link>
         <guid isPermaLink="true">http://thepaulrayner.com/what-is-design-design-quotes-part-1</guid>
         
-        <category>design</category>
+        <category>Design</category>
         
         
       </item>
@@ -774,7 +774,7 @@ increase the gravitational pull of the values at the center.&lt;/p&gt;
         <link>http://thepaulrayner.com/dont-give-your-customers-what-they-ask-for</link>
         <guid isPermaLink="true">http://thepaulrayner.com/dont-give-your-customers-what-they-ask-for</guid>
         
-        <category>agile</category>
+        <category>Agile</category>
         
         
       </item>
@@ -1685,7 +1685,9 @@ As part of our regular interaction with customers, we always asked a regular set
         <link>http://thepaulrayner.com/leanux-my-notes</link>
         <guid isPermaLink="true">http://thepaulrayner.com/leanux-my-notes</guid>
         
-        <category>lean</category>
+        <category>Lean</category>
+        
+        <category>Agile</category>
         
         
       </item>
@@ -1835,7 +1837,7 @@ As part of our regular interaction with customers, we always asked a regular set
         <link>http://thepaulrayner.com/persisting-value-objects</link>
         <guid isPermaLink="true">http://thepaulrayner.com/persisting-value-objects</guid>
         
-        <category>ddd</category>
+        <category>DDD</category>
         
         
       </item>
