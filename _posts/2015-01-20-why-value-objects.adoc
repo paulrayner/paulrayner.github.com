@@ -1,7 +1,7 @@
 ---
 title: Why Value Objects?
 tags:
-- ddd
+- DDD
 layout: post
 comments: true
 sharing: true

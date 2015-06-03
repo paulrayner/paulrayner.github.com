@@ -1,7 +1,7 @@
 ---
 title: Value Objects and Immutability
 tags:
-- ddd
+- DDD
 layout: post
 comments: true
 sharing: true

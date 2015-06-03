@@ -1,7 +1,9 @@
 ---
 layout: post
 title: LeanUX - My Notes
-tags: lean
+tags:
+- Lean
+- Agile
 comments: true
 sharing: true
 date: 2015-01-26 12:00
@@ -17,24 +19,24 @@ There are a couple of quotes from Eric Ries in the forward that I thought were g
 "The problem is the systems we use to build companies. We are still building linear organizations in a world that demands constant change. We are still building silos in a world that demands thorough collaboration."
 -- Eric Ries, from the forward, p. xi
 
-I've never heard the phrase "linear organizations" before, but it's a great way to describe the kind of siloing I see every day in the organizations I coach in agile. Two types of siloing are especially prelevant. One is specialty-based, the other software architecture/component-based. Many organizations have both kinds of silos. 
+I've never heard the phrase "linear organizations" before, but it's a great way to describe the kind of siloing I see every day in the organizations I coach in agile. Two types of siloing are especially prelevant. One is specialty-based, the other software architecture/component-based. Many organizations have both kinds of silos.
 
 Specialty-based organizations are structured around the roles people play in a serial, "gated", "waterfall" software development lifecycle. That is, there are UX designers for the design phase, architects for architecture in the design phase, BAs for analysis in the analysis phase, developers for the construction phase, testers for the QA phase, operations staff for the deployment phase, and so on. Each phase is gated based on the delivery of documentation, and a review of that documentation. Basically, such a process treats the entire deliverable as a single batch of work, it's the opposite of the 4 values in the agile manifesto.
 
 Hence:
 
-"...We are still investing in analysis, arguing over specifications, and efficiently producing deliverables in a world that demands continuous experimentation to achieve continuous innovation." 
+"...We are still investing in analysis, arguing over specifications, and efficiently producing deliverables in a world that demands continuous experimentation to achieve continuous innovation."
 -- Eric Ries, from the forward, p. xi
 
 
 Conway's Law is commonly expressed as organizations structured around component-based teams, where the organizational structure matches the architecture of the software. Feature-based cross-functional teams organized around customer outcomes are how agile typically tries to "hack" Conway's Law by maintaining software boundaries but incorporating all the people needed across the system architecture to ship a customer feature.
 
-"...heed Jeff Gothelf's call to 'get out of the deliverables business' and return our focus where it belongs, enlisting the whole corporation in its most urgent task: delighting customers." 
+"...heed Jeff Gothelf's call to 'get out of the deliverables business' and return our focus where it belongs, enlisting the whole corporation in its most urgent task: delighting customers."
 -- Eric Ries, from the forward, p. xi
 
 This is something I have thought about a lot when it comes to doing BDD well. Team members need to willing to make getting early feedback a priority, instead of only showing things to others when they are "done". Early feedback is best.
 
-"As I've learned to practice Lean UX, I've had to overcome the feeling that I was showing work that was "ugly," "unfinished," or "not ready." Working this way requires the support of a high-functioning team. You need to know - as a team - that you're not going to get it right the first time and that you're all working together to iterate your way forward." 
+"As I've learned to practice Lean UX, I've had to overcome the feeling that I was showing work that was "ugly," "unfinished," or "not ready." Working this way requires the support of a high-functioning team. You need to know - as a team - that you're not going to get it right the first time and that you're all working together to iterate your way forward."
 -- p. xv
 
 == Section 1 : Introduction and Principles
@@ -170,9 +172,9 @@ Composed of:
 * Personas - Models of the people for whom we believe we are solving a problem
 * Features - the product changes or improvements we believe will drive the outcomes we seek
 
-==== Declaring assumptions 
+==== Declaring assumptions
 
-* A group exercise, include all team members and relevant subject matter experts. 
+* A group exercise, include all team members and relevant subject matter experts.
 * May need to prepare in advance things like:
 ** Analytics reports showing how current product is being used
 ** Usability reports that illustrate why customers are taking certain actions in your product
@@ -349,7 +351,7 @@ LeanUX takes basic UX research techniques and overlays two important ideas, Lean
 ** decide what you need to learn
 ** decide to whom you'll need to speak to in order to address your learning goals
 * Create an interview guide to guide conversations
-** think about questions as a sequential funnel: 
+** think about questions as a sequential funnel:
 *** target audience?
 *** confirm problem hypotheses for this segment
 *** show prototype/mockup last to avoid limiting conversation to your solution vision

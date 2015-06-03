@@ -1,7 +1,8 @@
 ---
-tags: 
+tags:
 - AsciiDoc
 - Jekyll
+- Coding
 excerpt: The jekyll-asciidoc gem has now been released and is available for download at RubyGems. Get it now, and add the richness of AsciiDoc markup to your Jekyll static site generation.
 ---
 :title: Build Jekyll-Based Blogs & Websites with AsciiDoc
@@ -38,7 +39,7 @@ Here's the actual AsciiDoc content for this blog post. You can see the original 
 [source,asciidoc]
 ....
 ---
-tags: 
+tags:
 - AsciiDoc
 - Jekyll
 excerpt: The jekyll-asciidoc gem has now been released and is available for download at RubyGems. Get it now, and add the richness of AsciiDoc markup to your Jekyll static site generation.

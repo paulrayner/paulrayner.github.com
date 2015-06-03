@@ -5,7 +5,9 @@ date: 2013-02-01 11:40
 comments: true
 sharing: true
 categories: [DDD, Reviews]
-tags: [DDD, Reviews]
+tags:
+- DDD
+- Reviews
 ---
 
 image::/assets/iddd_thumbnail.jpg[Implementing DDD, 150, role="left"]
@@ -27,7 +29,7 @@ I thoroughly appreciated the pretension-free way _Implementing Domain-Driven Des
 
 > DDD brings domain experts and software developers together in order to develop software that reflects the mental model of the business experts. This does not mean that effort is spent on modeling the “real world.” Rather, DDD delivers a model that is the most useful to the business. Sometimes useful and realistic models happen to intersect, but to the degree that they diverge, DDD chooses useful.
 
-Vaughn's book comes across as guidance from a good friend, combining occasional corny cowboy jokes that keep it fun with detailed, solid advice on the deepest recesses of the mechanics of applying DDD using the tools and techniques of today. 
+Vaughn's book comes across as guidance from a good friend, combining occasional corny cowboy jokes that keep it fun with detailed, solid advice on the deepest recesses of the mechanics of applying DDD using the tools and techniques of today.
 
 The book's approach of developing an application to support Scrum and walking through how the team approached the problems they were up against is very helpful, especially when Vaughn digs into the team's mis-steps as they learn, adjust and improve. Contrary to any material online which might lead you to think that DDD is about overblown architectures, heavyweight frameworks and obfuscated approaches, in chapter one _Implementing Domain-Driven Design_ counsels that:
 
@@ -39,14 +41,14 @@ There is a very helpful chart that helps the reader identify whether DDD is the 
 
 Some confuse DDD with http://en.wikipedia.org/wiki/Big_Design_Up_Front[Big Design Up Front (BDUF)], and thus struggle with understanding how DDD and agile relate. I was also pleased that _Implementing Domain-Driven Design_ starts out by emphasizing the agile, iterative, continuous modeling with domain experts that is at the heart of DDD “done well.” For example:
 
-> The word “design” can evoke negative thoughts in the minds of business management. However, DDD is not a heavyweight, high ceremony design and development process. DDD is not about drawing diagrams. It is about carefully refining the mental model of domain experts into a useful model for the business. 
+> The word “design” can evoke negative thoughts in the minds of business management. However, DDD is not a heavyweight, high ceremony design and development process. DDD is not about drawing diagrams. It is about carefully refining the mental model of domain experts into a useful model for the business.
 
 == Fundamental Concepts
 
 The first chapter also does a good job of introducing the fundamental concepts of Ubiquitous Language, Bounded Context, and Core Domain. It also lays out clearly the costs and benefits of applying DDD, and how DDD as a lightweight, intentional approach to continous design is a natural fit for agile teams. For example:
 
 > If developing a given Subdomain requires such a difficult, even precarious, assent, we’d bring the DDD tactical patterns along for the climb. A business initiative that matches the criteria of Core Domain should not quickly dismiss the use of the tactical patterns. The Core Domain is an unknown and complex area. The team is best protected against a disastrous mid-asset fall if using the right tactics...
-> First we want to focus on how the model will be used by clients, and these tests drive the model’s design. The good news is, it really is an agile approach. DDD promotes lightweight development, not ceremonious, heavy, upfront design. 
+> First we want to focus on how the model will be used by clients, and these tests drive the model’s design. The good news is, it really is an agile approach. DDD promotes lightweight development, not ceremonious, heavy, upfront design.
 
 == Strategic Design with DDD
 
@@ -94,25 +96,25 @@ Chapter four of _Implementing Domain-Driven Design_ is targeted around architect
 
 > Avoiding architecture overuse is just as important as using it. Allowing real, genuine quality demands to drive what we do with architecture is a beneficial risk-driven approach. That way we use architecture only to mitigate the risk of failure, not to increase our risk of failure by using an architectural style that cannot be justified. Thus, we must be able to justify every architectural style in use, or we eliminate the style from our system.
 
-The architectural chapter is comprehensive and dense, but very good. 
+The architectural chapter is comprehensive and dense, but very good.
 
-I found the best description of ports and adaptors approach that I have read. There is also a good description of CQRS, combined with practical guidance on when and where to apply it as an architectural organizing approach, and how it relates to event sourcing. 
+I found the best description of ports and adaptors approach that I have read. There is also a good description of CQRS, combined with practical guidance on when and where to apply it as an architectural organizing approach, and how it relates to event sourcing.
 
 == Building Block Patterns
 
-Each of the next chapters covers one of the "building block" patterns of DDD in depth: entities, value objects, domain events, aggregates, factories and repositories. In each chapter _Implementing Domain-Driven Design_ explains what the pattern is, when to use it, and various ways to apply it. The book is careful to cover the relative merits and downsides of each approach, and gives technical implementations that show - by example - how to adopt them. 
+Each of the next chapters covers one of the "building block" patterns of DDD in depth: entities, value objects, domain events, aggregates, factories and repositories. In each chapter _Implementing Domain-Driven Design_ explains what the pattern is, when to use it, and various ways to apply it. The book is careful to cover the relative merits and downsides of each approach, and gives technical implementations that show - by example - how to adopt them.
 
 In particular, _Implementing Domain-Driven Design_'s distinction between collection-oriented and persistence-oriented repositories was very helpful, and the examples with how to apply these styles for a variety of common persistence stores, including MongoDB and Coherence.
 
 == Application Guidance
 
-In the application chapter I would have liked to see more code samples for UI approaches, but I realize that this wish is unrealistic: presentation layer design is a massive topic on its own. 
+In the application chapter I would have liked to see more code samples for UI approaches, but I realize that this wish is unrealistic: presentation layer design is a massive topic on its own.
 
 There is an overwhelming and ever-changing diversity of frameworks, UI tooling and associated techniques, and there is only so much that can be included in such a book as this. _Implementing Domain-Driven Design_ wisely lays out the various options and tradeoffs, guiding the reader towards making informed and judicious choices.
 
 == A Pleasant Surprise
 
-Appendix A is an in-depth treatment of event sourcing, contributed by Rinat Abdullin. When I started the book I wasn't sure about why the appendix was there (asking myself, "isn't this material covered already in the main text?"), but it actually proved most helpful in understanding the mechanics, advantages and pitfalls of event sourcing. 
+Appendix A is an in-depth treatment of event sourcing, contributed by Rinat Abdullin. When I started the book I wasn't sure about why the appendix was there (asking myself, "isn't this material covered already in the main text?"), but it actually proved most helpful in understanding the mechanics, advantages and pitfalls of event sourcing.
 
 The event sourcing material here is a superb complement to the rest of the material, building on it in all the most important ways. This A+ES event sourcing chapter is the clearest and best description I’ve found on how event sourcing works. The coding examples provide expert cutting-edge guidance and tooling for getting an event store-based approach up and running quickly.
 
@@ -120,7 +122,7 @@ The event sourcing material here is a superb complement to the rest of the mater
 
 I have to say it, if it’s not already obvious: I’m a fan. _Implementing Domain-Driven Design_ does a remarkable thing: it takes a sophisticated and substantial topic area in DDD and presentes it clearly, with nuance, fun and finesse. q:>[By the time you finish the book you will be able to begin applying all the important concepts of DDD, and then some.]
 
-This book is written in an engaging and friendly style, like a trusted advisor giving you expert counsel on how to accomplish what is most important. 
+This book is written in an engaging and friendly style, like a trusted advisor giving you expert counsel on how to accomplish what is most important.
 
 As I read, I found myself highlighting many sections, and will be getting a copy of _Implementing DDD_ for my bookshelf as soon as it is released. I will be referring back to it, and recommending it, often.
 

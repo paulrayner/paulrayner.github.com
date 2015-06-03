@@ -1,7 +1,7 @@
 ---
 title: Persisting Value Objects
 tags:
-- ddd
+- DDD
 layout: post
 comments: true
 sharing: true
@@ -17,7 +17,7 @@ image::/assets/cargo.png[Cargo entity and associated value objects]
 
 == Inline Value Object’s Fields to Entity’s Table
 
-This is the simplest arrangement, both in terms of ORM mapping and database schema design. It also is an easy way to support refactoring a value object out of an entity, since only the objects and the ORM mapping would need to change; there is no change to the underlying database schema. 
+This is the simplest arrangement, both in terms of ORM mapping and database schema design. It also is an easy way to support refactoring a value object out of an entity, since only the objects and the ORM mapping would need to change; there is no change to the underlying database schema.
 
 An example of this would be refactoring properties such as `Origin`, `Destination` and `Arrival Deadline` out of their original location in the https://github.com/paulrayner/ddd_sample_app_ruby/blob/master/domain/cargo/cargo.rb[`Cargo` entity] and into a new https://github.com/paulrayner/ddd_sample_app_ruby/blob/master/domain/cargo/route_specification.rb[`RouteSpecification` value object]. The `RouteSpecification` value object, having a one-to-one, relationship with the `Cargo` entity, lends itself very naturally to this kind of approach. The same would be true for the `Itinerary` value object.
 
@@ -27,7 +27,7 @@ In the DDD sample app, a single `Itinerary` value object has many `Leg` value ob
 
 == Serialize the Value Object and Store in Field in Entity’s Table
 
-This is a less common than creating a separate table for the value object as in the previous approach, but serialization is actually the method I would recommend in most cases where you have a one-to-many relationship. For example, persist `Itinerary` and all its `Leg` value objects as a serialized object grap and then inline it into the Entity’s table within the Cargo database table. 
+This is a less common than creating a separate table for the value object as in the previous approach, but serialization is actually the method I would recommend in most cases where you have a one-to-many relationship. For example, persist `Itinerary` and all its `Leg` value objects as a serialized object grap and then inline it into the Entity’s table within the Cargo database table.
 
 Use an appropriate serialization format such as plain text, XML, YAML or JSON. Databases such as Postgres and SQL Server provide native format for such approaches. For a Postgres example, see Vaughn Vernon's post https://vaughnvernon.co/?p=942[The Ideal Domain-Driven Design Aggregate Store?] For an example of manipulating XML with SQL Server, see https://www.simple-talk.com/sql/database-administration/manipulating-xml-data-in-sql-server/[Manipulating XML Data in SQL Server].
 
@@ -41,11 +41,11 @@ In the Java space, SpringSource has been doing some very interesting work for th
 
 == Use a Document Database
 
-The `CargoRepository` could use an `Itinerary` document Id stored in a `Cargo` field to retrieve the `Itinerary` value object stored in a document database such as MongoDB, RavenDB or CouchDB. Note that many document databases offer transparency of query into the contents of the 'document' (i.e. serialized value object in this case), which removes the need to predict which properties, etc. of the value object need to be stored separately in the table as additional fields just so that they can be queried. 
+The `CargoRepository` could use an `Itinerary` document Id stored in a `Cargo` field to retrieve the `Itinerary` value object stored in a document database such as MongoDB, RavenDB or CouchDB. Note that many document databases offer transparency of query into the contents of the 'document' (i.e. serialized value object in this case), which removes the need to predict which properties, etc. of the value object need to be stored separately in the table as additional fields just so that they can be queried.
 
 To Summarize:
 
-[cols="4*", options="header"] 
+[cols="4*", options="header"]
 |===
 |O-R
 |Represent Data in Fields

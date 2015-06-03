@@ -1,7 +1,7 @@
 ---
 title: The Design Process - Design Quotes Part 2
 tags:
-- design
+- Design
 layout: post
 comments: true
 sharing: true

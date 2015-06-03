@@ -1,7 +1,7 @@
 ---
 title: Good Design is People-Centered - Design Quotes Part 5
 tags:
-- design
+- Design
 layout: post
 comments: true
 sharing: true
