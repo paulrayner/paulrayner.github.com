@@ -27,12 +27,12 @@ Click on either thumbnail below to download the full-size PDF version.
 == Front
 
 [role=dropshadow]
-image::/assets/stories-for-design-and-delivery-thumbnail1.png[Stories for design and delivery - Front, link="/assets/resources/Stories-for-design-and-delivery.pdf"]
+image::/assets/stories-for-design-and-delivery-thumbnail1.png[Stories for design and delivery - Front, link="/assets/resources/stories-for-design-and-delivery.pdf"]
 
 == Back
 
 [role=dropshadow]
-image::/assets/stories-for-design-and-delivery-thumbnail2.png[Stories for design and delivery - Back, link="/assets/resources/Stories-for-design-and-delivery.pdf"]
+image::/assets/stories-for-design-and-delivery-thumbnail2.png[Stories for design and delivery - Back, link="/assets/resources/stories-for-design-and-delivery.pdf"]
 
 == History
 
