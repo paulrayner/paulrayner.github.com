@@ -21,7 +21,7 @@ cp -R _site/* ../paulrayner.github.com.master
 
 echo -e "Committing and pushing site to master branch on GitHub pages repository\n"
 cd ../paulrayner.github.com.master
-git config user.email "paul@virtual-genius.com"
+git config user.email "paul@virtualgenius.com"
 git config user.name "Paul Rayner"
 git add -A .
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
