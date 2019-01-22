@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 300;
   color: #111;
@@ -41,7 +41,7 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 10.5px; }
+  font-size: 15.75px; }
 
 /**
  * Lists
@@ -282,7 +282,7 @@ ul.site-contact {
     margin-bottom: 30px; }
 
 .post-meta {
-  font-size: 10.5px;
+  font-size: 15.75px;
   color: #828282; }
 
 .post-link {
@@ -1821,7 +1821,7 @@ p strong, td.content strong {
   letter-spacing: -.005em; }
 
 p, blockquote, dt, td.content {
-  font-size: 1.0625rem; }
+  font-size: 18px; }
 
 p {
   margin-bottom: 1.25rem; }
