@@ -1,0 +1,51 @@
+---
+title: "Explore DDD Realtime Retrospective"
+tags:
+- DDD
+- Agile
+layout: post
+comments: true
+sharing: true
+date: 2019-01-22 13:06
+permalink: ':title'
+---
+
+[quote, Emily Webber, 'https://emilywebber.co.uk/the-realtime-retrospective[The Realtime Retrospective]']
+____
+"The realtime retrospective is a way of capturing feedback or information to help improvements in realtime.".
+____
+
+At YOW! 2016, fellow speaker Emily Webber told me about a cool experiment she had run at recent conference. Emily described a visible, participative way - a https://emilywebber.co.uk/the-realtime-retrospective[Realtime Retrospective] - to reflect and improve throughout a conference. In September 2017 I was able to run my own realtime retrospective experiment for http://exploreddd.com/2017[Explore DDD 2017].
+
+Prior to the start of the conference we laid out a visual summary of the conference schedule along with instructions for how to contribute/participate. We also provided plenty of sharpies and colorful sticky notes.
+
+image::/assets/realtime-retro/drawing.jpg[Drawing Instructions,600]
+image::/assets/realtime-retro/main.jpg[,600]
+
+image::/assets/realtime-retro/people.jpg[,600]
+
+image::/assets/realtime-retro/done.jpg[,600]
+image::/assets/realtime-retro/friday.jpg[,600]
+
+We placed the conference schedule on the wall in the main conference space area to maximize exposure. During the conference opening and also prior to each keynote we reminded and encouraged attendees to contribute.
+
+
+We had conference staff and volunteers keeping an eye on the timeline so negative things got resolved almost immediately and marked as done. We used Slack as a backchannel to coordinate this through the volunteers. We also used the main conference Slack channel and Twitter for some of the questions, such as whether videos of the talks would be available  after the conference.  Venue staff also liked being notified of issues so they could deal with them quickly. This sense of participation, openness and responsiveness was very high value.
+
+image::/assets/realtime-retro/negatives.jpg[,600]
+
+For example, a problem with not enough soap in the mensroom was fixed within five minutes, and we resolved most AV and venue-related issues very quickly. Things that couldn't be fixed or improved were marked on the timeline and noted for next time. Since we were dealing with questions and issues in near-realtime and visually marking them on the wall, it was clear to attendees that things were improving.
+
+As a conference leadership we felt it was very successful, so we employed it again last year for Explore DDD 2018 and once again were very happy with how well it worked.
+
+image::/assets/realtime-retro/opening.jpg[]
+image::/assets/realtime-retro/keynote.jpg[]
+
+We've heard good things from speakers both years about the value of the immediate feedback. One of our 2017 speakers was so encouraged by the feedback he kept his sticky note comments as a memento after the conference. Here's some tweets from http://exploreddd.com/2018[Explore DDD 2018 speakers] showing their feedback:
+
+* https://twitter.com/martinschimak/status/1040993075038957568
+* https://twitter.com/hofstef/status/1040966608196317185
+* https://twitter.com/wasselovski/status/1040706520067923968
+* https://twitter.com/brunoboucard/status/1040690183820083201
+
+The realtime retrospective wall has become an integral part of the conference - I couldn't imagine us running http://exploreddd.com[Explore DDD] without it.

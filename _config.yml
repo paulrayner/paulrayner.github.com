@@ -1,6 +1,6 @@
 # Site settings
 title: Leading by Design
-email: paul@virtual-genius.com
+email: paul@virtualgenius.com
 description: Thinking about DDD, BDD, coding, software design and agile etc.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://thepaulrayner.com" # the base hostname & protocol for your site
