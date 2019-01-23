@@ -13,6 +13,10 @@ layout: default
         </h2>
         {% include post-meta.html post=post %}
 
+        {% if post.image %}
+            <img src="{{ site.baseurl }}/assets/{{ post.image }}">
+        {% endif %}
+
         {% if post.excerpt %}
           <p class="post-excerpt">{{ post.excerpt }}</p>
           <h5><a class="post-read-more" href="{{ post.url | prepend: site.baseurl }}">Read More ...</a></h4>

@@ -7,6 +7,7 @@ comments: true
 sharing: true
 date: 2015-03-28 23:18
 permalink: ':title'
+image: what-is-bdd-panel2.png
 ---
 
 Dan North mentioned at one point in the CukeUp 2015 panel yesterday the notion

@@ -1,5 +1,5 @@
 ---
-title: "Explore DDD Realtime Retrospective"
+title: "Explore DDD - Realtime Retrospective"
 tags:
 - DDD
 - Agile
@@ -8,6 +8,7 @@ comments: true
 sharing: true
 date: 2019-01-22 13:06
 permalink: ':title'
+image: realtime-retro/done.jpg
 ---
 
 At YOW! 2016, fellow speaker Emily Webber told me about a cool experiment she had run at recent conference. Emily described a visible, participative way - a https://emilywebber.co.uk/the-realtime-retrospective[Realtime Retrospective] - to reflect and improve throughout a conference. In September 2017 I was able to run my first realtime retrospective experiment at http://exploreddd.com/2017[Explore DDD 2017].
@@ -19,8 +20,8 @@ ____
 
 Prior to the start of the conference we laid out a visual summary of the conference schedule along with instructions for how to contribute/participate. We also provided plenty of sharpies and colorful sticky notes.
 
-image::/assets/realtime-retro/drawing.jpg[Drawing Instructions,600]
 image::/assets/realtime-retro/main.jpg[,600]
+image::/assets/realtime-retro/drawing.jpg[Drawing Instructions,600]
 
 image::/assets/realtime-retro/people.jpg[,600]
 

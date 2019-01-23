@@ -359,7 +359,8 @@ h1,h2{letter-spacing:-.01em}
 dt,th.tableblock,td.content{text-rendering:optimizeLegibility}
 p,td.content{letter-spacing:-.01em}
 p strong,td.content strong{letter-spacing:-.005em}
-p,blockquote,dt,td.content{font-size:1.0625rem}
+// p,blockquote,dt,td.content{font-size:1.0625rem}
+p,blockquote,dt,td.content{font-size:18px}
 p{margin-bottom:1.25rem}
 .sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
 .exampleblock>.content{background-color:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
