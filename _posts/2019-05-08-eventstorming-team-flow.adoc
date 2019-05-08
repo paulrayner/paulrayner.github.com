@@ -1,0 +1,90 @@
+---
+title: "EventStorming Team Flow"
+tags:
+- DDD
+- EventStorming
+layout: post
+comments: true
+sharing: true
+date: 2019-05-08 13:30
+permalink: ':title'
+image: eventstorming-team-flow/team-flow.jpg
+---
+
+Do you ever feel like development work seems to involve a lot of waiting? Waiting for builds to finish. Waiting for your team members to complete the code you need. Waiting for testing to be completed? Waiting for other teams, or for approvals to happen? Sigh. Yawn. The typical approach is to try to make the coding more efficient or start new work. But what if all these wait-states are actually where we should be focusing our improvement efforts first? These invisible piles of unfinished work slow us down far more than we realize, sucking team productivity, and making everything take longer than it should.
+
+In my NewCrafts talk, Fighting the Invisible Enemy, I mention using EventStorming as a way of helping a team visualize its development process and identify emergent queues. I expanded
+
+[quote, Donald Reinertsen, The Principles of Product Development Flow]
+____
+"The enemy of flow is the invisible and unmeasured queues that undermine all aspects of product development performance".
+____
+
+How can we fight an invisible enemy? Most development teams remain blissfully unaware of the negative impact of these invisible queues on productivity, or how to deal with them effectively.
+
+Teams can benefit from understanding the presence and the negative impact of these invisible queues in the work of real teams. Task boards are great for helping teams visualize and coordinate their work, but they don't show the full picture.
+
+Reduce waste so you can spend more time doing the coding you love.
+
+The goal is to visualize queues so they can be managed effectively, starting with the ones that have the most significant impact.
+
+## EventStorming
+
+As with EventStorming, perform an initial Brainstorm where everyone writes as many events as possible, as quickly as possible, from the initial feature idea to it making a user happy by using it to solve a problem/meet a need. Don't worry about duplication.
+
+Write the events in the past tense, as if you are looking back on the completed process.
+
+Arrange them chronologically, earliest on the left to latest on the right. Don't worry about loops or conditionals...just lay it out as if it's a linear flow. It's more important at this point to capture the overall sequence rather than various possible paths.
+
+TIP: If you have trouble doing this because you have many different types of work items, such as defects, production support, feature development... start with a specific user story, or a bug, and map that out. Once you have one flow fairly close to being visualized, you can always add one later in another swimlane.
+
+Use another color to represent possible/potential queues in the process. Look for anywhere there is:
+
+* a handoff from one person, role, or team to another
+* significant waiting. Examples include, but are not limited to: waiting for another team to complete something, or infrastructure to be ready, or some kind of approval, builds to run, pull requests to be approved, peer reviews to complete, time spent waiting for testing to happen, ...
+* batching of work, such as at sprint planning for Scrum teams
+* common points for rework?
+
+For every queue, ...
+
+Capture any problems, questions, hotspots or conversation points on bright colored stickies. For example, if the process
+
+Don't worry about trying to visualize loops. If you feel you must, use tape so you can still move stickies around easily.
+
+I haven't tried it, but I imagine this could be a good retrospective technique.
+
+Next steps:
+
+Go after the queue with the most significant economic/productivity impact.
+* Set a WIP limit for this queue.
+* See if the queue can be eliminated, perhaps through automation (e.g. CI/CD) or better collaboration (BDD, devops)
+Use this to build out a kanban board so you can limit WIP at the team and work state levels.
+Start gathering data on problematic areas
+Run small improvement experiments.
+
+
+
+image::/assets/realtime-retro/main.jpg[,600]
+image::/assets/realtime-retro/drawing.jpg[Drawing Instructions,600]
+
+image::/assets/realtime-retro/people.jpg[,600]
+
+image::/assets/realtime-retro/done.jpg[,600]
+image::/assets/realtime-retro/friday.jpg[,600]
+
+The realtime retrospective wall has become an integral part of the conference - I couldn't imagine us running http://exploreddd.com[Explore DDD] without it.
+
+
+
+To Do
+
+* Reference resources
+* Banner image for eventstorming/team-flow.jpg.
+
+Resources
+NewCrafts talk
+Value Stream Mapping book
+Principles of Product Development Flow
+
+
+See also my https://www.youtube.com/watch?v=q80FiugsO1Q[Modeling Team Flow] talk at Explore DDD 2018 for a slightly updated version.
