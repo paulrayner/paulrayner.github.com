@@ -6,14 +6,12 @@ tags:
 layout: post
 comments: true
 sharing: true
-date: 2019-05-08 13:30
+date: 2019-05-09 17:30
 permalink: ':title'
 image: eventstorming-team-flow/team-flow.jpg
 ---
 
-Do you ever feel like development work seems to involve a lot of waiting? Waiting for builds to finish. Waiting for your team members to complete the code you need. Waiting for testing to be completed? Waiting for other teams, or for approvals to happen? Sigh. Yawn. The typical approach is to try to make the coding more efficient or start new work. But what if all these wait-states are actually where we should be focusing our improvement efforts first? These invisible piles of unfinished work slow us down far more than we realize, sucking team productivity, and making everything take longer than it should.
-
-In my NewCrafts talk, Fighting the Invisible Enemy, I mention using EventStorming as a way of helping a team visualize its development process and identify emergent queues. I expanded
+image::/assets/eventstorming-team-flow/reviewing.jpg[Initial Brainstorming,600]
 
 [quote, Donald Reinertsen, The Principles of Product Development Flow]
 ____
@@ -22,19 +20,32 @@ ____
 
 How can we fight an invisible enemy? Most development teams remain blissfully unaware of the negative impact of these invisible queues on productivity, or how to deal with them effectively.
 
-Teams can benefit from understanding the presence and the negative impact of these invisible queues in the work of real teams. Task boards are great for helping teams visualize and coordinate their work, but they don't show the full picture.
+[quote, Karen Martin & Mike Osterling, Value Stream Mapping]
+____
+"The lack of understanding about how work flows - or, more commonly, doesn't flow - across a work system that's sole purpose is to deliver value to a customer is a fundamental problem that results in poor performance, poor business decisions, and poor work environments."
+____
 
-Reduce waste so you can spend more time doing the coding you love.
+In my NewCrafts 2018 talk, http://videos.ncrafts.io/video/275328050[Fighting the Invisible Enemy], I mention experimenting with EventStorming as a way of helping teams quickly visualize their development process and identify emergent queues. The goal for the talk was to provide practical ways for teams to understand the presence and negative impact of these invisible queues on their work, so they could start to manage them more effectively.
 
-The goal is to visualize queues so they can be managed effectively, starting with the ones that have the most significant impact.
+Task boards are a great tool for helping teams visualize and coordinate their work, but they don't show the full picture. Typically they only focus on flow of work for an individual team, ignoring upstream and downstream impacts and dependencies, and often without taking a customer-focused perspective. Also, they often tend to ignore wait states for work items rather than making them explicit on the board.
+
+For those familiar with value stream mapping, EventStorming can function as a lightweight, colloborative, first-pass approach to visualizing a value stream and a team's place within it.
+
+
+
+It can function as a visual unification tool, by enabling a team to visualize work that's not particularly visual. As with the visualization in value stream mapping, visualizing the invisible work is "an essential first step to gaining clarity about and consensus around how work gets done. It's also a highly unifying activity - helps people see the need for improvement, and generates alignment and consensus around specific improvements being considered." - https://www.amazon.com/Value-Stream-Mapping-Organizational-Transformation/dp/0071828915[Value Stream Mapping].
+
+The goal is to visualize queues so they can be managed effectively, starting with the ones that have the most significant impact economically.
 
 ## EventStorming
 
-As with EventStorming, perform an initial Brainstorm where everyone writes as many events as possible, as quickly as possible, from the initial feature idea to it making a user happy by using it to solve a problem/meet a need. Don't worry about duplication.
+As with regular https://leanpub.com/introducing_eventstorming[EventStorming], the team performs an initial Brainstorm where everyone writes as many events as possible, as quickly as possible. Mapping out the events that occur from an initial feature idea, to the point where delivered functionality is used by a customer to solve a problem or meet a need. Don't worry about duplication.
 
-Write the events in the past tense, as if you are looking back on the completed process.
+Events are written in the past tense, as if everyone is looking back on the completed process. For example, write "story estimated" rather than "estimate story," or write "changes pushed to production" rather than "push changes to production."
 
 Arrange them chronologically, earliest on the left to latest on the right. Don't worry about loops or conditionals...just lay it out as if it's a linear flow. It's more important at this point to capture the overall sequence rather than various possible paths.
+
+image::/assets/eventstorming-team-flow/initial-ideas2.jpg[Initial Brainstorming,600]
 
 TIP: If you have trouble doing this because you have many different types of work items, such as defects, production support, feature development... start with a specific user story, or a bug, and map that out. Once you have one flow fairly close to being visualized, you can always add one later in another swimlane.
 
@@ -63,14 +74,10 @@ Start gathering data on problematic areas
 Run small improvement experiments.
 
 
+image::/assets/eventstorming-team-flow/people.jpg[,600]
 
-image::/assets/realtime-retro/main.jpg[,600]
-image::/assets/realtime-retro/drawing.jpg[Drawing Instructions,600]
-
-image::/assets/realtime-retro/people.jpg[,600]
-
-image::/assets/realtime-retro/done.jpg[,600]
-image::/assets/realtime-retro/friday.jpg[,600]
+image::/assets/eventstorming-team-flow/done.jpg[,600]
+image::/assets/eventstorming-team-flow/friday.jpg[,600]
 
 The realtime retrospective wall has become an integral part of the conference - I couldn't imagine us running http://exploreddd.com[Explore DDD] without it.
 
@@ -88,3 +95,7 @@ Principles of Product Development Flow
 
 
 See also my https://www.youtube.com/watch?v=q80FiugsO1Q[Modeling Team Flow] talk at Explore DDD 2018 for a slightly updated version.
+
+
+
+Do you ever feel like development work seems to involve a lot of waiting? Waiting for builds to finish. Waiting for your team members to complete the code you need. Waiting for testing to be completed? Waiting for other teams, or for approvals to happen? Sigh. Yawn. The typical approach is to try to make the coding more efficient or start new work. But what if all these wait-states are actually where we should be focusing our improvement efforts first? These invisible piles of unfinished work slow us down far more than we realize, sucking team productivity, and making everything take longer than it should.
