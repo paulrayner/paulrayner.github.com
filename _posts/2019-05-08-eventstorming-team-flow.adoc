@@ -15,6 +15,8 @@ permalink: ':title'
 image: eventstorming-team-flow/team-flow.jpg
 ---
 
+Most development teams remain blissfully unaware of the negative impact of these invisible queues on productivity, or how to deal with them effectively. After all, how can we fight an invisible enemy? Isn't it better to focus on the problems we _can_ see? So the typical team approach to improving productivity is to focus on the work being done. For example, trying to make the coding more efficient, or by starting new work when something gets blocked.
+
 image::/assets/eventstorming-team-flow/team-flow.jpg[Team Flow Map,800]
 
 ## What's the Big Deal with Queues?
@@ -23,8 +25,6 @@ image::/assets/eventstorming-team-flow/team-flow.jpg[Team Flow Map,800]
 ____
 "The enemy of flow is the invisible and unmeasured queues that undermine all aspects of product development performance".
 ____
-
-Most development teams remain blissfully unaware of the negative impact of these invisible queues on productivity, or how to deal with them effectively. After all, how can we fight an invisible enemy? Isn't it better to focus on the problems we _can_ see? So the typical team approach to improving productivity is to focus on the work being done. For example, trying to make the coding more efficient, or by starting new work when something gets blocked.
 
 What if all these wait-states are actually where we should be focusing our improvement efforts first? According to Reinertsen, these invisible piles of unfinished work slow us down far more than we realize, sucking team productivity, and making everything take longer than it should.
 
