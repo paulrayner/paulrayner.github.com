@@ -17,6 +17,8 @@ image: eventstorming-team-flow/team-flow.jpg
 
 image::/assets/eventstorming-team-flow/team-flow.jpg[Team Flow Map,800]
 
+## What's the Big Deal with Queues?
+
 [quote, Donald Reinertsen, The Principles of Product Development Flow]
 ____
 "The enemy of flow is the invisible and unmeasured queues that undermine all aspects of product development performance".
@@ -24,19 +26,16 @@ ____
 
 Most development teams remain blissfully unaware of the negative impact of these invisible queues on productivity, or how to deal with them effectively. After all, how can we fight an invisible enemy? Isn't it better to focus on the problems we _can_ see? So the typical team approach to improving productivity is to focus on the work being done. For example, trying to make the coding more efficient, or by starting new work when something gets blocked.
 
-### What's the Big Deal with Queues?
-
 What if all these wait-states are actually where we should be focusing our improvement efforts first? According to Reinertsen, these invisible piles of unfinished work slow us down far more than we realize, sucking team productivity, and making everything take longer than it should.
 
 In my NewCrafts 2018 talk, http://videos.ncrafts.io/video/275328050[Fighting the Invisible Enemy], I go more deeply into these ideas, and provide some ideas for how to think about them.
-
-
-I've been experimenting with EventStorming as a way of helping teams quickly visualize their development process and identify emergent queues. The goal for the talk was to provide practical ways for teams to understand the presence and negative impact of these invisible queues on their work, so they could start to manage them more effectively.
 
 [quote, Karen Martin & Mike Osterling, Value Stream Mapping]
 ____
 "The lack of understanding about how work flows - or, more commonly, doesn't flow - across a work system that's sole purpose is to deliver value to a customer is a fundamental problem that results in poor performance, poor business decisions, and poor work environments."
 ____
+
+I've been experimenting with EventStorming as a way of helping teams quickly visualize their development process and identify emergent queues. The goal for the talk was to provide practical ways for teams to understand the presence and negative impact of these invisible queues on their work, so they could start to manage them more effectively.
 
 ### Visual Unification Tools
 
@@ -85,7 +84,7 @@ image::/assets/eventstorming-team-flow/reviewing4.jpg[Reviewing,800]
 
 Capture any problems, questions, hotspots or conversation points on bright colored stickies. For example, if you find an event that is frequently associated with rework, it would be a good one to call out as a problem area for future investigation/experimentation.
 
-### Improving the Flow
+### Improving Flow
 
 Identify the queue with the most significant economic/productivity impact. If you don't know which it is, start measuring it. Begin gathering data on problematic areas, and then run small improvement experiments.
 
