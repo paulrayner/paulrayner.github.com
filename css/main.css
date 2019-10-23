@@ -147,18 +147,21 @@ pre {
   border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
   min-height: 56px;
+  background: #374252;
+  color: white;
+  padding-top: 1.125rem;
   position: relative; }
 
 .site-title {
-  font-size: 26px;
-  line-height: 56px;
+  font-size: 55px;
+  font-weight: bold;
+  line-height: 66px;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
-  text-decoration: none;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1); }
+  text-decoration: none; }
   .site-title, .site-title:visited {
-    color: #424242; }
+    color: white; }
 
 .site-nav {
   float: right;
@@ -206,7 +209,7 @@ pre {
  * Site contact list in header
  */
 .site-contact, .site-contact:visited, .site-contact:hover {
-  color: #424242; }
+  color: white; }
 
 ul.site-contact {
   list-style-type: none;
@@ -322,7 +325,7 @@ ul.site-contact {
         font-size: 18px; } }
 
 .home h2 a {
-  color: #ba3925; }
+  color: #000000; }
   .home h2 a:hover {
     color: #ba3925; }
 
@@ -513,7 +516,7 @@ body {
   color: rgba(0, 0, 0, 0.8);
   padding: 0;
   margin: 0;
-  font-family: "Noto Serif","DejaVu Serif",serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   font-style: normal;
   line-height: 1;
@@ -611,7 +614,7 @@ h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 {
   font-family: "Open Sans","DejaVu Sans",sans-serif;
   font-weight: 300;
   font-style: normal;
-  color: #ba3925;
+  color: #000000;
   text-rendering: optimizeLegibility;
   margin-top: .7em;
   margin-bottom: .5em;
@@ -1087,7 +1090,7 @@ p a > code:hover {
   visibility: visible; }
 
 #content h1 > a.link, h2 > a.link, h3 > a.link, #toctitle > a.link, .sidebarblock > .content > .title > a.link, h4 > a.link, h5 > a.link, h6 > a.link {
-  color: #ba3925;
+  color: #000000;
   text-decoration: none; }
 
 #content h1 > a.link:hover, h2 > a.link:hover, h3 > a.link:hover, #toctitle > a.link:hover, .sidebarblock > .content > .title > a.link:hover, h4 > a.link:hover, h5 > a.link:hover, h6 > a.link:hover {
