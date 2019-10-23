@@ -5,24 +5,26 @@
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    background: #374252;
+    color: white; // colors the subtitle
+    padding-top:1.125rem;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 66px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
     text-decoration: none;
 
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
-
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: white;
     }
 }
 
@@ -95,7 +97,7 @@
  */
 .site-contact {
     &, &:visited, &:hover {
-        color: $grey-color-dark;
+        color: white;
     }
 }
 
@@ -259,7 +261,7 @@ ul.site-contact {
 
 
 .home h2 a {
-    color: #ba3925;
+    color: #000000;
     &:hover {
         color: #ba3925;
     }
