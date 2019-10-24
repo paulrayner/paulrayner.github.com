@@ -1,1 +1,4 @@
-Source code for Paul Rayner's Jekyll and Asciidoctor-powered blog
+Source code for Paul Rayner's Jekyll and Asciidoctor-powered blog.
+
+* Hosted on Github pages.
+* Deployed using GitHub https://docs.travis-ci.com/user/deployment/pages/[Pages Deployment Provider] for Travis CI. See https://medium.com/@mcred/supercharge-github-pages-with-jekyll-and-travis-ci-699bc0bde075 for details.
