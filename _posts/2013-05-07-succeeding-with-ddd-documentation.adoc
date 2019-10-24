@@ -4,7 +4,7 @@ title: Succeeding with DDD - Documentation
 date: 2013-05-07 11:40
 comments: true
 sharing: true
-tags: 
+tags:
 - DDD
 - Agile
 ---
@@ -24,7 +24,7 @@ The problem with a lot of documentation is that it is seen as an end in
 itself, rather than a means to an end, which is to deliver a quality product
 that meets an important customer need.
 ****
-This is why agile teams adopt the value of "working software over comprehensive documentation." 
+This is why agile teams adopt the value of "working software over comprehensive documentation."
 
 However, documentation serves a number of important, and different, purposes.
 For each documentation artifact, ask: "Is this artifact to support the team
@@ -51,7 +51,7 @@ As Jason points out, Grady Booch has popularized the phrase â€œtribal knowledgeâ
 for this kind of information artifact. Documenting for the future preserves
 the oral tradition by encoding knowledge that already exists. It supports the
 later transmission, socializing and sustainability of the "tribal knowledge"
-of the team. 
+of the team.
 
 So one type of documentation we create supports future development by
 preserving the oral tradition that teams develop along with the software.
@@ -79,7 +79,7 @@ Tribal wisdom, however, is the virtuous flip side of this tribal mythology.
 It is prescribed action with understanding, how accompanied by why, and is
 adaptable to new environments, new situations, and new problems. It transcends
 rote copying, and provides illumination through a comprehensive discussion of
-the reasons behind the action. 
+the reasons behind the action.
 ____
 
 [quote, Jason Smith, Elemental Design Patterns]
@@ -102,7 +102,7 @@ tend to favor documenting (as an ongoing, just-in-time, activity) over
 creating a (once-and-for all) document. And in the same manner that their
 planning is focused around high-fidelity communication, customer collaboration
 and team interaction, any documenting they do tends to have the same goals and
-characteristics. 
+characteristics.
 
 A plan is only useful until it needs to change, which is why agile teams focus
 on enabling and responding to change. The intention is the same with any
@@ -144,13 +144,13 @@ Documentation must be as accessible as necessary. Things that the team is
 working on right now, I would expect to be on the walls of the team area. Just
 the same as many teams use information radiators such as burndown charts and
 task boards to track their delivery progress, I like to see sketches of design
-diagrams on the walls too. 
+diagrams on the walls too.
 
 I like to see a context map on the wall, showing the terrain the team is
 dealing with. I've worked with many teams that were not co-located, so we
 would put the the documents in shared folders, and on the wiki. Sometimes we
 would sketch on a whiteboard, and then take a photo of the diagram and put it
-on the team wiki. 
+on the team wiki.
 
 Don't let your wiki fall prey to the http://en.wikipedia.org/wiki/Tragedy_of_the_commons[Tragedy of the Commons]. Appoint a curator for your documents if necessary. But strive for team-ownership of the documentation, just as you strive for team ownership of the
 code.
@@ -188,7 +188,7 @@ very helpful. Let's look at some of these.
 == Requirements Specification?
 
 Many teams opt for user stories as items in a feature queue, prioritized by value to the business
-(i.e. "Product Backlog", in Scrum terms). See my earlier blog post on http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd/[user stories and DDD]. 
+(i.e. "Product Backlog", in Scrum terms). See my earlier blog post on http://thepaulrayner.com/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd/[user stories and DDD].
 
 A team doing DDD could use a requirements specification document. But the trap with heavyweight, detailed specification documents is that they tend to http://www.leanessays.com/2011/08/dont-separate-design-from.html[separate design from implementation].
 
@@ -245,7 +245,7 @@ the design, paraphrasing Jack Reeves.
 Some teams find it helpful to develop a list of use cases, a list of tasks the
 program is able to perform or some combination of both. I would experiment
 with what you find most useful for your team. Use cases have fallen out of
-vogue recently, but I am still a big fan of them. 
+vogue recently, but I am still a big fan of them.
 
 Note that I am not against specifying requirements in written form, but rather entombing those requirements (i.e. what features the system should provide to meet the customer's needs) in a large tome that locks-in the details of how the system should behave. I have utilized use cases in a lightweight, just-in-time way and found them very useful. See Alistair Cockburn's article on http://alistair.cockburn.us/Why+I+still+use+use+cases[Why I still use use cases] for similar reasons to mine.
 
@@ -255,7 +255,7 @@ possible.
 == Core Elements
 
 I typically create a short document that captures the core domain vision
-statement and the context map. 
+statement and the context map.
 
 == Architecture
 
@@ -270,7 +270,7 @@ Notice that in Krutchen's approach, scenarios are the unifying thing.
 Reference scenarios are a more specific form of this. See http://skillsmatter.com/podcast/design-architecture/paulrayner-domain-scenarios[my presentation on
 domain scenarios at the DDD Exchange 2012] for a walkthrough of using reference
 scenarios. In DDD _reference_ scenarios describe the _key business problems
-that the model needs to solve_. 
+that the model needs to solve_.
 
 Reference scenarios will be the core domain business capabilities that the
 software, and in particular, the domain model, will enable. They often take
@@ -288,7 +288,7 @@ for a team with a business analyst this can be a very significant
 contribution. However, the same caveats mentioned above relating to separating
 design from implementation are particularly relevant:
 
-> In most software development processes I have encountered, a business analyst or product owner has been assigned the job of writing the requirements or stories or use cases which constitute the design of the system. Quite frankly, people in these roles often lack the training and experience to do good system design, to propose alternative designs and weigh their trade-offs, to examine implementation details and modify the design as the system is being developed. 
+> In most software development processes I have encountered, a business analyst or product owner has been assigned the job of writing the requirements or stories or use cases which constitute the design of the system. Quite frankly, people in these roles often lack the training and experience to do good system design, to propose alternative designs and weigh their trade-offs, to examine implementation details and modify the design as the system is being developed.
 
 So as with all the documents described here, the dictionary must be kept up to
 date to be useful. Such a dictionary can be an important start, but it
@@ -307,7 +307,7 @@ teams don't see the value in this. I particularly find instance diagrams
 particularly useful in walking through scenarios with domain experts. I find
 that when the domain experts see the concrete, pertinent business data values
 in the "little boxes" in the diagram, it really helps with  understanding what
-the model is expressing. 
+the model is expressing.
 
 Many times when I work with a team that has an existing model, one of the
 first things I will have the developers do is walk me and the domain expert
@@ -342,7 +342,7 @@ I'm biased towards Cucumber as a tool because I like the separation of steps
 in feature files and stepdefinitions encourages the separation of ubiquitous
 language from the technical implementation. The business terminology goes in
 the feature files, and should be refactored as the ubiquitous language is
-refined over time. 
+refined over time.
 
 I am co-authoring the book _BDD with Cucumber_ for Pearson/Addison Wesley. The book will
 cover doing BDD using Cucumber (Ruby), Cucumber-JVM and SpecFlow.
@@ -378,3 +378,15 @@ of what kinds of information you include in the document, particularly how
 much technical detail you incorporate.
 
 There's probably a lot of things I've missed here. What has been your experience with doing DDD in terms of documentation?
+
+== Further Resources
+
+Two excellent resources released since I wrote this article are:
+
+* https://www.amazon.com/Living-Documentation-Cyrille-Martraire/dp/0134689321[Living Documentation: Continuous Knowledge Sharing by Design] by Cyrille Martraire
+* https://leanpub.com/b/software-architecture[Software Architecture for Developers: Volumes 1 & 2 - Technical leadership and communication] by Simon Brown
+
+== Updates
+
+* [Updated 24 Oct 2019] - Added _Further Resources_ section
+
