@@ -34,7 +34,7 @@ I remember some of those tools, https://en.wikipedia.org/wiki/IBM_Rational_Rose_
 
 [quote, Gregor Hohpe]
 ____
-Somehow, trying to automate the specification and coding steps of software delivery never quite yielded the results that the creators of these tools were after. Collectively, we could have saved a lot of effort if we had taken Jack Reeve's article https://www.developerdotstar.com/mag/articles/reeves_design.html[What is Software Design] to heart. Published in 1992, Jack elaborated that coding is actually the _design_ of software whereas compiling and deploying software is the manufacturing aspect. So, if you are looking to industrialize software manufacturing, you should automate on testing, compiling, and deployment, as opposed to trying to industrialize coding. About a quarter century later than's finally being done. Some things take time, even software.
+Somehow, trying to automate the specification and coding steps of software delivery never quite yielded the results that the creators of these tools were after. Collectively, we could have saved a lot of effort if we had taken Jack Reeve's article https://www.developerdotstar.com/mag/articles/reeves_design.html[What is Software Design] to heart. Published in 1992, Jack elaborated that coding is actually the _design_ of software whereas compiling and deploying software is the manufacturing aspect. So, if you are looking to industrialize software manufacturing, you should automate on testing, compiling, and deployment, as opposed to trying to industrialize coding. About a quarter century later that's finally being done. Some things take time, even software.
 ____
 
 I'm reminded of David Marquet's distinction between red work and blue work.
