@@ -5,9 +5,114 @@
     <description>Paul Rayner&#39;s blog on software design and process</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 24 Oct 2019 18:01:24 +0000</pubDate>
-    <lastBuildDate>Thu, 24 Oct 2019 18:01:24 +0000</lastBuildDate>
+    <pubDate>Fri, 20 Mar 2020 00:24:56 +0000</pubDate>
+    <lastBuildDate>Fri, 20 Mar 2020 00:24:56 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Cloud Strategy, Design And Automation</title>
+        <description>&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/cloud-strategy/ruijia-wang-YmStaPUcd-Y-unsplash.jpg&quot; alt=&quot;ruijia wang YmStaPUcd Y unsplash&quot; width=&quot;700&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&amp;#8230;&amp;#8203;getting new features into production quickly is the real currency of the digital world.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I just finished reading Gregor Hohpe&amp;#8217;s excellent &lt;a href=&quot;https://leanpub.com/cloudstrategy&quot;&gt;Cloud Strategy: An Architect Elevator Guide to Successful Cloud Migration&lt;/a&gt; ebook. I like how the book approaches cloud strategy from an architectural perspective, moving beyond all the buzzwords and wishful thinking, while providing solid guidance for how to actually deliver on the promises of cloud migration for enterprises.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Concerning automation, he points out that much of the original effort towards streamlining development processes was focused on the specification and coding aspects of software delivery, i.e. the translation of ideas into code.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock right text-center&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/cloud-strategy/cloud-strategy-ebook-cover.png&quot; alt=&quot;cloud strategy ebook cover&quot; width=&quot;200&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Many frameworks and methodologies looking to industrialize this aspect of software development, such as CASE tools, 4GL, and executable UML, arrived and disappeared again over the course of the 1990s and 2000s.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I remember some of those tools, &lt;a href=&quot;https://en.wikipedia.org/wiki/IBM_Rational_Rose_XDE&quot;&gt;Rational Rose&lt;/a&gt; being one. The idea was to apply manufacturing techniques to the creative process of translating concepts into coding. After all, it seems simple enough: create a class diagram and translate that directly into code, and vice versa. But this ultimately proved to be much harder, and much less useful, than hoped.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Somehow, trying to automate the specification and coding steps of software delivery never quite yielded the results that the creators of these tools were after. Collectively, we could have saved a lot of effort if we had taken Jack Reeve&amp;#8217;s article &lt;a href=&quot;https://www.developerdotstar.com/mag/articles/reeves_design.html&quot;&gt;What is Software Design&lt;/a&gt; to heart. Published in 1992, Jack elaborated that coding is actually the &lt;em&gt;design&lt;/em&gt; of software whereas compiling and deploying software is the manufacturing aspect. So, if you are looking to industrialize software manufacturing, you should automate on testing, compiling, and deployment, as opposed to trying to industrialize coding. About a quarter century later than&amp;#8217;s finally being done. Some things take time, even software.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;m reminded of David Marquet&amp;#8217;s distinction between red work and blue work.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Red work is DOING work. It’s about execution and reducing variability.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Blue is THINKING work. It’s about discovery and decision making and increasing variability. Think of manufacturing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Analysis, modeling, design and coding are all activities that are intrinsically &lt;em&gt;blue&lt;/em&gt; work. Think of product development.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;What makes the automation that cloud deployment provides so powerful is that it can be applied to the red work downstream from development that needs to be done to speed delivery of newly coded functionality that results from the blue work.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This hopefully becomes a virtuous cycle where applications can be modularized to take advantage of the elasticity and deployment advantages of a cloud environment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Programming is a design activity — a good software design process recognizes this and does not hesitate to code when coding makes sense.
+Coding actually makes sense more often than believed. Often the process of rendering the design in code will reveal oversights and the need for additional design effort. The earlier this occurs, the better the design will be.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Since software is so cheap to build, formal engineering validation methods are not of much use in real world software development. It is easier and cheaper to just build the design and test it than to try to prove it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Jack Reeves
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Cloud strategy, when done well, is such a powerful enabler for the kind of delivery model that is optimized for this kind of time to value. Because of this, organizations should take an application-centric (rather than infrastructure-centric) view on their cloud strategy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In an application-centric approach to cloud the key drivers are concerned with &quot;speeding up software delivery, primarily by reducing friction. Speed comes from automation, such as a fully automated tool chain, infrastructure-as-code, and cloud-ready applications that scale horizontally. Coupled with modern approaches like continuous integration (CI), continuous delivery (CD), and lean development, such tooling can transform the way an enterprise thinks about software delivery.&quot; (Hohpe)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Photo of Cloud Gate by &lt;a href=&quot;https://unsplash.com/@sidem0n&quot;&gt;Ruijia Wang&lt;/a&gt; on &lt;a href=&quot;http://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;</description>
+        <pubDate>Thu, 19 Mar 2020 16:00:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/cloud-strategy-design-and-automation</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/cloud-strategy-design-and-automation</guid>
+        
+        <category>Cloud</category>
+        
+        <category>Design</category>
+        
+        <category>Architecture</category>
+        
+        
+      </item>
     
       <item>
         <title>EventStorming Team Flow</title>
@@ -1081,919 +1186,6 @@ increase the gravitational pull of the values at the center.&lt;/p&gt;
         <pubDate>Mon, 02 Feb 2015 14:50:00 +0000</pubDate>
         <link>http://thepaulrayner.com/dont-give-your-customers-what-they-ask-for</link>
         <guid isPermaLink="true">http://thepaulrayner.com/dont-give-your-customers-what-they-ask-for</guid>
-        
-        <category>Agile</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>LeanUX - My Notes</title>
-        <description>&lt;div class=&quot;imageblock left&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;/assets/lean-ux.jpg&quot; alt=&quot;Lean UX&quot; width=&quot;100&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Lean UX: Applying Lean Principles to Improve User Experience by Gothelf &amp;amp; Seiden comes in at just over 100 pages, so it&amp;#8217;s a quick read. But it&amp;#8217;s full of very practical guidance for how to apply lean principles to user experience design (UXD). Published in 2013, it won a Jolt Award. Here I captured quotes and notes I thought were interesting.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;If anything below looks interesting to you, run - don&amp;#8217;t walk - and &lt;a href=&quot;http://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1449311652/&quot;&gt;buy Lean UX&lt;/a&gt;. It&amp;#8217;s &lt;em&gt;that&lt;/em&gt; good.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;There are a couple of quotes from Eric Ries in the forward that I thought were great:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-The problem is the systems we use to build companies. We are still building linear organizations in a world that demands constant change. We are still building silos in a world that demands thorough collaboration.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; Eric Ries&lt;br&gt;
-&lt;cite&gt;from the forward, p. xi&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I&amp;#8217;ve never heard the phrase &quot;linear organizations&quot; before, but it&amp;#8217;s a great way to describe the kind of siloing I see every day in the organizations I coach in agile. Two types of siloing are especially prelevant. One is specialty-based, the other software architecture/component-based. Many organizations have both kinds of silos.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Specialty-based organizations are structured around the roles people play in a serial, &quot;gated&quot;, &quot;waterfall&quot; software development lifecycle. That is, there are UX designers for the design phase, architects for architecture in the design phase, BAs for analysis in the analysis phase, developers for the construction phase, testers for the QA phase, operations staff for the deployment phase, and so on. Each phase is gated based on the delivery of documentation, and a review of that documentation. Basically, such a process treats the entire deliverable as a single batch of work, it&amp;#8217;s the opposite of the 4 values in the agile manifesto.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Hence:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&amp;#8230;&amp;#8203;We are still investing in analysis, arguing over specifications, and efficiently producing deliverables in a world that demands continuous experimentation to achieve continuous innovation.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; Eric Ries&lt;br&gt;
-&lt;cite&gt;from the forward, p. xi&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Conway&amp;#8217;s Law is commonly expressed as organizations structured around component-based teams, where the organizational structure matches the architecture of the software. Feature-based cross-functional teams organized around customer outcomes are how agile typically tries to &quot;hack&quot; Conway&amp;#8217;s Law by maintaining software boundaries but incorporating all the people needed across the system architecture to ship a customer feature.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&amp;#8230;&amp;#8203;heed Jeff Gothelf&amp;#8217;s call to &#39;get out of the deliverables business&#39; and return our focus where it belongs, enlisting the whole corporation in its most urgent task: delighting customers.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; Eric Ries&lt;br&gt;
-&lt;cite&gt;from the forward, p. xi&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;This is something I have thought about a lot when it comes to doing BDD well. Team members need to willing to make getting early feedback a priority, instead of only showing things to others when they are &quot;done&quot;. Early feedback is best.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-As I&amp;#8217;ve learned to practice Lean UX, I&amp;#8217;ve had to overcome the feeling that I was showing work that was &quot;ugly,&quot; &quot;unfinished,&quot; or &quot;not ready.&quot; Working this way requires the support of a high-functioning team. You need to know - as a team - that you&amp;#8217;re not going to get it right the first time and that you&amp;#8217;re all working together to iterate your way forward.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. xv
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;section-1-introduction-and-principles&quot;&gt;Section 1 : Introduction and Principles&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;My quick and dirty sketch of the 3 foundations of Lean UX:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;/assets/lean_ux_sketch.jpg&quot; alt=&quot;LeanUX - 3 Foundations&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;em&gt;The thing above &quot;Focus&quot; in the drawing on the right is supposed to be an eye looking through a magnifying glass. Oh, the horror of my lack of drawing skills!&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The 3 foundations of Lean UX are:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;olist arabic&quot;&gt;
-&lt;ol class=&quot;arabic&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;Design Thinking&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Agile software development&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Lean Startup method&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;The principles of Lean UX are:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Cross-functional teams&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Small, dedicated, colocated&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Progress = Outcomes, not output&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Problem-focused teams&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Removing waste&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Small batch size&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Continuous discovery&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;GOOB: The new user-centricity&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Shared understanding&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Anti-pattern: Rockstars, gurus, and ninjas&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Externalizing your work&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Making over analysis&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Learning over growth&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Permission to fail&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Getting out of the deliverables business&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;cross-functional-teams&quot;&gt;Cross-functional Teams&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Collapse the gated-handoff process known as &lt;em&gt;waterfall&lt;/em&gt;. Early insights from all relevant disciplines, and increased team efficiency results from encouraging conversations across functional silos.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;small-dedicated-colocated&quot;&gt;Small, Dedicated, Colocated&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;No more than 10 core people: benefit is increased communication, focus, comaraderie.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;progress-outcomes-not-output&quot;&gt;Progress = Outcomes, not Output&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Focus on achieving explicity defined business goals over delivering features and providing services.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;problem-focused-teams&quot;&gt;Problem-focused teams&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Assign a team a business problem to solve, as opposed to a set of features to implement. Trust teams to arrive at their own solutions, driving deeper sense of pride and ownership.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;removing-waste&quot;&gt;Removing waste&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Eliminating anything from the team process that doesn&amp;#8217;t contribute to improving outcomes.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;small-batch-size&quot;&gt;Small batch size&lt;/h3&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Creating only the design that is necessary to move the team forward and avoiding a big &#39;inventory&#39; of untested and unimplemented design ideas.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 9
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;continuous-discovery&quot;&gt;Continuous discovery&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Ongoing, whole-team research process of engaging the customer during the design and development process, through regularly scheduled activities, using both quantitive and qualitative methods.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Goal: understand what the users are doing with your products and why they are doing it.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;goob-the-new-user-centricity&quot;&gt;GOOB: The new user-centricity&lt;/h3&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-GOOB: Getting out of the building.&quot; &quot;Ultimately, the success or failure of your product isn&amp;#8217;t the team&amp;#8217;s decision - it&amp;#8217;s the customers&#39;&amp;#8230;&amp;#8203;the sooner you give them a voice, the sooner you&amp;#8217;ll learn whether you&amp;#8217;ve got an idea that&amp;#8217;s ready to be built.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 9
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;shared-understanding&quot;&gt;Shared understanding&lt;/h3&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Shared understanding is the currency of Lean UX.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 10
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;anti-pattern-rockstars-gurus-and-ninjas&quot;&gt;Anti-pattern: Rockstars, gurus, and ninjas&lt;/h3&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Team cohesion breaks down when you add individuals with large egos who are determined to stand out and be stars.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 10
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;externalizing-your-work&quot;&gt;Externalizing your work&lt;/h3&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Externalizing means getting your work out of your head and out of your computer and into public view&amp;#8230;&amp;#8203;on to the wall, allowing everyone to see where the team stands. It creates a passive, ambient flow of information across the team&amp;#8230;&amp;#8203;. It allows all the members of the team - even the quiet ones - to participate in information-sharing activities.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 10
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;making-over-analysis&quot;&gt;Making over analysis&lt;/h3&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-There is more value in creating the first version of an idea than spending half a day debating its merits in a conference room.&quot; &quot;&amp;#8230;&amp;#8203;make the ideas concrete - you need to make something for people to respond to. Debating ideas is waste. Instead of analyzing potential scenarios, make something and get out of the building with it.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 11
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;learning-over-growth&quot;&gt;Learning over growth&lt;/h3&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Ensuring that an idea is right before scaling it out mitigates the risk inherent in broad feature deployment.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 11
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;permission-to-fail&quot;&gt;Permission to fail&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Teams need to learn to &lt;strong&gt;experiment&lt;/strong&gt; with ideas in order to find the best solutions to business problems. This requires a safe environment to take risks:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;technical - they can push out ideas in a safe way&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;cultural - they won&amp;#8217;t be penalized for trying ideas that don&amp;#8217;t succeed&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Permission to fail breeds a culture of experimentation. Experimentation breeds creativity. Creativity, in turn, yields innovative solutions.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 11
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&quot;Frequent failure leads to increased mastery of skills&quot;:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;In a video called &quot;Why You Need to Fail&quot; (&lt;a href=&quot;http://www.youtube.com/watch?v=HhxcFGuKOys&quot; class=&quot;bare&quot;&gt;http://www.youtube.com/watch?v=HhxcFGuKOys&lt;/a&gt;), CD Baby founder Derek Sivers describes the surprising results of a ceramics class. On the first day, the instructor announced to his class that the students would be divided into two groups. Half of the students would need to make only one clay pot each during the semester. Their grades would depend on the perfection of that solitary pot. The other half of the class would be graded simply by the weight of the pots they made during the semester. If they made 50 pounds of pots or more, they&amp;#8217;d get an A. Forty pounds would earn a B; 30 pounds, a C; and so on. WHat they actuall made was irrelevant. The istructor said he wouldn&amp;#8217;t even look at the pots. He would bring his bathroom scale to the final day of class and weigh each student&amp;#8217;s work.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;At the end of the semester, an interesting thing had occurred. Outside observers of the class notes that the highest-quality pots had been made by the &quot;quantity group.&quot; They had spent the entire semester working as quickly as they could to make pots. Sometimes they succeeded, and sometimes they failed. With each iteration, each experiment, they learned. From their learning, they became better able to achieve the end goal: making high-quality clay pots.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;By contrast, the group that made one object didn&amp;#8217;t have the benefit of those failed iterations and didn&amp;#8217;t learn as quickly enough to perform at the same level as the &quot;quantity group.&quot; They had spent their semester theorizing about what would make a &quot;grade-A&quot; pot but didn&amp;#8217;t have the experience to execute that grandiose vision.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;section-2-process&quot;&gt;Section 2 : Process&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-This is the day-to-day rhythm of Lean UX: a team working collaboratively, iteratively, and in parallel, with few handoffs, minimal deliverables, and a focus on working software and market feedback.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 16
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Our goal is not to create a deliverable, it&amp;#8217;s to change something in the world - to create an outcome. We start with assumptions instead of requirements. We create and test hypotheses. We measure to see we&amp;#8217;ve achieved our desired outcomes.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 17
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;hypothesis-statement&quot;&gt;Hypothesis Statement&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Composed of:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Assumptions - high-level declaration of what we believe to be true&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Hypotheses - more granular descriptions of our assumptions that target specific areas of our product or workflow for experimentation&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Outcomes - the signal we seek from the market to help us validate or invalidate our hypotheses. These are often quantitative but can also be qualitative&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Personas - Models of the people for whom we believe we are solving a problem&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Features - the product changes or improvements we believe will drive the outcomes we seek&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;declaring-assumptions&quot;&gt;Declaring assumptions&lt;/h4&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;A group exercise, include all team members and relevant subject matter experts.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;May need to prepare in advance things like:&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Analytics reports showing how current product is being used&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Usability reports that illustrate why customers are taking certain actions in your product&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Information about past attempts to fix this issue and their successes and failures&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Analysis from the business stakeholder about how solving this problem will affect the company&amp;#8217;s performance&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Competitive analysis that show how competitors are tackling the same issues&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect4&quot;&gt;
-&lt;h5 id=&quot;problem-statement&quot;&gt;Problem statement&lt;/h5&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Gives team a clear focus&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Defines any important constraints&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Made up of 3 elements:&lt;/p&gt;
-&lt;div class=&quot;olist arabic&quot;&gt;
-&lt;ol class=&quot;arabic&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;Current system goals&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Problem the business stakeholder wants addressed (i.e. where the goals aren&amp;#8217;t being met)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Explicit request for improvement that doesn&amp;#8217;t dictate a specific solution&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;em&gt;[&lt;strong&gt;Our service/product&lt;/strong&gt;] was designed to achieve [&lt;strong&gt;these goals&lt;/strong&gt;]. We have observed that the product/service isn&amp;#8217;t meeting [&lt;strong&gt;these goals&lt;/strong&gt;], which is causing [&lt;strong&gt;this adverse effect&lt;/strong&gt;] to our business. How might we improve [&lt;strong&gt;service/product&lt;/strong&gt;] so that our customers are more successful based on [&lt;strong&gt;these measurable criteria&lt;/strong&gt;]?&lt;/em&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;imageblock&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;img src=&quot;/assets/business_assumptions_worksheet.jpg&quot; alt=&quot;Business Assumptions Worksheet&quot;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Declare assumptions at the start so we can identify project risks. Figure out which assumptions are the riskiest and work on them first. Prioritize according to High Risk and High Unknown.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;hypotheses&quot;&gt;Hypotheses&lt;/h4&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;We believe that
-[&lt;strong&gt;doing this/building this feature/creating this experience&lt;/strong&gt;]
-for [&lt;strong&gt;these people/personas&lt;/strong&gt;]
-will achieve [&lt;strong&gt;this outcome&lt;/strong&gt;].
-We will know this is true when we see [&lt;strong&gt;this market feedback, quantitative measure, or qualitative insight&lt;/strong&gt;].&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;outcomes&quot;&gt;Outcomes&lt;/h4&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Break high-level outcomes down into specific ones where possible. Reach consensus.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;personas&quot;&gt;Personas&lt;/h4&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Four key elements to proto-persona:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;olist arabic&quot;&gt;
-&lt;ol class=&quot;arabic&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;Sketch and name&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Behavioral demographic information&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Pain points and needs&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Potential solutions&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;em&gt;treat persona elements as another hypothesis to validate and iterate on them.&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;features&quot;&gt;Features&lt;/h4&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Too often, our design process starts when someone has a feature idea, and we end up working backward to try to justify the feature. In Lean UX, features exist to serve the needs of the business, the customer, and the user.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;chapter-4-collaborative-design&quot;&gt;Chapter 4 - Collaborative Design&lt;/h3&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Love this quote:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;As you navigate through the rest of your life, be open to collaboration. Other people and other people&amp;#8217;s ideas are often better than your own. Find a group of people who challenge and inspire you, spend a lot of time with them, and it will change your life.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; Amy Poehler&lt;br&gt;
-&lt;cite&gt;p. 33&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Teams rarely learn or get better from working with heroes. Instead, &lt;strong&gt;designing together increases the design IQ of the entire team.&lt;/strong&gt; It allows every memeber of the team to articulate his or her ideas. It gives designers a broader set of ideas to draw upon as they refine the user experence. This collaboration, in turn, breeds incleased feelings of ownership over the work being done by the entire team. Finally, collaborative design builds team-wide shared understanding. It is this shared understadning that is the currency of Learn UX. The more the team colectively understands, the less it has to document in order to move forward.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 34
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Collaborative design&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Still a designer-led activity (designer calls and facilitates design meetings)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Key point: collaborate with a diverse group of team members&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;design session output is &lt;em&gt;low-fidelity sketches and wireframes&lt;/em&gt; &amp;#8594; critical to maintaining malleability of the work!&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Parallel paths for software development and design are the fastest route to an actual experience&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Conversations &amp;#8594; Designer/developer collaboration &amp;#8594; Transparency (process &amp;amp; progress) &amp;#8594; Bonds of trust &amp;#8594; Rising motivation to work together &amp;#8594; Higher quality work&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;design-studio&quot;&gt;Design Studio&lt;/h4&gt;
-&lt;div class=&quot;olist arabic&quot;&gt;
-&lt;ol class=&quot;arabic&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;Problem definition and constraints (15-45 mins)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Individual idea generation - &lt;em&gt;can use 6-up sheets&lt;/em&gt; (diverge) (10 mins)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Presentation and critique - &lt;em&gt;critique focuses on clarifying presenters intentions&lt;/em&gt; (3 mins per person)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Iterate and refine - &lt;em&gt;individual refines thinking for one idea based on critique&lt;/em&gt; (emerge) (5-10 mins)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Team idea generation - &lt;em&gt;drive to consensus through prioritizing &amp;amp; paring back features, use a parking lot for features that don&amp;#8217;t make the cut&lt;/em&gt; (converge) (45 mins)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;style-guide&quot;&gt;Style Guide&lt;/h4&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Also known as pattern library, is a living collection of all your product&amp;#8217;s customer-facing components.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&quot;If it&amp;#8217;s made of pixels, it goes in the style guide&quot;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Printed, wiki, or &quot;live&quot; (repositories of front-end code &amp;amp; design that not only define how the product looks and behaves, but actually function as the underlying markup and stylesheets for that experience)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Create efficiency&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Provide a repository of ready-to-go, approved interface elements that can be assembled and aligned to form a workflow&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Minimize debate over mundane elements&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Assets are already designed, defined, and collected in one place&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Benefits to interaction and visual designers&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;No longer have to recreate representations of experiences that already exist&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Approval cycles are streamlined (repetitive elements are no longer up for debate)&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Reviews become more focused on the core product challenge and breader views of the proposed solution&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Plan for maintenance&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Has 3 important characteristics&lt;/p&gt;
-&lt;div class=&quot;olist arabic&quot;&gt;
-&lt;ol class=&quot;arabic&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;Accessible - easily found, distributed, to search, and to use&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Continually improved&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Actionable&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&quot;Open sourcing&quot; the design process brings the entire team deeper into the project
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 54
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect2&quot;&gt;
-&lt;h3 id=&quot;chapter-5-mvps-and-experiments&quot;&gt;Chapter 5 - MVPs and Experiments&lt;/h3&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-All life is an experiment. The more experiments you make the better.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; Ralph Waldo Emerson&lt;br&gt;
-&lt;cite&gt;p. 33&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-The sooner we can find which features are worth investing in, the sooner we can focus our limited resources on the best solutions to our business problems
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 55
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;MVP - used in 2 different ways:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;olist arabic&quot;&gt;
-&lt;ol class=&quot;arabic&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;Create an MVP to learn something - not concerned with delivering value to the market, just want to figure out what the market wants&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Create a small version of a product or feature because you want to deliver value to the market as quickly as possible. (learning is possible, but not the primary focus)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;To maximize learning:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Be clear and concise - distill the idea to its core proposition and present that to the customers&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Prioritize ruthlessly - &quot;Ideas, like artifacts, are transient. Let the best ones prove themselves.&quot;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Stay agile - focus on being able to make updates quickly&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Measure behavior - &quot;In digital product design, behavior trumps opinion.&quot;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Use a call-to-action - &quot;You will know people value your solution when they demonstrate that they are using it&quot;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;To maximize value:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Be functional - some level of integration with the rest of your application must be in place to create a realistic usage scenario.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Integrate with existing analytics - Measure performance within the context of existing product workflows&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Be consistent with the rest of the application - fit current style and brand to minimize biases toward the new functionality&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Regardless of your desired outcome, build the smallest MVP possible. Remember it is a tool for learning. You will be iterating. You will be modifying it. You may very well be throwing it away entirely.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 58
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Stakeholds, often less familiar with their own product than they&amp;#8217;ll ever admit, will likely need a greater level of fidelity in the prototype in order to truly grasp the concept
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 59
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Low-fidelity prototypes:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Paper - can give a sense of how the workflow is starting to coalesce around the interface elements you&amp;#8217;ve assembled. Feedback is limited to the high-level structure and flow of the product.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Clickable wireframes&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Prototypes help show the project&amp;#8217;s stakeholders that progress is being made&amp;#8230;&amp;#8203;The more exposure the MVP gets, the more insight you&amp;#8217;ll have as to its validity.
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 66
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-The mantra to keep in mind when creating non-prototype MVPs is this: &lt;strong&gt;you can always go leaner&lt;/strong&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 68
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Types of non-prototype MVPs:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Email - open rates, click-throughs, task completion rates for recipients&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Google Ad Words&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Landing Page - for click-through traffic from Google ads. &quot;Whether it&amp;#8217;s Sign-up, Buy Now, or Share-With-A-Friend, every user who completes the task on your landing page counts as validation of your product idea.&quot;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect3&quot;&gt;
-&lt;h4 id=&quot;example-cheryl-yeoh-of-citypockets&quot;&gt;Example: Cheryl Yeoh of CityPockets&lt;/h4&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-This approach - though it involved some design and coding - left out the heavy lifting. Instead, it let Cheryl focus her investment on the smallest possible set of features she needed to support her learning. &lt;strong&gt;At the end of the day, this is the essence of the LeanUX approach. Design only what you need. Deliver it quickly. Create enough customer contact to get meaningful feedback fast.&lt;/strong&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 70
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;sect1&quot;&gt;
-&lt;h2 id=&quot;chapter-6-feedback-and-research&quot;&gt;Chapter 6: Feedback and Research&lt;/h2&gt;
-&lt;div class=&quot;sectionbody&quot;&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;LeanUX takes basic UX research techniques and overlays two important ideas, LeanUX research is:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;olist arabic&quot;&gt;
-&lt;ol class=&quot;arabic&quot;&gt;
-&lt;li&gt;
-&lt;p&gt;continuous - build research activities into every sprint&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;collaborative - research activities and responsibilities are distributed and shared across the entire team&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Our goal in all of this is to create a rich shared understanding across the team
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 74
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Collaborative discovery&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;As a team:&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;review questions, assumptions, hypotheses &amp;amp; MVPs&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;decide what you need to learn&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;decide to whom you&amp;#8217;ll need to speak to in order to address your learning goals&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Create an interview guide to guide conversations&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;think about questions as a sequential funnel:&lt;/p&gt;
-&lt;div class=&quot;ulist&quot;&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;target audience?&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;confirm problem hypotheses for this segment&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;show prototype/mockup last to avoid limiting conversation to your solution vision&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Break team into interview pairs, mixing up the various roles and disciplines within each pair&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Arm each pair with a version of the MVP&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Send each team out to meet with customers/users&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Have one team member conduct interviews while the other takes notes&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Start with questions, conversations and observations&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Demonstrate the MVP later in the session and allow the customer to interact with it&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Collect notes as the customer provides feedback&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;When the lead interviewer is done, switch roles to give the note-taker a chance to ask follow-up questions&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;At the end of the interview, ask the customer for referrals to other people who might also provide useful feedback&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Continuous discovery&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-A critical best practice in LeanUX is building a regular cadence of customer involvement&amp;#8230;&amp;#8203;*In general, knowing your never more than a few days away from customer feedback has a powerful effect on teams. It takes the pressure away from your decision making because you know that you&amp;#8217;re never more than a few days from getting meaningful data from the market
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; pp. 76-77
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Meetup - &quot;Three users every Thursday&quot;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-Park your outliers
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 81
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-As part of our regular interaction with customers, we always asked a regular set of level-setting questions to capture the &#39;vital signs&#39; of the job seeker&amp;#8217;s search, no matter what other questions, features or products we were testing&amp;#8230;&amp;#8203;aggregated over time, they became very powerful and shaped our future product discussions and considerations
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 82
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&amp;#8230;&amp;#8203;set expectations properly for the type of feedback you&amp;#8217;ll be able to generate with each type of artifact
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; p. 82
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;A/B testing tools: Unbounce (landing pages), Google Content Experiments, Adobe Test&amp;amp;Target, Webtrends Optimize&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-        <pubDate>Mon, 26 Jan 2015 12:00:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/leanux-my-notes</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/leanux-my-notes</guid>
-        
-        <category>Lean</category>
         
         <category>Agile</category>
         
