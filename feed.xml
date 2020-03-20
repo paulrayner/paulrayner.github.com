@@ -5,8 +5,8 @@
     <description>Paul Rayner&#39;s blog on software design and process</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 20 Mar 2020 03:13:36 +0000</pubDate>
-    <lastBuildDate>Fri, 20 Mar 2020 03:13:36 +0000</lastBuildDate>
+    <pubDate>Fri, 20 Mar 2020 03:17:14 +0000</pubDate>
+    <lastBuildDate>Fri, 20 Mar 2020 03:17:14 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -53,7 +53,7 @@
 &lt;div class=&quot;quoteblock&quot;&gt;
 &lt;blockquote&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Somehow, trying to automate the specification and coding steps of software delivery never quite yielded the results that the creators of these tools were after. Collectively, we could have saved a lot of effort if we had taken Jack Reeve&amp;#8217;s article &lt;a href=&quot;https://www.developerdotstar.com/mag/articles/reeves_design.html&quot;&gt;What is Software Design&lt;/a&gt; to heart. Published in 1992, Jack elaborated that coding is actually the &lt;em&gt;design&lt;/em&gt; of software whereas compiling and deploying software is the manufacturing aspect. So, if you are looking to industrialize software manufacturing, you should automate on testing, compiling, and deployment, as opposed to trying to industrialize coding. About a quarter century later than&amp;#8217;s finally being done. Some things take time, even software.&lt;/p&gt;
+&lt;p&gt;Somehow, trying to automate the specification and coding steps of software delivery never quite yielded the results that the creators of these tools were after. Collectively, we could have saved a lot of effort if we had taken Jack Reeve&amp;#8217;s article &lt;a href=&quot;https://www.developerdotstar.com/mag/articles/reeves_design.html&quot;&gt;What is Software Design&lt;/a&gt; to heart. Published in 1992, Jack elaborated that coding is actually the &lt;em&gt;design&lt;/em&gt; of software whereas compiling and deploying software is the manufacturing aspect. So, if you are looking to industrialize software manufacturing, you should automate on testing, compiling, and deployment, as opposed to trying to industrialize coding. About a quarter century later that&amp;#8217;s finally being done. Some things take time, even software.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;div class=&quot;attribution&quot;&gt;
