@@ -39,11 +39,11 @@ ____
 
 I'm reminded of David Marquet's distinction between red work and blue work.
 
-Red work is DOING work. It’s about execution and reducing variability.
+Red work is DOING work. It’s about execution and reducing variability.  Think of manufacturing.
 
-Blue is THINKING work. It’s about discovery and decision making and increasing variability. Think of manufacturing.
+Blue is THINKING work. It’s about discovery and decision making and increasing variability. Think of product development.
 
-Analysis, modeling, design and coding are all activities that are intrinsically _blue_ work. Think of product development.
+Analysis, modeling, design and coding are all activities that are intrinsically _blue_ work.
 
 *_What makes the automation that cloud deployment provides so powerful is that it can be applied to the red work downstream from development that needs to be done to speed delivery of newly coded functionality that results from the blue work._*
 
