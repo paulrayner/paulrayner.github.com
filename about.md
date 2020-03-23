@@ -4,10 +4,6 @@ title: About Paul
 permalink: /about/
 ---
 <img class="gravatar" src="http://www.gravatar.com/avatar/4ce180eb1538932a4cc5b14c9eb0e83b?s=300">
-<p>I am from Perth, Australia, but choose to live, work and play with my amazing wife and two children in Denver, Colorado.</p>
+Paul is a software design and development coach and mentor. He is available for consulting and training through his company, <a href="http://www.virtualgenius.com">Virtual Genius LLC.</a> He is the author of <a href="https://leanpub.com/eventstorming_handbook">The EventStorming Handbook</a> and major contributor to <a href="https://www.amazon.com/Behavior-Driven-Development-Cucumber-Specification-Example/dp/0321772636">Behavior-Driven Development with Cucumber.</a> He is also the founder and chair for the <a href="http://exploreddd.com">Explore DDD conference</a>.
 
-<p>I can often be found walking our dog and enjoying the Colorado outdoors, guitar playing, serving my church community, and good conversations with friends and family.</p>
-
-<p>I'm the founder and chair for the <a href="http://exploreddd.com">Explore DDD conference</a>. I co-founded and help lead <a href="http://bit.ly/ddd_den">DDD Denver</a>. Look for me speaking at local user groups, and at regional and international conferences.</p>
-
-<p>If you are looking for an expert hands-on team coach and design mentor in Domain-Driven Design (DDD), BDD with Cucumber, or Lean/agile process I am available for consulting and training through my company, <a href="http://www.virtualgenius.com">Virtual Genius LLC.</a>.</p>
+<p>If you are looking to improve your team's software design skills, struggling with defining your cloud migration/application modernization strategy, or challenged with cultivating effective collaboration between business and IT, then I may be able to help.</p>
