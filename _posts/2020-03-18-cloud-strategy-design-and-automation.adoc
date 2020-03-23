@@ -9,10 +9,8 @@ comments: true
 sharing: true
 date: 2020-03-19 16:00
 permalink: ':title'
-image:
+image: ruijia-wang-YmStaPUcd-Y-unsplash.jpg
 ---
-
-image::/assets/cloud-strategy/ruijia-wang-YmStaPUcd-Y-unsplash.jpg[,700]
 
 [quote, Gregor Hohpe]
 ____
