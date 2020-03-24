@@ -5,9 +5,226 @@
     <description>Paul Rayner&#39;s blog on software design and process</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 23 Mar 2020 18:10:34 +0000</pubDate>
-    <lastBuildDate>Mon, 23 Mar 2020 18:10:34 +0000</lastBuildDate>
+    <pubDate>Tue, 24 Mar 2020 00:15:25 +0000</pubDate>
+    <lastBuildDate>Tue, 24 Mar 2020 00:15:25 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Plotting Paths to Cloud Migration</title>
+        <description>&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren&amp;#8217;t a one-shot type of endeavor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Have you experienced confusion from your wide range of stakeholders in deciphering your cloud migration strategy? Using the typical lengthy variations verbs starting with &quot;R&quot; (rehost - replatform - rearchitect - retire) or complicated frameworks may actually make your approach less clear. A simple visual model can go a long way in providing clarity in navigating the inevitable complexity of a cloud migration.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;up-or-out&quot;&gt;Up or Out&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The article &lt;a href=&quot;https://cloud.google.com/blog/topics/perspectives/enterprise-it-can-move-up-or-out-or-both&quot;&gt;Enterprise IT can move up or out (or both)&lt;/a&gt;, describes the &quot;up or out&quot; framework as a way to empower both the business and IT to approach a cloud migration more collaboratively, cutting through much of the hype and technical complexity. This model can help enterprises chart their cloud adoption journey delineates cloud migration along two axes — up and out.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock text-center&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/cloud-strategy/cloud_adoption_journey.max-1000x1000.png&quot; alt=&quot;cloud adoption journey.max 1000x1000&quot; width=&quot;800&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;On-premise applications are located in the bottom left quadrant. The horizontal axis represents moving &quot;out&quot; from on-premises to the cloud, and the vertical axis describes modernizing applications to operate further &quot;up&quot; the stack, further away from infrastructure (servers and hardware details).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A cloud-based IT operating model has been shown to offer significant advantages in terms of rapid deployment, elastic scalability, resilient operations, and security. However, large enterprises can’t simply wake up one day with all their applications running in the cloud. Thus, every enterprise’s move to the cloud is at least initially a hybrid cloud scenario, where some workloads remain on-premises and other workloads run in the cloud.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;moving-up-the-stack&quot;&gt;Moving Up The Stack&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;One choice you can make is to move your migrations up the stack. This path is the journey of decoupling your applications from your current on-premise infrastructure.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For example, as an initial step you could transition from running a monolithic application on dedicated services to a Platform-As-A-Service (PaaS) model that deploys applications and services using containers. Or in going further by utilizing SaaS services for certain business capabilities that would benefit from this approach.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock text-center&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/cloud-strategy/up-the-stack.jpg&quot; alt=&quot;up the stack&quot; width=&quot;400&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Hohpe highlights several key advantages of moving up the stack:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Elasticity&lt;/em&gt; - Application deployment becomes automated, making it easy to add or subtract capacity as needed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Resilience&lt;/em&gt; - Operations also become more resilient because new instances can be rapidly deployed in case of failure, allowing PaaS or serverless platforms to withstand a server failure without visible customer impact.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Cost Reduction&lt;/em&gt; - Thanks to smaller deployable units, hardware can be more efficiently utilized, thus reducing run costs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Decoupling/Portability&lt;/em&gt; - Applications become more portable when they are better isolated from infrastructure details, as their containers may be deployed on a variety of infrastructures.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Moving up the stack may be a challenging effort, one which requires you to fundamentally change the way in which you build applications and operate the infrastructure that supports them. Modularity and decoupling from a business domain perspective becomes essential - see &lt;a href=&quot;https://domainlanguage.com/wp-content/uploads/2016/04/GettingStartedWithDDDWhenSurroundedByLegacySystemsV1.pdf&quot;&gt;Getting Started with DDD When Surrounded by Legacy Systems&lt;/a&gt; for various DDD-based techniques for navigating this complex terrain.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;out-to-the-cloud&quot;&gt;Out to The Cloud&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The second option is to lift, shift, and replatform existing applications out into the cloud. Some advantages mentioned by Hohpe in moving an application unchanged from an existing on-premises data center to the cloud and shifting the operational model to one that&amp;#8217;s more automated include:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Better economies of scale allow for more cost-efficient operations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Automated patching discipline improves security because it assures that no software with known vulnerabilities is run.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Increased transparency enables more efficient IT asset management, for example by rightsizing servers or detecting and retiring unused IT assets.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Moving out into the cloud transforms how an enterprise operates and acquires IT infrastructure from an asset-based model to usage-based model.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Taking an initial lift and shift approach into the cloud along the horizontal axis may make it easier to move vertically (optimize/re-architect) later, once the applications are already running in the cloud. The first reason is primarily technical: the application, data and traffic have already been completed, paving the way for further optimization and improvement when the timing and cost is more favorable. The second reason is that doing such migrations enables the organization to move to more of a &quot;cloud lifestyle&quot; and cultivate the necessary skills to perform future migrations more successfully.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Don&amp;#8217;t underestimate the importance of skills development and cultivating cultural memory for new approaches. Many organizations fall into the trap of assuming that migrating to the cloud is primarily a technical journey, but then discover too late that it actually requires rethinking how to do business - touching every aspect of product development, application development, deployment, support, and operations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;combining-cloud-migration-approaches&quot;&gt;Combining Cloud Migration Approaches&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Don&amp;#8217;t think of this as a blanket all-or-nothing approach. Combining various approaches into a progressive transformation towards cloud-centric operations reduces risk and improves time-to-value.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As Hohpe points out:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Lifting existing applications and replatforming them onto cloud infrastructure minimizes initial effort, avoiding the costs of redevelopment, and allowing an enterprise to transform its infrastructure acquisition and scaling processes while minimizing impact to existing operations models.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adjusting operations models to increase the use of automation and cloud-native tooling accelerates the overall transformation and maximizes the value from abstracted infrastructure services.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally, decomposing application elements to take advantage of managed cloud services, such as migrating off of self-managed My SQL databases onto  provider-managed Database-as-a-Service, requires some additional effort but lays the foundation for moving beyond seeing cloud as yet another infrastructure provider.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Not only is combining up and out allowed, it’s encouraged. We think of it as a cloud-native hybrid model, where applications are deployed as containers or functions and can be easily shifted from on-premises to the cloud as needed, all while maintaining a consistent deployment, run-time, and management framework.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Hohpe recommends you consider asking a few questions:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Which elements of an application or service would benefit most from an event-driven, serverless approach?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Which elements of a service require rapid code releases or the ability to validate new features using A/B testing (meaning that a new version of the software is made available to a percentage of users)?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Which elements change infrequently, but would benefit from automated scaling and deployment?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;plotting-paths-to-the-cloud&quot;&gt;Plotting Paths to the Cloud&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;With the answers to these questions, you can begin to decompose application capabilities, workloads, and components and map them against the up or out framework, thus presenting the organization with a pragmatic migration approach that maximizes value.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Remember, for most applications you are not locked into a single direction. On the up or out model, plot the path for each application or class of applications in your cloud migration strategy. Rather than thinking of each migration as a single jump, plot a path to cloud migration that makes sense in your context.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Plotting a path for individual workloads and architectural elements on the up or out framework can help IT decision makers focus on the benefits achieved by re-platforming, re-architecting, or a combination of the two. It’s typical and in fact desired that different components take unique paths. Avoid a &lt;a href=&quot;https://www.dictionary.com/e/memes/leeroy-jenkins/&quot;&gt;Leeroy Jenkins situation&lt;/a&gt; in your enterprise cloud migration by taking a more informed and nuanced approach by migrating the individual workloads and architectural elements in your context.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;At the same time, the simple visual model encourages collaborative conversations about the relative tradeoffs and risks that might be encountered along each path.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The visual model also communicates migration paths over time in an approachable manner that can be shared with a wide audience in both business and IT. For example, in the article Hohpe provides an example of what this might look for an enterprise ecommerce application:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock text-center&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/cloud-strategy/enterprise_IT_oYsbpz5.max-800x800.png&quot; alt=&quot;enterprise IT oYsbpz5.max 800x800&quot; width=&quot;800&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As an initial step, moving to the cloud horizontally is going to be faster (and typically less risky) than trying to re-architect an application while migrating it. Such an approach may be an ultimately longer journey than directly traveling the hypotenuse. In the case of a large, mission-critical and highly coupled (i.e. monolithic) application, such a migrate-then-update journey may be the better choice. The up or out framework helps you ask the right questions about how best to approach each application, and determine if it can be divided into elements that could each be migrated separately.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Simple but evocative frameworks like &quot;up or out&quot; can help IT decision makers navigate the inevitable complexity of a cloud migration. Like any good model, simplicity is a feature, not a bug, as it helps keep the focus on the desired outcome and is easily communicated to a variety of audiences.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For more details, see Gregor Hohpe&amp;#8217;s excellent &lt;a href=&quot;https://leanpub.com/cloudstrategy&quot;&gt;Cloud Strategy: An Architect Elevator Guide to Successful Cloud Migration&lt;/a&gt; ebook.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Photo of desserts by &lt;a href=&quot;https://unsplash.com/@massimo_adami?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Massimo Adami&lt;/a&gt; on &lt;a href=&quot;http://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Mon, 23 Mar 2020 12:00:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/plotting-paths-to-cloud-migration</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/plotting-paths-to-cloud-migration</guid>
+        
+        <category>Cloud</category>
+        
+        <category>Design</category>
+        
+        <category>DDD</category>
+        
+        <category>Architecture</category>
+        
+        
+      </item>
     
       <item>
         <title>Cloud Strategy, Design And Automation</title>
@@ -1109,80 +1326,6 @@ increase the gravitational pull of the values at the center.&lt;/p&gt;
         <guid isPermaLink="true">http://thepaulrayner.com/what-is-design-design-quotes-part-1</guid>
         
         <category>Design</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Don&#39;t Give Your Customers What They Ask For</title>
-        <description>&lt;div class=&quot;imageblock left&quot;&gt;
-&lt;div class=&quot;content&quot;&gt;
-&lt;a class=&quot;image&quot; href=&quot;http://arcweb.archives.gov/arc/action/ExternalIdSearch?id=594412&quot;&gt;&lt;img src=&quot;/assets/flying_machine_patent.jpg&quot; alt=&quot;Patent Drawing for a Flying Machine&quot; width=&quot;300&quot;&gt;&lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Give them what they need.&lt;/em&gt;&lt;/strong&gt; There is a pairing exercise participants experience in my BDD with Cucumber workshops, where one person describes a commonplace activity to the other. The challenge is describing it &lt;em&gt;without&lt;/em&gt; being able to use certain common words. One thing I have noticed, no matter where I have run this exercise, is that very few people actually explain &lt;em&gt;why&lt;/em&gt; this activity should even be done. They typically spend all the time describing the mechanics of how to do it, but don&amp;#8217;t explain why, and the listener usually doesn&amp;#8217;t think to ask. I contend that as technologists we do the same thing to our customers all the time.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;The critical piece here is asking &quot;why?&quot;&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;In the class exercise, if the person explaining the activity had started with why, the rest of the description would have been so much clearer and fallen into place quicker.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;For us, we need to ask our customers, &quot;why do you need this?&quot; &quot;How will it help you?&quot; &quot;What problem does having this capability or feature solve?&quot;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;And then ask &quot;why?&quot; a few more times.&lt;/strong&gt; Not in an annoying way like a small child does, but as a genuine drive to deeper learning and empathy.&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;Listen to your customers, but don’t let them tell you what to do.&quot;&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Failure to do this will lead to a mechanical understanding of the need rather than the type of creative collaboration that might lead to deep insights about the true problem being addressed. I think it is this lack of deeper questioning that explains how many user stories lack a clear statement of the benefit returned by implementing the feature described by the story.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;In &lt;a href=&quot;http://tom.preston-werner.com/2011/03/29/ten-lessons-from-githubs-first-year.html&quot;&gt;Ten Lessons from GitHub’s First Year&lt;/a&gt;, Tom Preston-Werner writes:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;strong&gt;Adapt to Your Customers&lt;/strong&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Here’s a seemingly paradoxical piece of advice for you: Listen to your customers, but don’t let them tell you what to do. Let me explain. Consider a feature request such as “GitHub should let me FTP up a documentation site for my project.” What this customer is really trying to say is “I want a simple way to publish content related to my project,” but they’re used to what’s already out there, and so they pose the request in terms that are familiar to them. We could have implemented some horrible FTP based solution as requested, but we looked deeper into the underlying question and now we allow you to publish content by simply pushing a Git repository to your account. This meets requirements of both functionality and elegance.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; Tom Preston-Werner&lt;br&gt;
-&lt;cite&gt;Ten Lessons from GitHub&#39;s First Year&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;In &lt;a href=&quot;http://tom.preston-werner.com/2010/08/23/readme-driven-development.html&quot;&gt;Readme Driven Development&lt;/a&gt; Tom points out how &quot;building the right system&quot; always trumps &quot;building the system right&quot;:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I hear a lot of talk these days about TDD and BDD and Extreme Programming and SCRUM and stand up meetings and all kinds of methodologies and techniques for developing better software, but it&amp;#8217;s all irrelevant unless the software we&amp;#8217;re building meets the needs of those that are using it. Let me put that another way. A perfect implementation of the wrong specification is worthless.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; Tom Preston-Werner&lt;br&gt;
-&lt;cite&gt;Readme Driven Development&lt;/cite&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Producing working software frequently is necessary but insufficient. Producing valuable working software frequently is what matters.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;em&gt;Note: I posted an early version of this articule on my company blog on 21 July 2011, but am reposting it here.&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;&lt;em&gt;Flying Machine Patent from US National Archives. Patent Drawing for a Flying Machine, 10/05/1869. Creator(s): Department of Commerce. Patent Office. (1925 - 1975).&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;</description>
-        <pubDate>Mon, 02 Feb 2015 14:50:00 +0000</pubDate>
-        <link>http://thepaulrayner.com/dont-give-your-customers-what-they-ask-for</link>
-        <guid isPermaLink="true">http://thepaulrayner.com/dont-give-your-customers-what-they-ask-for</guid>
-        
-        <category>Agile</category>
         
         
       </item>
