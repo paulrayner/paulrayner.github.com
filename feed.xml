@@ -5,8 +5,8 @@
     <description>Paul Rayner&#39;s blog on software design and process</description>
     <link>http://thepaulrayner.com/</link>
     <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 24 Mar 2020 00:15:25 +0000</pubDate>
-    <lastBuildDate>Tue, 24 Mar 2020 00:15:25 +0000</lastBuildDate>
+    <pubDate>Tue, 24 Mar 2020 00:20:24 +0000</pubDate>
+    <lastBuildDate>Tue, 24 Mar 2020 00:20:24 +0000</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -22,7 +22,7 @@
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Have you experienced confusion from your wide range of stakeholders in deciphering your cloud migration strategy? Using the typical lengthy variations verbs starting with &quot;R&quot; (rehost - replatform - rearchitect - retire) or complicated frameworks may actually make your approach less clear. A simple visual model can go a long way in providing clarity in navigating the inevitable complexity of a cloud migration.&lt;/p&gt;
+&lt;p&gt;Have your stakeholders expressed confusion in deciphering your cloud migration strategy? Are you using the typical lengthy variations verbs starting with &quot;R&quot; (rehost - replatform - rearchitect - retire)? Or perhaps an opaque, complicated framework that actually makes your approach less clear? A simple visual model can go a long way in providing clarity in navigating the inevitable complexity of a cloud migration.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;sect1&quot;&gt;
 &lt;h2 id=&quot;up-or-out&quot;&gt;Up or Out&lt;/h2&gt;
@@ -101,16 +101,6 @@
 &lt;p&gt;Increased transparency enables more efficient IT asset management, for example by rightsizing servers or detecting and retiring unused IT assets.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;quoteblock&quot;&gt;
-&lt;blockquote&gt;
-&lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Moving out into the cloud transforms how an enterprise operates and acquires IT infrastructure from an asset-based model to usage-based model.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/blockquote&gt;
-&lt;div class=&quot;attribution&quot;&gt;
-&amp;#8212; Gregor Hohpe
-&lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;Taking an initial lift and shift approach into the cloud along the horizontal axis may make it easier to move vertically (optimize/re-architect) later, once the applications are already running in the cloud. The first reason is primarily technical: the application, data and traffic have already been completed, paving the way for further optimization and improvement when the timing and cost is more favorable. The second reason is that doing such migrations enables the organization to move to more of a &quot;cloud lifestyle&quot; and cultivate the necessary skills to perform future migrations more successfully.&lt;/p&gt;
