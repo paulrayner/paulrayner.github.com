@@ -18,7 +18,7 @@ ____
 Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren't a one-shot type of endeavor.
 ____
 
-Have you experienced confusion from your wide range of stakeholders in deciphering your cloud migration strategy? Using the typical lengthy variations verbs starting with "R" (rehost - replatform - rearchitect - retire) or complicated frameworks may actually make your approach less clear. A simple visual model can go a long way in providing clarity in navigating the inevitable complexity of a cloud migration.
+Have your stakeholders expressed confusion in deciphering your cloud migration strategy? Are you using the typical lengthy variations verbs starting with "R" (rehost - replatform - rearchitect - retire)? Or perhaps an opaque, complicated framework that actually makes your approach less clear? A simple visual model can go a long way in providing clarity in navigating the inevitable complexity of a cloud migration.
 
 == Up or Out
 
@@ -57,11 +57,6 @@ The second option is to lift, shift, and replatform existing applications out in
 * Better economies of scale allow for more cost-efficient operations.
 * Automated patching discipline improves security because it assures that no software with known vulnerabilities is run.
 * Increased transparency enables more efficient IT asset management, for example by rightsizing servers or detecting and retiring unused IT assets.
-
-[quote, Gregor Hohpe]
-____
-Moving out into the cloud transforms how an enterprise operates and acquires IT infrastructure from an asset-based model to usage-based model.
-____
 
 Taking an initial lift and shift approach into the cloud along the horizontal axis may make it easier to move vertically (optimize/re-architect) later, once the applications are already running in the cloud. The first reason is primarily technical: the application, data and traffic have already been completed, paving the way for further optimization and improvement when the timing and cost is more favorable. The second reason is that doing such migrations enables the organization to move to more of a "cloud lifestyle" and cultivate the necessary skills to perform future migrations more successfully.
 
