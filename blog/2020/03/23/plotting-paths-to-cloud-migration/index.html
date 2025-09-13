@@ -6,14 +6,66 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Plotting Paths to Cloud Migration</title>
-  <meta name="description" content="Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren't a one-shot type of endeavor. — Gregor Hohpe">
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Plotting Paths to Cloud Migration | Leading by Design</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Plotting Paths to Cloud Migration" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren’t a one-shot type of endeavor. — Gregor Hohpe" />
+<meta property="og:description" content="Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren’t a one-shot type of endeavor. — Gregor Hohpe" />
+<link rel="canonical" href="http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration/" />
+<meta property="og:url" content="http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration/" />
+<meta property="og:site_name" content="Leading by Design" />
+<meta property="og:image" content="http://thepaulrayner.com/cloud-strategy/massimo-adami-JnqwC6dDL8c-unsplash.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-23T16:00:00+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://thepaulrayner.com/cloud-strategy/massimo-adami-JnqwC6dDL8c-unsplash.jpg" />
+<meta property="twitter:title" content="Plotting Paths to Cloud Migration" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2020-03-23T16:00:00+00:00","datePublished":"2020-03-23T16:00:00+00:00","description":"Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren’t a one-shot type of endeavor. — Gregor Hohpe","headline":"Plotting Paths to Cloud Migration","image":"http://thepaulrayner.com/cloud-strategy/massimo-adami-JnqwC6dDL8c-unsplash.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration/"},"url":"http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Plotting Paths to Cloud Migration",
+  "description": "Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren&#39;t a one-shot type of endeavor. — Gregor Hohpe",
+  "image": "/assets/cloud-strategy/massimo-adami-JnqwC6dDL8c-unsplash.jpg",
+  "author": {
+    "@type": "Person",
+    "name": "Paul Rayner",
+    "url": "http://thepaulrayner.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Leading by Design",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "/assets/favicon.ico"
+    }
+  },
+  "datePublished": "2020-03-23T16:00:00+00:00",
+  "dateModified": "2020-03-23T16:00:00+00:00",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration/"
+  },
+  "keywords": ["Cloud","Design","DDD","Architecture"]
+}
+</script>
+
 
   <meta name="keywords" content="Cloud, Design, DDD, Architecture">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="canonical" href="http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration/">
   <link rel="alternate" type="application/rss+xml" title="Leading by Design" href="http://thepaulrayner.com/feed.xml" />
   <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
@@ -57,6 +109,8 @@
       <li>|</li>
       <li><i class="fa fa-archive fa-lg"></i>&nbsp;<a class="site-contact" href="/archive.html">Archive</a></li>
       <li>|</li>
+      <li><i class="fa fa-search fa-lg"></i>&nbsp;<a class="site-contact" href="/search/">Search</a></li>
+      <li>|</li>
       <li><i class="fa fa-rss fa-lg text-error"></i>&nbsp;<a target="_blank" class="site-contact" href="http://thepaulrayner.com/feed.xml">RSS</a></li>
     </ul>
   </div>
@@ -71,6 +125,7 @@
     <h1 class="post-title">Plotting Paths to Cloud Migration</h1>
     <span class="post-meta">
 <i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Mar 23, 2020
+&nbsp;&nbsp;<i class="fa fa-clock-o"></i>&nbsp;9 min read
 
 <i class="fa fa-tags fa-lg"></i>&nbsp; <a href="/tags/Cloud" title="View posts tagged with &quot;Cloud&quot;">Cloud |</a>    <a href="/tags/Design" title="View posts tagged with &quot;Design&quot;">Design |</a>    <a href="/tags/DDD" title="View posts tagged with &quot;DDD&quot;">DDD |</a>    <a href="/tags/Architecture" title="View posts tagged with &quot;Architecture&quot;">Architecture |</a>   
 
@@ -371,15 +426,14 @@
 </footer>
 
 
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TEDG2MRQ84"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  ga('create', 'UA-37443128-1', 'thepaulrayner.com');
-  ga('send', 'pageview');
-
+  gtag('config', 'G-TEDG2MRQ84');
 </script>
 
   </body>

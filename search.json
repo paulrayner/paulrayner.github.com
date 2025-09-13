@@ -1,0 +1,66 @@
+[
+  
+    {
+      "title"    : "Plotting Paths to Cloud Migration",
+      "category" : "",
+      "tags"     : "Cloud, Design, DDD, Architecture",
+      "url"      : "/blog/2020/03/23/plotting-paths-to-cloud-migration/",
+      "date"     : "March 23, 2020",
+      "excerpt"  : "Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren&#39;t a one-shot type of endeavor. — Gregor Hohpe"
+    } ,
+  
+    {
+      "title"    : "Cloud Strategy, Design And Automation",
+      "category" : "",
+      "tags"     : "Cloud, Design, Architecture",
+      "url"      : "/blog/2020/03/19/cloud-strategy-design-and-automation/",
+      "date"     : "March 19, 2020",
+      "excerpt"  : "…getting new features into production quickly is the real currency of the digital world. — Gregor Hohpe"
+    } ,
+  
+    {
+      "title"    : "EventStorming Team Flow",
+      "category" : "",
+      "tags"     : "DDD, EventStorming, Flow, VSM, Lean, Agile",
+      "url"      : "/blog/2019/05/13/eventstorming-team-flow/",
+      "date"     : "May 13, 2019",
+      "excerpt"  : "Most development teams remain blissfully unaware of the negative impact of these invisible queues on productivity, or how to deal with them effectively."
+    } ,
+  
+    {
+      "title"    : "Explore DDD - Realtime Retrospective",
+      "category" : "",
+      "tags"     : "DDD, Agile",
+      "url"      : "/blog/2019/01/22/realtime-retro-eddd/",
+      "date"     : "January 22, 2019",
+      "excerpt"  : "At YOW! 2016, fellow speaker Emily Webber told me about a cool experiment she had run at recent conference. Emily described a visible, participative way - a Realtime Retrospective - to reflect and improve throughout a conference."
+    } ,
+  
+    {
+      "title"    : "BDD is a Centered Community Rather than a Bounded Community",
+      "category" : "",
+      "tags"     : "BDD",
+      "url"      : "/blog/2015/03/28/bdd-is-a-centered-rather-than-a-bounded-community/",
+      "date"     : "March 28, 2015",
+      "excerpt"  : "Dan North mentioned at one point in the CukeUp 2015 panel yesterday the notion in theology of a community being a &#39;bounded set.&#39; BDD is a centered community, rather than a bounded community."
+    } ,
+  
+    {
+      "title"    : "Good Design is People-Centered - Design Quotes Part 5",
+      "category" : "",
+      "tags"     : "Design",
+      "url"      : "/blog/2015/02/09/good-design-is-people-centered/",
+      "date"     : "February 09, 2015",
+      "excerpt"  : "A design isn&#39;t finished until somebody is using it. These quotes are about the goal of design, which is centered around meeting the needs of real people."
+    } ,
+  
+    {
+      "title"    : "Persisting Value Objects",
+      "category" : "",
+      "tags"     : "DDD",
+      "url"      : "/blog/2015/01/22/persisting-value-objects/",
+      "date"     : "January 22, 2015",
+      "excerpt"  : "It can be challenging sometimes to know how best to persist value objects to a data store, especially if you are using a RDBMS. There are a variety of options to choose from, however, depending on your needs and constraints."
+    } 
+  
+]
