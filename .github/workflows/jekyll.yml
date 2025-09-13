@@ -1,0 +1,39 @@
+name: Build and Deploy Jekyll Site
+
+on:
+  push:
+    branches: [ jekyll ]
+  pull_request:
+    branches: [ jekyll ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.1'
+        bundler-cache: true
+        
+    - name: Build Jekyll site
+      run: |
+        bundle install
+        bundle exec jekyll build
+        
+    - name: Deploy to master branch
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/jekyll'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
+        publish_branch: master
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: 'Deploy Jekyll site built from ${{ github.sha }}'
