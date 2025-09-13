@@ -48,12 +48,15 @@ This is a Jekyll-based static website hosted on GitHub Pages for Paul Rayner's t
 bundle install          # Install dependencies
 bundle exec jekyll serve --watch --drafts  # Local development server
 bundle exec jekyll build  # Build site to _site/
+bundle exec jekyll doctor  # Check for common issues
+bundle exec jekyll clean   # Clean build artifacts
 ```
 
 ### Deployment
-- **Standard GitHub Pages**: Push to `jekyll` branch, GitHub builds automatically
-- **No custom scripts**: Removed legacy Travis CI and build.sh infrastructure
-- **Safe process**: GitHub's Jekyll build won't delete existing content
+- **Automated builds**: Daily at 5 AM Mountain Time + on push to jekyll branch
+- **GitHub Actions**: Builds from `jekyll` branch, deploys to `main` branch
+- **Ruby 3.1**: Version specified in workflow
+- **Safe process**: Jekyll build preserves existing content
 
 ### Content Management
 - **New posts**: Use Markdown format in `_posts/`
