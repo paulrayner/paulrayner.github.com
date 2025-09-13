@@ -9,7 +9,7 @@ This is a Jekyll-based static website hosted on GitHub Pages for Paul Rayner's t
 ## Branch Structure
 
 - **jekyll branch**: Source files for Jekyll (work here)
-- **master branch**: Generated HTML served by GitHub Pages (do not edit directly)
+- **main branch**: Generated HTML served by GitHub Pages (do not edit directly)
 
 ## Architecture and Structure
 

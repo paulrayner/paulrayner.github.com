@@ -13,7 +13,11 @@
       "Bash(HandBrakeCLI:*)",
       "Bash(curl:*)",
       "WebSearch",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebFetch(domain:thepaulrayner.com)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []

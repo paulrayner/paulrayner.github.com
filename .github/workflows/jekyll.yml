@@ -29,13 +29,13 @@ jobs:
         bundle install
         bundle exec jekyll build
         
-    - name: Deploy to master branch
+    - name: Deploy to main branch
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/jekyll'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./_site
-        publish_branch: master
+        publish_branch: main
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
         commit_message: 'Deploy Jekyll site built from ${{ github.sha }}'
