@@ -15,4 +15,14 @@ layout: default
     {% include author.html %}
   </article>
 
+  {% comment %}
+    Use modern Utterances for new posts (2025+), keep Disqus for historical posts
+  {% endcomment %}
+  {% assign post_year = page.date | date: "%Y" | plus: 0 %}
+  {% if post_year >= 2025 %}
+    {% include utterances.html %}
+  {% else %}
+    {% include comments.html %}
+  {% endif %}
+
 </div>

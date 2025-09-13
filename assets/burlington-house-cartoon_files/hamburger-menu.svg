@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Hamburger Menu@1x</title>
+    <g id="Hamburger-Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" opacity="0" x="0" y="0" width="100" height="100"></rect>
+        <g id="Frame-1" transform="translate(0.000000, 10.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M95.7895,0 L4.21053,0 C1.88512,0 0,1.6844 0,3.7621 C0,5.8399 1.88512,7.5242 4.21053,7.5242 L95.7895,7.5242 C98.1149,7.5242 100,5.8399 100,3.7621 C100,1.6844 98.1149,0 95.7895,0 Z" id="Path"></path>
+            <path d="M95.7895,36.2379 L4.21053,36.2379 C1.88512,36.2379 0,37.9222 0,40 C0,42.0778 1.88512,43.7621 4.21053,43.7621 L95.7895,43.7621 C98.1149,43.7621 100,42.0778 100,40 C100,37.9222 98.1149,36.2379 95.7895,36.2379 Z" id="Path"></path>
+            <path d="M95.7895,72.4758 L4.21053,72.4758 C1.88512,72.4758 0,74.1601 0,76.2379 C0,78.3156 1.88512,80 4.21053,80 L95.7895,80 C98.1149,80 100,78.3156 100,76.2379 C100,74.1601 98.1149,72.4758 95.7895,72.4758 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

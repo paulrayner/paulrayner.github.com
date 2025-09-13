@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bundle:*)",
+      "Bash(git stash:*)",
+      "Bash(git checkout:*)",
+      "Bash(git show:*)",
+      "Bash(grep:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(chmod:*)",
+      "Bash(./copy_legacy_content.sh:*)",
+      "Bash(./copy_legacy_properly.sh:*)",
+      "Bash(HandBrakeCLI:*)",
+      "Bash(curl:*)",
+      "WebSearch",
+      "Bash(python3:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

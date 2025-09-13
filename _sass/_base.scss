@@ -119,6 +119,21 @@ blockquote {
     }
 }
 
+/* Extra spacing for consecutive blockquotes (like in design quote posts) */
+blockquote + blockquote {
+    margin-top: $spacing-unit !important;
+}
+
+/* Also handle case where there might be whitespace between blockquotes */
+.post-content blockquote {
+    margin-bottom: $spacing-unit;
+}
+
+/* Add spacing between consecutive quote blocks in static HTML files */
+.quoteblock + .quoteblock {
+    margin-top: $spacing-unit;
+}
+
 
 
 /**

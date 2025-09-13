@@ -9,20 +9,48 @@ github_username:  paulrayner
 
 # Build settings
 
-# Use same GitHub style syntax highlighting that Octopress enables by default
-markdown: redcarpet
+# Use kramdown for GitHub Pages compatibility
+markdown: kramdown
+highlighter: rouge
 
 # Maintain permalinks in migration of posts from Octopress
 permalink: /blog/:year/:month/:day/:title/
 
-# Add support for AsciiDoc posts using Asciidoctor
-gems:
-  - jekyll-asciidoc
+# Jekyll 4.x uses 'plugins' instead of 'gems' 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
 
-asciidoctor:
-  attributes:
-    - icons=font
-    - hardbreaks!
-    - source-highlighter=coderay
+# Kramdown settings
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-exclude: ['README.adoc', 'Gemfile.lock', 'Gemfile', '*.sh', vendor]
+# AsciiDoc configuration removed - no longer needed
+
+# Keep legacy post directories during builds
+keep_files: [
+  "about",
+  "agility-is-a-skill", 
+  "bdd-is-a-centered-rather-than-a-bounded-community",
+  "cloud-strategy-design-and-automation",
+  "design-is-difficult-design-quotes-part-4",
+  "dont-give-your-customers-what-they-ask-for",
+  "eventstorming-team-flow",
+  "good-design-is-people-centered-design-quotes-part-5",
+  "leanux-my-notes",
+  "persisting-value-objects", 
+  "plotting-paths-to-cloud-migration",
+  "realtime-retro-eddd",
+  "the-design-process-design-quotes-part-2",
+  "value-objects-and-immutability",
+  "what-is-design-design-quotes-part-1",
+  "why-design-design-quotes-part-3",
+  "blog",
+  "tags",
+  "archive.html",
+  "legacy-index.html",
+  "legacy-feed.xml"
+]
+
+exclude: ['README.adoc', 'Gemfile.lock', 'Gemfile', '*.sh', vendor, '_posts/*.adoc', 'copy_legacy_properly.sh']
