@@ -1,4 +1,5 @@
 {
+  "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
       "Bash(bundle:*)",
@@ -17,7 +18,8 @@
       "Bash(git commit:*)",
       "Bash(git push:*)",
       "WebFetch(domain:thepaulrayner.com)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git fetch:*)"
     ],
     "deny": [],
     "ask": []

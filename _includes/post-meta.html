@@ -1,5 +1,6 @@
 <span class="post-meta">
 <i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;{{ include.post.date | date: "%b %-d, %Y" }}
+&nbsp;&nbsp;{% assign words = include.post.content | strip_html | number_of_words %}{% assign reading_time = words | divided_by: 200 %}{% if reading_time == 0 %}{% assign reading_time = 1 %}{% endif %}<i class="fa fa-clock-o"></i>&nbsp;{{ reading_time }} min read
 {% if include.post.tags %}
 <i class="fa fa-tags fa-lg"></i>&nbsp;{% for tag in include.post.tags %} <a href="/tags/{{ tag }}" title="View posts tagged with &quot;{{ tag }}&quot;">{{ tag }} |</a>  {% if forloop.last != true %} {% endif %} {% endfor %}
 {% endif %}

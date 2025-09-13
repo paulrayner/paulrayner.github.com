@@ -1,0 +1,90 @@
+---
+layout: page
+title: Search
+permalink: /search/
+---
+
+<div class="search-container">
+  <div class="search-section">
+    <i class="fa fa-search"></i>
+    <input type="text" id="search-input" placeholder="Search posts..." autofocus>
+  </div>
+  <ul id="results-container"></ul>
+</div>
+
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+<script>
+  window.simpleJekyllSearch = new SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a><br><small>{date} • {tags}</small><br><p>{excerpt}</p></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+</script>
+
+<style>
+.search-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-section {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.search-section i {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #999;
+}
+
+#search-input {
+  width: 100%;
+  padding: 12px 12px 12px 40px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+}
+
+#search-input:focus {
+  border-color: #666;
+}
+
+#results-container {
+  list-style: none;
+  padding: 0;
+}
+
+#results-container li {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+#results-container li a {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+#results-container li a:hover {
+  color: #666;
+}
+
+#results-container li small {
+  color: #777;
+}
+
+#results-container li p {
+  margin-top: 0.5em;
+  color: #555;
+}
+</style>
