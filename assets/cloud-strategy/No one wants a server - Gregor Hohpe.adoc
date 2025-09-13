@@ -1,0 +1,31 @@
+Grgor Hohpe
+
+cloud is a different lifestyle, not a replacement for your data center (not just infrastructure)
+"Enterprise cloud" - violates NIST properties
+
+Need to rethink and rework the way your IT works.
+
+Why run software you didn't build? Do SAAS instead. Cloud CRM, SAP in the cloud etc. Vector here is clear.
+
+It's not about infrastructure, it's about application developement and delivery.
+
+Need to have a good idea why you are doing it (multi-cloud flavors). Having an architectureal thought about it and understanding the patterns are and choosing wisely. Portable is rare (looks good on paper, but more like a shiney Ferrari). What you need, what brings you value, and what architecture stands behind it.
+
+Nothing is free - be aware of tradeoffs.
+
+Hybrid cloud - many ways to slice to elephant.
+
+Cost savings have to be earned. Moving from on-prem to cloud (migration) will shave some money off. The biggest one is optimizing what you have. Making it resilient.
+
+Transparency (cloud -> optimized). See all the servers not doing much. Redundant machines. This is actually where the money is. Need to move beyond cloud to optimized.
+
+Automation is such a big ingredient in savings. Think about reducing manual labor as the goal, but it's about reducing the overall cost.
+
+Lock-in can give you benefits (like marriage - Adrian Cockroft).
+
+Complexity is very expensive - that's where a lot of problems come from.
+Want access to managed services (main reason you went to the cloud in teh 1st place). Don't try to achieve zero switching cost for something with little benefits.
+
+Clear Goals
+A strategy
+Architectural mindset.

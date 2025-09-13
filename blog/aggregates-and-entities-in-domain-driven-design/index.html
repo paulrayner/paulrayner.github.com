@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Aggregates & Entities in Domain-Driven Design</title>
+  <meta name="description" content="Here are some thoughts on distinctions between aggregates and entities in domain-driven design (DDD), in response to some good questions Harry Brumleve asked...">
+
+  <meta name="keywords" content="DDD, Coding">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="canonical" href="http://thepaulrayner.com/blog/aggregates-and-entities-in-domain-driven-design">
+  <link rel="alternate" type="application/rss+xml" title="Leading by Design" href="http://thepaulrayner.com/feed.xml" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Leading by Design</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+    </nav>
+
+  </div>
+<div class="wrapper">
+    <p class="text"><i>Paul Rayner's blog on software design and process</i></p>
+  </div>
+  <div class="wrapper">
+    <ul class="site-contact">
+      <li><i class="fa fa-twitter fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://twitter.com/thepaulrayner">Twitter</a></li>
+      <li>|</li>
+      <li><i class="fa fa-github fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://github.com/paulrayner">GitHub</a></li>
+      <li>|</li>
+      <!-- <li><i class="fa fa-google-plus fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://plus.google.com/u/0/104952531007433798958/posts">Google</a></li>
+      <li>|</li> -->
+      <li><i class="fa fa-linkedin fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://www.linkedin.com/in/thepaulrayner">LinkedIn</a></li>
+      <li>|</li>
+      <li><i class="fa fa-user fa-lg"></i>&nbsp;<a class="site-contact" href="/about">About</a></li>
+      <li>|</li>
+      <li><i class="fa fa-archive fa-lg"></i>&nbsp;<a class="site-contact" href="/archive.html">Archive</a></li>
+      <li>|</li>
+      <li><i class="fa fa-rss fa-lg text-error"></i>&nbsp;<a target="_blank" class="site-contact" href="http://thepaulrayner.com/feed.xml">RSS</a></li>
+    </ul>
+    <br>
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Aggregates & Entities in Domain-Driven Design</h1>
+    <span class="post-meta">
+<i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Jan 13, 2015
+
+<i class="fa fa-tags fa-lg"></i>&nbsp; <a href="/tags/DDD" title="View posts tagged with &quot;DDD&quot;">DDD |</a>     <a href="/tags/Coding" title="View posts tagged with &quot;Coding&quot;">Coding |</a>   
+
+</span>
+
+  </header>
+
+  <article class="post-content">
+    <div class="paragraph">
+<p>Here are some thoughts on distinctions between aggregates and entities in domain-driven design (DDD), in response to some good questions <a href="https://twitter.com/hbrumleve">Harry Brumleve</a> asked me via email.</p>
+</div>
+<div class="paragraph">
+<p>Here is the relevant content from the email:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>I've always had problems with Aggregates vs. Entities.
+
+Is it that Agg's are transactional boundaries that expose behaviors (methods) that the entities they contain may perform?
+
+Entity is a business concept that exposes behavior.
+
+A collection of entities may have different behavior varied upon the type of aggregate that encapsulates it?
+
+Or is it that Agg Root = Entity and it's an arbitrary naming of the same concept?
+
+Or is this over-thinking it?</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s use the typical example of a purchase order (PO) and its line items. How you might model this as entities and value objects? And is there an aggregate concept lurking in there?</p>
+</div>
+<div class="sect1">
+<h2 id="a-concrete-example">A Concrete Example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I&#8217;ve done this in the past as Purchase Order being an entity, since <em>it has identity and a lifecycle</em>. The lifecycle could be modeled as object state or as an event stream - it doesn&#8217;t matter for our purposes here. The line items would likely be value objects, since its their properties that probably matter more than trying to preserve identity over time for them. There may need to be other objects associated with the PO, but let&#8217;s keep it simple.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/assets/po-example-aggregate.png" alt="PO Example">
+</div>
+<div class="title">Figure 1. Two purchase orders, the 2nd one with multiple line items</div>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s say your company needs to create a purchase order for an 4 day agile workshop class, because creating purchase orders for training is how they roll. Using the model I described, you would have a single Purchase Order and one Line Item for the class. Unlike the agile classes I teach, which are one inclusive price,  other companies offering training and coaching might want to break out the costs to rent a venue, pay for catering, cover instructor travel expenses, coaching days etc. So purchase orders would need to handle multiple line items in many cases. This is fairly standard for POs anyway.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="aggregates-support-higher-level-concepts">Aggregates Support Higher Level Concepts</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The business could work with LineItems individually, but in practice never would, since they only really make sense in light of their PurchaseOrder. And you would mostly likely want to work with the higher-level concept of Purchase Orders rather than always having to deal at the granularity of the Line Items.</p>
+</div>
+<div class="paragraph">
+<p>If someone was to approve Purchase Order with ID=XYZ124, they would typically be approving all its Line Items as well. I could imagine business rules for certain types of Purchase Orders that the sum of the values of the individual Line Items could not exceed a certain amount for the Purchase Order to be approved. A Purchase Order would probably need to have at least one Line Item to be valid.</p>
+</div>
+<div class="paragraph">
+<p>Here is a case of two or more objects that seem to belong together most of the time in terms of how you need to work with them. So treat PO as an <em>aggregate</em> of the PO entiity and the Line Item value objects. And make the PO entity the root of the aggregate.  So what we have in this example is an aggregate consisting of a single entity, the Purchase Order (functioning as the <em>root</em> of the aggregate), and a set of one or more associated Line Item value objects.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="aggregates-invariants-and-consistency">Aggregates, Invariants and Consistency</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This aggregate boundary is part of the model, and allows us to enforce invariants (e.g. having at least one Line Item) for the PO aggregate. Between POs we can have eventual consistency, since we are comfortable with not trying to keep all our aggregates in sync with each other. We can update the PO with ID=XYZ124 and then update another related PO with ID=ABC432 separately.</p>
+</div>
+<div class="paragraph">
+<p>In terms of how this plays out, you would typically have a repository for persisting and retrieving the PO aggregates. When you get a PO from its repository, it would be created whole, with all its Line Items as well. As an aside, this is what makes document stores a nice fit for aggregates, since aggregate and document boundaries often tend to align in terms of how a model is used.</p>
+</div>
+<div class="paragraph">
+<p>I realize none of what I&#8217;ve written above is directly answering your questions, but it always helps me to try to have a concrete example to discuss. In a particular model, I&#8217;ve typically only had each entity be part of one aggregate. But that may be because I haven&#8217;t seen a domain yet where the model needed anything more complicated.</p>
+</div>
+<div class="paragraph">
+<p>For background reading, see the <a href="http://domainlanguage.com/ddd/reference/DDD_Reference_2011-01-31.pdf">DDD Reference</a> book, especially pp. 18, 19 and 24.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="aggregate-boundaries-and-behavior">Aggregate Boundaries and Behavior</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>I love concrete examples. This actually demonstrates my confusion between Aggregates and Root Entities.
+
+I obviously need to think this out _a lot more_, but I've always felt like the diagram you've sent has aggregates in the wrong spot. Namely, that aggregates represent a collection of behaviors that are transactionally bound and express the domain model.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>I can see how you might define an aggregate this way, and I think it&#8217;s a valid way to conceptualize them.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>The entities make up the design and implementation of an aggregate's behaviors; since they are encapsulated within aggregates,</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>I would rather have most of the behaviors tied to value objects rather than entities. One of the things I&#8217;d encourage is to keep entities free of behavior where possible, since identity is already a big burden to bear, and have behavior expressed in the value objects. So as more behavior needs to be added to this PO, I would try to model that as behaviors on new or existing value objects where possible.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>How they contribute to the make up of the aggregate's composition is arbitrary and not important to the domain outside of the aggregate's context.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>"Arbitrary and not important" might be a little too strong a statement for me. I&#8217;d need an example of where this would be the case. However, generally speaking, I think you&#8217;re correct.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Additionally, I feel that an Aggregate Root concept is a vestigial idea posited by Eric to appease some OO or implementation concern. :-) That may just be me being cheeky, though.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Possibly. I&#8217;ve not implemented a system using CQRS, which takes aggregates in a different and interesting direction from what Eric originally proposed. I find the aggregate root concept helpful though, since a single entity typically takes that responsibility.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="aggregate-boundaries-and-refining-the-model">Aggregate Boundaries and Refining the Model</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre>To your point, if entities aren't used across aggregate types, aren't you really using the behaviors of the aggregates to express your model and the entities to express the arbitrary design of a particular aggregate?</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Yes, if I understand you correctly.</p>
+</div>
+<div class="paragraph">
+<p>As a concrete example, a PO has several behaviors that may not change as a training organization moves from inferiority to not-as-optimal. The design and implementation may currently consider entities like "Location Rental" or "Travel Expenses" to express the PO model; but after maturity of the model and company they choose to represent their line items more succinctly or with less inferior concepts. The entities will change, or yield to new entity concepts, but the PO aggregate&#8217;s boundary stays in tact.</p>
+</div>
+<div class="paragraph">
+<p>Aggregate boundaries may, and likely will, change over time as the model matures. That&#8217;s assuming the team is practicing iterative design and growing their model as their understanding grows. Maybe the team realizes that Location Rental needs to be its own aggregate, for example. And if a PO is canceled then the Location Rental needs to be canceled too.</p>
+</div>
+<div class="paragraph">
+<p>To your point, though, the entities, value objects and domain events inside the aggregate could potentially change without affecting the aggregate boundary.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>Is the answer to my conundrum "it depends" &amp; "do what's best for your organization"? :-)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Always! :) That being said, there&#8217;s clearly some nuance here and probably the need to sketch out some ideas on napkins to clarify each other&#8217;s thinking.</p>
+</div>
+<div class="paragraph">
+<p>See <a href="https://github.com/paulrayner/ddd_sample_app_ruby/blob/master/domain/cargo/cargo.rb">the Cargo aggregate</a> in the Ruby DDD sample app for a half-decent example. Cargo is the aggregate root, with several value objects handling the business rules. Delivery essentially functions as a read projection of the Handling Event history. Cargo is focused on identity and not much else. All the interesting business logic is in the value objects.</p>
+</div>
+</div>
+</div>
+
+    
+    <div id="page-navigation">
+            <div class="clear">&nbsp;</div>
+            <div class="left" width="100">
+            
+                    <a href="/blog/2015/01/12/agile-and-fda-regulated-medical-device-software-development-resources/" title="Previous Post:
+    Agile And Fda Regulated Medical Device Software Development Resources">&laquo; Agile And Fda Regulated Medical Device Software Development Resources</a>
+            
+            </div>
+
+            <div class="right">
+            
+                    <a href="/blog/lean-thinking-and-software-design" title="next Post:
+    Lean Thinking and Software Design">Lean Thinking and Software Design &raquo; </a>
+            
+            </div>
+            <div class="clear">&nbsp;</div>
+            <div class="clear">&nbsp;</div>
+            <br>
+
+            <h3>Related Posts</h3>
+
+            <ul>
+              
+                <li>
+                  <a href="/blog/reading-and-writing-arrays-to-text-files-in-ruby">Reading and Writing Arrays to Text Files in Ruby</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2015/01/12/Refreshing-Your-Sites-Favicon/">Refreshing Your Sites Favicon</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2015/01/05/jekyll-asciidoc-gem-published/">Jekyll Asciidoc Gem Published</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2013/02/07/colors-when-viewing-folders-in-terminal/">Colors when viewing folders in Terminal</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2013/02/07/array-slicing-in-ruby/">Array Slicing in Ruby</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2013/02/06/object-ids-in-ruby/">Object Ids in Ruby</a>
+                </li>
+              
+                <li>
+                  <a href="/plotting-paths-to-cloud-migration">Plotting Paths to Cloud Migration</a>
+                </li>
+              
+                <li>
+                  <a href="/eventstorming-team-flow">EventStorming Team Flow</a>
+                </li>
+              
+                <li>
+                  <a href="/realtime-retro-eddd">Explore DDD - Realtime Retrospective</a>
+                </li>
+              
+                <li>
+                  <a href="/persisting-value-objects">Persisting Value Objects</a>
+                </li>
+              
+                <li>
+                  <a href="/value-objects-and-immutability">Value Objects and Immutability</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/why-value-objects">Why Value Objects?</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2013/06/20/domain-driven-design-in-ruby-at-ddd-exchange/">Domain-Driven Design in Ruby at DDD Exchange 2013 in London</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2013/05/07/succeeding-with-ddd-documentation/">Succeeding with DDD - Documentation</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2013/02/15/agile-user-stories-and-domain-driven-design-ddd/">Agile User stories and Domain-Driven Design (DDD)</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2013/02/01/book-review-implementing-domain-driven-design/">Book Review: Implementing Domain-Driven Design</a>
+                </li>
+              
+            </ul>
+    </div>
+
+    <div>
+  <h4>About the Author</h4>
+  <section  class="visible-desktop">
+  <img class="gravatar" src="http://www.gravatar.com/avatar/4ce180eb1538932a4cc5b14c9eb0e83b?s=300">
+  <span>Paul is a software design and development coach and mentor. He is available for consulting and training through his company, <a href="http://www.virtualgenius.com">Virtual Genius LLC.</a> He is the author of <a href="https://leanpub.com/eventstorming_handbook">The EventStorming Handbook</a> and major contributor to <a href="https://www.amazon.com/Behavior-Driven-Development-Cucumber-Specification-Example/dp/0321772636">Behavior-Driven Development with Cucumber.</a> He is also the founder and chair for the <a href="http://exploreddd.com">Explore DDD conference</a>.
+  </span>
+</section>
+</div>
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    
+<!-- Add Disqus comments. -->
+<div id="disqus_thread" class="site-footer"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'thepaulrayner'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Leading by Design</li>
+          <li><a href="mailto:paul@virtualgenius.com">paul@virtualgenius.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/paulrayner">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">paulrayner</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/thepaulrayner">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">thepaulrayner</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+      <span>
+      <a href="http://www.virtualgenius.com/" imageanchor="1"><img  class="footer-brand" alt="Virtual Genius LLC." src="/assets/vg_logo.png" title="Virtual Genius LLC" /></a>
+      </div>
+      </span>
+    </div>
+    <div>
+    <hr>
+    <span>
+        <i class="fa fa-gear fa-lg">&nbsp;</i>Powered by <a target="_blank" href="http://pages.github.com/">GitHub Pages</a>, <a target="_blank" href="http://jekyllrb.com">Jekyll</a> and <a target="_blank" href="http://asciidoctor.org/">AsciiDoctor</a>
+    </div>
+    </span>
+    <div>
+    <hr>
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:1" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+    </div>
+  </div>
+
+</footer>
+
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37443128-1', 'thepaulrayner.com');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>X Logo</title>
+    <g id="Prototypes-09.11.23" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-" transform="translate(-1813.000000, -310.000000)">
+            <g id="X-Logo" transform="translate(1813.000000, 310.000000)">
+                <circle id="Oval" fill="#000000" cx="100" cy="100" r="100"></circle>
+                <path d="M137.160855,50 L105.482819,86.7659842 L80.1817293,50 L51,50 L89.2602119,105.59668 L51,150 L59.6457305,150 L93.0984667,111.173871 L119.818189,150 L149,150 L109.321237,92.3431754 L109.323279,92.3431754 L145.806096,50 L137.160855,50 Z M97.4818471,106.088619 L97.4818471,106.086499 L93.6052088,100.550323 L62.7608265,56.4983651 L76.0401642,56.4983651 L100.932022,92.0497077 L104.808578,97.5858835 L137.164938,143.797141 L123.885601,143.797141 L97.4818471,106.088619 Z" id="Fill-1" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

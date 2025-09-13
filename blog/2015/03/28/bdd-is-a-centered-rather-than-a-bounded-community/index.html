@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BDD is a Centered Community Rather than a Bounded Community</title>
+  <meta name="description" content="Dan North mentioned at one point in the CukeUp 2015 panel yesterday the notion in theology of a community being a 'bounded set.' BDD is a centered community,...">
+
+  <meta name="keywords" content="BDD">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="canonical" href="http://thepaulrayner.com/blog/2015/03/28/bdd-is-a-centered-rather-than-a-bounded-community/">
+  <link rel="alternate" type="application/rss+xml" title="Leading by Design" href="http://thepaulrayner.com/feed.xml" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Leading by Design</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+    </nav>
+
+  </div>
+<div class="wrapper">
+    <p class="text"><i>Paul Rayner's blog on software design and process</i></p>
+  </div>
+  <div class="wrapper">
+    <ul class="site-contact">
+      <li><i class="fa fa-twitter fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://twitter.com/thepaulrayner">Twitter</a></li>
+      <li>|</li>
+      <li><i class="fa fa-github fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://github.com/paulrayner">GitHub</a></li>
+      <li>|</li>
+      <!-- <li><i class="fa fa-google-plus fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://plus.google.com/u/0/104952531007433798958/posts">Google</a></li>
+      <li>|</li> -->
+      <li><i class="fa fa-linkedin fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://www.linkedin.com/in/thepaulrayner">LinkedIn</a></li>
+      <li>|</li>
+      <li><i class="fa fa-user fa-lg"></i>&nbsp;<a class="site-contact" href="/about">About</a></li>
+      <li>|</li>
+      <li><i class="fa fa-archive fa-lg"></i>&nbsp;<a class="site-contact" href="/archive.html">Archive</a></li>
+      <li>|</li>
+      <li><i class="fa fa-rss fa-lg text-error"></i>&nbsp;<a target="_blank" class="site-contact" href="http://thepaulrayner.com/feed.xml">RSS</a></li>
+    </ul>
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">BDD is a Centered Community Rather than a Bounded Community</h1>
+    <span class="post-meta">
+<i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Mar 28, 2015
+
+<i class="fa fa-tags fa-lg"></i>&nbsp; <a href="/tags/BDD" title="View posts tagged with &quot;BDD&quot;">BDD |</a>   
+
+</span>
+
+  </header>
+
+  <article class="post-content">
+    <p>Dan North mentioned at one point in the CukeUp 2015 panel yesterday the notion in theology of a community being a “bounded set.” Since Tom Stuart had been gracious enough to invite me to participate in the panel, towards the end of the session I joined the panel so I could expand on Dan’s comment. I pointed out that the same theology also talks about the notion of a community being a “centered set.” To me, this is what BDD really is: A centered set, rather than a bounded set. In other words, <em>BDD is a centered community, rather than a bounded community.</em></p>
+
+<p><a href="https://skillsmatter.com/skillscasts/6174-wtf-is-bdd"><img src="/assets/what-is-bdd-panel2.png" alt="BDD panel" class="right" width="300" /></a></p>
+
+<p>I want to be clear what I meant by bounded vs. centered set as it applies to a community when I proposed it in the CukeUp 2015 panel. These terms originated in a theological context with the writings of anthropologist and missiologist Paul Hiebert, in terms of what makes a person a Christian. I’m going to quote and adapt a significant amount of the content from his original article in what follows to make it relevant for those without a background or interest in theology. Before I do that though, first a little background is in order.</p>
+
+<h2 id="cukeup-2015">CukeUp 2015</h2>
+
+<p>The CukeUp 2015 conference at Skills Matter in London culminated yesterday in an wonderful panel discussion about what BDD actually is, organized and facilitated by Tom Stuart. I highly recommend anyone interested in current thinking in BDD watch the video posted by Skills Matter at <a href="https://skillsmatter.com/skillscasts/6174-wtf-is-bdd">https://skillsmatter.com/skillscasts/6174-wtf-is-bdd</a>.</p>
+
+<p><img src="/assets/what-is-bdd-panel.png" alt="What is BDD?" class="left" width="300" /></p>
+
+<p>It seemed clear to me from the sentiments expressed in the session that focusing on boundaries and exclusion is not what the BDD community has ever been about. BDD is a community with values and principles at the center that promotes a certain growing body of knowledge and cloud of practices.</p>
+
+<p>But there is no interest the BDD community in adopting a bounded set approach, and staying static by “locking down” the body of knowledge or cloud of practices that currently makes up BDD. Rather, the BDD community wants, and needs, to continue challenging the status quo and incorporating new learning and practices as they reveal themselves in the future.</p>
+
+<h2 id="bounded-sets">Bounded sets</h2>
+
+<p>In his 1978 article<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>, Hiebert notes that many of our words refer to bounded sets: “apples,” “oranges,” “pencils,” and “pens,” for instance. What is a bounded set? How does our mind form it? In creating a bounded set our mind puts together things that share some common characteristics. “Apples,” for example, are objects that are “the firm fleshy somewhat round fruit of a Rosaceous tree. They are usually red, yellow or green and are eaten raw or cooked.”</p>
+
+<p>Bounded sets have certain structural characteristics — that is, they force us to look at things in a certain way. Let us use the category “apples” to illustrate some of these:</p>
+
+<ol>
+  <li>
+    <p><em>The category is created by listing the essential characteristics that an object must have to be within the set.</em> For example, an apple is (1) a kind of “fruit” that is (2) firm, (3) fleshy, (4) somewhat round, and so on. Any fruit that meets these requirements (assuming we have an adequate definition) is an “apple.”</p>
+  </li>
+  <li>
+    <p><em>The category is defined by a clear boundary.</em> A fruit is either an apple or it is not. It cannot be 70% apple and 30% pear. Most of the effort in defining the category is spent on defining and maintaining the boundary. In other words, not only must we say what an “apple” is, we must also clearly differentiate it from “oranges,” “pears,” and other similar objects that are <em>not</em> “apples.”</p>
+  </li>
+  <li>
+    <p><em>Objects within a bounded set are uniform in their essential characteristics.</em> All apples are 100% apple. One is not more apple than another. Either a fruit is an apple or it is not. There may be different sizes, shapes, and varieties, but they are all the same in that they are all apples. There is no variation implicit within the structuring of the category.</p>
+  </li>
+  <li>
+    <p><em>Bounded sets are static sets.</em> If a fruit is an apple, it remains an apple whether it is green, ripe, or rotten. The only change occurs when an apple ceases to be an apple (e.g., being eaten), or when something like an orange is turned into an apple (something we cannot do). The big question, therefore, is whether an object is inside or outside the category. Once it is within, there can be no change in its categorical status.</p>
+  </li>
+</ol>
+
+<h2 id="what-if-bdd-was-a-bounded-set">What if BDD was a Bounded Set?</h2>
+
+<p>What happens to our concept of “BDD” if we define it in terms of a bounded set? If we use the above characteristics of a bounded set we probably come up with something like the following:</p>
+
+<ol>
+  <li>
+    <p><em>We would define “BDD” in terms of a set of essential or definitive characteristics.</em> These characteristics, such as perhaps collaborative specification by example, test-first automation, feature injection, red-green-refactor (TDD), would be non-negotiable for people doing BDD.</p>
+  </li>
+  <li>
+    <p><em>We would make a clear distinction between what is “BDD” and what is not.</em> There is no place in between. Moreover, maintaining this boundary would be critical to the maintenance of the category of BDD. Therefore it would be essential we determine who is doing BDD and who is not, and to keep the two sharply differentiated. We would want to make sure to include those who are truly doing BDD and to exclude from the community those who claim to be but are not. If BDD was to be a bounded set, to have an unclear boundary would be to undermine the very concept of BDD itself.</p>
+  </li>
+  <li>
+    <p><em>We would view all “BDD practitioners” as essentially the same.</em> There would be experienced BDD practitioners and beginners, but all are doing BDD, since they are within the boundary. Homogeneity within the community in terms of belief and practices would be the norm and the goal.</p>
+  </li>
+</ol>
+
+<p>If we think of BDD as a bounded set, we must decide what are the definitive characteristics that set a BDD practitioner apart from a non-BDD practitioner. We may do so in terms of belief in certain essential “truths” about BDD, or strict adherence to certain essential BDD “practices.”</p>
+
+<p>BDD, as understood by leaders within the community, is clearly NOT a bounded set. Rather, it is a centered set. Let’s see what we mean by that.</p>
+
+<h2 id="centered-sets">Centered Sets</h2>
+
+<p>There are other ways to form mental categories. Hiebert says a second way is to form centered sets<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>. A centered set has the following characteristics:</p>
+
+<ol>
+  <li>
+    <p><em>It is created by defining a center, and the relationship of things to that center.</em> Some things may be far from the center, but they are moving towards the center, therefore, they are part of the centered set. On the other hand, some objects may be near the center but are moving away from it, so they are not a part of the set. The set is made up of all objects moving towards the center.</p>
+  </li>
+  <li>
+    <p><em>While the centered set does not place the primary focus on the boundary, there is a clear division between things moving in and those moving out.</em> An object either belongs to a set or it does not. The set focuses upon the center and the boundary emerges when the center and the movement of the objects has been defined. There is no great need to maintain the boundary in order to maintain the set. The boundary is not the focus so long as the center is clear.</p>
+  </li>
+  <li>
+    <p><em>Centered sets reflect variation within a category.</em> While there is a clear distinction between things moving in and those moving out, the objects within the set are not categorically uniform. Some may be near the center and others far from it, even though all are moving towards the center. Each object must be considered individually. It is not reduced to a single common uniformity within the category.</p>
+  </li>
+  <li>
+    <p><em>Centered sets are dynamic sets.</em> Two types of movements are essential parts of their structure. First, it is possible to change direction — to turn from moving away to moving towards the center, from being outside to being inside the set. Second, because all objects are seen in constant motion, they are moving, fast or slowly, towards or away from the center. Something is always happening to an object. It is never static.</p>
+  </li>
+</ol>
+
+<p><img src="/assets/centered-set.png" alt="Centered Set" class="right" width="300" /></p>
+
+<p>Illustrations of centered sets are harder to come by in English, since English tends to see the world largely in terms of bounded sets. One example is a magnetic field in which particles are in motion. Electrons are those particles which are drawn towards the positive magnetic pole, and protons are those attracted by the negative pole. The diagram here is another way of visualizing a centered set<sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup>.</p>
+
+<h2 id="bdd-as-a-centered-set">BDD as a Centered Set</h2>
+
+<p>In contrast to a bounded set, how does the concept “BDD” look defined as a centered set as I propose?</p>
+
+<ol>
+  <li>
+    <p><em>A BDD practitioner is be defined in terms of the center — in terms of the principles, values and goals that the BDD community holds to be central</em>. These principles, values and goals were enumerated quite clearly by Dan North and others during the panel session and are spelled out in other places (Dan’s original article about BDD in Better Software was published in 2006 and still applies today). From the nature of the centered set, it should be clear that it is possible that there are those near the center who know a great deal about BDD, but who are moving away from the center. On the other hand there are those who are at a distance — who know little about BDD because they are just starting to learn it — but they are still BDD practitioners.</p>
+  </li>
+  <li>
+    <p><em>There is a clear division between being doing BDD and not doing BDD.</em> The boundary is there. To pick an extreme example, I mentioned on the panel that a team doing waterfall (serial lifecycle phase gate) development with no collaboration between roles, not using examples, and doing no test automation at all could not be said to be doing BDD. But with a centered set there is less stress on maintaining the boundary in order to preserve the existence and purity of the category, the BDD community. There is also no need to play boundary games and institutionally exclude those who are not truly part of the BDD community. Rather, the focus is on the center and of pointing people to that center. Inclusion, rather than exclusion, is the name of the BDD game.</p>
+  </li>
+  <li>
+    <p><em>There is a recognition of variation among the BDD community.</em> Some are closer to the BDD values in their knowledge and practice, others have only a little knowledge and need to grow. But - whether novice or expert or somewhere in between - all are doing BDD, and are called to continuously seek to improve and grow in their understanding and practice of delivering value early and often.</p>
+  </li>
+</ol>
+
+<p>Being a centered set, growth thus is an essential part of practicing BDD. When a team begins doing BDD, they begin a journey and should strive to continue to move towards the center. There is no static state. Learning BDD is not the end, it is the beginning. We need good BDD education, mentoring and coaching to teach BDD to the many beginners who will join the community in the years to come, but we must also think about the need to continously improve and inspire novices to move beyond following recipes and so-called “best practices” and experiment with tailoring BDD to their unique context.</p>
+
+<p>I submit that the agile community in general should also be considered a centered set, with the agile manifesto as the central value statement for the movement. Whether BDD, or agile in general, being a centered community rather than a bounded one must involve always seeking to not only uphold but also increase the gravitational pull of the values at the center.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Paul Hiebert, “Conversion, Culture and Cognitive Categories.” In: Gospel in Context 1:4 (October, 1978), 24-29., sourced from <a href="https://danutm.files.wordpress.com/2010/06/hiebert-paul-g-conversion-culture-and-cognitive-categories.pdf">https://danutm.files.wordpress.com/2010/06/hiebert-paul-g-conversion-culture-and-cognitive-categories.pdf</a>, 3/28/2015 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>There are also Fuzzy Sets, see Hiebert’s article for more references <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>Sourced from <a href="http://www.academia.edu/6810466/Understanding_Christian_Identity_in_Terms_of_Bounded_and_Centered_Set_Theory_in_the_Writings_of_Paul_G._Hiebert">http://www.academia.edu/6810466/Understanding_Christian_Identity_in_Terms_of_Bounded_and_Centered_Set_Theory_in_the_Writings_of_Paul_G._Hiebert</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+
+    
+    <div id="page-navigation">
+            <div class="clear">&nbsp;</div>
+            <div class="left" width="100">
+            
+                    <a href="/blog/2015/02/09/good-design-is-people-centered/" title="Previous Post:
+    Good Design is People-Centered - Design Quotes Part 5">&laquo; Good Design is People-Centered - Design Quotes Part 5</a>
+            
+            </div>
+
+            <div class="right">
+            
+                    <a href="/blog/2019/01/22/realtime-retro-eddd/" title="next Post:
+    Explore DDD - Realtime Retrospective">Explore DDD - Realtime Retrospective &raquo; </a>
+            
+            </div>
+            <div class="clear">&nbsp;</div>
+            <div class="clear">&nbsp;</div>
+            <br>
+
+            <h3>Related Posts</h3>
+
+            <ul>
+              
+              
+              
+              <!-- First priority: posts with shared tags -->
+              
+              
+              <!-- If we don't have enough related posts, fill with recent posts -->
+              
+              
+              <!-- Display the related posts -->
+              
+                <li>
+                  <a href="/blog/2020/03/23/plotting-paths-to-cloud-migration/">Plotting Paths to Cloud Migration</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2020/03/19/cloud-strategy-design-and-automation/">Cloud Strategy, Design And Automation</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2019/05/13/eventstorming-team-flow/">EventStorming Team Flow</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2019/01/22/realtime-retro-eddd/">Explore DDD - Realtime Retrospective</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2015/02/09/good-design-is-people-centered/">Good Design is People-Centered - Design Quotes Part 5</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2015/01/22/persisting-value-objects/">Persisting Value Objects</a>
+                </li>
+              
+            </ul>
+    </div>
+
+    <div>
+  <h4>About the Author</h4>
+  <section  class="visible-desktop">
+  <img class="gravatar" src="http://www.gravatar.com/avatar/4ce180eb1538932a4cc5b14c9eb0e83b?s=300">
+  <span>Paul is a software design and development coach and mentor. He is available for consulting and training through his company, <a href="http://www.virtualgenius.com">Virtual Genius LLC.</a> He is the author of <a href="https://leanpub.com/eventstorming_handbook">The EventStorming Handbook</a> and major contributor to <a href="https://www.amazon.com/Behavior-Driven-Development-Cucumber-Specification-Example/dp/0321772636">Behavior-Driven Development with Cucumber.</a> He is also the founder and chair for the <a href="http://exploreddd.com">Explore DDD conference</a>.
+  </span>
+</section>
+</div>
+  </article>
+
+  
+  
+  
+    
+<!-- Add Disqus comments. -->
+<div id="disqus_thread" class="site-footer"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'thepaulrayner'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Leading by Design</li>
+          <li><a href="mailto:paul@virtualgenius.com">paul@virtualgenius.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/paulrayner">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">paulrayner</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/thepaulrayner">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">thepaulrayner</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+      <span>
+      <a href="http://www.virtualgenius.com/" imageanchor="1"><img  class="footer-brand" alt="Virtual Genius LLC." src="/assets/vg_logo.png" title="Virtual Genius LLC" /></a>
+      </div>
+      </span>
+    </div>
+    <div>
+    <hr>
+    <span>
+        <i class="fa fa-gear fa-lg">&nbsp;</i>Powered by <a target="_blank" href="http://pages.github.com/">GitHub Pages</a>, <a target="_blank" href="http://jekyllrb.com">Jekyll</a> and <a target="_blank" href="http://asciidoctor.org/">AsciiDoctor</a>
+    </div>
+    </span>
+    <div>
+    <hr>
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:1" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+    </div>
+  </div>
+
+</footer>
+
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37443128-1', 'thepaulrayner.com');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+
+</html>

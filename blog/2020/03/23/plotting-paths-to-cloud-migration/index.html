@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Plotting Paths to Cloud Migration</title>
+  <meta name="description" content="Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren't a one-shot type of endeavor. — Gregor Hohpe">
+
+  <meta name="keywords" content="Cloud, Design, DDD, Architecture">
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="canonical" href="http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration/">
+  <link rel="alternate" type="application/rss+xml" title="Leading by Design" href="http://thepaulrayner.com/feed.xml" />
+  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Leading by Design</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+    </nav>
+
+  </div>
+<div class="wrapper">
+    <p class="text"><i>Paul Rayner's blog on software design and process</i></p>
+  </div>
+  <div class="wrapper">
+    <ul class="site-contact">
+      <li><i class="fa fa-twitter fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://twitter.com/thepaulrayner">Twitter</a></li>
+      <li>|</li>
+      <li><i class="fa fa-github fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://github.com/paulrayner">GitHub</a></li>
+      <li>|</li>
+      <!-- <li><i class="fa fa-google-plus fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://plus.google.com/u/0/104952531007433798958/posts">Google</a></li>
+      <li>|</li> -->
+      <li><i class="fa fa-linkedin fa-lg"></i>&nbsp;<a target="_blank" class="site-contact" href="https://www.linkedin.com/in/thepaulrayner">LinkedIn</a></li>
+      <li>|</li>
+      <li><i class="fa fa-user fa-lg"></i>&nbsp;<a class="site-contact" href="/about">About</a></li>
+      <li>|</li>
+      <li><i class="fa fa-archive fa-lg"></i>&nbsp;<a class="site-contact" href="/archive.html">Archive</a></li>
+      <li>|</li>
+      <li><i class="fa fa-rss fa-lg text-error"></i>&nbsp;<a target="_blank" class="site-contact" href="http://thepaulrayner.com/feed.xml">RSS</a></li>
+    </ul>
+  </div>
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Plotting Paths to Cloud Migration</h1>
+    <span class="post-meta">
+<i class="fa fa-calendar fa-lg"></i>&nbsp;&nbsp;Mar 23, 2020
+
+<i class="fa fa-tags fa-lg"></i>&nbsp; <a href="/tags/Cloud" title="View posts tagged with &quot;Cloud&quot;">Cloud |</a>    <a href="/tags/Design" title="View posts tagged with &quot;Design&quot;">Design |</a>    <a href="/tags/DDD" title="View posts tagged with &quot;DDD&quot;">DDD |</a>    <a href="/tags/Architecture" title="View posts tagged with &quot;Architecture&quot;">Architecture |</a>   
+
+</span>
+
+  </header>
+
+  <article class="post-content">
+    <blockquote>
+  <p>Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren’t a one-shot type of endeavor.</p>
+
+  <p>— Gregor Hohpe</p>
+</blockquote>
+
+<p>Have your stakeholders expressed confusion in deciphering your cloud migration strategy? Are you using the typical lengthy variations verbs starting with “R” (rehost - replatform - rearchitect - retire)? Or perhaps an opaque, complicated framework that actually makes your approach less clear? A simple visual model can go a long way in providing clarity in navigating the inevitable complexity of a cloud migration.</p>
+
+<h2 id="up-or-out">Up or Out</h2>
+
+<p>The article <a href="https://cloud.google.com/blog/topics/perspectives/enterprise-it-can-move-up-or-out-or-both">Enterprise IT can move up or out (or both)</a>, describes the “up or out” framework as a way to empower both the business and IT to approach a cloud migration more collaboratively, cutting through much of the hype and technical complexity. This model can help enterprises chart their cloud adoption journey delineates cloud migration along two axes — up and out.</p>
+
+<p><img src="/assets/cloud-strategy/cloud_adoption_journey.max-1000x1000.png" alt="Cloud Adoption Journey" class="center-image" width="800" /></p>
+
+<p>On-premise applications are located in the bottom left quadrant. The horizontal axis represents moving “out” from on-premises to the cloud, and the vertical axis describes modernizing applications to operate further “up” the stack, further away from infrastructure (servers and hardware details).</p>
+
+<blockquote>
+  <p>A cloud-based IT operating model has been shown to offer significant advantages in terms of rapid deployment, elastic scalability, resilient operations, and security. However, large enterprises can’t simply wake up one day with all their applications running in the cloud. Thus, every enterprise’s move to the cloud is at least initially a hybrid cloud scenario, where some workloads remain on-premises and other workloads run in the cloud.</p>
+
+  <p>— Gregor Hohpe</p>
+</blockquote>
+
+<h3 id="moving-up-the-stack">Moving Up The Stack</h3>
+
+<p>One choice you can make is to move your migrations up the stack. This path is the journey of decoupling your applications from your current on-premise infrastructure.</p>
+
+<p>For example, as an initial step you could transition from running a monolithic application on dedicated services to a Platform-As-A-Service (PaaS) model that deploys applications and services using containers. Or in going further by utilizing SaaS services for certain business capabilities that would benefit from this approach.</p>
+
+<p><img src="/assets/cloud-strategy/up-the-stack.jpg" alt="Up The Stack" class="center-image" width="400" /></p>
+
+<p>Hohpe highlights several key advantages of moving up the stack:</p>
+
+<ul>
+  <li><strong>Elasticity</strong> - Application deployment becomes automated, making it easy to add or subtract capacity as needed.</li>
+  <li><strong>Resilience</strong> - Operations also become more resilient because new instances can be rapidly deployed in case of failure, allowing PaaS or serverless platforms to withstand a server failure without visible customer impact.</li>
+  <li><strong>Cost Reduction</strong> - Thanks to smaller deployable units, hardware can be more efficiently utilized, thus reducing run costs.</li>
+  <li><strong>Decoupling/Portability</strong> - Applications become more portable when they are better isolated from infrastructure details, as their containers may be deployed on a variety of infrastructures.</li>
+</ul>
+
+<p>Moving up the stack may be a challenging effort, one which requires you to fundamentally change the way in which you build applications and operate the infrastructure that supports them. Modularity and decoupling from a business domain perspective becomes essential.</p>
+
+<h3 id="out-to-the-cloud">Out to The Cloud</h3>
+
+<p>The second option is to lift, shift, and replatform existing applications out into the cloud. Some advantages mentioned by Hohpe in moving an application unchanged from an existing on-premises data center to the cloud and shifting the operational model to one that’s more automated include:</p>
+
+<ul>
+  <li>Better economies of scale allow for more cost-efficient operations.</li>
+  <li>Automated patching discipline improves security because it assures that no software with known vulnerabilities is run.</li>
+  <li>Increased transparency enables more efficient IT asset management, for example by rightsizing servers or detecting and retiring unused IT assets.</li>
+</ul>
+
+<p>Taking an initial lift and shift approach into the cloud along the horizontal axis may make it easier to move vertically (optimize/re-architect) later, once the applications are already running in the cloud. The first reason is primarily technical: the application, data and traffic have already been completed, paving the way for further optimization and improvement when the timing and cost is more favorable. The second reason is that doing such migrations enables the organization to move to more of a “cloud lifestyle” and cultivate the necessary skills to perform future migrations more successfully.</p>
+
+<p>Don’t underestimate the importance of skills development and cultivating cultural memory for new approaches. Many organizations fall into the trap of assuming that migrating to the cloud is primarily a technical journey, but then discover too late that it actually requires rethinking how to do business - touching every aspect of product development, application development, deployment, support, and operations.</p>
+
+<h3 id="combining-cloud-migration-approaches">Combining Cloud Migration Approaches</h3>
+
+<p>Don’t think of this as a blanket all-or-nothing approach. Combining various approaches into a progressive transformation towards cloud-centric operations reduces risk and improves time-to-value.</p>
+
+<p>As Hohpe points out:</p>
+
+<ul>
+  <li>Lifting existing applications and replatforming them onto cloud infrastructure minimizes initial effort, avoiding the costs of redevelopment, and allowing an enterprise to transform its infrastructure acquisition and scaling processes while minimizing impact to existing operations models.</li>
+  <li>Adjusting operations models to increase the use of automation and cloud-native tooling accelerates the overall transformation and maximizes the value from abstracted infrastructure services.</li>
+  <li>Finally, decomposing application elements to take advantage of managed cloud services, such as migrating off of self-managed My SQL databases onto provider-managed Database-as-a-Service, requires some additional effort but lays the foundation for moving beyond seeing cloud as yet another infrastructure provider.</li>
+</ul>
+
+<blockquote>
+  <p>Not only is combining up and out allowed, it’s encouraged. We think of it as a cloud-native hybrid model, where applications are deployed as containers or functions and can be easily shifted from on-premises to the cloud as needed, all while maintaining a consistent deployment, run-time, and management framework.</p>
+
+  <p>— Gregor Hohpe</p>
+</blockquote>
+
+<p>Hohpe recommends you consider asking a few questions:</p>
+
+<ul>
+  <li>Which elements of an application or service would benefit most from an event-driven, serverless approach?</li>
+  <li>Which elements of a service require rapid code releases or the ability to validate new features using A/B testing (meaning that a new version of the software is made available to a percentage of users)?</li>
+  <li>Which elements change infrequently, but would benefit from automated scaling and deployment?</li>
+</ul>
+
+<h3 id="multiple-paths-per-application">Multiple Paths Per Application</h3>
+
+<p>With the answers to these questions, you can begin to decompose application capabilities, workloads, and components and map them against the up or out framework, thus presenting the organization with a pragmatic migration approach that maximizes value.</p>
+
+<p>Remember, for most applications you are not locked into a single direction. On the up or out model, plot the path for each application or class of applications in your cloud migration strategy. Rather than thinking of each migration as a single jump, plot a path to cloud migration that makes sense in your context.</p>
+
+<p>Plotting a path for individual workloads and architectural elements on the up or out framework can help IT decision makers focus on the benefits achieved by re-platforming, re-architecting, or a combination of the two. It’s typical and in fact desired that different components take unique paths. Avoid a <a href="https://www.dictionary.com/e/memes/leeroy-jenkins/">Leeroy Jenkins situation</a> in your enterprise cloud migration by taking a more informed and nuanced approach by migrating the individual workloads and architectural elements in your context.</p>
+
+<h3 id="plotting-paths-to-the-cloud">Plotting Paths to the Cloud</h3>
+
+<p>The visual model also communicates migration paths over time in an approachable manner that can be shared with a wide audience in both business and IT. For example, in the article Hohpe provides an example of what this might look for an enterprise ecommerce application.</p>
+
+<p>In the ecommerce example, the retailer’s customer-facing front end frequently required feature updates to differentiate them in a competitive retail market. They also wanted to utilize A/B testing to ensure that they were delivering the right features. By incrementally isolating and rewriting the web front end and moving it up the stack in containers, they could also support this with a new automated CI/CD pipeline to enable rapid delivery to support excel and innovate.</p>
+
+<p>The ecommerce mid-tier application needed refactoring and re-architecting, but “more immediate value could be generated by shifting to an automated scale-out model and gaining operational efficiencies in the cloud.” This is a good example of setting priorities correctly and focusing on reducing the time-to-value of migration efforts.</p>
+
+<p>The retailer’s back-end catalog systems changed infrequently and were hosted on well-understood and easily maintained systems. There did not seem to be value in devoting effort to migrating them, plus any attention devoted to that would distract from the other more valuable concerns. To focus their initial energy, they decided to keep the back-end systems in place until they can replace them completely in the future.</p>
+
+<blockquote>
+  <p>Taking this approach allowed the retailer to minimize the time and effort required to accomplish their primary goal—rapid iteration of a customer experience that was becoming stale. They also gained operational and capital efficiencies and set themselves in a good position to migrate their catalog data to the cloud when the time and price were right for them.</p>
+
+  <p>— Gregor Hohpe</p>
+</blockquote>
+
+<p><img src="/assets/cloud-strategy/enterprise_IT_oYsbpz5.max-800x800.png" alt="Enterprise IT Migration" class="center-image" width="800" /></p>
+
+<p>Separating out elements and migrating them up and out enables an organization to target the migration of more valuable capabilities earlier, creating opportunities to excel and innovate without being shackled to software elements that are harder to modify. This relates to the notion of <em>domain-distillation</em> in strategic domain-driven design (DDD), where more valuable software elements are isolated into new components that can be developed and deployed independently of the existing systems. We’ll be talking about options for this in later articles.</p>
+
+<p><em>Note: In the case of a large, mission-critical and highly coupled (i.e. monolithic) application, a migrate-then-update journey might also be a good choice, after the distillation and movement up the stack of valuable capabilities. Why? As an initial step, moving to the cloud horizontally is going to be faster (and typically less risky) than trying to re-architect an entire application while migrating it, even though such an approach may be an ultimately longer journey than directly traveling the hypotenuse.</em></p>
+
+<h3 id="communicating-your-cloud-strategy">Communicating Your Cloud Strategy</h3>
+
+<p>The up or out framework helps you ask the right questions about how best to approach each application, and determine if it can be divided into elements that could each be migrated separately.</p>
+
+<p>The simple up or out visual model encourages collaborative conversations about the relative tradeoffs and risks that might be encountered along each path. These conversations need to push past apparently conflicting priorities in seeking alignment between business and technical priorities.</p>
+
+<p><strong>If your cloud strategy seems to be too good to be true, it probably is.</strong> There are always tradeoffs. Plans need to be adjusted as the organization learns. As with any effort, your plan needs to be realistic from both a business and technical perspective, with clear goals and measures of success. To be successful, goals must to be communicated effectively to both technical and non-technical stakeholders so that there is the necessary buy-in and trust to move forward with the plan, and adjust as situations change during implementation.</p>
+
+<blockquote>
+  <p>Simple but evocative frameworks like “up or out” can help IT decision makers navigate the inevitable complexity of a cloud migration. Like any good model, simplicity is a feature, not a bug, as it helps keep the focus on the desired outcome and is easily communicated to a variety of audiences.</p>
+
+  <p>— Gregor Hohpe</p>
+</blockquote>
+
+<p>For more details, see Gregor Hohpe’s excellent <a href="https://leanpub.com/cloudstrategy">Cloud Strategy: An Architect Elevator Guide to Successful Cloud Migration</a> ebook.</p>
+
+<p>Photo of desserts by <a href="https://unsplash.com/@massimo_adami?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Massimo Adami</a> on <a href="http://unsplash.com">Unsplash</a>.</p>
+
+
+    
+    <div id="page-navigation">
+            <div class="clear">&nbsp;</div>
+            <div class="left" width="100">
+            
+                    <a href="/blog/2020/03/19/cloud-strategy-design-and-automation/" title="Previous Post:
+    Cloud Strategy, Design And Automation">&laquo; Cloud Strategy, Design And Automation</a>
+            
+            </div>
+
+            <div class="right">
+            
+            </div>
+            <div class="clear">&nbsp;</div>
+            <div class="clear">&nbsp;</div>
+            <br>
+
+            <h3>Related Posts</h3>
+
+            <ul>
+              
+              
+              
+              <!-- First priority: posts with shared tags -->
+              
+              
+              <!-- If we don't have enough related posts, fill with recent posts -->
+              
+              
+              <!-- Display the related posts -->
+              
+                <li>
+                  <a href="/blog/2020/03/19/cloud-strategy-design-and-automation/">Cloud Strategy, Design And Automation</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2019/05/13/eventstorming-team-flow/">EventStorming Team Flow</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2019/01/22/realtime-retro-eddd/">Explore DDD - Realtime Retrospective</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2015/02/09/good-design-is-people-centered/">Good Design is People-Centered - Design Quotes Part 5</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2015/01/22/persisting-value-objects/">Persisting Value Objects</a>
+                </li>
+              
+                <li>
+                  <a href="/blog/2015/03/28/bdd-is-a-centered-rather-than-a-bounded-community/">BDD is a Centered Community Rather than a Bounded Community</a>
+                </li>
+              
+            </ul>
+    </div>
+
+    <div>
+  <h4>About the Author</h4>
+  <section  class="visible-desktop">
+  <img class="gravatar" src="http://www.gravatar.com/avatar/4ce180eb1538932a4cc5b14c9eb0e83b?s=300">
+  <span>Paul is a software design and development coach and mentor. He is available for consulting and training through his company, <a href="http://www.virtualgenius.com">Virtual Genius LLC.</a> He is the author of <a href="https://leanpub.com/eventstorming_handbook">The EventStorming Handbook</a> and major contributor to <a href="https://www.amazon.com/Behavior-Driven-Development-Cucumber-Specification-Example/dp/0321772636">Behavior-Driven Development with Cucumber.</a> He is also the founder and chair for the <a href="http://exploreddd.com">Explore DDD conference</a>.
+  </span>
+</section>
+</div>
+  </article>
+
+  
+  
+  
+    
+<!-- Add Disqus comments. -->
+<div id="disqus_thread" class="site-footer"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'thepaulrayner'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Leading by Design</li>
+          <li><a href="mailto:paul@virtualgenius.com">paul@virtualgenius.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/paulrayner">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">paulrayner</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/thepaulrayner">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">thepaulrayner</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+      <span>
+      <a href="http://www.virtualgenius.com/" imageanchor="1"><img  class="footer-brand" alt="Virtual Genius LLC." src="/assets/vg_logo.png" title="Virtual Genius LLC" /></a>
+      </div>
+      </span>
+    </div>
+    <div>
+    <hr>
+    <span>
+        <i class="fa fa-gear fa-lg">&nbsp;</i>Powered by <a target="_blank" href="http://pages.github.com/">GitHub Pages</a>, <a target="_blank" href="http://jekyllrb.com">Jekyll</a> and <a target="_blank" href="http://asciidoctor.org/">AsciiDoctor</a>
+    </div>
+    </span>
+    <div>
+    <hr>
+        <span><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:1" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</span>
+    </div>
+  </div>
+
+</footer>
+
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37443128-1', 'thepaulrayner.com');
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+
+</html>

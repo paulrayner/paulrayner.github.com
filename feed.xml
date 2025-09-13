@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://thepaulrayner.com/" rel="alternate" type="text/html" /><updated>2025-09-13T04:31:33+00:00</updated><id>http://thepaulrayner.com/feed.xml</id><title type="html">Leading by Design</title><subtitle>Paul Rayner&apos;s blog on software design and process</subtitle><entry><title type="html">Plotting Paths to Cloud Migration</title><link href="http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration/" rel="alternate" type="text/html" title="Plotting Paths to Cloud Migration" /><published>2020-03-23T16:00:00+00:00</published><updated>2020-03-23T16:00:00+00:00</updated><id>http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration</id><content type="html" xml:base="http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration/"><![CDATA[<blockquote>
+  <p>Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren’t a one-shot type of endeavor.</p>
+
+  <p>— Gregor Hohpe</p>
+</blockquote>
+
+<p>Have your stakeholders expressed confusion in deciphering your cloud migration strategy? Are you using the typical lengthy variations verbs starting with “R” (rehost - replatform - rearchitect - retire)? Or perhaps an opaque, complicated framework that actually makes your approach less clear? A simple visual model can go a long way in providing clarity in navigating the inevitable complexity of a cloud migration.</p>
+
+<h2 id="up-or-out">Up or Out</h2>
+
+<p>The article <a href="https://cloud.google.com/blog/topics/perspectives/enterprise-it-can-move-up-or-out-or-both">Enterprise IT can move up or out (or both)</a>, describes the “up or out” framework as a way to empower both the business and IT to approach a cloud migration more collaboratively, cutting through much of the hype and technical complexity. This model can help enterprises chart their cloud adoption journey delineates cloud migration along two axes — up and out.</p>
+
+<p><img src="/assets/cloud-strategy/cloud_adoption_journey.max-1000x1000.png" alt="Cloud Adoption Journey" class="center-image" width="800" /></p>
+
+<p>On-premise applications are located in the bottom left quadrant. The horizontal axis represents moving “out” from on-premises to the cloud, and the vertical axis describes modernizing applications to operate further “up” the stack, further away from infrastructure (servers and hardware details).</p>
+
+<blockquote>
+  <p>A cloud-based IT operating model has been shown to offer significant advantages in terms of rapid deployment, elastic scalability, resilient operations, and security. However, large enterprises can’t simply wake up one day with all their applications running in the cloud. Thus, every enterprise’s move to the cloud is at least initially a hybrid cloud scenario, where some workloads remain on-premises and other workloads run in the cloud.</p>
+
+  <p>— Gregor Hohpe</p>
+</blockquote>
+
+<h3 id="moving-up-the-stack">Moving Up The Stack</h3>
+
+<p>One choice you can make is to move your migrations up the stack. This path is the journey of decoupling your applications from your current on-premise infrastructure.</p>
+
+<p>For example, as an initial step you could transition from running a monolithic application on dedicated services to a Platform-As-A-Service (PaaS) model that deploys applications and services using containers. Or in going further by utilizing SaaS services for certain business capabilities that would benefit from this approach.</p>
+
+<p><img src="/assets/cloud-strategy/up-the-stack.jpg" alt="Up The Stack" class="center-image" width="400" /></p>
+
+<p>Hohpe highlights several key advantages of moving up the stack:</p>
+
+<ul>
+  <li><strong>Elasticity</strong> - Application deployment becomes automated, making it easy to add or subtract capacity as needed.</li>
+  <li><strong>Resilience</strong> - Operations also become more resilient because new instances can be rapidly deployed in case of failure, allowing PaaS or serverless platforms to withstand a server failure without visible customer impact.</li>
+  <li><strong>Cost Reduction</strong> - Thanks to smaller deployable units, hardware can be more efficiently utilized, thus reducing run costs.</li>
+  <li><strong>Decoupling/Portability</strong> - Applications become more portable when they are better isolated from infrastructure details, as their containers may be deployed on a variety of infrastructures.</li>
+</ul>
+
+<p>Moving up the stack may be a challenging effort, one which requires you to fundamentally change the way in which you build applications and operate the infrastructure that supports them. Modularity and decoupling from a business domain perspective becomes essential.</p>
+
+<h3 id="out-to-the-cloud">Out to The Cloud</h3>
+
+<p>The second option is to lift, shift, and replatform existing applications out into the cloud. Some advantages mentioned by Hohpe in moving an application unchanged from an existing on-premises data center to the cloud and shifting the operational model to one that’s more automated include:</p>
+
+<ul>
+  <li>Better economies of scale allow for more cost-efficient operations.</li>
+  <li>Automated patching discipline improves security because it assures that no software with known vulnerabilities is run.</li>
+  <li>Increased transparency enables more efficient IT asset management, for example by rightsizing servers or detecting and retiring unused IT assets.</li>
+</ul>
+
+<p>Taking an initial lift and shift approach into the cloud along the horizontal axis may make it easier to move vertically (optimize/re-architect) later, once the applications are already running in the cloud. The first reason is primarily technical: the application, data and traffic have already been completed, paving the way for further optimization and improvement when the timing and cost is more favorable. The second reason is that doing such migrations enables the organization to move to more of a “cloud lifestyle” and cultivate the necessary skills to perform future migrations more successfully.</p>
+
+<p>Don’t underestimate the importance of skills development and cultivating cultural memory for new approaches. Many organizations fall into the trap of assuming that migrating to the cloud is primarily a technical journey, but then discover too late that it actually requires rethinking how to do business - touching every aspect of product development, application development, deployment, support, and operations.</p>
+
+<h3 id="combining-cloud-migration-approaches">Combining Cloud Migration Approaches</h3>
+
+<p>Don’t think of this as a blanket all-or-nothing approach. Combining various approaches into a progressive transformation towards cloud-centric operations reduces risk and improves time-to-value.</p>
+
+<p>As Hohpe points out:</p>
+
+<ul>
+  <li>Lifting existing applications and replatforming them onto cloud infrastructure minimizes initial effort, avoiding the costs of redevelopment, and allowing an enterprise to transform its infrastructure acquisition and scaling processes while minimizing impact to existing operations models.</li>
+  <li>Adjusting operations models to increase the use of automation and cloud-native tooling accelerates the overall transformation and maximizes the value from abstracted infrastructure services.</li>
+  <li>Finally, decomposing application elements to take advantage of managed cloud services, such as migrating off of self-managed My SQL databases onto provider-managed Database-as-a-Service, requires some additional effort but lays the foundation for moving beyond seeing cloud as yet another infrastructure provider.</li>
+</ul>
+
+<blockquote>
+  <p>Not only is combining up and out allowed, it’s encouraged. We think of it as a cloud-native hybrid model, where applications are deployed as containers or functions and can be easily shifted from on-premises to the cloud as needed, all while maintaining a consistent deployment, run-time, and management framework.</p>
+
+  <p>— Gregor Hohpe</p>
+</blockquote>
+
+<p>Hohpe recommends you consider asking a few questions:</p>
+
+<ul>
+  <li>Which elements of an application or service would benefit most from an event-driven, serverless approach?</li>
+  <li>Which elements of a service require rapid code releases or the ability to validate new features using A/B testing (meaning that a new version of the software is made available to a percentage of users)?</li>
+  <li>Which elements change infrequently, but would benefit from automated scaling and deployment?</li>
+</ul>
+
+<h3 id="multiple-paths-per-application">Multiple Paths Per Application</h3>
+
+<p>With the answers to these questions, you can begin to decompose application capabilities, workloads, and components and map them against the up or out framework, thus presenting the organization with a pragmatic migration approach that maximizes value.</p>
+
+<p>Remember, for most applications you are not locked into a single direction. On the up or out model, plot the path for each application or class of applications in your cloud migration strategy. Rather than thinking of each migration as a single jump, plot a path to cloud migration that makes sense in your context.</p>
+
+<p>Plotting a path for individual workloads and architectural elements on the up or out framework can help IT decision makers focus on the benefits achieved by re-platforming, re-architecting, or a combination of the two. It’s typical and in fact desired that different components take unique paths. Avoid a <a href="https://www.dictionary.com/e/memes/leeroy-jenkins/">Leeroy Jenkins situation</a> in your enterprise cloud migration by taking a more informed and nuanced approach by migrating the individual workloads and architectural elements in your context.</p>
+
+<h3 id="plotting-paths-to-the-cloud">Plotting Paths to the Cloud</h3>
+
+<p>The visual model also communicates migration paths over time in an approachable manner that can be shared with a wide audience in both business and IT. For example, in the article Hohpe provides an example of what this might look for an enterprise ecommerce application.</p>
+
+<p>In the ecommerce example, the retailer’s customer-facing front end frequently required feature updates to differentiate them in a competitive retail market. They also wanted to utilize A/B testing to ensure that they were delivering the right features. By incrementally isolating and rewriting the web front end and moving it up the stack in containers, they could also support this with a new automated CI/CD pipeline to enable rapid delivery to support excel and innovate.</p>
+
+<p>The ecommerce mid-tier application needed refactoring and re-architecting, but “more immediate value could be generated by shifting to an automated scale-out model and gaining operational efficiencies in the cloud.” This is a good example of setting priorities correctly and focusing on reducing the time-to-value of migration efforts.</p>
+
+<p>The retailer’s back-end catalog systems changed infrequently and were hosted on well-understood and easily maintained systems. There did not seem to be value in devoting effort to migrating them, plus any attention devoted to that would distract from the other more valuable concerns. To focus their initial energy, they decided to keep the back-end systems in place until they can replace them completely in the future.</p>
+
+<blockquote>
+  <p>Taking this approach allowed the retailer to minimize the time and effort required to accomplish their primary goal—rapid iteration of a customer experience that was becoming stale. They also gained operational and capital efficiencies and set themselves in a good position to migrate their catalog data to the cloud when the time and price were right for them.</p>
+
+  <p>— Gregor Hohpe</p>
+</blockquote>
+
+<p><img src="/assets/cloud-strategy/enterprise_IT_oYsbpz5.max-800x800.png" alt="Enterprise IT Migration" class="center-image" width="800" /></p>
+
+<p>Separating out elements and migrating them up and out enables an organization to target the migration of more valuable capabilities earlier, creating opportunities to excel and innovate without being shackled to software elements that are harder to modify. This relates to the notion of <em>domain-distillation</em> in strategic domain-driven design (DDD), where more valuable software elements are isolated into new components that can be developed and deployed independently of the existing systems. We’ll be talking about options for this in later articles.</p>
+
+<p><em>Note: In the case of a large, mission-critical and highly coupled (i.e. monolithic) application, a migrate-then-update journey might also be a good choice, after the distillation and movement up the stack of valuable capabilities. Why? As an initial step, moving to the cloud horizontally is going to be faster (and typically less risky) than trying to re-architect an entire application while migrating it, even though such an approach may be an ultimately longer journey than directly traveling the hypotenuse.</em></p>
+
+<h3 id="communicating-your-cloud-strategy">Communicating Your Cloud Strategy</h3>
+
+<p>The up or out framework helps you ask the right questions about how best to approach each application, and determine if it can be divided into elements that could each be migrated separately.</p>
+
+<p>The simple up or out visual model encourages collaborative conversations about the relative tradeoffs and risks that might be encountered along each path. These conversations need to push past apparently conflicting priorities in seeking alignment between business and technical priorities.</p>
+
+<p><strong>If your cloud strategy seems to be too good to be true, it probably is.</strong> There are always tradeoffs. Plans need to be adjusted as the organization learns. As with any effort, your plan needs to be realistic from both a business and technical perspective, with clear goals and measures of success. To be successful, goals must to be communicated effectively to both technical and non-technical stakeholders so that there is the necessary buy-in and trust to move forward with the plan, and adjust as situations change during implementation.</p>
+
+<blockquote>
+  <p>Simple but evocative frameworks like “up or out” can help IT decision makers navigate the inevitable complexity of a cloud migration. Like any good model, simplicity is a feature, not a bug, as it helps keep the focus on the desired outcome and is easily communicated to a variety of audiences.</p>
+
+  <p>— Gregor Hohpe</p>
+</blockquote>
+
+<p>For more details, see Gregor Hohpe’s excellent <a href="https://leanpub.com/cloudstrategy">Cloud Strategy: An Architect Elevator Guide to Successful Cloud Migration</a> ebook.</p>
+
+<p>Photo of desserts by <a href="https://unsplash.com/@massimo_adami?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Massimo Adami</a> on <a href="http://unsplash.com">Unsplash</a>.</p>]]></content><author><name></name></author><category term="Cloud" /><category term="Design" /><category term="DDD" /><category term="Architecture" /><summary type="html"><![CDATA[Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren't a one-shot type of endeavor. — Gregor Hohpe]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://thepaulrayner.com/cloud-strategy/massimo-adami-JnqwC6dDL8c-unsplash.jpg" /><media:content medium="image" url="http://thepaulrayner.com/cloud-strategy/massimo-adami-JnqwC6dDL8c-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cloud Strategy, Design And Automation</title><link href="http://thepaulrayner.com/blog/2020/03/19/cloud-strategy-design-and-automation/" rel="alternate" type="text/html" title="Cloud Strategy, Design And Automation" /><published>2020-03-19T16:00:00+00:00</published><updated>2020-03-19T16:00:00+00:00</updated><id>http://thepaulrayner.com/blog/2020/03/19/cloud-strategy-design-and-automation</id><content type="html" xml:base="http://thepaulrayner.com/blog/2020/03/19/cloud-strategy-design-and-automation/"><![CDATA[<blockquote>
+  <p>…getting new features into production quickly is the real currency of the digital world.</p>
+
+  <p>— Gregor Hohpe</p>
+</blockquote>
+
+<p>I just finished reading Gregor Hohpe’s excellent <a href="https://leanpub.com/cloudstrategy">Cloud Strategy: An Architect Elevator Guide to Successful Cloud Migration</a> ebook. I like how the book approaches cloud strategy from an architectural perspective, moving beyond all the buzzwords and wishful thinking, while providing solid guidance for how to actually deliver on the promises of cloud migration for enterprises.</p>
+
+<p>Concerning automation, he points out that much of the original effort towards streamlining development processes was focused on the specification and coding aspects of software delivery, i.e. the translation of ideas into code.</p>
+
+<p><img src="/assets/cloud-strategy/cloud-strategy-ebook-cover.png" alt="cloud strategy ebook cover" class="right text-center" width="200" /></p>
+
+<blockquote>
+  <p>Many frameworks and methodologies looking to industrialize this aspect of software development, such as CASE tools, 4GL, and executable UML, arrived and disappeared again over the course of the 1990s and 2000s.</p>
+
+  <p>— Gregor Hohpe</p>
+</blockquote>
+
+<p>I remember some of those tools, <a href="https://en.wikipedia.org/wiki/IBM_Rational_Rose_XDE">Rational Rose</a> being one. The idea was to apply manufacturing techniques to the creative process of translating concepts into coding. After all, it seems simple enough: create a class diagram and translate that directly into code, and vice versa. But this ultimately proved to be much harder, and much less useful, than hoped.</p>
+
+<blockquote>
+  <p>Somehow, trying to automate the specification and coding steps of software delivery never quite yielded the results that the creators of these tools were after. Collectively, we could have saved a lot of effort if we had taken Jack Reeve’s article <a href="https://www.developerdotstar.com/mag/articles/reeves_design.html">What is Software Design</a> to heart. Published in 1992, Jack elaborated that coding is actually the <em>design</em> of software whereas compiling and deploying software is the manufacturing aspect. So, if you are looking to industrialize software manufacturing, you should automate on testing, compiling, and deployment, as opposed to trying to industrialize coding. About a quarter century later that’s finally being done. Some things take time, even software.</p>
+
+  <p>— Gregor Hohpe</p>
+</blockquote>
+
+<p>I’m reminded of David Marquet’s distinction between red work and blue work.</p>
+
+<p>Red work is DOING work. It’s about execution and reducing variability.  Think of manufacturing.</p>
+
+<p>Blue is THINKING work. It’s about discovery and decision making and increasing variability. Think of product development.</p>
+
+<p>Analysis, modeling, design and coding are all activities that are intrinsically <em>blue</em> work.</p>
+
+<p><strong><em>What makes the automation that cloud deployment provides so powerful is that it can be applied to the red work downstream from development that needs to be done to speed delivery of newly coded functionality that results from the blue work.</em></strong></p>
+
+<p>This hopefully becomes a virtuous cycle where applications can be modularized to take advantage of the elasticity and deployment advantages of a cloud environment.</p>
+
+<blockquote>
+  <p>Programming is a design activity — a good software design process recognizes this and does not hesitate to code when coding makes sense.
+Coding actually makes sense more often than believed. Often the process of rendering the design in code will reveal oversights and the need for additional design effort. The earlier this occurs, the better the design will be.</p>
+
+  <p>Since software is so cheap to build, formal engineering validation methods are not of much use in real world software development. It is easier and cheaper to just build the design and test it than to try to prove it.</p>
+
+  <p>— Jack Reeves</p>
+</blockquote>
+
+<p>Cloud strategy, when done well, is such a powerful enabler for the kind of delivery model that is optimized for this kind of time to value. Because of this, organizations should take an application-centric (rather than infrastructure-centric) view on their cloud strategy.</p>
+
+<p>In an application-centric approach to cloud the key drivers are concerned with “speeding up software delivery, primarily by reducing friction. Speed comes from automation, such as a fully automated tool chain, infrastructure-as-code, and cloud-ready applications that scale horizontally. Coupled with modern approaches like continuous integration (CI), continuous delivery (CD), and lean development, such tooling can transform the way an enterprise thinks about software delivery.” (Hohpe)</p>
+
+<p>Photo of Cloud Gate by <a href="https://unsplash.com/@sidem0n">Ruijia Wang</a> on <a href="http://unsplash.com">Unsplash</a>.</p>]]></content><author><name></name></author><category term="Cloud" /><category term="Design" /><category term="Architecture" /><summary type="html"><![CDATA[…getting new features into production quickly is the real currency of the digital world. — Gregor Hohpe]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://thepaulrayner.com/ruijia-wang-YmStaPUcd-Y-unsplash.jpg" /><media:content medium="image" url="http://thepaulrayner.com/ruijia-wang-YmStaPUcd-Y-unsplash.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">EventStorming Team Flow</title><link href="http://thepaulrayner.com/blog/2019/05/13/eventstorming-team-flow/" rel="alternate" type="text/html" title="EventStorming Team Flow" /><published>2019-05-13T16:00:00+00:00</published><updated>2019-05-13T16:00:00+00:00</updated><id>http://thepaulrayner.com/blog/2019/05/13/eventstorming-team-flow</id><content type="html" xml:base="http://thepaulrayner.com/blog/2019/05/13/eventstorming-team-flow/"><![CDATA[<p>Most development teams remain blissfully unaware of the negative impact of these invisible queues on productivity, or how to deal with them effectively. After all, how can we fight an invisible enemy? Isn’t it better to focus on the problems we <em>can</em> see? So the typical team approach to improving productivity is to focus on the work being done. For example, trying to make the coding more efficient, or by starting new work when something gets blocked.</p>
+
+<p><img src="/assets/eventstorming-team-flow/team-flow.jpg" alt="Team Flow Map" /></p>
+
+<h2 id="whats-the-big-deal-with-queues">What’s the Big Deal with Queues?</h2>
+
+<blockquote>
+  <p>“The enemy of flow is the invisible and unmeasured queues that undermine all aspects of product development performance”.</p>
+
+  <p>— Donald Reinertsen<br />
+<em>The Principles of Product Development Flow</em></p>
+</blockquote>
+
+<p>What if all these wait-states are actually where we should be focusing our improvement efforts first? According to Reinertsen, these invisible piles of unfinished work slow us down far more than we realize, sucking team productivity, and making everything take longer than it should.</p>
+
+<p>In my NewCrafts 2018 talk, <a href="http://videos.ncrafts.io/video/275328050">Fighting the Invisible Enemy</a>, I go more deeply into these ideas, and provide some ideas for how to think about them.</p>
+
+<blockquote>
+  <p>“The lack of understanding about how work flows - or, more commonly, doesn’t flow - across a work system that’s sole purpose is to deliver value to a customer is a fundamental problem that results in poor performance, poor business decisions, and poor work environments.”</p>
+
+  <p>— Karen Martin &amp; Mike Osterling<br />
+<em>Value Stream Mapping</em></p>
+</blockquote>
+
+<p>I’ve been experimenting with EventStorming as a way of helping teams quickly visualize their development process and identify emergent queues. The goal for the talk was to provide practical ways for teams to understand the presence and negative impact of these invisible queues on their work, so they could start to manage them more effectively.</p>
+
+<h3 id="visual-unification-tools">Visual Unification Tools</h3>
+
+<p>Task boards are a great tool for helping teams visualize and coordinate their work, but they don’t show the full picture. Typically they only focus on flow of work for an individual team, ignoring upstream and downstream impacts and dependencies, and often without taking a customer-focused perspective. Also, they often tend to ignore wait states for work items rather than making them explicit on the board.</p>
+
+<p><img src="/assets/eventstorming-team-flow/initial-ideas.jpg" alt="Initial Brainstorming" /></p>
+
+<p>For those familiar with value stream mapping, EventStorming can function as a lightweight, collaborative, first-pass approach to visualizing a value stream and a team’s place within it.</p>
+
+<p>EventStorming can function as a lightweight step in the direction of value stream mapping. The conversation that it enables and the map that it produces “can function as a visual unification tool, by enabling a team to visualize work that’s not particularly visual.”</p>
+
+<p>As with the visualization applied in value stream mapping, visualizing the invisible work is “an essential first step to gaining clarity about and consensus around how work gets done. It’s also a highly unifying activity - helps people see the need for improvement, and generates alignment and consensus around specific improvements being considered.” - <a href="https://www.amazon.com/Value-Stream-Mapping-Organizational-Transformation/dp/0071828915">Value Stream Mapping</a>.</p>
+
+<p><strong>The goal is to visualize queues so they can be managed effectively, starting with the ones that have the most significant impact economically.</strong></p>
+
+<p><img src="/assets/eventstorming-team-flow/reviewing.jpg" alt="Initial Brainstorming" /></p>
+
+<h3 id="visualizing-your-team-flow">Visualizing Your Team Flow</h3>
+
+<p>As with regular <a href="https://leanpub.com/introducing_eventstorming">EventStorming</a>, the team performs an initial brainstorm where everyone writes as many events as possible at the same time. I recommend you map out the events that occur from an initial feature idea, all the way to the point where the delivered functionality is used by a customer to solve a problem or meet a need. Don’t worry about possible duplication or event sequence at this point where everyone is writing events.</p>
+
+<p>Events are written in the past tense, as if everyone is looking back on the completed process. For example, write “story estimated” rather than “estimate story,” or write “changes pushed to production” rather than “push changes to production.”</p>
+
+<p><img src="/assets/eventstorming-team-flow/initial-ideas2.jpg" alt="Initial Brainstorming" /></p>
+
+<p>Once you have a good representative sample of events, arrange them chronologically in sequence, earliest on the left to latest on the right. Don’t worry about loops or conditionals…just lay it out as if it’s a linear flow. It’s more important at this point to capture the overall sequence rather than various possible paths. Eliminate any duplicates, though keep an eye out for differences in terminology for events as they may be significant in terms of uncovering different perspectives or misunderstandings.</p>
+
+<blockquote>
+  <p><strong>Tip:</strong> If you have trouble doing this because you have many different types of work items, such as defects, production support, feature development… start with a specific user story, or a bug, and map that one out first. Once you have a flow that seems fairly representative for the item being visualized, start you can always add one later in another swimlane.</p>
+</blockquote>
+
+<h3 id="visualizing-queues">Visualizing Queues</h3>
+
+<p>Use another color to represent possible/potential queues in the process. Look for anywhere there is:</p>
+
+<ul>
+  <li>a handoff from one person, role, or team to another</li>
+  <li>significant waiting. Examples include, but are not limited to: waiting for another team to complete something, or infrastructure to be ready, or some kind of approval, builds to run, pull requests to be approved, peer reviews to complete, time spent waiting for testing to happen, …</li>
+  <li>batching of work, such as at sprint planning for Scrum teams</li>
+  <li>common points for rework?</li>
+</ul>
+
+<p>For every queue, talk it through as a team in terms of how much of a friction point it is for the overall flow. Are there simple ways to reduce the time that work spends in that queue?</p>
+
+<p><img src="/assets/eventstorming-team-flow/reviewing3.jpg" alt="Reviewing" /></p>
+
+<p><img src="/assets/eventstorming-team-flow/reviewing4.jpg" alt="Reviewing" /></p>
+
+<p><strong>The goal is to NOT to eliminate all queues but to manage and constrain them.</strong></p>
+
+<p>Capture any problems, questions, hotspots or conversation points on bright colored stickies. For example, if you find an event that is frequently associated with rework, it would be a good one to call out as a problem area for future investigation/experimentation.</p>
+
+<h3 id="improving-flow">Improving Flow</h3>
+
+<p>Identify the queue with the most significant economic/productivity impact. If you don’t know which it is, start measuring it. Begin gathering data on problematic areas, and then run small improvement experiments.</p>
+
+<p>Some possible tactics for managing an emergent queue to improve overall flow:</p>
+
+<ul>
+  <li>Set a WIP limit for this queue.</li>
+  <li>See if the queue can be eliminated, perhaps through automation (e.g. CI/CD) or better collaboration (BDD, devops)</li>
+  <li>Use the EventStorming map to build out a kanban board so you can limit WIP at the team and work state levels.</li>
+</ul>
+
+<p><img src="/assets/eventstorming-team-flow/reviewing2.jpg" alt="Reviewing" /></p>
+
+<p>See also my <a href="https://www.youtube.com/watch?v=q80FiugsO1Q">Modeling Team Flow</a> talk at Explore DDD 2018 for a slightly updated version of the Newcrafts talk. I also mention a number of other techniques for managing and constraining emergent queues.</p>
+
+<p>I also introduced this technique at last year’s EventStorming Summit in Bologna. I learned there that others had already experimented with similar approaches using EventStorming in the past, so please let me know in the comments if there are other articles or talks that should be referenced:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Artifacts from <a href="https://twitter.com/hashtag/EventStorming?src=hash&amp;ref_src=twsrc%5Etfw">#EventStorming</a> summit <a href="https://twitter.com/hashtag/ESS18?src=hash&amp;ref_src=twsrc%5Etfw">#ESS18</a> session on modeling team flow (i.e. value steam mapping) using EventStorming. Will publish something soon. <a href="https://t.co/bSR7GXXLRc">pic.twitter.com/bSR7GXXLRc</a></p>&mdash; Paul Rayner (@thepaulrayner) <a href="https://twitter.com/thepaulrayner/status/1017300285746642945?ref_src=twsrc%5Etfw">July 12, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Here’s a example <a href="https://twitter.com/jennyjmar">Jenny Martin</a> posted of applying this technique in a workshop:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Really successful workshop looking at flow &amp; business process.  Mashup of Value Stream Mapping and Event Storming.  Inspired by <a href="https://twitter.com/thepaulrayner?ref_src=twsrc%5Etfw">@thepaulrayner</a> &amp; <a href="https://twitter.com/ziobrando?ref_src=twsrc%5Etfw">@ziobrando</a> <a href="https://twitter.com/hashtag/eventstorming?src=hash&amp;ref_src=twsrc%5Etfw">#eventstorming</a> <a href="https://twitter.com/hashtag/lean?src=hash&amp;ref_src=twsrc%5Etfw">#lean</a> Thx! <a href="https://t.co/4aF3eCyCCv">pic.twitter.com/4aF3eCyCCv</a></p>&mdash; Jenny Martin (@jennyjmar) <a href="https://twitter.com/jennyjmar/status/1011614739531694080?ref_src=twsrc%5Etfw">June 26, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>If you map an entire value stream flow from “concept to cash” it is common to notice how small the development team part of the process is, and it is possible that the most damaging queues in terms of economic impact are upstream or downstream from the team. Once everything is mapped out, for non-trivial flows a common comment I hear is: “I had no idea we had so many queues.”</p>
+
+<p>I’d be interested in hearing about anyone experimenting with this approach, such as for a team retrospective or workshop. I haven’t tried to be comprehensive here, as I’m interested in learning what questions/feedback others have. What do you think? Feel free to post in the comments below.</p>]]></content><author><name></name></author><category term="DDD" /><category term="EventStorming" /><category term="Flow" /><category term="VSM" /><category term="Lean" /><category term="Agile" /><summary type="html"><![CDATA[Most development teams remain blissfully unaware of the negative impact of these invisible queues on productivity, or how to deal with them effectively.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://thepaulrayner.com/eventstorming-team-flow/team-flow.jpg" /><media:content medium="image" url="http://thepaulrayner.com/eventstorming-team-flow/team-flow.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Explore DDD - Realtime Retrospective</title><link href="http://thepaulrayner.com/blog/2019/01/22/realtime-retro-eddd/" rel="alternate" type="text/html" title="Explore DDD - Realtime Retrospective" /><published>2019-01-22T17:00:00+00:00</published><updated>2019-01-22T17:00:00+00:00</updated><id>http://thepaulrayner.com/blog/2019/01/22/realtime-retro-eddd</id><content type="html" xml:base="http://thepaulrayner.com/blog/2019/01/22/realtime-retro-eddd/"><![CDATA[<p>At YOW! 2016, fellow speaker Emily Webber told me about a cool experiment she had run at recent conference. Emily described a visible, participative way - a <a href="https://emilywebber.co.uk/the-realtime-retrospective">Realtime Retrospective</a> - to reflect and improve throughout a conference. In September 2017 I was able to run my first realtime retrospective experiment at <a href="http://exploreddd.com/2017">Explore DDD 2017</a>.</p>
+
+<blockquote>
+  <p>“The realtime retrospective is a way of capturing feedback or information to help improvements in realtime.”</p>
+
+  <p>— Emily Webber<br />
+<em><a href="https://emilywebber.co.uk/the-realtime-retrospective">The Realtime Retrospective</a></em></p>
+</blockquote>
+
+<p>Prior to the start of the conference we laid out a visual summary of the conference schedule along with instructions for how to contribute/participate. We also provided plenty of sharpies and colorful sticky notes.</p>
+
+<p><img src="/assets/realtime-retro/main.jpg" alt="main" width="600" /></p>
+
+<p><img src="/assets/realtime-retro/drawing.jpg" alt="Drawing Instructions" width="600" /></p>
+
+<p><img src="/assets/realtime-retro/people.jpg" alt="people" width="600" /></p>
+
+<p><img src="/assets/realtime-retro/done.jpg" alt="done" width="600" /></p>
+
+<p><img src="/assets/realtime-retro/friday.jpg" alt="friday" width="600" /></p>
+
+<p>We placed the conference schedule on the wall in the main conference space area where everyone would be passing by to maximize exposure. During the conference opening and also prior to each keynote we reminded and encouraged attendees to contribute. It didn’t take long for attendees to start posting and interacting with the timeline.</p>
+
+<p>We had conference staff and volunteers keeping an eye on the timeline so negative things got resolved almost immediately and marked as done. We used Slack as a backchannel to coordinate this through the volunteers. We also used the main conference Slack channel and Twitter for some of the questions, such as whether videos of the talks would be available  after the conference.  Venue staff also liked being notified of issues so they could deal with them quickly. The overall sense of participation, openness and responsiveness generated by the timeline was high value for organizers, volunteers, speakers and attendees alike.</p>
+
+<p><img src="/assets/realtime-retro/negatives.jpg" alt="negatives" width="600" /></p>
+
+<p>For example, a problem with not enough soap in the mensroom was fixed within five minutes, and we resolved most AV and venue-related issues very quickly. Things that couldn’t be fixed or improved were marked on the timeline and noted for next time. Since we were dealing with questions and issues in near-realtime and visually marking them on the wall, it was clear to attendees that things were improving.</p>
+
+<p>As a conference leadership we felt it was very successful, so we employed it again last year for Explore DDD 2018 and once again were very happy with how well it worked.</p>
+
+<p><img src="/assets/realtime-retro/opening.jpg" alt="opening" /></p>
+
+<p><img src="/assets/realtime-retro/keynote.jpg" alt="keynote" /></p>
+
+<p>We’ve heard good things from speakers both years about the value of the immediate feedback. One of our 2017 speakers was so encouraged by the feedback he kept his sticky note comments as a memento after the conference. Here’s some tweets from <a href="http://exploreddd.com/2018">Explore DDD 2018 speakers</a> sharing their feedback:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Sometimes you just get it all ... all the positive feedback that keeps you going. And then all the nuanced personal feedback that helps you make the progress! Thank you <a href="https://twitter.com/ExploreDDD?ref_src=twsrc%5Etfw">@ExploreDDD</a>! You were simply awesome and you made me happy! <a href="https://twitter.com/hashtag/eddd?src=hash&amp;ref_src=twsrc%5Etfw">#eddd</a> <a href="https://t.co/og3uly4qGP">pic.twitter.com/og3uly4qGP</a></p>&mdash; Martin Schimak (@martinschimak) <a href="https://twitter.com/martinschimak/status/1040993075038957568?ref_src=twsrc%5Etfw">September 15, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/EDDD?src=hash&amp;ref_src=twsrc%5Etfw">#EDDD</a> 2018 is over. What a conference! Thanks to all the speakers, to everyone who attended, to the people who were eager to learn <a href="https://twitter.com/hashtag/DomainStorytelling?src=hash&amp;ref_src=twsrc%5Etfw">#DomainStorytelling</a>, to <a href="https://twitter.com/thepaulrayner?ref_src=twsrc%5Etfw">@thepaulrayner</a> , and to his team! <a href="https://t.co/ZrIzgB3J2H">pic.twitter.com/ZrIzgB3J2H</a></p>&mdash; Stefan Hofer (@hofstef) <a href="https://twitter.com/hofstef/status/1040966608196317185?ref_src=twsrc%5Etfw">September 15, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It was my pleasure.<br />Thanks for the feedback :)  <a href="https://twitter.com/hashtag/EDDD?src=hash&amp;ref_src=twsrc%5Etfw">#EDDD</a> <a href="https://t.co/vgJSuBSAvd">pic.twitter.com/vgJSuBSAvd</a></p>&mdash; Wassel (@wasselovski) <a href="https://twitter.com/wasselovski/status/1040706520067923968?ref_src=twsrc%5Etfw">September 14, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">We're so glad, thanks for your feedback ⁦<a href="https://twitter.com/tpierrain?ref_src=twsrc%5Etfw">@tpierrain</a>⁩ <a href="https://twitter.com/hashtag/EDDD?src=hash&amp;ref_src=twsrc%5Etfw">#EDDD</a> <a href="https://t.co/WXh74dXu0D">pic.twitter.com/WXh74dXu0D</a></p>&mdash; brunoboucard (@brunoboucard) <a href="https://twitter.com/brunoboucard/status/1040690183820083201?ref_src=twsrc%5Etfw">September 14, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>The realtime retrospective wall has become an integral part of the conference - I couldn’t imagine us running <a href="http://exploreddd.com">Explore DDD</a> without it.</p>]]></content><author><name></name></author><category term="DDD" /><category term="Agile" /><summary type="html"><![CDATA[At YOW! 2016, fellow speaker Emily Webber told me about a cool experiment she had run at recent conference. Emily described a visible, participative way - a Realtime Retrospective - to reflect and improve throughout a conference.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://thepaulrayner.com/realtime-retro/done.jpg" /><media:content medium="image" url="http://thepaulrayner.com/realtime-retro/done.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">BDD is a Centered Community Rather than a Bounded Community</title><link href="http://thepaulrayner.com/blog/2015/03/28/bdd-is-a-centered-rather-than-a-bounded-community/" rel="alternate" type="text/html" title="BDD is a Centered Community Rather than a Bounded Community" /><published>2015-03-28T16:00:00+00:00</published><updated>2015-03-28T16:00:00+00:00</updated><id>http://thepaulrayner.com/blog/2015/03/28/bdd-is-a-centered-rather-than-a-bounded-community</id><content type="html" xml:base="http://thepaulrayner.com/blog/2015/03/28/bdd-is-a-centered-rather-than-a-bounded-community/"><![CDATA[<p>Dan North mentioned at one point in the CukeUp 2015 panel yesterday the notion in theology of a community being a “bounded set.” Since Tom Stuart had been gracious enough to invite me to participate in the panel, towards the end of the session I joined the panel so I could expand on Dan’s comment. I pointed out that the same theology also talks about the notion of a community being a “centered set.” To me, this is what BDD really is: A centered set, rather than a bounded set. In other words, <em>BDD is a centered community, rather than a bounded community.</em></p>
+
+<p><a href="https://skillsmatter.com/skillscasts/6174-wtf-is-bdd"><img src="/assets/what-is-bdd-panel2.png" alt="BDD panel" class="right" width="300" /></a></p>
+
+<p>I want to be clear what I meant by bounded vs. centered set as it applies to a community when I proposed it in the CukeUp 2015 panel. These terms originated in a theological context with the writings of anthropologist and missiologist Paul Hiebert, in terms of what makes a person a Christian. I’m going to quote and adapt a significant amount of the content from his original article in what follows to make it relevant for those without a background or interest in theology. Before I do that though, first a little background is in order.</p>
+
+<h2 id="cukeup-2015">CukeUp 2015</h2>
+
+<p>The CukeUp 2015 conference at Skills Matter in London culminated yesterday in an wonderful panel discussion about what BDD actually is, organized and facilitated by Tom Stuart. I highly recommend anyone interested in current thinking in BDD watch the video posted by Skills Matter at <a href="https://skillsmatter.com/skillscasts/6174-wtf-is-bdd">https://skillsmatter.com/skillscasts/6174-wtf-is-bdd</a>.</p>
+
+<p><img src="/assets/what-is-bdd-panel.png" alt="What is BDD?" class="left" width="300" /></p>
+
+<p>It seemed clear to me from the sentiments expressed in the session that focusing on boundaries and exclusion is not what the BDD community has ever been about. BDD is a community with values and principles at the center that promotes a certain growing body of knowledge and cloud of practices.</p>
+
+<p>But there is no interest the BDD community in adopting a bounded set approach, and staying static by “locking down” the body of knowledge or cloud of practices that currently makes up BDD. Rather, the BDD community wants, and needs, to continue challenging the status quo and incorporating new learning and practices as they reveal themselves in the future.</p>
+
+<h2 id="bounded-sets">Bounded sets</h2>
+
+<p>In his 1978 article<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup>, Hiebert notes that many of our words refer to bounded sets: “apples,” “oranges,” “pencils,” and “pens,” for instance. What is a bounded set? How does our mind form it? In creating a bounded set our mind puts together things that share some common characteristics. “Apples,” for example, are objects that are “the firm fleshy somewhat round fruit of a Rosaceous tree. They are usually red, yellow or green and are eaten raw or cooked.”</p>
+
+<p>Bounded sets have certain structural characteristics — that is, they force us to look at things in a certain way. Let us use the category “apples” to illustrate some of these:</p>
+
+<ol>
+  <li>
+    <p><em>The category is created by listing the essential characteristics that an object must have to be within the set.</em> For example, an apple is (1) a kind of “fruit” that is (2) firm, (3) fleshy, (4) somewhat round, and so on. Any fruit that meets these requirements (assuming we have an adequate definition) is an “apple.”</p>
+  </li>
+  <li>
+    <p><em>The category is defined by a clear boundary.</em> A fruit is either an apple or it is not. It cannot be 70% apple and 30% pear. Most of the effort in defining the category is spent on defining and maintaining the boundary. In other words, not only must we say what an “apple” is, we must also clearly differentiate it from “oranges,” “pears,” and other similar objects that are <em>not</em> “apples.”</p>
+  </li>
+  <li>
+    <p><em>Objects within a bounded set are uniform in their essential characteristics.</em> All apples are 100% apple. One is not more apple than another. Either a fruit is an apple or it is not. There may be different sizes, shapes, and varieties, but they are all the same in that they are all apples. There is no variation implicit within the structuring of the category.</p>
+  </li>
+  <li>
+    <p><em>Bounded sets are static sets.</em> If a fruit is an apple, it remains an apple whether it is green, ripe, or rotten. The only change occurs when an apple ceases to be an apple (e.g., being eaten), or when something like an orange is turned into an apple (something we cannot do). The big question, therefore, is whether an object is inside or outside the category. Once it is within, there can be no change in its categorical status.</p>
+  </li>
+</ol>
+
+<h2 id="what-if-bdd-was-a-bounded-set">What if BDD was a Bounded Set?</h2>
+
+<p>What happens to our concept of “BDD” if we define it in terms of a bounded set? If we use the above characteristics of a bounded set we probably come up with something like the following:</p>
+
+<ol>
+  <li>
+    <p><em>We would define “BDD” in terms of a set of essential or definitive characteristics.</em> These characteristics, such as perhaps collaborative specification by example, test-first automation, feature injection, red-green-refactor (TDD), would be non-negotiable for people doing BDD.</p>
+  </li>
+  <li>
+    <p><em>We would make a clear distinction between what is “BDD” and what is not.</em> There is no place in between. Moreover, maintaining this boundary would be critical to the maintenance of the category of BDD. Therefore it would be essential we determine who is doing BDD and who is not, and to keep the two sharply differentiated. We would want to make sure to include those who are truly doing BDD and to exclude from the community those who claim to be but are not. If BDD was to be a bounded set, to have an unclear boundary would be to undermine the very concept of BDD itself.</p>
+  </li>
+  <li>
+    <p><em>We would view all “BDD practitioners” as essentially the same.</em> There would be experienced BDD practitioners and beginners, but all are doing BDD, since they are within the boundary. Homogeneity within the community in terms of belief and practices would be the norm and the goal.</p>
+  </li>
+</ol>
+
+<p>If we think of BDD as a bounded set, we must decide what are the definitive characteristics that set a BDD practitioner apart from a non-BDD practitioner. We may do so in terms of belief in certain essential “truths” about BDD, or strict adherence to certain essential BDD “practices.”</p>
+
+<p>BDD, as understood by leaders within the community, is clearly NOT a bounded set. Rather, it is a centered set. Let’s see what we mean by that.</p>
+
+<h2 id="centered-sets">Centered Sets</h2>
+
+<p>There are other ways to form mental categories. Hiebert says a second way is to form centered sets<sup id="fnref:2"><a href="#fn:2" class="footnote" rel="footnote" role="doc-noteref">2</a></sup>. A centered set has the following characteristics:</p>
+
+<ol>
+  <li>
+    <p><em>It is created by defining a center, and the relationship of things to that center.</em> Some things may be far from the center, but they are moving towards the center, therefore, they are part of the centered set. On the other hand, some objects may be near the center but are moving away from it, so they are not a part of the set. The set is made up of all objects moving towards the center.</p>
+  </li>
+  <li>
+    <p><em>While the centered set does not place the primary focus on the boundary, there is a clear division between things moving in and those moving out.</em> An object either belongs to a set or it does not. The set focuses upon the center and the boundary emerges when the center and the movement of the objects has been defined. There is no great need to maintain the boundary in order to maintain the set. The boundary is not the focus so long as the center is clear.</p>
+  </li>
+  <li>
+    <p><em>Centered sets reflect variation within a category.</em> While there is a clear distinction between things moving in and those moving out, the objects within the set are not categorically uniform. Some may be near the center and others far from it, even though all are moving towards the center. Each object must be considered individually. It is not reduced to a single common uniformity within the category.</p>
+  </li>
+  <li>
+    <p><em>Centered sets are dynamic sets.</em> Two types of movements are essential parts of their structure. First, it is possible to change direction — to turn from moving away to moving towards the center, from being outside to being inside the set. Second, because all objects are seen in constant motion, they are moving, fast or slowly, towards or away from the center. Something is always happening to an object. It is never static.</p>
+  </li>
+</ol>
+
+<p><img src="/assets/centered-set.png" alt="Centered Set" class="right" width="300" /></p>
+
+<p>Illustrations of centered sets are harder to come by in English, since English tends to see the world largely in terms of bounded sets. One example is a magnetic field in which particles are in motion. Electrons are those particles which are drawn towards the positive magnetic pole, and protons are those attracted by the negative pole. The diagram here is another way of visualizing a centered set<sup id="fnref:3"><a href="#fn:3" class="footnote" rel="footnote" role="doc-noteref">3</a></sup>.</p>
+
+<h2 id="bdd-as-a-centered-set">BDD as a Centered Set</h2>
+
+<p>In contrast to a bounded set, how does the concept “BDD” look defined as a centered set as I propose?</p>
+
+<ol>
+  <li>
+    <p><em>A BDD practitioner is be defined in terms of the center — in terms of the principles, values and goals that the BDD community holds to be central</em>. These principles, values and goals were enumerated quite clearly by Dan North and others during the panel session and are spelled out in other places (Dan’s original article about BDD in Better Software was published in 2006 and still applies today). From the nature of the centered set, it should be clear that it is possible that there are those near the center who know a great deal about BDD, but who are moving away from the center. On the other hand there are those who are at a distance — who know little about BDD because they are just starting to learn it — but they are still BDD practitioners.</p>
+  </li>
+  <li>
+    <p><em>There is a clear division between being doing BDD and not doing BDD.</em> The boundary is there. To pick an extreme example, I mentioned on the panel that a team doing waterfall (serial lifecycle phase gate) development with no collaboration between roles, not using examples, and doing no test automation at all could not be said to be doing BDD. But with a centered set there is less stress on maintaining the boundary in order to preserve the existence and purity of the category, the BDD community. There is also no need to play boundary games and institutionally exclude those who are not truly part of the BDD community. Rather, the focus is on the center and of pointing people to that center. Inclusion, rather than exclusion, is the name of the BDD game.</p>
+  </li>
+  <li>
+    <p><em>There is a recognition of variation among the BDD community.</em> Some are closer to the BDD values in their knowledge and practice, others have only a little knowledge and need to grow. But - whether novice or expert or somewhere in between - all are doing BDD, and are called to continuously seek to improve and grow in their understanding and practice of delivering value early and often.</p>
+  </li>
+</ol>
+
+<p>Being a centered set, growth thus is an essential part of practicing BDD. When a team begins doing BDD, they begin a journey and should strive to continue to move towards the center. There is no static state. Learning BDD is not the end, it is the beginning. We need good BDD education, mentoring and coaching to teach BDD to the many beginners who will join the community in the years to come, but we must also think about the need to continously improve and inspire novices to move beyond following recipes and so-called “best practices” and experiment with tailoring BDD to their unique context.</p>
+
+<p>I submit that the agile community in general should also be considered a centered set, with the agile manifesto as the central value statement for the movement. Whether BDD, or agile in general, being a centered community rather than a bounded one must involve always seeking to not only uphold but also increase the gravitational pull of the values at the center.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Paul Hiebert, “Conversion, Culture and Cognitive Categories.” In: Gospel in Context 1:4 (October, 1978), 24-29., sourced from <a href="https://danutm.files.wordpress.com/2010/06/hiebert-paul-g-conversion-culture-and-cognitive-categories.pdf">https://danutm.files.wordpress.com/2010/06/hiebert-paul-g-conversion-culture-and-cognitive-categories.pdf</a>, 3/28/2015 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>There are also Fuzzy Sets, see Hiebert’s article for more references <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>Sourced from <a href="http://www.academia.edu/6810466/Understanding_Christian_Identity_in_Terms_of_Bounded_and_Centered_Set_Theory_in_the_Writings_of_Paul_G._Hiebert">http://www.academia.edu/6810466/Understanding_Christian_Identity_in_Terms_of_Bounded_and_Centered_Set_Theory_in_the_Writings_of_Paul_G._Hiebert</a> <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="BDD" /><summary type="html"><![CDATA[Dan North mentioned at one point in the CukeUp 2015 panel yesterday the notion in theology of a community being a 'bounded set.' BDD is a centered community, rather than a bounded community.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://thepaulrayner.com/what-is-bdd-panel2.png" /><media:content medium="image" url="http://thepaulrayner.com/what-is-bdd-panel2.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Good Design is People-Centered - Design Quotes Part 5</title><link href="http://thepaulrayner.com/blog/2015/02/09/good-design-is-people-centered/" rel="alternate" type="text/html" title="Good Design is People-Centered - Design Quotes Part 5" /><published>2015-02-09T17:00:00+00:00</published><updated>2015-02-09T17:00:00+00:00</updated><id>http://thepaulrayner.com/blog/2015/02/09/good-design-is-people-centered</id><content type="html" xml:base="http://thepaulrayner.com/blog/2015/02/09/good-design-is-people-centered/"><![CDATA[<blockquote>
+  <p>A design isn’t finished until somebody is using it.</p>
+</blockquote>
+
+<p>These quotes are about the goal of design, which is centered around meeting the needs of real people. What other quotes on people-centered design am I missing?</p>
+
+<blockquote>
+  <p>Design is about making things good (and then better) and right (and fantastic) for the people who use and encounter them.</p>
+
+  <p>— Matt Beale</p>
+</blockquote>
+
+<blockquote>
+  <p>I never design a building before I’ve seen the site and met the people who will be using it.</p>
+
+  <p>— Frank Lloyd Wright</p>
+</blockquote>
+
+<blockquote>
+  <p>The only important thing about design is how it relates to people.</p>
+
+  <p>— Victor Papanek</p>
+</blockquote>
+
+<blockquote>
+  <p>A design isn’t finished until somebody is using it.</p>
+
+  <p>— Brenda Laurel</p>
+</blockquote>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[A design isn't finished until somebody is using it. These quotes are about the goal of design, which is centered around meeting the needs of real people.]]></summary></entry><entry><title type="html">Persisting Value Objects</title><link href="http://thepaulrayner.com/blog/2015/01/22/persisting-value-objects/" rel="alternate" type="text/html" title="Persisting Value Objects" /><published>2015-01-22T17:00:00+00:00</published><updated>2015-01-22T17:00:00+00:00</updated><id>http://thepaulrayner.com/blog/2015/01/22/persisting-value-objects</id><content type="html" xml:base="http://thepaulrayner.com/blog/2015/01/22/persisting-value-objects/"><![CDATA[<p>It can be challenging sometimes to know how best to persist value objects to a data store, especially if you are using a RDBMS. There are a variety of options to choose from, however, depending on your needs and constraints.</p>
+
+<p>Examples below are based on my <a href="https://github.com/paulrayner/ddd_sample_app_ruby">Ruby port of the DDD sample app</a>. Here is a class diagram showing the <code class="language-plaintext highlighter-rouge">Cargo</code> aggregrate, which consists of the <code class="language-plaintext highlighter-rouge">Cargo</code> entity (as the aggregate root) and a number of value objects, such as <code class="language-plaintext highlighter-rouge">Itinerary</code> and <code class="language-plaintext highlighter-rouge">RouteSpecification</code> that are also part of the <code class="language-plaintext highlighter-rouge">Cargo</code> aggregate. This is based on examples given in Eric Evans’s <a href="http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215">Domain-Driven Design</a> book.</p>
+
+<p><img src="/assets/cargo.png" alt="Cargo entity and associated value objects" />
+<em>Figure 1. Cargo entity and associated value objects</em></p>
+
+<h2 id="inline-value-objects-fields-to-entitys-table">Inline Value Object’s Fields to Entity’s Table</h2>
+
+<p>This is the simplest arrangement, both in terms of ORM mapping and database schema design. It also is an easy way to support refactoring a value object out of an entity, since only the objects and the ORM mapping would need to change; there is no change to the underlying database schema.</p>
+
+<p>An example of this would be refactoring properties such as <code class="language-plaintext highlighter-rouge">Origin</code>, <code class="language-plaintext highlighter-rouge">Destination</code> and <code class="language-plaintext highlighter-rouge">Arrival Deadline</code> out of their original location in the <a href="https://github.com/paulrayner/ddd_sample_app_ruby/blob/master/domain/cargo/cargo.rb"><code class="language-plaintext highlighter-rouge">Cargo</code> entity</a> and into a new <a href="https://github.com/paulrayner/ddd_sample_app_ruby/blob/master/domain/cargo/route_specification.rb"><code class="language-plaintext highlighter-rouge">RouteSpecification</code> value object</a>. The <code class="language-plaintext highlighter-rouge">RouteSpecification</code> value object, having a one-to-one, relationship with the <code class="language-plaintext highlighter-rouge">Cargo</code> entity, lends itself very naturally to this kind of approach. The same would be true for the <code class="language-plaintext highlighter-rouge">Itinerary</code> value object.</p>
+
+<h2 id="create-database-table-for-each-of-value-object-type-and-represent-data-as-field">Create Database Table for each of Value Object Type and Represent Data as Field</h2>
+
+<p>In the DDD sample app, a single <code class="language-plaintext highlighter-rouge">Itinerary</code> value object has many <code class="language-plaintext highlighter-rouge">Leg</code> value objects. So an example of this approach would be to persist the <code class="language-plaintext highlighter-rouge">Legs</code> value object to a <code class="language-plaintext highlighter-rouge">Legs</code> database table that has a foreign key back to the Itinerary database table. This is a common approach for 1-Many relationships. However, see the next serialization approach as perhaps a more effective solution in many cases.</p>
+
+<h2 id="serialize-the-value-object-and-store-in-field-in-entitys-table">Serialize the Value Object and Store in Field in Entity’s Table</h2>
+
+<p>This is a less common than creating a separate table for the value object as in the previous approach, but serialization is actually the method I would recommend in most cases where you have a one-to-many relationship. For example, persist <code class="language-plaintext highlighter-rouge">Itinerary</code> and all its <code class="language-plaintext highlighter-rouge">Leg</code> value objects as a serialized object grap and then inline it into the Entity’s table within the Cargo database table.</p>
+
+<p>Use an appropriate serialization format such as plain text, XML, YAML or JSON. Databases such as Postgres and SQL Server provide native format for such approaches. For a Postgres example, see Vaughn Vernon’s post <a href="https://vaughnvernon.co/?p=942">The Ideal Domain-Driven Design Aggregate Store?</a> For an example of manipulating XML with SQL Server, see <a href="https://www.simple-talk.com/sql/database-administration/manipulating-xml-data-in-sql-server/">Manipulating XML Data in SQL Server</a>.</p>
+
+<p>Querying and indexing options may be limited as in SQL Server 2008 XML columns, or even non-existent in many RDMS’s. An ORM will typically need custom code or a custom type, such as in Hibernate, to manage the serialization/deserialization of each collection.</p>
+
+<p>Serializing objects to text-based formats gives you human-readable database data, but is comparatively slow and potentially huge in size compared to regular database columns. It is important to verify that this approach can handle the performance needs before going too far with it. Also, if the serialized value object stored in the DB is opaque (e.g., the only query performed on the column is to serialize/deserialize based on primary key lookep) then consider using a much faster (and typically smaller) format like binary.</p>
+
+<h2 id="combined-rdms-and-document-database-approach">Combined RDMS and Document Database Approach</h2>
+
+<p>In the Java space, SpringSource has been doing some very interesting work for the <a href="http://www.springsource.org/spring-data">Spring.Data.Commons and related projects</a> in the area of what they call ‘cross-store persistence.’ <sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> Portions of your object are persisted to a RDBMS and other portions are persisted to NoSQL stores (and the framework handles persisting and rehydrating the right parts to/from the right data store for you). These are all OSS solutions.</p>
+
+<h2 id="use-a-document-database">Use a Document Database</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">CargoRepository</code> could use an <code class="language-plaintext highlighter-rouge">Itinerary</code> document Id stored in a <code class="language-plaintext highlighter-rouge">Cargo</code> field to retrieve the <code class="language-plaintext highlighter-rouge">Itinerary</code> value object stored in a document database such as MongoDB, RavenDB or CouchDB. Note that many document databases offer transparency of query into the contents of the ‘document’ (i.e. serialized value object in this case), which removes the need to predict which properties, etc. of the value object need to be stored separately in the table as additional fields just so that they can be queried.</p>
+
+<p>To Summarize:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>O-R</th>
+      <th>Represent Data in Fields</th>
+      <th>Serialize Object</th>
+      <th>Reference to Other Storage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Inline in Entity Table</strong></td>
+      <td><strong>1-to-1</strong><br />• Good O-R mapper support<br />• Straightforward object/DB schema versioning<br />• Factoring fields into Value Object doesn’t change DB schema</td>
+      <td><strong>1-to-Many/1-to-1 Complex</strong><br />• Version management of serialization<br />• Some performance concerns<br />• Query limitations<br />• Field length limitations</td>
+      <td><strong>Document Id</strong><br />• Hybrid approach – store document Id in Entity’s table and lookup in Repository<br />• Queries supported by document databases</td>
+    </tr>
+    <tr>
+      <td><strong>Separate Table</strong></td>
+      <td><strong>1-to-Many</strong><br />• Good O-R mapper support, but must put ID field in Value Object<br />• Straightforward object/DB schema versioning</td>
+      <td><strong>X</strong></td>
+      <td><strong>X</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Sourced from Steve Bohlen posting to DDD Immersion Alumni Mailing List on 11/17/2011 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="DDD" /><summary type="html"><![CDATA[It can be challenging sometimes to know how best to persist value objects to a data store, especially if you are using a RDBMS. There are a variety of options to choose from, however, depending on your needs and constraints.]]></summary></entry></feed>

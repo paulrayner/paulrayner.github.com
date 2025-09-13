@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leading by Design</title>
+    <description>Paul Rayner&#39;s blog on software design and process</description>
+    <link>http://thepaulrayner.com/</link>
+    <atom:link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 24 Mar 2020 15:41:58 +0000</pubDate>
+    <lastBuildDate>Tue, 24 Mar 2020 15:41:58 +0000</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Plotting Paths to Cloud Migration</title>
+        <description>&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren&amp;#8217;t a one-shot type of endeavor.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Have your stakeholders expressed confusion in deciphering your cloud migration strategy? Are you using the typical lengthy variations verbs starting with &quot;R&quot; (rehost - replatform - rearchitect - retire)? Or perhaps an opaque, complicated framework that actually makes your approach less clear? A simple visual model can go a long way in providing clarity in navigating the inevitable complexity of a cloud migration.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;up-or-out&quot;&gt;Up or Out&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The article &lt;a href=&quot;https://cloud.google.com/blog/topics/perspectives/enterprise-it-can-move-up-or-out-or-both&quot;&gt;Enterprise IT can move up or out (or both)&lt;/a&gt;, describes the &quot;up or out&quot; framework as a way to empower both the business and IT to approach a cloud migration more collaboratively, cutting through much of the hype and technical complexity. This model can help enterprises chart their cloud adoption journey delineates cloud migration along two axes — up and out.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock text-center&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/cloud-strategy/cloud_adoption_journey.max-1000x1000.png&quot; alt=&quot;cloud adoption journey.max 1000x1000&quot; width=&quot;800&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;On-premise applications are located in the bottom left quadrant. The horizontal axis represents moving &quot;out&quot; from on-premises to the cloud, and the vertical axis describes modernizing applications to operate further &quot;up&quot; the stack, further away from infrastructure (servers and hardware details).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A cloud-based IT operating model has been shown to offer significant advantages in terms of rapid deployment, elastic scalability, resilient operations, and security. However, large enterprises can’t simply wake up one day with all their applications running in the cloud. Thus, every enterprise’s move to the cloud is at least initially a hybrid cloud scenario, where some workloads remain on-premises and other workloads run in the cloud.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;moving-up-the-stack&quot;&gt;Moving Up The Stack&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;One choice you can make is to move your migrations up the stack. This path is the journey of decoupling your applications from your current on-premise infrastructure.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For example, as an initial step you could transition from running a monolithic application on dedicated services to a Platform-As-A-Service (PaaS) model that deploys applications and services using containers. Or in going further by utilizing SaaS services for certain business capabilities that would benefit from this approach.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock text-center&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/cloud-strategy/up-the-stack.jpg&quot; alt=&quot;up the stack&quot; width=&quot;400&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Hohpe highlights several key advantages of moving up the stack:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Elasticity&lt;/em&gt; - Application deployment becomes automated, making it easy to add or subtract capacity as needed.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Resilience&lt;/em&gt; - Operations also become more resilient because new instances can be rapidly deployed in case of failure, allowing PaaS or serverless platforms to withstand a server failure without visible customer impact.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Cost Reduction&lt;/em&gt; - Thanks to smaller deployable units, hardware can be more efficiently utilized, thus reducing run costs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Decoupling/Portability&lt;/em&gt; - Applications become more portable when they are better isolated from infrastructure details, as their containers may be deployed on a variety of infrastructures.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Moving up the stack may be a challenging effort, one which requires you to fundamentally change the way in which you build applications and operate the infrastructure that supports them. Modularity and decoupling from a business domain perspective becomes essential.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;out-to-the-cloud&quot;&gt;Out to The Cloud&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The second option is to lift, shift, and replatform existing applications out into the cloud. Some advantages mentioned by Hohpe in moving an application unchanged from an existing on-premises data center to the cloud and shifting the operational model to one that&amp;#8217;s more automated include:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Better economies of scale allow for more cost-efficient operations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Automated patching discipline improves security because it assures that no software with known vulnerabilities is run.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Increased transparency enables more efficient IT asset management, for example by rightsizing servers or detecting and retiring unused IT assets.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Taking an initial lift and shift approach into the cloud along the horizontal axis may make it easier to move vertically (optimize/re-architect) later, once the applications are already running in the cloud. The first reason is primarily technical: the application, data and traffic have already been completed, paving the way for further optimization and improvement when the timing and cost is more favorable. The second reason is that doing such migrations enables the organization to move to more of a &quot;cloud lifestyle&quot; and cultivate the necessary skills to perform future migrations more successfully.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Don&amp;#8217;t underestimate the importance of skills development and cultivating cultural memory for new approaches. Many organizations fall into the trap of assuming that migrating to the cloud is primarily a technical journey, but then discover too late that it actually requires rethinking how to do business - touching every aspect of product development, application development, deployment, support, and operations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;combining-cloud-migration-approaches&quot;&gt;Combining Cloud Migration Approaches&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Don&amp;#8217;t think of this as a blanket all-or-nothing approach. Combining various approaches into a progressive transformation towards cloud-centric operations reduces risk and improves time-to-value.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As Hohpe points out:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Lifting existing applications and replatforming them onto cloud infrastructure minimizes initial effort, avoiding the costs of redevelopment, and allowing an enterprise to transform its infrastructure acquisition and scaling processes while minimizing impact to existing operations models.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Adjusting operations models to increase the use of automation and cloud-native tooling accelerates the overall transformation and maximizes the value from abstracted infrastructure services.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finally, decomposing application elements to take advantage of managed cloud services, such as migrating off of self-managed My SQL databases onto  provider-managed Database-as-a-Service, requires some additional effort but lays the foundation for moving beyond seeing cloud as yet another infrastructure provider.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Not only is combining up and out allowed, it’s encouraged. We think of it as a cloud-native hybrid model, where applications are deployed as containers or functions and can be easily shifted from on-premises to the cloud as needed, all while maintaining a consistent deployment, run-time, and management framework.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Hohpe recommends you consider asking a few questions:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Which elements of an application or service would benefit most from an event-driven, serverless approach?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Which elements of a service require rapid code releases or the ability to validate new features using A/B testing (meaning that a new version of the software is made available to a percentage of users)?&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Which elements change infrequently, but would benefit from automated scaling and deployment?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;multiple-paths-per-application&quot;&gt;Multiple Paths Per Application&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;With the answers to these questions, you can begin to decompose application capabilities, workloads, and components and map them against the up or out framework, thus presenting the organization with a pragmatic migration approach that maximizes value.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Remember, for most applications you are not locked into a single direction. On the up or out model, plot the path for each application or class of applications in your cloud migration strategy. Rather than thinking of each migration as a single jump, plot a path to cloud migration that makes sense in your context.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Plotting a path for individual workloads and architectural elements on the up or out framework can help IT decision makers focus on the benefits achieved by re-platforming, re-architecting, or a combination of the two. It’s typical and in fact desired that different components take unique paths. Avoid a &lt;a href=&quot;https://www.dictionary.com/e/memes/leeroy-jenkins/&quot;&gt;Leeroy Jenkins situation&lt;/a&gt; in your enterprise cloud migration by taking a more informed and nuanced approach by migrating the individual workloads and architectural elements in your context.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;plotting-paths-to-the-cloud&quot;&gt;Plotting Paths to the Cloud&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The visual model also communicates migration paths over time in an approachable manner that can be shared with a wide audience in both business and IT. For example, in the article Hohpe provides an example of what this might look for an enterprise ecommerce application.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In the ecommerce example, the retailer&amp;#8217;s customer-facing front end frequently required feature updates to differentiate them in a competitive retail market. They also wanted to utilize A/B testing to ensure that they were delivering the right features. By incrementally isolating and rewriting the web front end and moving it up the stack in containers, they could also support this with a new automated CI/CD pipeline to enable rapid delivery to support excel and innovate.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The ecommerce mid-tier application needed refactoring and re-architecting, but &quot;more immediate value could be generated by shifting to an automated scale-out model and gaining operational efficiencies in the cloud.&quot; This is a good example of setting priorities correctly and focusing on reducing the time-to-value of migration efforts.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The retailer’s back-end catalog systems changed infrequently and were hosted on well-understood and easily maintained systems. There did not seem to be value in devoting effort to migrating them, plus any attention devoted to that would distract from the other more valuable concerns. To focus their initial energy, they decided to keep the back-end systems in place until they can replace them completely in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Taking this approach allowed the retailer to minimize the time and effort required to accomplish their primary goal—rapid iteration of a customer experience that was becoming stale. They also gained operational and capital efficiencies and set themselves in a good position to migrate their catalog data to the cloud when the time and price were right for them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock text-center&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/cloud-strategy/enterprise_IT_oYsbpz5.max-800x800.png&quot; alt=&quot;enterprise IT oYsbpz5.max 800x800&quot; width=&quot;800&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Separating out elements and migrating them up and out enables an organization to target the migration of more valuable capabilities earlier, creating opportunities to excel and innovate without being shackled to software elements that are harder to modify. This relates to the notion of &lt;em&gt;domain-distillation&lt;/em&gt; in strategic domain-driven design (DDD), where more valuable software elements are isolated into new components that can be developed and deployed independently of the existing systems. We&amp;#8217;ll be talking about options for this in later articles.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;em&gt;Note: In the case of a large, mission-critical and highly coupled (i.e. monolithic) application, a migrate-then-update journey might also be a good choice, after the distillation and movement up the stack of valuable capabilities. Why? As an initial step, moving to the cloud horizontally is going to be faster (and typically less risky) than trying to re-architect an entire application while migrating it, even though such an approach may be an ultimately longer journey than directly traveling the hypotenuse.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;communicating-your-cloud-strategy&quot;&gt;Communicating Your Cloud Strategy&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The up or out framework helps you ask the right questions about how best to approach each application, and determine if it can be divided into elements that could each be migrated separately.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The simple up or out visual model encourages collaborative conversations about the relative tradeoffs and risks that might be encountered along each path. These conversations need to push past apparently conflicting priorities in seeking alignment between business and technical priorities.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;If your cloud strategy seems to be too good to be true, it probably is.&lt;/strong&gt; There are always tradeoffs. Plans need to be adjusted as the organization learns. As with any effort, your plan needs to be realistic from both a business and technical perspective, with clear goals and measures of success. To be successful, goals must to be communicated effectively to both technical and non-technical stakeholders so that there is the necessary buy-in and trust to move forward with the plan, and adjust as situations change during implementation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Simple but evocative frameworks like &quot;up or out&quot; can help IT decision makers navigate the inevitable complexity of a cloud migration. Like any good model, simplicity is a feature, not a bug, as it helps keep the focus on the desired outcome and is easily communicated to a variety of audiences.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For more details, see Gregor Hohpe&amp;#8217;s excellent &lt;a href=&quot;https://leanpub.com/cloudstrategy&quot;&gt;Cloud Strategy: An Architect Elevator Guide to Successful Cloud Migration&lt;/a&gt; ebook.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Photo of desserts by &lt;a href=&quot;https://unsplash.com/@massimo_adami?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Massimo Adami&lt;/a&gt; on &lt;a href=&quot;http://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Mon, 23 Mar 2020 12:00:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/plotting-paths-to-cloud-migration</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/plotting-paths-to-cloud-migration</guid>
+        
+        <category>Cloud</category>
+        
+        <category>Design</category>
+        
+        <category>DDD</category>
+        
+        <category>Architecture</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Cloud Strategy, Design And Automation</title>
+        <description>&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&amp;#8230;&amp;#8203;getting new features into production quickly is the real currency of the digital world.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I just finished reading Gregor Hohpe&amp;#8217;s excellent &lt;a href=&quot;https://leanpub.com/cloudstrategy&quot;&gt;Cloud Strategy: An Architect Elevator Guide to Successful Cloud Migration&lt;/a&gt; ebook. I like how the book approaches cloud strategy from an architectural perspective, moving beyond all the buzzwords and wishful thinking, while providing solid guidance for how to actually deliver on the promises of cloud migration for enterprises.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Concerning automation, he points out that much of the original effort towards streamlining development processes was focused on the specification and coding aspects of software delivery, i.e. the translation of ideas into code.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock right text-center&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/cloud-strategy/cloud-strategy-ebook-cover.png&quot; alt=&quot;cloud strategy ebook cover&quot; width=&quot;200&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Many frameworks and methodologies looking to industrialize this aspect of software development, such as CASE tools, 4GL, and executable UML, arrived and disappeared again over the course of the 1990s and 2000s.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I remember some of those tools, &lt;a href=&quot;https://en.wikipedia.org/wiki/IBM_Rational_Rose_XDE&quot;&gt;Rational Rose&lt;/a&gt; being one. The idea was to apply manufacturing techniques to the creative process of translating concepts into coding. After all, it seems simple enough: create a class diagram and translate that directly into code, and vice versa. But this ultimately proved to be much harder, and much less useful, than hoped.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Somehow, trying to automate the specification and coding steps of software delivery never quite yielded the results that the creators of these tools were after. Collectively, we could have saved a lot of effort if we had taken Jack Reeve&amp;#8217;s article &lt;a href=&quot;https://www.developerdotstar.com/mag/articles/reeves_design.html&quot;&gt;What is Software Design&lt;/a&gt; to heart. Published in 1992, Jack elaborated that coding is actually the &lt;em&gt;design&lt;/em&gt; of software whereas compiling and deploying software is the manufacturing aspect. So, if you are looking to industrialize software manufacturing, you should automate on testing, compiling, and deployment, as opposed to trying to industrialize coding. About a quarter century later that&amp;#8217;s finally being done. Some things take time, even software.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Gregor Hohpe
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;m reminded of David Marquet&amp;#8217;s distinction between red work and blue work.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Red work is DOING work. It’s about execution and reducing variability.  Think of manufacturing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Blue is THINKING work. It’s about discovery and decision making and increasing variability. Think of product development.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Analysis, modeling, design and coding are all activities that are intrinsically &lt;em&gt;blue&lt;/em&gt; work.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;What makes the automation that cloud deployment provides so powerful is that it can be applied to the red work downstream from development that needs to be done to speed delivery of newly coded functionality that results from the blue work.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This hopefully becomes a virtuous cycle where applications can be modularized to take advantage of the elasticity and deployment advantages of a cloud environment.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Programming is a design activity — a good software design process recognizes this and does not hesitate to code when coding makes sense.
+Coding actually makes sense more often than believed. Often the process of rendering the design in code will reveal oversights and the need for additional design effort. The earlier this occurs, the better the design will be.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Since software is so cheap to build, formal engineering validation methods are not of much use in real world software development. It is easier and cheaper to just build the design and test it than to try to prove it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Jack Reeves
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Cloud strategy, when done well, is such a powerful enabler for the kind of delivery model that is optimized for this kind of time to value. Because of this, organizations should take an application-centric (rather than infrastructure-centric) view on their cloud strategy.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In an application-centric approach to cloud the key drivers are concerned with &quot;speeding up software delivery, primarily by reducing friction. Speed comes from automation, such as a fully automated tool chain, infrastructure-as-code, and cloud-ready applications that scale horizontally. Coupled with modern approaches like continuous integration (CI), continuous delivery (CD), and lean development, such tooling can transform the way an enterprise thinks about software delivery.&quot; (Hohpe)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Photo of Cloud Gate by &lt;a href=&quot;https://unsplash.com/@sidem0n&quot;&gt;Ruijia Wang&lt;/a&gt; on &lt;a href=&quot;http://unsplash.com&quot;&gt;Unsplash&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;</description>
+        <pubDate>Thu, 19 Mar 2020 16:00:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/cloud-strategy-design-and-automation</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/cloud-strategy-design-and-automation</guid>
+        
+        <category>Cloud</category>
+        
+        <category>Design</category>
+        
+        <category>Architecture</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>EventStorming Team Flow</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Most development teams remain blissfully unaware of the negative impact of these invisible queues on productivity, or how to deal with them effectively. After all, how can we fight an invisible enemy? Isn&amp;#8217;t it better to focus on the problems we &lt;em&gt;can&lt;/em&gt; see? So the typical team approach to improving productivity is to focus on the work being done. For example, trying to make the coding more efficient, or by starting new work when something gets blocked.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/eventstorming-team-flow/team-flow.jpg&quot; alt=&quot;Team Flow Map&quot; width=&quot;800&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats-the-big-deal-with-queues&quot;&gt;What&amp;#8217;s the Big Deal with Queues?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&quot;The enemy of flow is the invisible and unmeasured queues that undermine all aspects of product development performance&quot;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Donald Reinertsen&lt;br&gt;
+&lt;cite&gt;The Principles of Product Development Flow&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;What if all these wait-states are actually where we should be focusing our improvement efforts first? According to Reinertsen, these invisible piles of unfinished work slow us down far more than we realize, sucking team productivity, and making everything take longer than it should.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In my NewCrafts 2018 talk, &lt;a href=&quot;http://videos.ncrafts.io/video/275328050&quot;&gt;Fighting the Invisible Enemy&lt;/a&gt;, I go more deeply into these ideas, and provide some ideas for how to think about them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&quot;The lack of understanding about how work flows - or, more commonly, doesn&amp;#8217;t flow - across a work system that&amp;#8217;s sole purpose is to deliver value to a customer is a fundamental problem that results in poor performance, poor business decisions, and poor work environments.&quot;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Karen Martin &amp; Mike Osterling&lt;br&gt;
+&lt;cite&gt;Value Stream Mapping&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;ve been experimenting with EventStorming as a way of helping teams quickly visualize their development process and identify emergent queues. The goal for the talk was to provide practical ways for teams to understand the presence and negative impact of these invisible queues on their work, so they could start to manage them more effectively.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;visual-unification-tools&quot;&gt;Visual Unification Tools&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Task boards are a great tool for helping teams visualize and coordinate their work, but they don&amp;#8217;t show the full picture. Typically they only focus on flow of work for an individual team, ignoring upstream and downstream impacts and dependencies, and often without taking a customer-focused perspective. Also, they often tend to ignore wait states for work items rather than making them explicit on the board.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/eventstorming-team-flow/initial-ideas.jpg&quot; alt=&quot;Initial Brainstorming&quot; width=&quot;800&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For those familiar with value stream mapping, EventStorming can function as a lightweight, collaborative, first-pass approach to visualizing a value stream and a team&amp;#8217;s place within it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;EventStorming can function as a lightweight step in the direction of value stream mapping. The conversation that it enables and the map that it produces &quot;can function as a visual unification tool, by enabling a team to visualize work that&amp;#8217;s not particularly visual.&quot;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As with the visualization applied in value stream mapping, visualizing the invisible work is &quot;an essential first step to gaining clarity about and consensus around how work gets done. It&amp;#8217;s also a highly unifying activity - helps people see the need for improvement, and generates alignment and consensus around specific improvements being considered.&quot; - &lt;a href=&quot;https://www.amazon.com/Value-Stream-Mapping-Organizational-Transformation/dp/0071828915&quot;&gt;Value Stream Mapping&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;The goal is to visualize queues so they can be managed effectively, starting with the ones that have the most significant impact economically.&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/eventstorming-team-flow/reviewing.jpg&quot; alt=&quot;Initial Brainstorming&quot; width=&quot;800&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;visualizing-your-team-flow&quot;&gt;Visualizing Your Team Flow&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As with regular &lt;a href=&quot;https://leanpub.com/introducing_eventstorming&quot;&gt;EventStorming&lt;/a&gt;, the team performs an initial brainstorm where everyone writes as many events as possible at the same time. I recommend you map out the events that occur from an initial feature idea, all the way to the point where the delivered functionality is used by a customer to solve a problem or meet a need. Don&amp;#8217;t worry about possible duplication or event sequence at this point where everyone is writing events.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Events are written in the past tense, as if everyone is looking back on the completed process. For example, write &quot;story estimated&quot; rather than &quot;estimate story,&quot; or write &quot;changes pushed to production&quot; rather than &quot;push changes to production.&quot;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/eventstorming-team-flow/initial-ideas2.jpg&quot; alt=&quot;Initial Brainstorming&quot; width=&quot;800&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Once you have a good representative sample of events, arrange them chronologically in sequence, earliest on the left to latest on the right. Don&amp;#8217;t worry about loops or conditionals&amp;#8230;&amp;#8203;just lay it out as if it&amp;#8217;s a linear flow. It&amp;#8217;s more important at this point to capture the overall sequence rather than various possible paths. Eliminate any duplicates, though keep an eye out for differences in terminology for events as they may be significant in terms of uncovering different perspectives or misunderstandings.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;admonitionblock tip&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&quot;icon&quot;&gt;
+&lt;i class=&quot;fa icon-tip&quot; title=&quot;Tip&quot;&gt;&lt;/i&gt;
+&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;
+If you have trouble doing this because you have many different types of work items, such as defects, production support, feature development&amp;#8230;&amp;#8203; start with a specific user story, or a bug, and map that one out first. Once you have a flow that seems fairly representative for the item being visualized, start you can always add one later in another swimlane.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;visualizing-queues&quot;&gt;Visualizing Queues&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Use another color to represent possible/potential queues in the process. Look for anywhere there is:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;a handoff from one person, role, or team to another&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;significant waiting. Examples include, but are not limited to: waiting for another team to complete something, or infrastructure to be ready, or some kind of approval, builds to run, pull requests to be approved, peer reviews to complete, time spent waiting for testing to happen, &amp;#8230;&amp;#8203;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;batching of work, such as at sprint planning for Scrum teams&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;common points for rework?&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For every queue, talk it through as a team in terms of how much of a friction point it is for the overall flow. Are there simple ways to reduce the time that work spends in that queue?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/eventstorming-team-flow/reviewing3.jpg&quot; alt=&quot;Reviewing&quot; width=&quot;800&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/eventstorming-team-flow/reviewing4.jpg&quot; alt=&quot;Reviewing&quot; width=&quot;800&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;The goal is to NOT to eliminate all queues but to manage and constrain them.&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Capture any problems, questions, hotspots or conversation points on bright colored stickies. For example, if you find an event that is frequently associated with rework, it would be a good one to call out as a problem area for future investigation/experimentation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;improving-flow&quot;&gt;Improving Flow&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Identify the queue with the most significant economic/productivity impact. If you don&amp;#8217;t know which it is, start measuring it. Begin gathering data on problematic areas, and then run small improvement experiments.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Some possible tactics for managing an emergent queue to improve overall flow:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Set a WIP limit for this queue.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;See if the queue can be eliminated, perhaps through automation (e.g. CI/CD) or better collaboration (BDD, devops)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Use the EventStorming map to build out a kanban board so you can limit WIP at the team and work state levels.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/eventstorming-team-flow/reviewing2.jpg&quot; alt=&quot;Reviewing&quot; width=&quot;800&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;See also my &lt;a href=&quot;https://www.youtube.com/watch?v=q80FiugsO1Q&quot;&gt;Modeling Team Flow&lt;/a&gt; talk at Explore DDD 2018 for a slightly updated version of the Newcrafts talk. I also mention a number of other techniques for managing and constraining emergent queues.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I also introduced this technique at last year&amp;#8217;s EventStorming Summit in Bologna. I learned there that others had already experimented with similar approaches using EventStorming in the past, so please let me know in the comments if there are other articles or talks that should be referenced:&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Artifacts from &lt;a href=&quot;https://twitter.com/hashtag/EventStorming?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#EventStorming&lt;/a&gt; summit &lt;a href=&quot;https://twitter.com/hashtag/ESS18?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#ESS18&lt;/a&gt; session on modeling team flow (i.e. value steam mapping) using EventStorming. Will publish something soon. &lt;a href=&quot;https://t.co/bSR7GXXLRc&quot;&gt;pic.twitter.com/bSR7GXXLRc&lt;/a&gt;&lt;/p&gt;&amp;mdash; Paul Rayner (@thepaulrayner) &lt;a href=&quot;https://twitter.com/thepaulrayner/status/1017300285746642945?ref_src=twsrc%5Etfw&quot;&gt;July 12, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Here&amp;#8217;s a example &lt;a href=&quot;https://twitter.com/jennyjmar&quot;&gt;Jenny Martin&lt;/a&gt; posted of applying this technique in a workshop:&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Really successful workshop looking at flow &amp;amp; business process.  Mashup of Value Stream Mapping and Event Storming.  Inspired by &lt;a href=&quot;https://twitter.com/thepaulrayner?ref_src=twsrc%5Etfw&quot;&gt;@thepaulrayner&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://twitter.com/ziobrando?ref_src=twsrc%5Etfw&quot;&gt;@ziobrando&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/eventstorming?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#eventstorming&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/lean?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#lean&lt;/a&gt; Thx! &lt;a href=&quot;https://t.co/4aF3eCyCCv&quot;&gt;pic.twitter.com/4aF3eCyCCv&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jenny Martin (@jennyjmar) &lt;a href=&quot;https://twitter.com/jennyjmar/status/1011614739531694080?ref_src=twsrc%5Etfw&quot;&gt;June 26, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you map an entire value stream flow from &quot;concept to cash&quot; it is common to notice how small the development team part of the process is, and it is possible that the most damaging queues in terms of economic impact are upstream or downstream from the team. Once everything is mapped out, for non-trivial flows a common comment I hear is: &quot;I had no idea we had so many queues.&quot;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I&amp;#8217;d be interested in hearing about anyone experimenting with this approach, such as for a team retrospective or workshop. I haven&amp;#8217;t tried to be comprehensive here, as I&amp;#8217;m interested in learning what questions/feedback others have. What do you think? Feel free to post in the comments below.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Mon, 13 May 2019 16:00:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/eventstorming-team-flow</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/eventstorming-team-flow</guid>
+        
+        <category>DDD</category>
+        
+        <category>EventStorming</category>
+        
+        <category>Flow</category>
+        
+        <category>VSM</category>
+        
+        <category>Lean</category>
+        
+        <category>Agile</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Explore DDD - Realtime Retrospective</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;At YOW! 2016, fellow speaker Emily Webber told me about a cool experiment she had run at recent conference. Emily described a visible, participative way - a &lt;a href=&quot;https://emilywebber.co.uk/the-realtime-retrospective&quot;&gt;Realtime Retrospective&lt;/a&gt; - to reflect and improve throughout a conference. In September 2017 I was able to run my first realtime retrospective experiment at &lt;a href=&quot;http://exploreddd.com/2017&quot;&gt;Explore DDD 2017&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&quot;The realtime retrospective is a way of capturing feedback or information to help improvements in realtime.&quot;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Emily Webber&lt;br&gt;
+&lt;cite&gt;&lt;a href=&quot;https://emilywebber.co.uk/the-realtime-retrospective&quot;&gt;The Realtime Retrospective&lt;/a&gt;&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Prior to the start of the conference we laid out a visual summary of the conference schedule along with instructions for how to contribute/participate. We also provided plenty of sharpies and colorful sticky notes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/realtime-retro/main.jpg&quot; alt=&quot;main&quot; width=&quot;600&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/realtime-retro/drawing.jpg&quot; alt=&quot;Drawing Instructions&quot; width=&quot;600&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/realtime-retro/people.jpg&quot; alt=&quot;people&quot; width=&quot;600&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/realtime-retro/done.jpg&quot; alt=&quot;done&quot; width=&quot;600&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/realtime-retro/friday.jpg&quot; alt=&quot;friday&quot; width=&quot;600&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We placed the conference schedule on the wall in the main conference space area where everyone would be passing by to maximize exposure. During the conference opening and also prior to each keynote we reminded and encouraged attendees to contribute. It didn&amp;#8217;t take long for attendees to start posting and interacting with the timeline.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We had conference staff and volunteers keeping an eye on the timeline so negative things got resolved almost immediately and marked as done. We used Slack as a backchannel to coordinate this through the volunteers. We also used the main conference Slack channel and Twitter for some of the questions, such as whether videos of the talks would be available  after the conference.  Venue staff also liked being notified of issues so they could deal with them quickly. The overall sense of participation, openness and responsiveness generated by the timeline was high value for organizers, volunteers, speakers and attendees alike.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/realtime-retro/negatives.jpg&quot; alt=&quot;negatives&quot; width=&quot;600&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For example, a problem with not enough soap in the mensroom was fixed within five minutes, and we resolved most AV and venue-related issues very quickly. Things that couldn&amp;#8217;t be fixed or improved were marked on the timeline and noted for next time. Since we were dealing with questions and issues in near-realtime and visually marking them on the wall, it was clear to attendees that things were improving.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As a conference leadership we felt it was very successful, so we employed it again last year for Explore DDD 2018 and once again were very happy with how well it worked.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/realtime-retro/opening.jpg&quot; alt=&quot;opening&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/realtime-retro/keynote.jpg&quot; alt=&quot;keynote&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We&amp;#8217;ve heard good things from speakers both years about the value of the immediate feedback. One of our 2017 speakers was so encouraged by the feedback he kept his sticky note comments as a memento after the conference. Here&amp;#8217;s some tweets from &lt;a href=&quot;http://exploreddd.com/2018&quot;&gt;Explore DDD 2018 speakers&lt;/a&gt; sharing their feedback:&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Sometimes you just get it all ... all the positive feedback that keeps you going. And then all the nuanced personal feedback that helps you make the progress! Thank you &lt;a href=&quot;https://twitter.com/ExploreDDD?ref_src=twsrc%5Etfw&quot;&gt;@ExploreDDD&lt;/a&gt;! You were simply awesome and you made me happy! &lt;a href=&quot;https://twitter.com/hashtag/eddd?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#eddd&lt;/a&gt; &lt;a href=&quot;https://t.co/og3uly4qGP&quot;&gt;pic.twitter.com/og3uly4qGP&lt;/a&gt;&lt;/p&gt;&amp;mdash; Martin Schimak (@martinschimak) &lt;a href=&quot;https://twitter.com/martinschimak/status/1040993075038957568?ref_src=twsrc%5Etfw&quot;&gt;September 15, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;&lt;a href=&quot;https://twitter.com/hashtag/EDDD?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#EDDD&lt;/a&gt; 2018 is over. What a conference! Thanks to all the speakers, to everyone who attended, to the people who were eager to learn &lt;a href=&quot;https://twitter.com/hashtag/DomainStorytelling?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#DomainStorytelling&lt;/a&gt;, to &lt;a href=&quot;https://twitter.com/thepaulrayner?ref_src=twsrc%5Etfw&quot;&gt;@thepaulrayner&lt;/a&gt; , and to his team! &lt;a href=&quot;https://t.co/ZrIzgB3J2H&quot;&gt;pic.twitter.com/ZrIzgB3J2H&lt;/a&gt;&lt;/p&gt;&amp;mdash; Stefan Hofer (@hofstef) &lt;a href=&quot;https://twitter.com/hofstef/status/1040966608196317185?ref_src=twsrc%5Etfw&quot;&gt;September 15, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;It was my pleasure.&lt;br&gt;Thanks for the feedback :)  &lt;a href=&quot;https://twitter.com/hashtag/EDDD?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#EDDD&lt;/a&gt; &lt;a href=&quot;https://t.co/vgJSuBSAvd&quot;&gt;pic.twitter.com/vgJSuBSAvd&lt;/a&gt;&lt;/p&gt;&amp;mdash; Wassel (@wasselovski) &lt;a href=&quot;https://twitter.com/wasselovski/status/1040706520067923968?ref_src=twsrc%5Etfw&quot;&gt;September 14, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; data-lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;We’re so glad, thanks for your feedback ⁦&lt;a href=&quot;https://twitter.com/tpierrain?ref_src=twsrc%5Etfw&quot;&gt;@tpierrain&lt;/a&gt;⁩ &lt;a href=&quot;https://twitter.com/hashtag/EDDD?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#EDDD&lt;/a&gt; &lt;a href=&quot;https://t.co/WXh74dXu0D&quot;&gt;pic.twitter.com/WXh74dXu0D&lt;/a&gt;&lt;/p&gt;&amp;mdash; brunoboucard (@brunoboucard) &lt;a href=&quot;https://twitter.com/brunoboucard/status/1040690183820083201?ref_src=twsrc%5Etfw&quot;&gt;September 14, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The realtime retrospective wall has become an integral part of the conference - I couldn&amp;#8217;t imagine us running &lt;a href=&quot;http://exploreddd.com&quot;&gt;Explore DDD&lt;/a&gt; without it.&lt;/p&gt;
+&lt;/div&gt;</description>
+        <pubDate>Tue, 22 Jan 2019 13:06:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/realtime-retro-eddd</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/realtime-retro-eddd</guid>
+        
+        <category>DDD</category>
+        
+        <category>Agile</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>BDD is a Centered Community Rather than a Bounded Community</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Dan North mentioned at one point in the CukeUp 2015 panel yesterday the notion
+in theology of a community being a &quot;bounded set.&quot; Since Tom Stuart had been
+gracious enough to invite me to participate in the panel, towards the end of the
+session I joined the panel so I could expand on Dan&amp;#8217;s comment. I pointed out
+that the same theology also talks about the notion of a community being a
+&quot;centered set.&quot; To me, this is what BDD really is: A centered set, rather than a
+bounded set. In other words, &lt;em&gt;BDD is a centered community, rather than a bounded
+community.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock right&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;a class=&quot;image&quot; href=&quot;https://skillsmatter.com/skillscasts/6174-wtf-is-bdd&quot;&gt;&lt;img src=&quot;/assets/what-is-bdd-panel2.png&quot; alt=&quot;BDD panel&quot; width=&quot;300&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I want to be clear what I meant by bounded vs. centered set as it applies to a
+community when I proposed it in the CukeUp 2015 panel. These terms originated in
+a theological context with the writings of anthropologist and missiologist Paul
+Hiebert, in terms of what makes a person a Christian. I&amp;#8217;m going to quote and
+adapt a significant amount of the content from his original article in what
+follows to make it relevant for those without a background or interest in
+theology. Before I do that though, first a little background is in order.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;cukeup-2015&quot;&gt;CukeUp 2015&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The CukeUp 2015 conference at Skills Matter in London culminated yesterday in an
+wonderful panel discussion about what BDD actually is, organized and facilitated
+by Tom Stuart. I highly recommend anyone interested in current thinking in BDD watch
+the video posted by Skills Matter at &lt;a href=&quot;https://skillsmatter.com/skillscasts/6174-wtf-is-bdd&quot; class=&quot;bare&quot;&gt;https://skillsmatter.com/skillscasts/6174-wtf-is-bdd&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock left&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/what-is-bdd-panel.png&quot; alt=&quot;What is BDD?&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It seemed clear to me from the sentiments expressed in the session that focusing
+on boundaries and exclusion is not what the BDD community has ever been about.
+BDD is a community with values and principles at the center that promotes a
+certain growing body of knowledge and cloud of practices.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;But there is no interest the BDD community in adopting a bounded set approach,
+and staying static by &quot;locking down&quot; the body of knowledge or cloud of practices
+that currently makes up BDD. Rather, the BDD community wants, and needs, to
+continue challenging the status quo and incorporating new learning and practices
+as they reveal themselves in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;bounded-sets&quot;&gt;Bounded sets&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In his 1978 article&lt;sup class=&quot;footnote&quot;&gt;[&lt;a id=&quot;_footnoteref_1&quot; class=&quot;footnote&quot; href=&quot;#_footnotedef_1&quot; title=&quot;View footnote.&quot;&gt;1&lt;/a&gt;]&lt;/sup&gt;
+, Hiebert notes that many of our words refer to bounded sets:
+&quot;apples,&quot; &quot;oranges,&quot; &quot;pencils,&quot; and &quot;pens,&quot; for instance. What is a bounded set?
+How does our mind form it? In creating a bounded set our mind puts together
+things that share some common characteristics. &quot;Apples,&quot; for example, are objects
+that are &quot;the firm fleshy somewhat round fruit of a Rosaceous tree. They are
+usually red, yellow or green and are eaten raw or cooked.&quot;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Bounded sets have certain structural characteristics — that is, they force us to
+look at things in a certain way. Let us use the category &quot;apples&quot; to illustrate
+some of these:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist loweralpha&quot;&gt;
+&lt;ol class=&quot;loweralpha&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;The category is created by listing the essential characteristics that an
+object must have to be within the set.&lt;/em&gt; For example, an apple is (1) a kind of
+&quot;fruit&quot; that is (2) firm, (3) fleshy, (4) somewhat round, and so on. Any fruit
+that meets these requirements (assuming we have an adequate definition) is an
+&quot;apple.&quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;The category is defined by a clear boundary.&lt;/em&gt; A fruit is either an apple or it
+is not. It cannot be 70% apple and 30% pear. Most of the effort in defining the
+category is spent on defining and maintaining the boundary. In other words, not
+only must we say what an &quot;apple&quot; is, we must also clearly differentiate it from
+&quot;oranges,&quot; &quot;pears,&quot; and other similar objects that are &lt;em&gt;not&lt;/em&gt; &quot;apples.&quot;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Objects within a bounded set are uniform in their essential characteristics.&lt;/em&gt;
+All apples are 100% apple. One is not more apple than another. Either a fruit is
+an apple or it is not. There may be different sizes, shapes, and varieties, but
+they are all the same in that they are all apples. There is no variation
+implicit within the structuring of the category.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Bounded sets are static sets.&lt;/em&gt; If a fruit is an apple, it remains an apple
+whether it is green, ripe, or rotten. The only change occurs when an apple
+ceases to be an apple (e.g., being eaten), or when something like an orange is
+turned into an apple (something we cannot do). The big question, therefore, is
+whether an object is inside or outside the category. Once it is within, there
+can be no change in its categorical status.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;what-if-bdd-was-a-bounded-set&quot;&gt;What if BDD was a Bounded Set?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;What happens to our concept of &quot;BDD&quot; if we define it in terms of a bounded set?
+If we use the above characteristics of a bounded set we probably come up with
+something like the following:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist loweralpha&quot;&gt;
+&lt;ol class=&quot;loweralpha&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;We would define &quot;BDD&quot; in terms of a set of essential or definitive
+characteristics.&lt;/em&gt; These characteristics, such as perhaps collaborative
+specification by example, test-first automation, feature injection,
+red-green-refactor (TDD), would be non-negotiable for people doing BDD.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;We would make a clear distinction between what is &quot;BDD&quot; and what is not.&lt;/em&gt;
+There is no place in between. Moreover, maintaining this boundary would be critical to
+the maintenance of the category of BDD. Therefore it would be essential we determine who
+is doing BDD and who is not, and to keep the two sharply differentiated. We would want
+to make sure to include those who
+are truly doing BDD and to exclude from the community those who claim to be but are
+not. If BDD was to be a bounded set, to have an unclear boundary would be to undermine the very concept of BDD
+itself.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;We would view all &quot;BDD practitioners&quot; as essentially the same.&lt;/em&gt; There would be
+experienced BDD practitioners and beginners, but all are doing BDD, since they are
+within the boundary. Homogeneity within the community in terms of belief and practices
+would be the norm and the goal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If we think of BDD as a bounded set, we must decide what are the definitive
+characteristics that set a BDD practitioner apart from a non-BDD practitioner.
+We may do so in terms of belief in certain essential &quot;truths&quot; about BDD, or
+strict adherence to certain essential BDD &quot;practices.&quot;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;BDD, as understood by leaders within the community, is clearly NOT a bounded
+set. Rather, it is a centered set. Let&amp;#8217;s see what we mean by that.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;centered-sets&quot;&gt;Centered Sets&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There are other ways to form mental categories. Hiebert says a second way is to
+form centered sets&lt;sup class=&quot;footnote&quot;&gt;[&lt;a id=&quot;_footnoteref_2&quot; class=&quot;footnote&quot; href=&quot;#_footnotedef_2&quot; title=&quot;View footnote.&quot;&gt;2&lt;/a&gt;]&lt;/sup&gt;. A centered set has the following characteristics:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist loweralpha&quot;&gt;
+&lt;ol class=&quot;loweralpha&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;It is created by defining a center, and the relationship of things to that center.&lt;/em&gt;
+Some things may be far from the center, but they are moving towards the
+center, therefore, they are part of the centered set. On the other hand, some
+objects may be near the center but are moving away from it, so they are not a
+part of the set. The set is made up of all objects moving towards the center.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;While the centered set does not place the primary focus on the boundary,
+there is a clear division between things moving in and those moving out.&lt;/em&gt; An
+object either belongs to a set or it does not. The set focuses upon the center
+and the boundary emerges when the center and the movement of the objects has
+been defined. There is no great need to maintain the boundary in order to
+maintain the set. The boundary is not the focus so long as the center is clear.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Centered sets reflect variation within a category.&lt;/em&gt; While there is a clear
+distinction between things moving in and those moving out, the objects within
+the set are not categorically uniform. Some may be near the center and others
+far from it, even though all are moving towards the center. Each object must be
+considered individually. It is not reduced to a single common uniformity within
+the category.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Centered sets are dynamic sets.&lt;/em&gt; Two types of movements are essential parts of
+their structure. First, it is possible to change direction — to turn from moving
+away to moving towards the center, from being outside to being inside the set.
+Second, because all objects are seen in constant motion, they are moving, fast
+or slowly, towards or away from the center. Something is always happening to an
+object. It is never static.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock right&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/centered-set.png&quot; alt=&quot;Centered Set&quot; width=&quot;300&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Illustrations of centered sets are harder to come by in English, since English tends
+to see the world largely in terms of bounded sets. One example is a magnetic field
+in which particles are in motion. Electrons are those particles which are drawn
+towards the positive magnetic pole, and protons are those attracted by the negative
+pole. The diagram here is another way of visualizing a centered set&lt;sup class=&quot;footnote&quot;&gt;[&lt;a id=&quot;_footnoteref_3&quot; class=&quot;footnote&quot; href=&quot;#_footnotedef_3&quot; title=&quot;View footnote.&quot;&gt;3&lt;/a&gt;]&lt;/sup&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;bdd-as-a-centered-set&quot;&gt;BDD as a Centered Set&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In contrast to a bounded set, how does the concept &quot;BDD&quot; look defined as a
+centered set as I propose?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;olist loweralpha&quot;&gt;
+&lt;ol class=&quot;loweralpha&quot;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;A BDD practitioner is be defined in terms of the center — in terms of the
+principles, values and goals that the BDD community holds to be central&lt;/em&gt;. These
+principles, values and goals were enumerated quite clearly by Dan North and
+others during the panel session and are spelled out in other places (Dan&amp;#8217;s original
+article about BDD in Better Software was published in 2006 and still applies today). From the
+nature of the centered set, it should be clear that it is possible that there
+are those near the center who know a great deal about BDD, but who are moving
+away from the center. On the other hand there are those who are at a distance —
+who know little about BDD because they are just starting to learn it — but they
+are still BDD practitioners.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;There is a clear division between being doing BDD and not doing BDD.&lt;/em&gt;
+The boundary is there. To pick an extreme example, I mentioned on the panel that a team doing waterfall
+(serial lifecycle phase gate) development with no collaboration between roles, not
+using examples, and doing no test automation at all could not be said to be doing BDD.
+But with a centered set there is less stress on maintaining the
+boundary in order to preserve the existence and purity of the category, the BDD
+community. There is also no need to play boundary games and institutionally
+exclude those who are not truly part of the BDD community. Rather, the focus is on the center
+and of pointing people to that center. Inclusion, rather than exclusion, is
+the name of the BDD game.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;There is a recognition of variation among the BDD community.&lt;/em&gt; Some are
+closer to the BDD values in their knowledge and practice, others have only a
+little knowledge and need to grow. But - whether novice or expert or somewhere
+in between - all are doing BDD, and are called to continuously seek to
+improve and grow in their understanding and practice of delivering value early
+and often.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Being a centered set, growth thus is an essential part of practicing BDD. When a
+team begins doing BDD, they begin a journey and should strive to continue to
+move towards the center. There is no static state. Learning BDD is not the end,
+it is the beginning. We need good BDD education, mentoring and coaching to teach
+BDD to the many beginners who will join the community in the years to come, but
+we must also think about the need to continously improve and inspire novices to
+move beyond following recipes and so-called &quot;best practices&quot; and experiment with
+tailoring BDD to their unique context.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I submit that the agile community in general should also be considered a
+centered set, with the agile manifesto as the central value statement for the
+movement. Whether BDD, or agile in general, being a centered community rather
+than a bounded one must involve always seeking to not only uphold but also
+increase the gravitational pull of the values at the center.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&quot;footnotes&quot;&gt;
+&lt;hr&gt;
+&lt;div class=&quot;footnote&quot; id=&quot;_footnotedef_1&quot;&gt;
+&lt;a href=&quot;#_footnoteref_1&quot;&gt;1&lt;/a&gt;. Paul Hiebert, &quot;Conversion, Culture and Cognitive Categories.&quot; In: Gospel in Context 1:4 (October, 1978), 24-29., sourced from &lt;a href=&quot;https://danutm.files.wordpress.com/2010/06/hiebert-paul-g-conversion-culture-and-cognitive-categories.pdf&quot; class=&quot;bare&quot;&gt;https://danutm.files.wordpress.com/2010/06/hiebert-paul-g-conversion-culture-and-cognitive-categories.pdf&lt;/a&gt;, 3/28/2015
+&lt;/div&gt;
+&lt;div class=&quot;footnote&quot; id=&quot;_footnotedef_2&quot;&gt;
+&lt;a href=&quot;#_footnoteref_2&quot;&gt;2&lt;/a&gt;. There are also Fuzzy Sets, see Hiebert&amp;#8217;s article for more references
+&lt;/div&gt;
+&lt;div class=&quot;footnote&quot; id=&quot;_footnotedef_3&quot;&gt;
+&lt;a href=&quot;#_footnoteref_3&quot;&gt;3&lt;/a&gt;. Sourced from &lt;a href=&quot;http://www.academia.edu/6810466/Understanding_Christian_Identity_in_Terms_of_Bounded_and_Centered_Set_Theory_in_the_Writings_of_Paul_G._Hiebert&quot; class=&quot;bare&quot;&gt;http://www.academia.edu/6810466/Understanding_Christian_Identity_in_Terms_of_Bounded_and_Centered_Set_Theory_in_the_Writings_of_Paul_G._Hiebert&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Sat, 28 Mar 2015 23:18:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/bdd-is-a-centered-rather-than-a-bounded-community</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/bdd-is-a-centered-rather-than-a-bounded-community</guid>
+        
+        <category>BDD</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Good Design is People-Centered - Design Quotes Part 5</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;A design isn&amp;#8217;t finished until somebody is using it.&quot;&gt;&lt;/span&gt;These quotes are about the goal of design, which is centered around meeting the needs of real people. What other quotes on people-centered design am I missing?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Design is about making things good (and then better) and right (and fantastic) for the people who use and encounter them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Matt Beale
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I never design a building before I&amp;#8217;ve seen the site and met the people who will be using it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Frank Lloyd Wright
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The only important thing about design is how it relates to people.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Victor Papanek
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A design isn&amp;#8217;t finished until somebody is using it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Brenda Laurel
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Mon, 09 Feb 2015 12:01:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/good-design-is-people-centered-design-quotes-part-5</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/good-design-is-people-centered-design-quotes-part-5</guid>
+        
+        <category>Design</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Design is Difficult - Design Quotes Part 4</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;No, Watson, this was not done by accident, but by design.&quot;&gt;&lt;/span&gt;These quotes are about the difficulty of good design. What other quotes on the challenges of doing good design am I missing?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&amp;#8230;&amp;#8203;it&amp;#8217;s very easy to be different, but very difficult to be better.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Jonathan Ive
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We&amp;#8217;ve probably designed 4,000 products at IDEO over my career, and for every one of them I&amp;#8217;d like to send a little note with it that says, &quot;I&amp;#8217;m sorry that it&amp;#8217;s in this present state. Given what I know now, if I could start over again it would be a lot better.&quot;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; David Kelley
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Design is easy. All you do is stare at the screen until drops of blood form on your forehead.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Marty Nuemeier - paraphrasing Gene Fowler
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Ease of use and ease of learning are not the same.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Katherine Haramundanis
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Computer design is often bad design done on a computer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Mike Hicks
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Our opportunity, as designers, is to learn how to handle the complexity, rather than shy away from it, and to realize that the big art of design is to make complicated things simple.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Tim Parsey
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Discovery consists of seeing what everybody has seen and thinking what nobody has thought.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Albert Von Szent-Gyorgy
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;No, Watson, this was not done by accident, but by design.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Sherlock Holmes - Sir Arthur Conan Doyle
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Fri, 06 Feb 2015 12:00:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/design-is-difficult-design-quotes-part-4</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/design-is-difficult-design-quotes-part-4</guid>
+        
+        <category>Design</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Why Design? - Design Quotes Part 3</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;Good design is good business.&quot;&gt;&lt;/span&gt;These quotes are about the &lt;em&gt;purpose&lt;/em&gt; of design. What other quotes on the &lt;em&gt;utility&lt;/em&gt; of design am I missing?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you think it&amp;#8217;s expensive to hire a professional to do the job, wait until you hire an amateur.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Red Adair
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Good design is good business.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Thomas J. Watson Jr.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Design must reflect the practical and aesthetic in business but above all&amp;#8230;&amp;#8203; good design must primarily serve people.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Thomas J. Watson
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Questions about whether design is necessary or affordable are quite beside the point: design is inevitable. The alternative to good design is bad design, not no design at all. Everyone makes design decisions all the time without realizing it—like Moliere&amp;#8217;s M. Jourdain who discovered he had been speaking prose all his life—and good design is simply the result of making these decisions consciously, at the right stage, and in consultation with others as the need arises.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Douglas Martin
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;A good design is not the one that correctly predicts the future, it&amp;#8217;s one that makes adapting to the future affordable.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Venkat Subramaniam
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Everyone designs who devises courses of action aimed at changing existing situations into preferred ones.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Herbert Simon
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Thu, 05 Feb 2015 12:00:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/why-design-design-quotes-part-3</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/why-design-design-quotes-part-3</guid>
+        
+        <category>Design</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>The Design Process - Design Quotes Part 2</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;When you specify something to be designed, tell what properties you need, not how they are to be achieved.&quot;&gt;&lt;/span&gt;These quotes are about the process of design. What other quotes on design as process am I missing?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Perfection is not reached when there is nothing to be added anymore, but when there is nothing to be left out anymore.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Antoine De Saint-Exupery
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The design process, at its best, integrates the aspirations of art, science, and culture.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Jeff Smith
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Everyone is a lot of people to design for.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Joshua Rose
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To say that something is designed means it has intentions that go beyond its function. Otherwise it&amp;#8217;s just planning.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Ayse Birsel
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Good design defuses the tension between functional and aesthetic goals precisely because it works within the boundaries defined by the functional requirements of the communication problem. Unlike the fine arts, which exists for their own sake, design must always solve a particular real-world problem.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Kevin Mullet and Darrell Sano
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In practice, designing seems to proceed by oscillating between sub-solution and sub-problem areas, as well as by decomposing the problem and combining sub-solutions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Fred Brooks&lt;br&gt;
+&lt;cite&gt;The Design of Design&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;When you specify something to be designed, tell what properties you need, not how they are to be achieved.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Fred Brooks&lt;br&gt;
+&lt;cite&gt;The Design of Design&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The trick is to hold “process” off long enough to permit great design to occur, so that the lesser issues can be debated once the great design is on the table—rather than smothering it in the cradle.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Fred Brooks&lt;br&gt;
+&lt;cite&gt;The Design of Design&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Wed, 04 Feb 2015 12:01:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/the-design-process-design-quotes-part-2</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/the-design-process-design-quotes-part-2</guid>
+        
+        <category>Design</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>What is Design? - Design Quotes Part 1</title>
+        <description>&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;span class=&quot;pullquote-right&quot; data-pullquote=&quot;Design is intelligence made visible.&quot;&gt;&lt;/span&gt;I&amp;#8217;m collecting helpful quotes about the nature and importance of design. This is part one in a series of pages of quotes about different aspects of design. Many of the quotes I&amp;#8217;ve sourced are about design in general, but also apply well to software design in all its many forms. What other quotes on the &lt;em&gt;nature&lt;/em&gt; of design am I missing?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Design is not just what it looks like and feels like. Design is how it works.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Steve Jobs
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;People think that design is styling. Design is not style. It&amp;#8217;s not about giving shape to the shell and not giving a damn about the guts. Good design is a renaissance attitude that combines technology, cognitive science, human need, and beauty to produce something that the world didn&amp;#8217;t know it was missing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Paola Antonelli
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Good design is a lot like clear thinking made visual.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Edward Tufte
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Design is intelligence made visible.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Don Newgren
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;[Design is] a plan for arranging elements in such a way as to best accomplish a particular purpose.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Charles Eames
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;What is design? It&amp;#8217;s where you stand with a foot in two worlds - the world of technology and the world of people and human purposes - and you try to bring the two together.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Mitchell Kapor
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;quoteblock&quot;&gt;
+&lt;blockquote&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Design isn’t just to satisfy requirements, but also to uncover requirements.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;attribution&quot;&gt;
+&amp;#8212; Fred Brooks&lt;br&gt;
+&lt;cite&gt;The Design of Design&lt;/cite&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        <pubDate>Tue, 03 Feb 2015 12:00:00 +0000</pubDate>
+        <link>http://thepaulrayner.com/what-is-design-design-quotes-part-1</link>
+        <guid isPermaLink="true">http://thepaulrayner.com/what-is-design-design-quotes-part-1</guid>
+        
+        <category>Design</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
