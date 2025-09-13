@@ -1,6 +1,8 @@
 name: Build and Deploy Jekyll Site
 
 on:
+  schedule:
+    - cron: '0 11 * * *'  # 5 AM Mountain Time (11 AM UTC) daily
   push:
     branches: [ jekyll ]
   pull_request:
