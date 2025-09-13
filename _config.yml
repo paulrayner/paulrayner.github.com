@@ -1,7 +1,7 @@
 # Site settings
 title: Leading by Design
 email: paul@virtualgenius.com
-description: Paul Rayner's blog on software design and process
+description: by Paul Rayner
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://thepaulrayner.com" # the base hostname & protocol for your site
 twitter_username: thepaulrayner
