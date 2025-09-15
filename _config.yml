@@ -8,6 +8,8 @@ twitter_username: thepaulrayner
 github_username:  paulrayner
 
 # Build settings
+timezone: America/Denver
+future: true  # Allow posts with future dates to be published
 
 # Use kramdown for GitHub Pages compatibility
 markdown: kramdown
