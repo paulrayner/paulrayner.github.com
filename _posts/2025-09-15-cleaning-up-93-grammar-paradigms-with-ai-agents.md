@@ -6,6 +6,7 @@ tags: [AI, Development, Productivity, Claude, Hebrew]
 excerpt: Last week I had to deal with a mess I'd been putting off for way too long. Here's how I used AI agents to systematically clean up 93 grammar paradigms in parallel.
 image: ai-cleanup/2025-09-12 binah-parallel-cleanup-edited-and-15x-thumbnail.png
 comments: true
+redirect_to: https://virtualgenius.com/blog/cleaning-up-93-grammar-paradigms-with-ai-agents/
 ---
 
 Last week I had to deal with a mess I'd been putting off for way too long.

@@ -6,6 +6,7 @@ tags: [DDD, EventStorming, Flow, VSM, Lean, Agile]
 excerpt: "Most development teams remain blissfully unaware of the negative impact of these invisible queues on productivity, or how to deal with them effectively."
 image: eventstorming-team-flow/team-flow.jpg
 comments: true
+redirect_to: https://virtualgenius.com/blog/eventstorming-team-flow/
 ---
 
 Most development teams remain blissfully unaware of the negative impact of these invisible queues on productivity, or how to deal with them effectively. After all, how can we fight an invisible enemy? Isn't it better to focus on the problems we *can* see? So the typical team approach to improving productivity is to focus on the work being done. For example, trying to make the coding more efficient, or by starting new work when something gets blocked.
