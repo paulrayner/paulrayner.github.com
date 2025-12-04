@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://thepaulrayner.com/" rel="alternate" type="text/html" /><updated>2025-12-03T22:39:07-07:00</updated><id>http://thepaulrayner.com/feed.xml</id><title type="html">Leading by Design</title><subtitle>by Paul Rayner</subtitle><entry><title type="html">Cleaning up 93 grammar paradigms with AI agents</title><link href="http://thepaulrayner.com/blog/2025/09/15/cleaning-up-93-grammar-paradigms-with-ai-agents/" rel="alternate" type="text/html" title="Cleaning up 93 grammar paradigms with AI agents" /><published>2025-09-15T04:00:00-06:00</published><updated>2025-09-15T04:00:00-06:00</updated><id>http://thepaulrayner.com/blog/2025/09/15/cleaning-up-93-grammar-paradigms-with-ai-agents</id><content type="html" xml:base="http://thepaulrayner.com/blog/2025/09/15/cleaning-up-93-grammar-paradigms-with-ai-agents/"><![CDATA[]]></content><author><name></name></author><category term="AI" /><category term="Development" /><category term="Productivity" /><category term="Claude" /><category term="Hebrew" /><summary type="html"><![CDATA[Last week I had to deal with a mess I'd been putting off for way too long. Here's how I used AI agents to systematically clean up 93 grammar paradigms in parallel.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://thepaulrayner.com/ai-cleanup/2025-09-12%20binah-parallel-cleanup-edited-and-15x-thumbnail.png" /><media:content medium="image" url="http://thepaulrayner.com/ai-cleanup/2025-09-12%20binah-parallel-cleanup-edited-and-15x-thumbnail.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Plotting Paths to Cloud Migration</title><link href="http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration/" rel="alternate" type="text/html" title="Plotting Paths to Cloud Migration" /><published>2020-03-23T10:00:00-06:00</published><updated>2020-03-23T10:00:00-06:00</updated><id>http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration</id><content type="html" xml:base="http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration/"><![CDATA[<blockquote>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://thepaulrayner.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://thepaulrayner.com/" rel="alternate" type="text/html" /><updated>2025-12-03T22:56:14-07:00</updated><id>http://thepaulrayner.com/feed.xml</id><title type="html">Leading by Design</title><subtitle>by Paul Rayner</subtitle><entry><title type="html">Cleaning up 93 grammar paradigms with AI agents</title><link href="http://thepaulrayner.com/blog/2025/09/15/cleaning-up-93-grammar-paradigms-with-ai-agents/" rel="alternate" type="text/html" title="Cleaning up 93 grammar paradigms with AI agents" /><published>2025-09-15T04:00:00-06:00</published><updated>2025-09-15T04:00:00-06:00</updated><id>http://thepaulrayner.com/blog/2025/09/15/cleaning-up-93-grammar-paradigms-with-ai-agents</id><content type="html" xml:base="http://thepaulrayner.com/blog/2025/09/15/cleaning-up-93-grammar-paradigms-with-ai-agents/"><![CDATA[]]></content><author><name></name></author><category term="AI" /><category term="Development" /><category term="Productivity" /><category term="Claude" /><category term="Hebrew" /><summary type="html"><![CDATA[Last week I had to deal with a mess I'd been putting off for way too long. Here's how I used AI agents to systematically clean up 93 grammar paradigms in parallel.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://thepaulrayner.com/ai-cleanup/2025-09-12%20binah-parallel-cleanup-edited-and-15x-thumbnail.png" /><media:content medium="image" url="http://thepaulrayner.com/ai-cleanup/2025-09-12%20binah-parallel-cleanup-edited-and-15x-thumbnail.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Plotting Paths to Cloud Migration</title><link href="http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration/" rel="alternate" type="text/html" title="Plotting Paths to Cloud Migration" /><published>2020-03-23T10:00:00-06:00</published><updated>2020-03-23T10:00:00-06:00</updated><id>http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration</id><content type="html" xml:base="http://thepaulrayner.com/blog/2020/03/23/plotting-paths-to-cloud-migration/"><![CDATA[<blockquote>
   <p>Using the up or out plane to plot the migration path, it becomes apparent that many migrations aren’t a one-shot type of endeavor.</p>
 
   <p>— Gregor Hohpe</p>
@@ -204,72 +204,4 @@ Coding actually makes sense more often than believed. Often the process of rende
   <p>A design isn’t finished until somebody is using it.</p>
 
   <p>— Brenda Laurel</p>
-</blockquote>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[A design isn't finished until somebody is using it. These quotes are about the goal of design, which is centered around meeting the needs of real people.]]></summary></entry><entry><title type="html">Persisting Value Objects</title><link href="http://thepaulrayner.com/blog/2015/01/22/persisting-value-objects/" rel="alternate" type="text/html" title="Persisting Value Objects" /><published>2015-01-22T10:00:00-07:00</published><updated>2015-01-22T10:00:00-07:00</updated><id>http://thepaulrayner.com/blog/2015/01/22/persisting-value-objects</id><content type="html" xml:base="http://thepaulrayner.com/blog/2015/01/22/persisting-value-objects/"><![CDATA[<p>It can be challenging sometimes to know how best to persist value objects to a data store, especially if you are using a RDBMS. There are a variety of options to choose from, however, depending on your needs and constraints.</p>
-
-<p>Examples below are based on my <a href="https://github.com/paulrayner/ddd_sample_app_ruby">Ruby port of the DDD sample app</a>. Here is a class diagram showing the <code class="language-plaintext highlighter-rouge">Cargo</code> aggregrate, which consists of the <code class="language-plaintext highlighter-rouge">Cargo</code> entity (as the aggregate root) and a number of value objects, such as <code class="language-plaintext highlighter-rouge">Itinerary</code> and <code class="language-plaintext highlighter-rouge">RouteSpecification</code> that are also part of the <code class="language-plaintext highlighter-rouge">Cargo</code> aggregate. This is based on examples given in Eric Evans’s <a href="http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215">Domain-Driven Design</a> book.</p>
-
-<p><img src="/assets/cargo.png" alt="Cargo entity and associated value objects" />
-<em>Figure 1. Cargo entity and associated value objects</em></p>
-
-<h2 id="inline-value-objects-fields-to-entitys-table">Inline Value Object’s Fields to Entity’s Table</h2>
-
-<p>This is the simplest arrangement, both in terms of ORM mapping and database schema design. It also is an easy way to support refactoring a value object out of an entity, since only the objects and the ORM mapping would need to change; there is no change to the underlying database schema.</p>
-
-<p>An example of this would be refactoring properties such as <code class="language-plaintext highlighter-rouge">Origin</code>, <code class="language-plaintext highlighter-rouge">Destination</code> and <code class="language-plaintext highlighter-rouge">Arrival Deadline</code> out of their original location in the <a href="https://github.com/paulrayner/ddd_sample_app_ruby/blob/master/domain/cargo/cargo.rb"><code class="language-plaintext highlighter-rouge">Cargo</code> entity</a> and into a new <a href="https://github.com/paulrayner/ddd_sample_app_ruby/blob/master/domain/cargo/route_specification.rb"><code class="language-plaintext highlighter-rouge">RouteSpecification</code> value object</a>. The <code class="language-plaintext highlighter-rouge">RouteSpecification</code> value object, having a one-to-one, relationship with the <code class="language-plaintext highlighter-rouge">Cargo</code> entity, lends itself very naturally to this kind of approach. The same would be true for the <code class="language-plaintext highlighter-rouge">Itinerary</code> value object.</p>
-
-<h2 id="create-database-table-for-each-of-value-object-type-and-represent-data-as-field">Create Database Table for each of Value Object Type and Represent Data as Field</h2>
-
-<p>In the DDD sample app, a single <code class="language-plaintext highlighter-rouge">Itinerary</code> value object has many <code class="language-plaintext highlighter-rouge">Leg</code> value objects. So an example of this approach would be to persist the <code class="language-plaintext highlighter-rouge">Legs</code> value object to a <code class="language-plaintext highlighter-rouge">Legs</code> database table that has a foreign key back to the Itinerary database table. This is a common approach for 1-Many relationships. However, see the next serialization approach as perhaps a more effective solution in many cases.</p>
-
-<h2 id="serialize-the-value-object-and-store-in-field-in-entitys-table">Serialize the Value Object and Store in Field in Entity’s Table</h2>
-
-<p>This is a less common than creating a separate table for the value object as in the previous approach, but serialization is actually the method I would recommend in most cases where you have a one-to-many relationship. For example, persist <code class="language-plaintext highlighter-rouge">Itinerary</code> and all its <code class="language-plaintext highlighter-rouge">Leg</code> value objects as a serialized object grap and then inline it into the Entity’s table within the Cargo database table.</p>
-
-<p>Use an appropriate serialization format such as plain text, XML, YAML or JSON. Databases such as Postgres and SQL Server provide native format for such approaches. For a Postgres example, see Vaughn Vernon’s post <a href="https://vaughnvernon.co/?p=942">The Ideal Domain-Driven Design Aggregate Store?</a> For an example of manipulating XML with SQL Server, see <a href="https://www.simple-talk.com/sql/database-administration/manipulating-xml-data-in-sql-server/">Manipulating XML Data in SQL Server</a>.</p>
-
-<p>Querying and indexing options may be limited as in SQL Server 2008 XML columns, or even non-existent in many RDMS’s. An ORM will typically need custom code or a custom type, such as in Hibernate, to manage the serialization/deserialization of each collection.</p>
-
-<p>Serializing objects to text-based formats gives you human-readable database data, but is comparatively slow and potentially huge in size compared to regular database columns. It is important to verify that this approach can handle the performance needs before going too far with it. Also, if the serialized value object stored in the DB is opaque (e.g., the only query performed on the column is to serialize/deserialize based on primary key lookep) then consider using a much faster (and typically smaller) format like binary.</p>
-
-<h2 id="combined-rdms-and-document-database-approach">Combined RDMS and Document Database Approach</h2>
-
-<p>In the Java space, SpringSource has been doing some very interesting work for the <a href="http://www.springsource.org/spring-data">Spring.Data.Commons and related projects</a> in the area of what they call ‘cross-store persistence.’ <sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> Portions of your object are persisted to a RDBMS and other portions are persisted to NoSQL stores (and the framework handles persisting and rehydrating the right parts to/from the right data store for you). These are all OSS solutions.</p>
-
-<h2 id="use-a-document-database">Use a Document Database</h2>
-
-<p>The <code class="language-plaintext highlighter-rouge">CargoRepository</code> could use an <code class="language-plaintext highlighter-rouge">Itinerary</code> document Id stored in a <code class="language-plaintext highlighter-rouge">Cargo</code> field to retrieve the <code class="language-plaintext highlighter-rouge">Itinerary</code> value object stored in a document database such as MongoDB, RavenDB or CouchDB. Note that many document databases offer transparency of query into the contents of the ‘document’ (i.e. serialized value object in this case), which removes the need to predict which properties, etc. of the value object need to be stored separately in the table as additional fields just so that they can be queried.</p>
-
-<p>To Summarize:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>O-R</th>
-      <th>Represent Data in Fields</th>
-      <th>Serialize Object</th>
-      <th>Reference to Other Storage</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Inline in Entity Table</strong></td>
-      <td><strong>1-to-1</strong><br />• Good O-R mapper support<br />• Straightforward object/DB schema versioning<br />• Factoring fields into Value Object doesn’t change DB schema</td>
-      <td><strong>1-to-Many/1-to-1 Complex</strong><br />• Version management of serialization<br />• Some performance concerns<br />• Query limitations<br />• Field length limitations</td>
-      <td><strong>Document Id</strong><br />• Hybrid approach – store document Id in Entity’s table and lookup in Repository<br />• Queries supported by document databases</td>
-    </tr>
-    <tr>
-      <td><strong>Separate Table</strong></td>
-      <td><strong>1-to-Many</strong><br />• Good O-R mapper support, but must put ID field in Value Object<br />• Straightforward object/DB schema versioning</td>
-      <td><strong>X</strong></td>
-      <td><strong>X</strong></td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Sourced from Steve Bohlen posting to DDD Immersion Alumni Mailing List on 11/17/2011 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name></name></author><category term="DDD" /><summary type="html"><![CDATA[It can be challenging sometimes to know how best to persist value objects to a data store, especially if you are using a RDBMS. There are a variety of options to choose from, however, depending on your needs and constraints.]]></summary></entry></feed>
+</blockquote>]]></content><author><name></name></author><category term="Design" /><summary type="html"><![CDATA[A design isn't finished until somebody is using it. These quotes are about the goal of design, which is centered around meeting the needs of real people.]]></summary></entry><entry><title type="html">Persisting Value Objects</title><link href="http://thepaulrayner.com/blog/2015/01/22/persisting-value-objects/" rel="alternate" type="text/html" title="Persisting Value Objects" /><published>2015-01-22T10:00:00-07:00</published><updated>2015-01-22T10:00:00-07:00</updated><id>http://thepaulrayner.com/blog/2015/01/22/persisting-value-objects</id><content type="html" xml:base="http://thepaulrayner.com/blog/2015/01/22/persisting-value-objects/"><![CDATA[]]></content><author><name></name></author><category term="DDD" /><summary type="html"><![CDATA[It can be challenging sometimes to know how best to persist value objects to a data store, especially if you are using a RDBMS. There are a variety of options to choose from, however, depending on your needs and constraints.]]></summary></entry></feed>
