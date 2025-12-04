@@ -5,6 +5,7 @@ date: 2015-01-22 10:00:00 -0700
 tags: [DDD]
 excerpt: "It can be challenging sometimes to know how best to persist value objects to a data store, especially if you are using a RDBMS. There are a variety of options to choose from, however, depending on your needs and constraints."
 comments: true
+redirect_to: https://virtualgenius.com/blog/persisting-value-objects/
 ---
 
 It can be challenging sometimes to know how best to persist value objects to a data store, especially if you are using a RDBMS. There are a variety of options to choose from, however, depending on your needs and constraints.
