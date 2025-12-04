@@ -6,6 +6,7 @@ tags: [BDD]
 excerpt: "Dan North mentioned at one point in the CukeUp 2015 panel yesterday the notion in theology of a community being a 'bounded set.' BDD is a centered community, rather than a bounded community."
 image: what-is-bdd-panel2.png
 comments: true
+redirect_to: https://virtualgenius.com/blog/bdd-is-a-centered-rather-than-a-bounded-community/
 ---
 
 Dan North mentioned at one point in the CukeUp 2015 panel yesterday the notion in theology of a community being a "bounded set." Since Tom Stuart had been gracious enough to invite me to participate in the panel, towards the end of the session I joined the panel so I could expand on Dan's comment. I pointed out that the same theology also talks about the notion of a community being a "centered set." To me, this is what BDD really is: A centered set, rather than a bounded set. In other words, *BDD is a centered community, rather than a bounded community.*
