@@ -6,6 +6,7 @@ tags: [DDD, Agile]
 excerpt: "At YOW! 2016, fellow speaker Emily Webber told me about a cool experiment she had run at recent conference. Emily described a visible, participative way - a Realtime Retrospective - to reflect and improve throughout a conference."
 image: realtime-retro/done.jpg
 comments: true
+redirect_to: https://virtualgenius.com/blog/realtime-retro-eddd/
 ---
 
 At YOW! 2016, fellow speaker Emily Webber told me about a cool experiment she had run at recent conference. Emily described a visible, participative way - a [Realtime Retrospective](https://emilywebber.co.uk/the-realtime-retrospective) - to reflect and improve throughout a conference. In September 2017 I was able to run my first realtime retrospective experiment at [Explore DDD 2017](http://exploreddd.com/2017).
